@@ -9,14 +9,17 @@ public class TowerScript : MonoBehaviour
     public GameObject FindClosestEnemy(float min, float max)
     {
         // THIS needs fixing - triggers UnityException: Tag: Enemy is not defined.
-        GameObject[] enemies = GameObject.FindGameObjectsWithTag("Enemy");
+        GameObject[] enemies = GameObject.FindGameObjectsWithTag("enemy");
         if (enemies.Length == 0)
         {
             print("No enemies found");
         }
         if (enemies.Length > 0)
         {
-            print("Current enemies are: " + enemies);
+            foreach (GameObject enemy in enemies)
+            {
+                print("Current enemies are: " + enemy);
+            }
         }
         GameObject closestEnemy = null;
         float distance = Mathf.Infinity;
