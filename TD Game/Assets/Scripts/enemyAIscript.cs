@@ -18,7 +18,7 @@ public float Speed;
 	void Start () 
 		{
 		waypointGO = GameObject.Find("Waypoints");
-		Speed = 5;
+		Speed = 3.0f;
 		}
 	void GetNextWaypoint()
 		{

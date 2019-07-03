@@ -2,11 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BallScript : MonoBehaviour {
+public class ProjectileScript : MonoBehaviour {
 
-	public GameObject bullet;
-	public Transform BulletSpawn;
-	public Transform StartingPoint;
+	public GameObject projectile;
+	public Transform projectileSpawn;
+	public Transform startingPoint;
 //	GameObject TargetGo;
 //	Transform TargetEnemy;
 //	
@@ -37,15 +37,15 @@ public class BallScript : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-	float Speed = 15f;
+	float Speed = 5f;
 	float step = Speed * Time.deltaTime;
 
 	if(Input.GetKeyDown(KeyCode.D))
 	{
-	Instantiate(bullet, BulletSpawn.position, BulletSpawn.rotation);
-	Debug.Log("Bullet created");
+	Instantiate(projectile, projectileSpawn.position, projectileSpawn.rotation);
+	Debug.Log("Projectile created");
 	}
-	transform.position = Vector3.MoveTowards(transform.position, StartingPoint.position, step);
+	transform.position = Vector3.MoveTowards(transform.position, startingPoint.position, step);
 //		if(TargetEnemy == null)
 //		{
 //		NewTargetEnemy();

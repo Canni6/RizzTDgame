@@ -5,7 +5,7 @@ using UnityEngine;
 public class SpawnerScript : MonoBehaviour {
 
 	public GameObject enemy;
-	public float TimeBetweenMobs = 1.0f;
+	public float timeBetweenMobs = 1.0f;
 	public int enemiesRemainingToSpawn;
 
 	// Use this for initialization
@@ -16,11 +16,11 @@ public class SpawnerScript : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		TimeBetweenMobs -= Time.deltaTime;
-		if(TimeBetweenMobs <= 0.0f && enemiesRemainingToSpawn > 0) 
+		timeBetweenMobs -= Time.deltaTime;
+		if(timeBetweenMobs <= 0.0f && enemiesRemainingToSpawn > 0) 
 		{
 			Instantiate(enemy);
-			TimeBetweenMobs = 1.0f;
+			timeBetweenMobs = 2.0f;
 			enemiesRemainingToSpawn--;
 		}
 	}
