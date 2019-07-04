@@ -12,28 +12,16 @@ public class TowerScript : MonoBehaviour
     public GameObject FindClosestEnemy(float max)
     {
         GameObject[] enemies = GameObject.FindGameObjectsWithTag("enemy");
-        //if (enemies.Length == 0)
-        //{
-        //    print("No enemies found");
-        //}
-        //if (enemies.Length > 0)
-        //{
-        //    print("Current number of enemies: " + enemies.Length);
-        //}
         GameObject closestEnemy = null;
         Vector3 towerOffset = new Vector3(0, 1.5f, 0);
         Vector3 towerPosition = this.transform.position + towerOffset;
         print("Position of Tower is: " + towerPosition);
 
-        // calculate squared distances for Unity specific performance quirk
-        // min = min * min;
-        max = maxRange;
         // reset closestDistance
         float closestDistance = Mathf.Infinity;
         
         // track enemy transforms
         List<Transform> enemyTransforms = new List<Transform>();
-
         // track distances of each enemy
         foreach (GameObject enemy in enemies)
         {
@@ -44,6 +32,7 @@ public class TowerScript : MonoBehaviour
         {
             print("Enemy list transform is located at: " + enemyItem.transform.position);
         }
+        // TO DO: track each enemyItem's transform and use for comparison to tower position
         
         // loop through all enemies in scene
         foreach (GameObject enemy in enemies)
@@ -52,8 +41,7 @@ public class TowerScript : MonoBehaviour
             enemy.GetComponent<Renderer>().material.color = Color.cyan;
             // calculate distance between enemy and tower
             Vector3 diff = enemy.transform.position - towerPosition;
-            // ^ as above - apparently .Magnitude calculation is slower than sqrMagnitude, so we use sqrMagnitude
-            // float distanceToEnemy = diff.sqrMagnitude;
+            // convert Vector3 to float with .magnitude
             float distanceToEnemy = diff.magnitude;
             // Debug.Log("min distance: " + min);
             Debug.Log("max distance: " + max);
