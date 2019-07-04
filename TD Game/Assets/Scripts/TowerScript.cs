@@ -12,18 +12,18 @@ public class TowerScript : MonoBehaviour
     public GameObject FindClosestEnemy(float max)
     {
         GameObject[] enemies = GameObject.FindGameObjectsWithTag("enemy");
-        if (enemies.Length == 0)
-        {
-            print("No enemies found");
-        }
-        if (enemies.Length > 0)
-        {
-            print("Current number of enemies: " + enemies.Length);
-        }
+        //if (enemies.Length == 0)
+        //{
+        //    print("No enemies found");
+        //}
+        //if (enemies.Length > 0)
+        //{
+        //    print("Current number of enemies: " + enemies.Length);
+        //}
         GameObject closestEnemy = null;
-        
-        Vector3 position = this.transform.position;
-        print("Position of Tower is: " + position);
+        Vector3 towerOffset = new Vector3(0, 1.5f, 0);
+        Vector3 towerPosition = this.transform.position + towerOffset;
+        print("Position of Tower is: " + towerPosition);
 
         // calculate squared distances for Unity specific performance quirk
         // min = min * min;
@@ -51,7 +51,7 @@ public class TowerScript : MonoBehaviour
             // reset object colour
             enemy.GetComponent<Renderer>().material.color = Color.cyan;
             // calculate distance between enemy and tower
-            Vector3 diff = enemy.transform.position - position;
+            Vector3 diff = enemy.transform.position - towerPosition;
             // ^ as above - apparently .Magnitude calculation is slower than sqrMagnitude, so we use sqrMagnitude
             // float distanceToEnemy = diff.sqrMagnitude;
             float distanceToEnemy = diff.magnitude;
