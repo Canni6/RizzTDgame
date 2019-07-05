@@ -5645,7 +5645,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemy: {fileID: 1925956016919348, guid: 093511e524ad9844ca901dbb378c4ef4, type: 3}
-  timeBetweenMobs: 1
+  timeBetweenMobs: 2
   enemiesRemainingToSpawn: 0
 --- !u!4 &597984166
 Transform:
