@@ -6,30 +6,21 @@ using System;
 public class TowerScript : MonoBehaviour
 {
 	public Material highlightTarget;
-    // public float minRange = 5.0f;
     // try max range only
     public float maxRange = 10.0f;
-    // create reference to SpawnerScript for later use
-    private SpawnerScript spawnScript;
-
-    // create empty list of enemy proximites to populate later
-    //List<float> enemyProximities = null;
     Vector3 towerPosition;
     Vector3 enemyPosition;
     GameObject closestEnemy = null;
+    public Transform turret = transform.FindChild
+    public Transform target;
 
     public void Start()
     {
-        // create instance of SpawnerScript
-        spawnScript = GetComponent<SpawnerScript>();
         // locate tower
         Vector3 towerOffset = new Vector3(0, 1.5f, 0);
         towerPosition = transform.position + towerOffset;
-        print("Position of Tower is: " + towerPosition);
     }
     
-    
-
     public GameObject FindClosestEnemy(float maxRange)
     {
         // This function is going to execute every frame
@@ -42,8 +33,6 @@ public class TowerScript : MonoBehaviour
         {
             enemyPosition = enemy.transform.position;
             float enemyProximity = Vector3.Distance(enemyPosition, towerPosition);
-            print(enemyProximity);
-
             if (enemyProximity <= maxRange & enemyProximity < closestDistance)
             {
                 closestDistance = enemyProximity;
@@ -53,6 +42,7 @@ public class TowerScript : MonoBehaviour
                     closestEnemy = enemy;
                     print("Found closest enemy" + closestEnemy);
                     closestEnemy.GetComponent<Renderer>().material = highlightTarget;
+                    target = closestEnemy.transform;
                     return closestEnemy;
                 }
             }
@@ -62,19 +52,17 @@ public class TowerScript : MonoBehaviour
                 enemy.GetComponent<Renderer>().material.color = Color.cyan;
                 print("No enemies found");
             }
-            
         }
         return closestEnemy;
     }
-
-
         // updates every frame
-        private void FixedUpdate()
+    private void FixedUpdate()
     {
-
-        // create local list as copy of list in spawnScript instance
-
-
         FindClosestEnemy(maxRange);
+    }
+
+    private void Update()
+    {
+        transform.LookAt(target);
     }
 }
