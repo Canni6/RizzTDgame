@@ -16360,7 +16360,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   highlightTarget: {fileID: 2100000, guid: 3becb9f52bf72254690bb473084099e4, type: 2}
-  maxRange: 8
+  maxRange: 10
 --- !u!1 &1678988462
 GameObject:
   m_ObjectHideFlags: 0

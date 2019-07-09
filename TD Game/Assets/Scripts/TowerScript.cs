@@ -1,120 +1,80 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
 
 public class TowerScript : MonoBehaviour
 {
 	public Material highlightTarget;
     // public float minRange = 5.0f;
     // try max range only
-    
     public float maxRange = 10.0f;
-
     // create reference to SpawnerScript for later use
     private SpawnerScript spawnScript;
+
     // create empty list of enemy proximites to populate later
-    List<float> enemyProximities = null;
-
-
+    //List<float> enemyProximities = null;
     Vector3 towerPosition;
+    Vector3 enemyPosition;
+    GameObject closestEnemy = null;
+
     public void Start()
     {
         // create instance of SpawnerScript
-        spawnScript = new SpawnerScript();
+        spawnScript = GetComponent<SpawnerScript>();
+        // locate tower
         Vector3 towerOffset = new Vector3(0, 1.5f, 0);
-        Vector3 towerPosition = transform.position + towerOffset;
+        towerPosition = transform.position + towerOffset;
         print("Position of Tower is: " + towerPosition);
-        
     }
-
     
-    public void TrackEnemyProximities()
+    
+
+    public GameObject FindClosestEnemy(float maxRange)
     {
-
-        List<Transform> towerEnemyTransforms = spawnScript.enemyTransforms;
-        foreach (Transform towerEnemyTransform in towerEnemyTransforms)
-        {
-            float enemyProximity = towerEnemyTransform.position.magnitude - towerPosition.magnitude;
-            enemyProximities.Add(enemyProximity);
-        }
-    }
-
-    public GameObject FindClosestEnemy(float max)
-    {
-        // THIS FUNCTION is going to execute every frame
-               
-        // GameObject[] enemies = GameObject.FindGameObjectsWithTag("enemy");
-        GameObject closestEnemy = null;
+        // This function is going to execute every frame
         
-        
-        
-
-        // reset closestDistance
+        // reset closest distance before each loop
         float closestDistance = Mathf.Infinity;
-        
-        
-        
-        //// track enemy transforms
-        //List<Transform> enemyTransforms = new List<Transform>();
-        //// track distances of each enemy
-        //foreach (GameObject enemy in enemies)
-        //{
-        //    enemyTransforms.Add(enemy.transform);
-        //}
-        //// print(enemyTransforms);
-        //foreach (var enemyItem in enemyTransforms)
-        //{
-        //    print("Enemy list transform is located at: " + enemyItem.transform.position);
-        //}
-        // TO DO: track each enemyItem's transform and use for comparison to tower position
-
-
-        
-        // loop through all enemies in scene
+        // refresh array of enemies in scene before each loop
+        GameObject[] enemies = GameObject.FindGameObjectsWithTag("enemy");
         foreach (GameObject enemy in enemies)
         {
-                //// reset object colour
-                //enemy.GetComponent<Renderer>().material.color = Color.cyan;
-            // calculate distance between enemy and tower
-            Vector3 diff = enemy.transform.position - towerPosition;
-            // convert Vector3 to float with .magnitude
-            float distanceToEnemy = diff.magnitude;
-            // Debug.Log("min distance: " + min);
-            Debug.Log("max distance: " + max);
-            // Debug.Log("distance to enemy: " + distanceToEnemy);
-            
-            // check that current enemy is closest in the scene and in range (>= min <= max range values)
-            if (distanceToEnemy < closestDistance && distanceToEnemy <= max)
+            enemyPosition = enemy.transform.position;
+            float enemyProximity = Vector3.Distance(enemyPosition, towerPosition);
+            print(enemyProximity);
+
+            if (enemyProximity <= maxRange & enemyProximity < closestDistance)
             {
-                // set new closest distance
-                closestDistance = distanceToEnemy;
-                // set closestEnemy equal to current loop item
-                closestEnemy = enemy;
-                print("found closest enemy" + closestEnemy);
-                // highlight closest enemy
-                closestEnemy.GetComponent<Renderer>().material = highlightTarget;
-                // set distance to current distance
+                closestDistance = enemyProximity;
+                // lock on to target whilst in range
+                while (enemyProximity <= maxRange)
+                {
+                    closestEnemy = enemy;
+                    print("Found closest enemy" + closestEnemy);
+                    closestEnemy.GetComponent<Renderer>().material = highlightTarget;
+                    return closestEnemy;
+                }
             }
-            // if enemy out of range, remove target highlight
-            //else if (distanceToEnemy < min && distanceToEnemy > max)
-            //{
-            //    enemy.GetComponent<Renderer>().material.color = Color.cyan;
-            //}
+            else
+            {
+                closestEnemy = null;
+                enemy.GetComponent<Renderer>().material.color = Color.cyan;
+                print("No enemies found");
+            }
+            
         }
         return closestEnemy;
     }
 
-    // updates every frame
-    private void Update()
-    {
-        
-        // create local list as copy of list in spawnScript instance
-        
-        FindClosestEnemy(maxRange);
-    }
 
-    private void FixedUpdate()
+        // updates every frame
+        private void FixedUpdate()
     {
-        
+
+        // create local list as copy of list in spawnScript instance
+
+
+        FindClosestEnemy(maxRange);
     }
 }
