@@ -11,7 +11,8 @@ public class TowerScript : MonoBehaviour
     Vector3 towerPosition;
     Vector3 enemyPosition;
     GameObject closestEnemy = null;
-    public Transform turret = transform.FindChild
+    // TO DO:
+    // public Transform turret = transform.FindChild
     public Transform target;
 
     public void Start()
@@ -63,6 +64,7 @@ public class TowerScript : MonoBehaviour
 
     private void Update()
     {
+        // TO DO
         transform.LookAt(target);
     }
 }
