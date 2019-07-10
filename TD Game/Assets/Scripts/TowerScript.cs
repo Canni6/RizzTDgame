@@ -10,6 +10,9 @@ public class TowerScript : MonoBehaviour
     public float maxRange = 10.0f;
     Vector3 towerPosition;
     Vector3 enemyPosition;
+    Vector3 targetPosition;
+    
+                
     GameObject closestEnemy = null;
     // TO DO:
     // public Transform turret = transform.FindChild
@@ -50,6 +53,7 @@ public class TowerScript : MonoBehaviour
             else
             {
                 closestEnemy = null;
+                target = null;
                 enemy.GetComponent<Renderer>().material.color = Color.cyan;
                 print("No enemies found");
             }
@@ -64,7 +68,16 @@ public class TowerScript : MonoBehaviour
 
     private void Update()
     {
-        // TO DO
-        transform.LookAt(target);
+    /* code references: https://answers.unity.com/questions/36255/lookat-to-only-rotate-on-y-axis-how.html
+                        https://answers.unity.com/questions/950010/offset-lookat-rotation.html */
+        // tower target to only consider y axis
+        if (target)
+        {
+            // turret only rotates about y axis
+            Vector3 targetPosition = new Vector3(enemyPosition.x, (this.transform.position.y), enemyPosition.z);
+            // fix 90 degree rotation offset
+            transform.right = (targetPosition - transform.position);
+        }
+        
     }
 }
