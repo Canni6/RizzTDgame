@@ -8,14 +8,16 @@ public class TowerScript : MonoBehaviour
 	public Material highlightTarget;
     // try max range only
     public float maxRange = 10.0f;
+    public float projectileSpeed = 5.0f;
+    public float timeBetweenShots = 2.0f;
+    public GameObject projectile;
+    public GameObject projectileSpawn;
     Vector3 towerPosition;
     Vector3 enemyPosition;
     Vector3 targetPosition;
     
                 
     GameObject closestEnemy = null;
-    // TO DO:
-    // public Transform turret = transform.FindChild
     public Transform target;
 
     public void Start()
@@ -23,8 +25,40 @@ public class TowerScript : MonoBehaviour
         // locate tower
         Vector3 towerOffset = new Vector3(0, 1.5f, 0);
         towerPosition = transform.position + towerOffset;
+
+        projectileSpawn = GameObject.Find("ProjectileSpawn");
     }
-    
+
+    // projectile collision
+    public void OnCollisionEnter(Collision collision)
+    {
+        Destroy(gameObject);
+    }
+    // if target exists, fire projectile at it every x seconds
+    public void Shoot()
+    {
+        // variable for projectile motion
+        float step = projectileSpeed * Time.deltaTime;
+        
+        if (timeBetweenShots <= 0)
+        {
+            // create projectile
+            Instantiate(projectile, projectileSpawn.transform.position, projectileSpawn.transform.rotation);
+            Debug.Log("projectile created");
+            // move projectile toward enemy
+
+            // TO DO: TEST implementation - need to fix
+            while (timeBetweenShots >  0)
+            {
+                projectile.transform.position = Vector3.MoveTowards(projectile.transform.position, enemyPosition, step);
+            }
+            
+            // reset timer
+            timeBetweenShots = 2.0f;
+        }
+        
+    }
+
     public GameObject FindClosestEnemy(float maxRange)
     {
         // This function is going to execute every frame
@@ -77,7 +111,11 @@ public class TowerScript : MonoBehaviour
             Vector3 targetPosition = new Vector3(enemyPosition.x, (this.transform.position.y), enemyPosition.z);
             // fix 90 degree rotation offset
             transform.right = (targetPosition - transform.position);
-        }
-        
+            // timer for shooting
+            timeBetweenShots -= Time.deltaTime;
+            // execute shoot function
+            Shoot();
+
+        }  
     }
 }
