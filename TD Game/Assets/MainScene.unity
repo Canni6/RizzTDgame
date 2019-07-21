@@ -20170,7 +20170,9 @@ MonoBehaviour:
   highlightTarget: {fileID: 2100000, guid: 3becb9f52bf72254690bb473084099e4, type: 2}
   maxRange: 10
   projectileSpeed: 5
-  projectile: {fileID: 0}
+  timeBetweenShots: 2
+  projectile: {fileID: 4313315001184675784, guid: 045ef448137bd1846bdb91bba40d4504,
+    type: 3}
   projectileSpawn: {fileID: 0}
   target: {fileID: 0}
 --- !u!1 &2063350974

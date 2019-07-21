@@ -15,10 +15,18 @@ public class TowerScript : MonoBehaviour
     Vector3 towerPosition;
     Vector3 enemyPosition;
     Vector3 targetPosition;
+    private ProjectileScript projectileScript;
     
-                
+
+
     GameObject closestEnemy = null;
-    public Transform target;
+    public Transform target = null;
+
+
+    private void Awake()
+    {
+        projectileScript = GetComponent<ProjectileScript>();
+    }
 
     public void Start()
     {
@@ -27,36 +35,28 @@ public class TowerScript : MonoBehaviour
         towerPosition = transform.position + towerOffset;
 
         projectileSpawn = GameObject.Find("ProjectileSpawn");
+        
     }
 
-    // projectile collision
-    public void OnCollisionEnter(Collision collision)
-    {
-        Destroy(gameObject);
-    }
+    //// projectile collision
+    //public void OnCollisionEnter(Collision collision)
+    //{
+    //    Destroy(gameObject);
+    //}
+    
+    
     // if target exists, fire projectile at it every x seconds
     public void Shoot()
     {
-        // variable for projectile motion
-        float step = projectileSpeed * Time.deltaTime;
-        
         if (timeBetweenShots <= 0)
         {
             // create projectile
             Instantiate(projectile, projectileSpawn.transform.position, projectileSpawn.transform.rotation);
             Debug.Log("projectile created");
-            // move projectile toward enemy
 
-            // TO DO: TEST implementation - need to fix
-            while (timeBetweenShots >  0)
-            {
-                projectile.transform.position = Vector3.MoveTowards(projectile.transform.position, enemyPosition, step);
-            }
-            
             // reset timer
             timeBetweenShots = 2.0f;
         }
-        
     }
 
     public GameObject FindClosestEnemy(float maxRange)
@@ -95,27 +95,43 @@ public class TowerScript : MonoBehaviour
         return closestEnemy;
     }
         // updates every frame
-    private void FixedUpdate()
+    public void FixedUpdate()
     {
         FindClosestEnemy(maxRange);
     }
 
-    private void Update()
+    public void Update()
     {
-    /* code references: https://answers.unity.com/questions/36255/lookat-to-only-rotate-on-y-axis-how.html
-                        https://answers.unity.com/questions/950010/offset-lookat-rotation.html */
+        /* code references: https://answers.unity.com/questions/36255/lookat-to-only-rotate-on-y-axis-how.html
+                            https://answers.unity.com/questions/950010/offset-lookat-rotation.html */
+
         // tower target to only consider y axis
+        
         if (target)
         {
+            projectileScript.target = target;
+
             // turret only rotates about y axis
             Vector3 targetPosition = new Vector3(enemyPosition.x, (this.transform.position.y), enemyPosition.z);
             // fix 90 degree rotation offset
             transform.right = (targetPosition - transform.position);
             // timer for shooting
             timeBetweenShots -= Time.deltaTime;
-            // execute shoot function
+            // execute shoot function to create projectile
             Shoot();
+            
 
-        }  
+            //// distance for projectile to move
+            //float step = projectileSpeed * Time.deltaTime;
+            //// move projectile toward target
+            //projectile.transform.position = Vector3.MoveTowards(projectile.transform.position, enemyPosition, step);
+            //print("projectile moved");
+            //// check if position of enemy and projectile are approximately equal.
+            //if (Vector3.Distance(projectile.transform.position, enemyPosition) < 0.001f)
+            //{
+            //    Destroy(projectile);
+            //    print("projectile destroyed!");
+            //}
+        }
     }
 }

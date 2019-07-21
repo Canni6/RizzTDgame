@@ -1,11 +1,13 @@
 fileFormatVersion: 2
 guid: cbab315858b8ddc46b21d8688937d372
-timeCreated: 1551181793
-licenseType: Free
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - highlightTarget: {instanceID: 0}
+  - projectile: {instanceID: 0}
+  - projectileSpawn: {instanceID: 0}
+  - target: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
