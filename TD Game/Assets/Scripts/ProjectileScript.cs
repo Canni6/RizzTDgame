@@ -4,41 +4,48 @@ using UnityEngine;
 
 public class ProjectileScript : MonoBehaviour
 {
+    // TO DO: fix projectile rotation
 
-    public Transform target = null;
-    public float speed = 5.0f;
-    //private TowerScript towerScript;
-    
+    // target reference for the projectile
+    public Transform target;
+    public float speed = 20f;
+    private Vector3 worldUp;
 
-    // Use this for initialization
-    void Start()
+    // transform to pass in from the Tower Script - Brackeys tutorial: https://www.youtube.com/watch?v=oqidgRQAMB8
+    public void Seek (Transform _target)
     {
-        
+        target = _target;
     }
 
-    private void Awake()
+    public void Awake()
     {
-        //towerScript = GetComponent<TowerScript>();
-        //towerScript.target = GetComponent<TowerScript>().target;
+        this.transform.Rotate(0, 0, 90f, Space.World);
     }
 
     // Update is called once per frame
     void Update()
     {
-        float step = speed * Time.deltaTime; 
-        if (target)
+        float step = speed * Time.deltaTime;
+
+        if(target == null)
         {
-            //target = towerScript.target;
-            print(target);
-            transform.position = Vector3.MoveTowards(transform.position, target.position, step);
-            print("projectile moved");
-            // check if position of enemy and projectile are approximately equal.
-            if (Vector3.Distance(transform.position, target.position) < 0.001f)
-            {
-                Destroy(gameObject);
-                print("projectile destroyed!");
-            }
+            Destroy(gameObject);
+            print("target null - projectile destroyed");
+            return;
         }
-        
+
+        Vector3 dir = target.position - transform.position;
+        // FIX: Vector3.RotateTowards(this, target, 10 * Time.deltaTime);
+
+        // check if position of enemy and projectile are approximately equal.
+        if (Vector3.Distance(transform.position, target.position) <= 1f)
+        {
+            Destroy(gameObject);
+            print("collision - projectile destroyed!");
+            return;
+        }
+        this.transform.Translate(dir.normalized * step, Space.World);
+        print("projectile moved");
+
     }
 }

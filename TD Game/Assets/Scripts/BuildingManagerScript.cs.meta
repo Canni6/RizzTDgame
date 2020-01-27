@@ -1,11 +1,12 @@
 fileFormatVersion: 2
 guid: 956087d3e583e7c4eab2688378a0d975
-timeCreated: 1550905133
-licenseType: Free
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - boxRend: {instanceID: 0}
+  - tempTower: {fileID: 1964124958064930, guid: 8f79b89df760e0d47a3369abd21a0409,
+      type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
