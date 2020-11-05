@@ -11,6 +11,7 @@ public class BuildingManagerScript : MonoBehaviour {
     string play = "--Play State--";
     string buildStateString;
     public bool buildState = false;
+    public bool buildableArea = true;
     public GameObject tempTower = null; // prefab declaration
     public GameObject tempTowerClone; // placement phase
     public GameObject newTower; // built phase
@@ -25,22 +26,28 @@ public class BuildingManagerScript : MonoBehaviour {
     void OnMouseEnter()
     {
         if (buildState == true) {
-            boxRend.material.color = Color.red;
-            print(boxRend.material.color);
-            // instantiate temp tower
-            tempTowerClone = Instantiate(tempTower, boxRend.transform.position, boxRend.transform.rotation) as GameObject;
+            if(buildableArea) {
+                boxRend.material.color = Color.green;
+                print(boxRend.material.color);
+                // instantiate temp tower
+                tempTowerClone = Instantiate(tempTower, boxRend.transform.position, boxRend.transform.rotation) as GameObject;
+            }
+            else {
+                boxRend.material.color = Color.red;
+            }
         }
     }
 
     void OnMouseDown() {
-        if (buildState == true) {
-            boxRend.material.color = Color.green; // set to green temporarily to 
+        if (buildState == true && buildableArea) {
+            boxRend.material.color = Color.yellow; // set to green temporarily to 
             print(boxRend.material.color);
             Destroy(tempTowerClone); // destroy the temp
             // instantiate new tower
             newTower = Instantiate(tempTower, boxRend.transform.position, boxRend.transform.rotation) as GameObject;
             // access tower script and toggle built state
             newTower.GetComponentInChildren<TowerScript>().setBuilt();
+            buildableArea = false;
             //print("Setting tower script to active.");
             //newTower.GetComponentInChildren<TowerScript>().toggleActive();
             //print(newTower.GetComponentInChildren<TowerScript>().getActive());

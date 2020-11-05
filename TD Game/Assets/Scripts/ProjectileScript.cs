@@ -4,16 +4,11 @@ using UnityEngine;
 
 public class ProjectileScript : MonoBehaviour
 {
-    // TO DO: fix projectile rotation
-
     // target reference for the projectile
     public Transform target;
     public float speed = 20f;
     private Vector3 worldUp;
 
-    //public ProjectileScript()
-
-    // transform to pass in from the Tower Script - Brackeys tutorial: https://www.youtube.com/watch?v=oqidgRQAMB8
     public void Seek (Transform _target)
     {
         target = _target;
