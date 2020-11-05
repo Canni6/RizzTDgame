@@ -37,15 +37,6 @@ public class ProjectileScript : MonoBehaviour
         }
 
         Vector3 dir = target.position - transform.position;
-        // FIX: Vector3.RotateTowards(this, target, 10 * Time.deltaTime);
-
-        // check if position of enemy and projectile are approximately equal.
-        //if (Vector3.Distance(transform.position, target.position) <= 1f)
-        //{
-        //    Destroy(gameObject);
-        //    print("collision - projectile destroyed!");
-        //    return;
-        //}
         this.transform.Translate(dir.normalized * step, Space.World);
         print("projectile moved");
 

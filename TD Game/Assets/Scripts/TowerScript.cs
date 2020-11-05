@@ -2,9 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 using System;
+using System.Net.NetworkInformation;
 
 public class TowerScript : MonoBehaviour
 {
+    private bool active;
 	public Material highlightTarget;
     // try max range only
     public float maxRange = 10.0f;
@@ -15,9 +17,13 @@ public class TowerScript : MonoBehaviour
     Vector3 towerPosition;
     Vector3 enemyPosition;
     Vector3 targetPosition;
+    public bool built = false;
     
     GameObject closestEnemy = null;
     public Transform target = null;
+
+ 
+    GameObject projectileGO = null;
 
 
     private void Awake()
@@ -31,7 +37,6 @@ public class TowerScript : MonoBehaviour
         Vector3 towerOffset = new Vector3(0, 1.5f, 0);
         towerPosition = this.transform.position + towerOffset;
         projectileSpawn = this.gameObject.transform.GetChild(2);
-        // projectileSpawn = GameObject.Find("ProjectileSpawn");  
     }
        
     // if target exists, fire projectile at it every x seconds
@@ -41,14 +46,17 @@ public class TowerScript : MonoBehaviour
         {
             // create projectile
             //GameObject projectileGO = (GameObject) Instantiate(projectile, this.projectileSpawn.transform.position, this.projectileSpawn.transform.rotation);
-            GameObject projectileGO = (GameObject)Instantiate(projectile, projectileSpawn.position, this.projectileSpawn.rotation);
-            ProjectileScript projectileRef = projectileGO.GetComponent<ProjectileScript>();
-            Debug.Log("projectile created");
-
-            if(projectileRef != null)
+            projectileGO = (GameObject) Instantiate(projectile, projectileSpawn.position, this.projectileSpawn.rotation);
+            // so enemy knows what's hitting it
+            projectileGO.tag = "projectile";
+            ProjectileScript projectileRef;
+            projectileGO.gameObject.AddComponent<ProjectileScript>();
+            projectileRef = projectileGO.GetComponent<ProjectileScript>();
+            if (projectileRef != null)
             {
                 projectileRef.Seek(target);
                 print("Target found");
+                print("Target is: " + target);
             }
 
             // reset timer
@@ -94,7 +102,9 @@ public class TowerScript : MonoBehaviour
         // updates every frame
     public void FixedUpdate()
     {
-        FindClosestEnemy(maxRange);
+        if(built) {
+            FindClosestEnemy(maxRange);
+        }           
     }
 
     public void Update()
@@ -104,8 +114,7 @@ public class TowerScript : MonoBehaviour
 
         // tower target to only consider y axis
         
-        if (target)
-        {
+        if (target) {
             //projectileScript.target = target;
             //print("target is set");
 
@@ -118,5 +127,9 @@ public class TowerScript : MonoBehaviour
             // execute shoot function to create projectile
             Shoot();
         }
+    }
+    
+    public void setBuilt() {
+        built = true;
     }
 }

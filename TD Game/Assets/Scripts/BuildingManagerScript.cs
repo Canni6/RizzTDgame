@@ -11,9 +11,9 @@ public class BuildingManagerScript : MonoBehaviour {
     string play = "--Play State--";
     string buildStateString;
     public bool buildState = false;
-    public GameObject tempTower = null;
-    public GameObject tempTowerClone;
-    public GameObject newTower;
+    public GameObject tempTower = null; // prefab declaration
+    public GameObject tempTowerClone; // placement phase
+    public GameObject newTower; // built phase
 
     // Use this for initialization
     void Start () {
@@ -24,8 +24,7 @@ public class BuildingManagerScript : MonoBehaviour {
 
     void OnMouseEnter()
     {
-        if (buildState == true)
-        {
+        if (buildState == true) {
             boxRend.material.color = Color.red;
             print(boxRend.material.color);
             // instantiate temp tower
@@ -35,14 +34,19 @@ public class BuildingManagerScript : MonoBehaviour {
 
     void OnMouseDown() {
         if (buildState == true) {
-            boxRend.material.color = Color.red;
+            boxRend.material.color = Color.green; // set to green temporarily to 
             print(boxRend.material.color);
+            Destroy(tempTowerClone); // destroy the temp
             // instantiate new tower
             newTower = Instantiate(tempTower, boxRend.transform.position, boxRend.transform.rotation) as GameObject;
+            // access tower script and toggle built state
+            newTower.GetComponentInChildren<TowerScript>().setBuilt();
+            //print("Setting tower script to active.");
+            //newTower.GetComponentInChildren<TowerScript>().toggleActive();
+            //print(newTower.GetComponentInChildren<TowerScript>().getActive());
             //newTower.gameObject.TowerScript.start();
             //newTower.gameObject.addComponent(new ProjectileScript());
             print("Construction complete.");
-            Destroy(tempTowerClone);
         }
     }
 
