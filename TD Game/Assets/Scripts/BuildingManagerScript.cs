@@ -13,12 +13,13 @@ public class BuildingManagerScript : MonoBehaviour {
     public bool buildState = false;
     public GameObject tempTower = null;
     public GameObject tempTowerClone;
+    public GameObject newTower;
 
     // Use this for initialization
     void Start () {
         //boxRend = GetComponentInChildren<Renderer>();
         boxRend = GetComponent<Renderer>();
-        tempTower = (GameObject)Resources.Load("Prefabs/Tower_Built");
+        tempTower = (GameObject)Resources.Load("Prefabs/Tower");
 }
 
     void OnMouseEnter()
@@ -29,6 +30,19 @@ public class BuildingManagerScript : MonoBehaviour {
             print(boxRend.material.color);
             // instantiate temp tower
             tempTowerClone = Instantiate(tempTower, boxRend.transform.position, boxRend.transform.rotation) as GameObject;
+        }
+    }
+
+    void OnMouseDown() {
+        if (buildState == true) {
+            boxRend.material.color = Color.red;
+            print(boxRend.material.color);
+            // instantiate new tower
+            newTower = Instantiate(tempTower, boxRend.transform.position, boxRend.transform.rotation) as GameObject;
+            //newTower.gameObject.TowerScript.start();
+            //newTower.gameObject.addComponent(new ProjectileScript());
+            print("Construction complete.");
+            Destroy(tempTowerClone);
         }
     }
 
@@ -51,6 +65,8 @@ public class BuildingManagerScript : MonoBehaviour {
         if (buildState == true)
         {
             buildStateString = build;
+        } else {
+
         }
 
         if (buildState == false)

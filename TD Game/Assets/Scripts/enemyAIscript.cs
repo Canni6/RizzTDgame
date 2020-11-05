@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class enemyAIscript : MonoBehaviour 
+public class EnemyAIscript : MonoBehaviour 
 {
 
     GameObject waypointGO;  // defines waypoint gameobject
@@ -54,4 +54,11 @@ public class enemyAIscript : MonoBehaviour
 		    transform.Translate( direction.normalized * step );
 		}
 	}
+
+    void OnCollisionEnter(Collision target) {
+        if (target.gameObject.tag.Equals("projectile") == true) {
+            Destroy(gameObject);
+            print("collision - enemy destroyed!");
+        }
+    }
 }

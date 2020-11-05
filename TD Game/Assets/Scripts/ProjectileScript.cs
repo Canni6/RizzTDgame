@@ -11,6 +11,8 @@ public class ProjectileScript : MonoBehaviour
     public float speed = 20f;
     private Vector3 worldUp;
 
+    //public ProjectileScript()
+
     // transform to pass in from the Tower Script - Brackeys tutorial: https://www.youtube.com/watch?v=oqidgRQAMB8
     public void Seek (Transform _target)
     {
@@ -38,14 +40,22 @@ public class ProjectileScript : MonoBehaviour
         // FIX: Vector3.RotateTowards(this, target, 10 * Time.deltaTime);
 
         // check if position of enemy and projectile are approximately equal.
-        if (Vector3.Distance(transform.position, target.position) <= 1f)
-        {
-            Destroy(gameObject);
-            print("collision - projectile destroyed!");
-            return;
-        }
+        //if (Vector3.Distance(transform.position, target.position) <= 1f)
+        //{
+        //    Destroy(gameObject);
+        //    print("collision - projectile destroyed!");
+        //    return;
+        //}
         this.transform.Translate(dir.normalized * step, Space.World);
         print("projectile moved");
 
+    }
+
+
+    void OnCollisionEnter(Collision target) {
+        if(target.gameObject.tag.Equals("enemy") == true ) {
+            Destroy(gameObject);
+            print("collision - projectile destroyed!");
+        }
     }
 }
