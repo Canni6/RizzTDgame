@@ -64,7 +64,6 @@ public class BuildingManagerScript : MonoBehaviour {
                 // spend 1 credit
                 updatePlayerCredit(-1);
 
-
                 buildableArea = false;
                 print("Construction complete.");
             } else {
@@ -75,8 +74,7 @@ public class BuildingManagerScript : MonoBehaviour {
         }
     }
 
-    void OnMouseExit()
-    {
+    void OnMouseExit() {
         boxRend.material.color = Color.white;
         Destroy(tempTowerClone);
     }
@@ -95,11 +93,6 @@ public class BuildingManagerScript : MonoBehaviour {
         {
             buildStateString = build;
         } else {
-
-        }
-
-        if (buildState == false)
-        {
             buildStateString = play;
         }
     }
@@ -117,44 +110,21 @@ public class BuildingManagerScript : MonoBehaviour {
             }
         }
 
-        if (Input.GetKeyDown(KeyCode.B))
-        {
+        if (Input.GetKeyDown(KeyCode.B)) {
             buildState = true;
             print("State changed to build");
             print("Player 1 credit report from building manager w/ gameManager ref: " + gameManagerRef.getPlayerCredit());
         }
 
-        if(Input.GetKeyDown(KeyCode.Escape))
-        {
+        if(Input.GetKeyDown(KeyCode.Escape)) {
             buildState = false;
             print("State changed to play");
         }
 
         if (Input.GetKeyDown(KeyCode.B)) {
-		Debug.Log("pressed B");
-//		// TO DO:
-//		// Open Build Menu -> implement some UI stuff/icon/description/cost
-//			if(Input.GetKeyDown(KeyCode.T)
-//			{
-//			//Build basic tower
-//				//Instantiate(tower) on mouse cursor and follow mouse cursor around
-//				// - whilst following mouse cursor, highlight closest buildable block within radius x of mouse cursor
-//				// - on left click down: PlaceBuilding();
-//				// void PlaceBuilding();
-//				// {
-//				// Instantiate(Tower) at centre of currently highlighted block
-//				// DeductCurrencyFromPlayer;
-//				// ReadyToFireTurret;
-//				// 
-//
-//			}
+		    Debug.Log("pressed B");
 		}
 	}
-
-    void DetectMouseOver()
-    {
-        
-    }
 
     void updatePlayerCredit(int credit) {
         gameManagerRef.addPlayerCredit(credit);

@@ -7,9 +7,6 @@ public class GameManager : MonoBehaviour {
 
     // reference to player 1 game object
     public GameObject player1GO = null;
-    //// reference to player 2 game object
-    //public GameObject player2GO = null;
-
     // references to player scripts on the game objects
     Player player1Ref;
     //Player player2ref;
@@ -23,15 +20,6 @@ public class GameManager : MonoBehaviour {
         // Add some credit using player script reference
         player1Ref.addCredit(5);
         playerCreditString = "Bloka's cash: " + player1Ref.getCredit();
-
-        //player2GO = Instantiate(player2GO);
-        //player2GO.AddComponent<Player>();
-        //player2ref = player2GO.GetComponent<Player>();
-
-        //player2ref.addCredit(10);
-
-        print("Player 1's credit: " + player1Ref.getCredit());
-
     }
 
     // Update is called once per frame
