@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UIElements;
 
 public class BuildingManagerScript : MonoBehaviour {
 
@@ -16,6 +17,10 @@ public class BuildingManagerScript : MonoBehaviour {
     public GameObject tempTowerClone; // placement phase
     public GameObject newTower; // built phase
     public GameManager gameManagerRef;
+    bool creditWarning;
+    public float timer;
+    string creditWarningString;
+    private GUIStyle guiStyle = new GUIStyle();
 
     // Use this for initialization
     void Start () {
@@ -23,12 +28,17 @@ public class BuildingManagerScript : MonoBehaviour {
         boxRend = GetComponent<Renderer>();
         tempTower = (GameObject)Resources.Load("Prefabs/Tower");
         gameManagerRef = GameObject.Find("GameManager").GetComponent<GameManager>();
+        creditWarning = false;
+        timer = 0;
+        creditWarningString = "We need more gold!";
+        guiStyle.normal.textColor = Color.red;
+        guiStyle.fontSize = 20;
     }
 
     void OnMouseEnter()
     {
         if (buildState == true) {
-            if(buildableArea) {
+            if(buildableArea && gameManagerRef.getPlayerCredit() > 0) {
                 boxRend.material.color = Color.green;
                 print(boxRend.material.color);
                 // instantiate temp tower
@@ -59,6 +69,7 @@ public class BuildingManagerScript : MonoBehaviour {
                 print("Construction complete.");
             } else {
                 print("We need more gold!");
+                creditWarning = true;
             }
             
         }
@@ -72,8 +83,10 @@ public class BuildingManagerScript : MonoBehaviour {
 
     void OnGUI()
     {
-        GUI.contentColor = Color.green;
         GUI.Label(new Rect(Screen.width / 2, Screen.height / 2, 1000, 200), buildStateString);
+        if(creditWarning) {
+            GUI.Label(new Rect(Screen.width / 3, Screen.height / 2 + 2*(Screen.height / 5), 500, 100), creditWarningString, guiStyle);
+        }
     }
 
     void changeBuildState()
@@ -95,6 +108,14 @@ public class BuildingManagerScript : MonoBehaviour {
     // Update is called once per frame
     void Update () {
         changeBuildState();
+
+        if(creditWarning) {
+            timer += Time.deltaTime;
+            if (timer > 3) {
+                creditWarning = false;
+                timer = 0;
+            }
+        }
 
         if (Input.GetKeyDown(KeyCode.B))
         {

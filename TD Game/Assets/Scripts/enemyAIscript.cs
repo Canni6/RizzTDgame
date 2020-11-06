@@ -9,14 +9,12 @@ public class EnemyAIscript : MonoBehaviour
     Transform targetWaypoint; // defines a movement 
     int waypointIndex = 0;
     public float Speed;
-
-    // TO DO:
-    // Deal with projectiles: die
-    // On death: Add to player economy/score
+    GameObject gameManager;
 
 	// Use this for initialization
     void Start () 
     {
+        gameManager = GameObject.Find("GameManager");
         waypointGO = GameObject.Find("Waypoints");
         Speed = 3.0f;
     }
@@ -59,6 +57,8 @@ public class EnemyAIscript : MonoBehaviour
         if (target.gameObject.tag.Equals("projectile") == true) {
             Destroy(gameObject);
             print("collision - enemy destroyed!");
+            gameManager.GetComponent<GameManager>().addPlayerCredit(1);
+            print("Added to player score");
         }
     }
 }
