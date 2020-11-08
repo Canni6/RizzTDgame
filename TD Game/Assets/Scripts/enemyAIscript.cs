@@ -10,14 +10,16 @@ public class EnemyAIscript : MonoBehaviour
     int waypointIndex = 0;
     public float Speed;
     GameObject gameManager;
+    GameManager gameManagerRef;
     public int health;
     public int waypointCount;
 
 	// Use this for initialization
     void Start () {
         gameManager = GameObject.Find("GameManager");
+        gameManagerRef = gameManager.GetComponent<GameManager>();
         waypointGO = GameObject.Find("Waypoints");
-        Speed = 10.0f;
+        Speed = 20.0f;
         health = 3;
         waypointCount = waypointGO.transform.childCount;
     }
@@ -28,11 +30,14 @@ public class EnemyAIscript : MonoBehaviour
             waypointIndex++;
         }
         else {
-            Destroy(gameObject);
+            ReachedGoal();
         }
     }
     void ReachedGoal() {
 	    Destroy(gameObject);
+        // subtract life from player
+        gameManagerRef.addPlayerLife(-1);
+        print("Reached goal");
 	}
     // Update is called once per frame
     void Update () {
@@ -58,7 +63,7 @@ public class EnemyAIscript : MonoBehaviour
             if(health < 1) {
                 Destroy(gameObject);
                 print("collision - enemy destroyed!");
-                gameManager.GetComponent<GameManager>().addPlayerCredit(1);
+                gameManagerRef.addPlayerCredit(1);
                 print("Added to player score");
             }
         }

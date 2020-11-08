@@ -11,6 +11,11 @@ public class GameManager : MonoBehaviour {
     Player player1Ref;
     //Player player2ref;
     string playerCreditString;
+    string playerLifeString;
+    string gameOverString;
+    bool gameOver;
+    // 
+    private GUIStyle guiStyle = new GUIStyle();
 
     // Start is called before the first frame update
     void Start() {
@@ -19,7 +24,12 @@ public class GameManager : MonoBehaviour {
         player1Ref = player1GO.GetComponent<Player>();
         // Add some credit using player script reference
         player1Ref.addCredit(5);
-        playerCreditString = "Bloka's cash: " + player1Ref.getCredit();
+        playerCreditString = "Credit: " + player1Ref.getCredit();
+        playerLifeString = "Life: " + player1Ref.getLife().ToString();
+        guiStyle.normal.textColor = Color.red;
+        guiStyle.fontSize = 30;
+        gameOverString = "GAME OVER!";
+        gameOver = false;
     }
 
     // Update is called once per frame
@@ -33,10 +43,22 @@ public class GameManager : MonoBehaviour {
 
     public void addPlayerCredit(int credit) {
         player1Ref.addCredit(credit);
-        playerCreditString = "Bloka's cash: " + player1Ref.getCredit();
+        playerCreditString = "Credit: " + player1Ref.getCredit();
+    }
+
+    public void addPlayerLife(int life) {
+        player1Ref.addLife(life);
+        playerLifeString = "Life: " + player1Ref.getLife().ToString();
+        if(player1Ref.getLife() < 1) {
+            gameOver = true;
+        }
     }
 
     private void OnGUI() {
-        GUI.Label(new Rect(Screen.width / 2 + Screen.width / 4, Screen.height / 2 + Screen.height / 3, 1000, 200), playerCreditString);
+        GUI.Label(new Rect(Screen.width / 2, Screen.height / 2 - Screen.height / 3, 1000, 200), playerCreditString);
+        GUI.Label(new Rect(Screen.width / 2 - Screen.width / 4, Screen.height / 2 - Screen.height / 3, 1000, 200), playerLifeString);
+        if(gameOver) {
+            GUI.Label(new Rect(Screen.width / 2, Screen.height / 2, 1000, 200), gameOverString, guiStyle);
+        }
     }
 }
