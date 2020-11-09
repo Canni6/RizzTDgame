@@ -299,10 +299,13 @@ MonoBehaviour:
   buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
-  tempTowerClone: {fileID: 0}
-  newTower: {fileID: 0}
+  basicTower: {fileID: 0}
+  frostTower: {fileID: 0}
+  rapidTower: {fileID: 0}
+  builtTower: {fileID: 0}
   gameManagerRef: {fileID: 0}
   timer: 0
+  selection: 0
 --- !u!1 &33395248
 GameObject:
   m_ObjectHideFlags: 0
@@ -577,10 +580,13 @@ MonoBehaviour:
   buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
-  tempTowerClone: {fileID: 0}
-  newTower: {fileID: 0}
+  basicTower: {fileID: 0}
+  frostTower: {fileID: 0}
+  rapidTower: {fileID: 0}
+  builtTower: {fileID: 0}
   gameManagerRef: {fileID: 0}
   timer: 0
+  selection: 0
 --- !u!1 &51633106
 GameObject:
   m_ObjectHideFlags: 0
@@ -693,10 +699,13 @@ MonoBehaviour:
   buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
-  tempTowerClone: {fileID: 0}
-  newTower: {fileID: 0}
+  basicTower: {fileID: 0}
+  frostTower: {fileID: 0}
+  rapidTower: {fileID: 0}
+  builtTower: {fileID: 0}
   gameManagerRef: {fileID: 0}
   timer: 0
+  selection: 0
 --- !u!1 &63754246
 GameObject:
   m_ObjectHideFlags: 0
@@ -809,10 +818,13 @@ MonoBehaviour:
   buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
-  tempTowerClone: {fileID: 0}
-  newTower: {fileID: 0}
+  basicTower: {fileID: 0}
+  frostTower: {fileID: 0}
+  rapidTower: {fileID: 0}
+  builtTower: {fileID: 0}
   gameManagerRef: {fileID: 0}
   timer: 0
+  selection: 0
 --- !u!1 &72180122
 GameObject:
   m_ObjectHideFlags: 0
@@ -1006,10 +1018,13 @@ MonoBehaviour:
   buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
-  tempTowerClone: {fileID: 0}
-  newTower: {fileID: 0}
+  basicTower: {fileID: 0}
+  frostTower: {fileID: 0}
+  rapidTower: {fileID: 0}
+  builtTower: {fileID: 0}
   gameManagerRef: {fileID: 0}
   timer: 0
+  selection: 0
 --- !u!1 &79436847
 GameObject:
   m_ObjectHideFlags: 0
@@ -1122,10 +1137,13 @@ MonoBehaviour:
   buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
-  tempTowerClone: {fileID: 0}
-  newTower: {fileID: 0}
+  basicTower: {fileID: 1964124958064930, guid: 4acafbe077a43424c92aa8ff5cd7aae8, type: 3}
+  frostTower: {fileID: 1964124958064930, guid: 89b4d89f3b94181498edfd87b541cb89, type: 3}
+  rapidTower: {fileID: 1964124958064930, guid: 7c24cd2f5ea7b8f478f590cf490925ae, type: 3}
+  builtTower: {fileID: 0}
   gameManagerRef: {fileID: 0}
   timer: 0
+  selection: 0
 --- !u!1 &86611646
 GameObject:
   m_ObjectHideFlags: 0
@@ -1238,10 +1256,13 @@ MonoBehaviour:
   buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
-  tempTowerClone: {fileID: 0}
-  newTower: {fileID: 0}
+  basicTower: {fileID: 0}
+  frostTower: {fileID: 0}
+  rapidTower: {fileID: 0}
+  builtTower: {fileID: 0}
   gameManagerRef: {fileID: 0}
   timer: 0
+  selection: 0
 --- !u!1 &90617664
 GameObject:
   m_ObjectHideFlags: 0
@@ -1399,10 +1420,13 @@ MonoBehaviour:
   buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
-  tempTowerClone: {fileID: 0}
-  newTower: {fileID: 0}
+  basicTower: {fileID: 0}
+  frostTower: {fileID: 0}
+  rapidTower: {fileID: 0}
+  builtTower: {fileID: 0}
   gameManagerRef: {fileID: 0}
   timer: 0
+  selection: 0
 --- !u!1 &100466182
 GameObject:
   m_ObjectHideFlags: 0
@@ -1515,10 +1539,13 @@ MonoBehaviour:
   buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
-  tempTowerClone: {fileID: 0}
-  newTower: {fileID: 0}
+  basicTower: {fileID: 0}
+  frostTower: {fileID: 0}
+  rapidTower: {fileID: 0}
+  builtTower: {fileID: 0}
   gameManagerRef: {fileID: 0}
   timer: 0
+  selection: 0
 --- !u!1 &104806307
 GameObject:
   m_ObjectHideFlags: 0
@@ -1631,10 +1658,13 @@ MonoBehaviour:
   buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
-  tempTowerClone: {fileID: 0}
-  newTower: {fileID: 0}
+  basicTower: {fileID: 0}
+  frostTower: {fileID: 0}
+  rapidTower: {fileID: 0}
+  builtTower: {fileID: 0}
   gameManagerRef: {fileID: 0}
   timer: 0
+  selection: 0
 --- !u!1 &114925257
 GameObject:
   m_ObjectHideFlags: 0
@@ -1747,10 +1777,13 @@ MonoBehaviour:
   buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
-  tempTowerClone: {fileID: 0}
-  newTower: {fileID: 0}
+  basicTower: {fileID: 0}
+  frostTower: {fileID: 0}
+  rapidTower: {fileID: 0}
+  builtTower: {fileID: 0}
   gameManagerRef: {fileID: 0}
   timer: 0
+  selection: 0
 --- !u!1 &119789041
 GameObject:
   m_ObjectHideFlags: 0
@@ -1863,10 +1896,13 @@ MonoBehaviour:
   buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
-  tempTowerClone: {fileID: 0}
-  newTower: {fileID: 0}
+  basicTower: {fileID: 0}
+  frostTower: {fileID: 0}
+  rapidTower: {fileID: 0}
+  builtTower: {fileID: 0}
   gameManagerRef: {fileID: 0}
   timer: 0
+  selection: 0
 --- !u!1 &126861084
 GameObject:
   m_ObjectHideFlags: 0
@@ -1979,10 +2015,13 @@ MonoBehaviour:
   buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
-  tempTowerClone: {fileID: 0}
-  newTower: {fileID: 0}
+  basicTower: {fileID: 0}
+  frostTower: {fileID: 0}
+  rapidTower: {fileID: 0}
+  builtTower: {fileID: 0}
   gameManagerRef: {fileID: 0}
   timer: 0
+  selection: 0
 --- !u!1 &140101808
 GameObject:
   m_ObjectHideFlags: 0
@@ -2331,10 +2370,13 @@ MonoBehaviour:
   buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
-  tempTowerClone: {fileID: 0}
-  newTower: {fileID: 0}
+  basicTower: {fileID: 0}
+  frostTower: {fileID: 0}
+  rapidTower: {fileID: 0}
+  builtTower: {fileID: 0}
   gameManagerRef: {fileID: 0}
   timer: 0
+  selection: 0
 --- !u!1 &163102672
 GameObject:
   m_ObjectHideFlags: 0
@@ -2447,10 +2489,13 @@ MonoBehaviour:
   buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
-  tempTowerClone: {fileID: 0}
-  newTower: {fileID: 0}
+  basicTower: {fileID: 0}
+  frostTower: {fileID: 0}
+  rapidTower: {fileID: 0}
+  builtTower: {fileID: 0}
   gameManagerRef: {fileID: 0}
   timer: 0
+  selection: 0
 --- !u!1 &175411803
 GameObject:
   m_ObjectHideFlags: 0
@@ -2563,10 +2608,13 @@ MonoBehaviour:
   buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
-  tempTowerClone: {fileID: 0}
-  newTower: {fileID: 0}
+  basicTower: {fileID: 0}
+  frostTower: {fileID: 0}
+  rapidTower: {fileID: 0}
+  builtTower: {fileID: 0}
   gameManagerRef: {fileID: 0}
   timer: 0
+  selection: 0
 --- !u!1 &177362509
 GameObject:
   m_ObjectHideFlags: 0
@@ -2679,10 +2727,13 @@ MonoBehaviour:
   buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
-  tempTowerClone: {fileID: 0}
-  newTower: {fileID: 0}
+  basicTower: {fileID: 0}
+  frostTower: {fileID: 0}
+  rapidTower: {fileID: 0}
+  builtTower: {fileID: 0}
   gameManagerRef: {fileID: 0}
   timer: 0
+  selection: 0
 --- !u!1 &178647815
 GameObject:
   m_ObjectHideFlags: 0
@@ -2795,10 +2846,13 @@ MonoBehaviour:
   buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
-  tempTowerClone: {fileID: 0}
-  newTower: {fileID: 0}
+  basicTower: {fileID: 0}
+  frostTower: {fileID: 0}
+  rapidTower: {fileID: 0}
+  builtTower: {fileID: 0}
   gameManagerRef: {fileID: 0}
   timer: 0
+  selection: 0
 --- !u!1 &224015142
 GameObject:
   m_ObjectHideFlags: 0
@@ -2911,10 +2965,13 @@ MonoBehaviour:
   buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
-  tempTowerClone: {fileID: 0}
-  newTower: {fileID: 0}
+  basicTower: {fileID: 0}
+  frostTower: {fileID: 0}
+  rapidTower: {fileID: 0}
+  builtTower: {fileID: 0}
   gameManagerRef: {fileID: 0}
   timer: 0
+  selection: 0
 --- !u!1001 &228569889
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3042,7 +3099,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &242946268
 GameObject:
@@ -3156,10 +3213,13 @@ MonoBehaviour:
   buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
-  tempTowerClone: {fileID: 0}
-  newTower: {fileID: 0}
+  basicTower: {fileID: 0}
+  frostTower: {fileID: 0}
+  rapidTower: {fileID: 0}
+  builtTower: {fileID: 0}
   gameManagerRef: {fileID: 0}
   timer: 0
+  selection: 0
 --- !u!1 &260657074
 GameObject:
   m_ObjectHideFlags: 0
@@ -3272,10 +3332,13 @@ MonoBehaviour:
   buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
-  tempTowerClone: {fileID: 0}
-  newTower: {fileID: 0}
+  basicTower: {fileID: 0}
+  frostTower: {fileID: 0}
+  rapidTower: {fileID: 0}
+  builtTower: {fileID: 0}
   gameManagerRef: {fileID: 0}
   timer: 0
+  selection: 0
 --- !u!1 &269007368
 GameObject:
   m_ObjectHideFlags: 0
@@ -3388,10 +3451,13 @@ MonoBehaviour:
   buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
-  tempTowerClone: {fileID: 0}
-  newTower: {fileID: 0}
+  basicTower: {fileID: 0}
+  frostTower: {fileID: 0}
+  rapidTower: {fileID: 0}
+  builtTower: {fileID: 0}
   gameManagerRef: {fileID: 0}
   timer: 0
+  selection: 0
 --- !u!1 &284240154
 GameObject:
   m_ObjectHideFlags: 0
@@ -3504,10 +3570,13 @@ MonoBehaviour:
   buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
-  tempTowerClone: {fileID: 0}
-  newTower: {fileID: 0}
+  basicTower: {fileID: 0}
+  frostTower: {fileID: 0}
+  rapidTower: {fileID: 0}
+  builtTower: {fileID: 0}
   gameManagerRef: {fileID: 0}
   timer: 0
+  selection: 0
 --- !u!1001 &284282576
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3746,10 +3815,13 @@ MonoBehaviour:
   buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
-  tempTowerClone: {fileID: 0}
-  newTower: {fileID: 0}
+  basicTower: {fileID: 0}
+  frostTower: {fileID: 0}
+  rapidTower: {fileID: 0}
+  builtTower: {fileID: 0}
   gameManagerRef: {fileID: 0}
   timer: 0
+  selection: 0
 --- !u!1 &322461372
 GameObject:
   m_ObjectHideFlags: 0
@@ -3862,10 +3934,13 @@ MonoBehaviour:
   buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
-  tempTowerClone: {fileID: 0}
-  newTower: {fileID: 0}
+  basicTower: {fileID: 0}
+  frostTower: {fileID: 0}
+  rapidTower: {fileID: 0}
+  builtTower: {fileID: 0}
   gameManagerRef: {fileID: 0}
   timer: 0
+  selection: 0
 --- !u!1 &336195959
 GameObject:
   m_ObjectHideFlags: 0
@@ -3978,10 +4053,13 @@ MonoBehaviour:
   buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
-  tempTowerClone: {fileID: 0}
-  newTower: {fileID: 0}
+  basicTower: {fileID: 0}
+  frostTower: {fileID: 0}
+  rapidTower: {fileID: 0}
+  builtTower: {fileID: 0}
   gameManagerRef: {fileID: 0}
   timer: 0
+  selection: 0
 --- !u!1 &342356473
 GameObject:
   m_ObjectHideFlags: 0
@@ -4094,10 +4172,13 @@ MonoBehaviour:
   buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
-  tempTowerClone: {fileID: 0}
-  newTower: {fileID: 0}
+  basicTower: {fileID: 0}
+  frostTower: {fileID: 0}
+  rapidTower: {fileID: 0}
+  builtTower: {fileID: 0}
   gameManagerRef: {fileID: 0}
   timer: 0
+  selection: 0
 --- !u!1 &355033255
 GameObject:
   m_ObjectHideFlags: 0
@@ -4210,10 +4291,13 @@ MonoBehaviour:
   buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
-  tempTowerClone: {fileID: 0}
-  newTower: {fileID: 0}
+  basicTower: {fileID: 0}
+  frostTower: {fileID: 0}
+  rapidTower: {fileID: 0}
+  builtTower: {fileID: 0}
   gameManagerRef: {fileID: 0}
   timer: 0
+  selection: 0
 --- !u!1 &364836107
 GameObject:
   m_ObjectHideFlags: 0
@@ -4326,10 +4410,13 @@ MonoBehaviour:
   buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
-  tempTowerClone: {fileID: 0}
-  newTower: {fileID: 0}
+  basicTower: {fileID: 0}
+  frostTower: {fileID: 0}
+  rapidTower: {fileID: 0}
+  builtTower: {fileID: 0}
   gameManagerRef: {fileID: 0}
   timer: 0
+  selection: 0
 --- !u!1 &365565585
 GameObject:
   m_ObjectHideFlags: 0
@@ -4442,10 +4529,13 @@ MonoBehaviour:
   buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
-  tempTowerClone: {fileID: 0}
-  newTower: {fileID: 0}
+  basicTower: {fileID: 0}
+  frostTower: {fileID: 0}
+  rapidTower: {fileID: 0}
+  builtTower: {fileID: 0}
   gameManagerRef: {fileID: 0}
   timer: 0
+  selection: 0
 --- !u!1 &385850549
 GameObject:
   m_ObjectHideFlags: 0
@@ -4639,10 +4729,13 @@ MonoBehaviour:
   buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
-  tempTowerClone: {fileID: 0}
-  newTower: {fileID: 0}
+  basicTower: {fileID: 0}
+  frostTower: {fileID: 0}
+  rapidTower: {fileID: 0}
+  builtTower: {fileID: 0}
   gameManagerRef: {fileID: 0}
   timer: 0
+  selection: 0
 --- !u!1 &391697152
 GameObject:
   m_ObjectHideFlags: 0
@@ -4755,10 +4848,13 @@ MonoBehaviour:
   buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
-  tempTowerClone: {fileID: 0}
-  newTower: {fileID: 0}
+  basicTower: {fileID: 0}
+  frostTower: {fileID: 0}
+  rapidTower: {fileID: 0}
+  builtTower: {fileID: 0}
   gameManagerRef: {fileID: 0}
   timer: 0
+  selection: 0
 --- !u!1 &410896893
 GameObject:
   m_ObjectHideFlags: 0
@@ -4871,10 +4967,13 @@ MonoBehaviour:
   buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
-  tempTowerClone: {fileID: 0}
-  newTower: {fileID: 0}
+  basicTower: {fileID: 0}
+  frostTower: {fileID: 0}
+  rapidTower: {fileID: 0}
+  builtTower: {fileID: 0}
   gameManagerRef: {fileID: 0}
   timer: 0
+  selection: 0
 --- !u!1 &413058055
 GameObject:
   m_ObjectHideFlags: 0
@@ -4987,10 +5086,13 @@ MonoBehaviour:
   buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
-  tempTowerClone: {fileID: 0}
-  newTower: {fileID: 0}
+  basicTower: {fileID: 0}
+  frostTower: {fileID: 0}
+  rapidTower: {fileID: 0}
+  builtTower: {fileID: 0}
   gameManagerRef: {fileID: 0}
   timer: 0
+  selection: 0
 --- !u!1 &426986237
 GameObject:
   m_ObjectHideFlags: 0
@@ -5103,10 +5205,13 @@ MonoBehaviour:
   buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
-  tempTowerClone: {fileID: 0}
-  newTower: {fileID: 0}
+  basicTower: {fileID: 0}
+  frostTower: {fileID: 0}
+  rapidTower: {fileID: 0}
+  builtTower: {fileID: 0}
   gameManagerRef: {fileID: 0}
   timer: 0
+  selection: 0
 --- !u!1 &434253068
 GameObject:
   m_ObjectHideFlags: 0
@@ -5219,10 +5324,13 @@ MonoBehaviour:
   buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
-  tempTowerClone: {fileID: 0}
-  newTower: {fileID: 0}
+  basicTower: {fileID: 0}
+  frostTower: {fileID: 0}
+  rapidTower: {fileID: 0}
+  builtTower: {fileID: 0}
   gameManagerRef: {fileID: 0}
   timer: 0
+  selection: 0
 --- !u!1 &440898059
 GameObject:
   m_ObjectHideFlags: 0
@@ -5416,10 +5524,13 @@ MonoBehaviour:
   buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
-  tempTowerClone: {fileID: 0}
-  newTower: {fileID: 0}
+  basicTower: {fileID: 0}
+  frostTower: {fileID: 0}
+  rapidTower: {fileID: 0}
+  builtTower: {fileID: 0}
   gameManagerRef: {fileID: 0}
   timer: 0
+  selection: 0
 --- !u!1 &464775913
 GameObject:
   m_ObjectHideFlags: 0
@@ -5532,10 +5643,13 @@ MonoBehaviour:
   buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
-  tempTowerClone: {fileID: 0}
-  newTower: {fileID: 0}
+  basicTower: {fileID: 0}
+  frostTower: {fileID: 0}
+  rapidTower: {fileID: 0}
+  builtTower: {fileID: 0}
   gameManagerRef: {fileID: 0}
   timer: 0
+  selection: 0
 --- !u!1 &470365122
 GameObject:
   m_ObjectHideFlags: 0
@@ -5648,10 +5762,13 @@ MonoBehaviour:
   buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
-  tempTowerClone: {fileID: 0}
-  newTower: {fileID: 0}
+  basicTower: {fileID: 0}
+  frostTower: {fileID: 0}
+  rapidTower: {fileID: 0}
+  builtTower: {fileID: 0}
   gameManagerRef: {fileID: 0}
   timer: 0
+  selection: 0
 --- !u!1 &472498136
 GameObject:
   m_ObjectHideFlags: 0
@@ -5764,10 +5881,13 @@ MonoBehaviour:
   buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
-  tempTowerClone: {fileID: 0}
-  newTower: {fileID: 0}
+  basicTower: {fileID: 0}
+  frostTower: {fileID: 0}
+  rapidTower: {fileID: 0}
+  builtTower: {fileID: 0}
   gameManagerRef: {fileID: 0}
   timer: 0
+  selection: 0
 --- !u!1 &477465617
 GameObject:
   m_ObjectHideFlags: 0
@@ -5880,10 +6000,13 @@ MonoBehaviour:
   buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
-  tempTowerClone: {fileID: 0}
-  newTower: {fileID: 0}
+  basicTower: {fileID: 0}
+  frostTower: {fileID: 0}
+  rapidTower: {fileID: 0}
+  builtTower: {fileID: 0}
   gameManagerRef: {fileID: 0}
   timer: 0
+  selection: 0
 --- !u!1 &497513183
 GameObject:
   m_ObjectHideFlags: 0
@@ -6091,10 +6214,13 @@ MonoBehaviour:
   buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
-  tempTowerClone: {fileID: 0}
-  newTower: {fileID: 0}
+  basicTower: {fileID: 0}
+  frostTower: {fileID: 0}
+  rapidTower: {fileID: 0}
+  builtTower: {fileID: 0}
   gameManagerRef: {fileID: 0}
   timer: 0
+  selection: 0
 --- !u!1 &525317217
 GameObject:
   m_ObjectHideFlags: 0
@@ -6288,10 +6414,13 @@ MonoBehaviour:
   buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
-  tempTowerClone: {fileID: 0}
-  newTower: {fileID: 0}
+  basicTower: {fileID: 0}
+  frostTower: {fileID: 0}
+  rapidTower: {fileID: 0}
+  builtTower: {fileID: 0}
   gameManagerRef: {fileID: 0}
   timer: 0
+  selection: 0
 --- !u!1 &562930370
 GameObject:
   m_ObjectHideFlags: 0
@@ -6404,10 +6533,13 @@ MonoBehaviour:
   buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
-  tempTowerClone: {fileID: 0}
-  newTower: {fileID: 0}
+  basicTower: {fileID: 0}
+  frostTower: {fileID: 0}
+  rapidTower: {fileID: 0}
+  builtTower: {fileID: 0}
   gameManagerRef: {fileID: 0}
   timer: 0
+  selection: 0
 --- !u!1 &570608260
 GameObject:
   m_ObjectHideFlags: 0
@@ -6520,10 +6652,13 @@ MonoBehaviour:
   buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
-  tempTowerClone: {fileID: 0}
-  newTower: {fileID: 0}
+  basicTower: {fileID: 0}
+  frostTower: {fileID: 0}
+  rapidTower: {fileID: 0}
+  builtTower: {fileID: 0}
   gameManagerRef: {fileID: 0}
   timer: 0
+  selection: 0
 --- !u!1 &575643700
 GameObject:
   m_ObjectHideFlags: 0
@@ -6636,10 +6771,13 @@ MonoBehaviour:
   buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
-  tempTowerClone: {fileID: 0}
-  newTower: {fileID: 0}
+  basicTower: {fileID: 0}
+  frostTower: {fileID: 0}
+  rapidTower: {fileID: 0}
+  builtTower: {fileID: 0}
   gameManagerRef: {fileID: 0}
   timer: 0
+  selection: 0
 --- !u!1 &575778286
 GameObject:
   m_ObjectHideFlags: 0
@@ -6752,10 +6890,13 @@ MonoBehaviour:
   buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
-  tempTowerClone: {fileID: 0}
-  newTower: {fileID: 0}
+  basicTower: {fileID: 0}
+  frostTower: {fileID: 0}
+  rapidTower: {fileID: 0}
+  builtTower: {fileID: 0}
   gameManagerRef: {fileID: 0}
   timer: 0
+  selection: 0
 --- !u!1 &576418820
 GameObject:
   m_ObjectHideFlags: 0
@@ -6868,10 +7009,13 @@ MonoBehaviour:
   buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
-  tempTowerClone: {fileID: 0}
-  newTower: {fileID: 0}
+  basicTower: {fileID: 0}
+  frostTower: {fileID: 0}
+  rapidTower: {fileID: 0}
+  builtTower: {fileID: 0}
   gameManagerRef: {fileID: 0}
   timer: 0
+  selection: 0
 --- !u!1 &594196491
 GameObject:
   m_ObjectHideFlags: 0
@@ -6984,10 +7128,13 @@ MonoBehaviour:
   buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
-  tempTowerClone: {fileID: 0}
-  newTower: {fileID: 0}
+  basicTower: {fileID: 0}
+  frostTower: {fileID: 0}
+  rapidTower: {fileID: 0}
+  builtTower: {fileID: 0}
   gameManagerRef: {fileID: 0}
   timer: 0
+  selection: 0
 --- !u!1 &599853812
 GameObject:
   m_ObjectHideFlags: 0
@@ -7100,10 +7247,13 @@ MonoBehaviour:
   buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
-  tempTowerClone: {fileID: 0}
-  newTower: {fileID: 0}
+  basicTower: {fileID: 0}
+  frostTower: {fileID: 0}
+  rapidTower: {fileID: 0}
+  builtTower: {fileID: 0}
   gameManagerRef: {fileID: 0}
   timer: 0
+  selection: 0
 --- !u!1 &615965510
 GameObject:
   m_ObjectHideFlags: 0
@@ -7216,10 +7366,13 @@ MonoBehaviour:
   buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
-  tempTowerClone: {fileID: 0}
-  newTower: {fileID: 0}
+  basicTower: {fileID: 0}
+  frostTower: {fileID: 0}
+  rapidTower: {fileID: 0}
+  builtTower: {fileID: 0}
   gameManagerRef: {fileID: 0}
   timer: 0
+  selection: 0
 --- !u!1 &631477663
 GameObject:
   m_ObjectHideFlags: 0
@@ -7424,10 +7577,13 @@ MonoBehaviour:
   buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
-  tempTowerClone: {fileID: 0}
-  newTower: {fileID: 0}
+  basicTower: {fileID: 0}
+  frostTower: {fileID: 0}
+  rapidTower: {fileID: 0}
+  builtTower: {fileID: 0}
   gameManagerRef: {fileID: 0}
   timer: 0
+  selection: 0
 --- !u!1001 &657575038
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7603,10 +7759,13 @@ MonoBehaviour:
   buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
-  tempTowerClone: {fileID: 0}
-  newTower: {fileID: 0}
+  basicTower: {fileID: 0}
+  frostTower: {fileID: 0}
+  rapidTower: {fileID: 0}
+  builtTower: {fileID: 0}
   gameManagerRef: {fileID: 0}
   timer: 0
+  selection: 0
 --- !u!1 &678601602
 GameObject:
   m_ObjectHideFlags: 0
@@ -7719,10 +7878,13 @@ MonoBehaviour:
   buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
-  tempTowerClone: {fileID: 0}
-  newTower: {fileID: 0}
+  basicTower: {fileID: 0}
+  frostTower: {fileID: 0}
+  rapidTower: {fileID: 0}
+  builtTower: {fileID: 0}
   gameManagerRef: {fileID: 0}
   timer: 0
+  selection: 0
 --- !u!1 &684398122
 GameObject:
   m_ObjectHideFlags: 0
@@ -7835,10 +7997,13 @@ MonoBehaviour:
   buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
-  tempTowerClone: {fileID: 0}
-  newTower: {fileID: 0}
+  basicTower: {fileID: 0}
+  frostTower: {fileID: 0}
+  rapidTower: {fileID: 0}
+  builtTower: {fileID: 0}
   gameManagerRef: {fileID: 0}
   timer: 0
+  selection: 0
 --- !u!1 &722625218
 GameObject:
   m_ObjectHideFlags: 0
@@ -7951,10 +8116,13 @@ MonoBehaviour:
   buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
-  tempTowerClone: {fileID: 0}
-  newTower: {fileID: 0}
+  basicTower: {fileID: 0}
+  frostTower: {fileID: 0}
+  rapidTower: {fileID: 0}
+  builtTower: {fileID: 0}
   gameManagerRef: {fileID: 0}
   timer: 0
+  selection: 0
 --- !u!1 &730674220
 GameObject:
   m_ObjectHideFlags: 0
@@ -8067,10 +8235,13 @@ MonoBehaviour:
   buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
-  tempTowerClone: {fileID: 0}
-  newTower: {fileID: 0}
+  basicTower: {fileID: 0}
+  frostTower: {fileID: 0}
+  rapidTower: {fileID: 0}
+  builtTower: {fileID: 0}
   gameManagerRef: {fileID: 0}
   timer: 0
+  selection: 0
 --- !u!1 &743762057
 GameObject:
   m_ObjectHideFlags: 0
@@ -8183,10 +8354,13 @@ MonoBehaviour:
   buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
-  tempTowerClone: {fileID: 0}
-  newTower: {fileID: 0}
+  basicTower: {fileID: 0}
+  frostTower: {fileID: 0}
+  rapidTower: {fileID: 0}
+  builtTower: {fileID: 0}
   gameManagerRef: {fileID: 0}
   timer: 0
+  selection: 0
 --- !u!1 &743916828
 GameObject:
   m_ObjectHideFlags: 0
@@ -8299,10 +8473,13 @@ MonoBehaviour:
   buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
-  tempTowerClone: {fileID: 0}
-  newTower: {fileID: 0}
+  basicTower: {fileID: 0}
+  frostTower: {fileID: 0}
+  rapidTower: {fileID: 0}
+  builtTower: {fileID: 0}
   gameManagerRef: {fileID: 0}
   timer: 0
+  selection: 0
 --- !u!1 &755285606
 GameObject:
   m_ObjectHideFlags: 0
@@ -8415,10 +8592,13 @@ MonoBehaviour:
   buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
-  tempTowerClone: {fileID: 0}
-  newTower: {fileID: 0}
+  basicTower: {fileID: 0}
+  frostTower: {fileID: 0}
+  rapidTower: {fileID: 0}
+  builtTower: {fileID: 0}
   gameManagerRef: {fileID: 0}
   timer: 0
+  selection: 0
 --- !u!1 &758114674
 GameObject:
   m_ObjectHideFlags: 0
@@ -8531,10 +8711,13 @@ MonoBehaviour:
   buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
-  tempTowerClone: {fileID: 0}
-  newTower: {fileID: 0}
+  basicTower: {fileID: 0}
+  frostTower: {fileID: 0}
+  rapidTower: {fileID: 0}
+  builtTower: {fileID: 0}
   gameManagerRef: {fileID: 0}
   timer: 0
+  selection: 0
 --- !u!1 &772307692
 GameObject:
   m_ObjectHideFlags: 0
@@ -8647,10 +8830,13 @@ MonoBehaviour:
   buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
-  tempTowerClone: {fileID: 0}
-  newTower: {fileID: 0}
+  basicTower: {fileID: 0}
+  frostTower: {fileID: 0}
+  rapidTower: {fileID: 0}
+  builtTower: {fileID: 0}
   gameManagerRef: {fileID: 0}
   timer: 0
+  selection: 0
 --- !u!1 &785145279
 GameObject:
   m_ObjectHideFlags: 0
@@ -8763,10 +8949,13 @@ MonoBehaviour:
   buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
-  tempTowerClone: {fileID: 0}
-  newTower: {fileID: 0}
+  basicTower: {fileID: 0}
+  frostTower: {fileID: 0}
+  rapidTower: {fileID: 0}
+  builtTower: {fileID: 0}
   gameManagerRef: {fileID: 0}
   timer: 0
+  selection: 0
 --- !u!1 &798562611
 GameObject:
   m_ObjectHideFlags: 0
@@ -8879,10 +9068,13 @@ MonoBehaviour:
   buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
-  tempTowerClone: {fileID: 0}
-  newTower: {fileID: 0}
+  basicTower: {fileID: 0}
+  frostTower: {fileID: 0}
+  rapidTower: {fileID: 0}
+  builtTower: {fileID: 0}
   gameManagerRef: {fileID: 0}
   timer: 0
+  selection: 0
 --- !u!1 &806273626
 GameObject:
   m_ObjectHideFlags: 0
@@ -8995,10 +9187,13 @@ MonoBehaviour:
   buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
-  tempTowerClone: {fileID: 0}
-  newTower: {fileID: 0}
+  basicTower: {fileID: 0}
+  frostTower: {fileID: 0}
+  rapidTower: {fileID: 0}
+  builtTower: {fileID: 0}
   gameManagerRef: {fileID: 0}
   timer: 0
+  selection: 0
 --- !u!1 &811702145
 GameObject:
   m_ObjectHideFlags: 0
@@ -9111,10 +9306,13 @@ MonoBehaviour:
   buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
-  tempTowerClone: {fileID: 0}
-  newTower: {fileID: 0}
+  basicTower: {fileID: 0}
+  frostTower: {fileID: 0}
+  rapidTower: {fileID: 0}
+  builtTower: {fileID: 0}
   gameManagerRef: {fileID: 0}
   timer: 0
+  selection: 0
 --- !u!1 &818392524
 GameObject:
   m_ObjectHideFlags: 0
@@ -9227,10 +9425,13 @@ MonoBehaviour:
   buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
-  tempTowerClone: {fileID: 0}
-  newTower: {fileID: 0}
+  basicTower: {fileID: 0}
+  frostTower: {fileID: 0}
+  rapidTower: {fileID: 0}
+  builtTower: {fileID: 0}
   gameManagerRef: {fileID: 0}
   timer: 0
+  selection: 0
 --- !u!1 &828098051
 GameObject:
   m_ObjectHideFlags: 0
@@ -9343,10 +9544,13 @@ MonoBehaviour:
   buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
-  tempTowerClone: {fileID: 0}
-  newTower: {fileID: 0}
+  basicTower: {fileID: 0}
+  frostTower: {fileID: 0}
+  rapidTower: {fileID: 0}
+  builtTower: {fileID: 0}
   gameManagerRef: {fileID: 0}
   timer: 0
+  selection: 0
 --- !u!1 &857268691
 GameObject:
   m_ObjectHideFlags: 0
@@ -9459,10 +9663,13 @@ MonoBehaviour:
   buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
-  tempTowerClone: {fileID: 0}
-  newTower: {fileID: 0}
+  basicTower: {fileID: 0}
+  frostTower: {fileID: 0}
+  rapidTower: {fileID: 0}
+  builtTower: {fileID: 0}
   gameManagerRef: {fileID: 0}
   timer: 0
+  selection: 0
 --- !u!1 &877641674
 GameObject:
   m_ObjectHideFlags: 0
@@ -9575,10 +9782,13 @@ MonoBehaviour:
   buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
-  tempTowerClone: {fileID: 0}
-  newTower: {fileID: 0}
+  basicTower: {fileID: 0}
+  frostTower: {fileID: 0}
+  rapidTower: {fileID: 0}
+  builtTower: {fileID: 0}
   gameManagerRef: {fileID: 0}
   timer: 0
+  selection: 0
 --- !u!1 &891814161
 GameObject:
   m_ObjectHideFlags: 0
@@ -9691,10 +9901,13 @@ MonoBehaviour:
   buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
-  tempTowerClone: {fileID: 0}
-  newTower: {fileID: 0}
+  basicTower: {fileID: 0}
+  frostTower: {fileID: 0}
+  rapidTower: {fileID: 0}
+  builtTower: {fileID: 0}
   gameManagerRef: {fileID: 0}
   timer: 0
+  selection: 0
 --- !u!1001 &900125670
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9870,10 +10083,13 @@ MonoBehaviour:
   buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
-  tempTowerClone: {fileID: 0}
-  newTower: {fileID: 0}
+  basicTower: {fileID: 0}
+  frostTower: {fileID: 0}
+  rapidTower: {fileID: 0}
+  builtTower: {fileID: 0}
   gameManagerRef: {fileID: 0}
   timer: 0
+  selection: 0
 --- !u!1 &920008546
 GameObject:
   m_ObjectHideFlags: 0
@@ -9986,10 +10202,13 @@ MonoBehaviour:
   buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
-  tempTowerClone: {fileID: 0}
-  newTower: {fileID: 0}
+  basicTower: {fileID: 0}
+  frostTower: {fileID: 0}
+  rapidTower: {fileID: 0}
+  builtTower: {fileID: 0}
   gameManagerRef: {fileID: 0}
   timer: 0
+  selection: 0
 --- !u!1 &935299185
 GameObject:
   m_ObjectHideFlags: 0
@@ -10102,10 +10321,13 @@ MonoBehaviour:
   buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
-  tempTowerClone: {fileID: 0}
-  newTower: {fileID: 0}
+  basicTower: {fileID: 0}
+  frostTower: {fileID: 0}
+  rapidTower: {fileID: 0}
+  builtTower: {fileID: 0}
   gameManagerRef: {fileID: 0}
   timer: 0
+  selection: 0
 --- !u!1 &935567401
 GameObject:
   m_ObjectHideFlags: 0
@@ -10218,10 +10440,13 @@ MonoBehaviour:
   buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
-  tempTowerClone: {fileID: 0}
-  newTower: {fileID: 0}
+  basicTower: {fileID: 0}
+  frostTower: {fileID: 0}
+  rapidTower: {fileID: 0}
+  builtTower: {fileID: 0}
   gameManagerRef: {fileID: 0}
   timer: 0
+  selection: 0
 --- !u!1 &936000811
 GameObject:
   m_ObjectHideFlags: 0
@@ -10334,10 +10559,13 @@ MonoBehaviour:
   buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
-  tempTowerClone: {fileID: 0}
-  newTower: {fileID: 0}
+  basicTower: {fileID: 0}
+  frostTower: {fileID: 0}
+  rapidTower: {fileID: 0}
+  builtTower: {fileID: 0}
   gameManagerRef: {fileID: 0}
   timer: 0
+  selection: 0
 --- !u!1 &936672549
 GameObject:
   m_ObjectHideFlags: 0
@@ -10450,10 +10678,13 @@ MonoBehaviour:
   buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
-  tempTowerClone: {fileID: 0}
-  newTower: {fileID: 0}
+  basicTower: {fileID: 0}
+  frostTower: {fileID: 0}
+  rapidTower: {fileID: 0}
+  builtTower: {fileID: 0}
   gameManagerRef: {fileID: 0}
   timer: 0
+  selection: 0
 --- !u!1 &973484184
 GameObject:
   m_ObjectHideFlags: 0
@@ -10566,10 +10797,13 @@ MonoBehaviour:
   buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
-  tempTowerClone: {fileID: 0}
-  newTower: {fileID: 0}
+  basicTower: {fileID: 0}
+  frostTower: {fileID: 0}
+  rapidTower: {fileID: 0}
+  builtTower: {fileID: 0}
   gameManagerRef: {fileID: 0}
   timer: 0
+  selection: 0
 --- !u!1001 &984974722
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10745,10 +10979,13 @@ MonoBehaviour:
   buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
-  tempTowerClone: {fileID: 0}
-  newTower: {fileID: 0}
+  basicTower: {fileID: 0}
+  frostTower: {fileID: 0}
+  rapidTower: {fileID: 0}
+  builtTower: {fileID: 0}
   gameManagerRef: {fileID: 0}
   timer: 0
+  selection: 0
 --- !u!1 &1017324671
 GameObject:
   m_ObjectHideFlags: 0
@@ -10861,10 +11098,13 @@ MonoBehaviour:
   buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
-  tempTowerClone: {fileID: 0}
-  newTower: {fileID: 0}
+  basicTower: {fileID: 0}
+  frostTower: {fileID: 0}
+  rapidTower: {fileID: 0}
+  builtTower: {fileID: 0}
   gameManagerRef: {fileID: 0}
   timer: 0
+  selection: 0
 --- !u!1 &1022089444
 GameObject:
   m_ObjectHideFlags: 0
@@ -10977,10 +11217,13 @@ MonoBehaviour:
   buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
-  tempTowerClone: {fileID: 0}
-  newTower: {fileID: 0}
+  basicTower: {fileID: 0}
+  frostTower: {fileID: 0}
+  rapidTower: {fileID: 0}
+  builtTower: {fileID: 0}
   gameManagerRef: {fileID: 0}
   timer: 0
+  selection: 0
 --- !u!1 &1028096241
 GameObject:
   m_ObjectHideFlags: 0
@@ -11093,10 +11336,13 @@ MonoBehaviour:
   buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
-  tempTowerClone: {fileID: 0}
-  newTower: {fileID: 0}
+  basicTower: {fileID: 0}
+  frostTower: {fileID: 0}
+  rapidTower: {fileID: 0}
+  builtTower: {fileID: 0}
   gameManagerRef: {fileID: 0}
   timer: 0
+  selection: 0
 --- !u!1 &1042766024
 GameObject:
   m_ObjectHideFlags: 0
@@ -11209,10 +11455,13 @@ MonoBehaviour:
   buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
-  tempTowerClone: {fileID: 0}
-  newTower: {fileID: 0}
+  basicTower: {fileID: 0}
+  frostTower: {fileID: 0}
+  rapidTower: {fileID: 0}
+  builtTower: {fileID: 0}
   gameManagerRef: {fileID: 0}
   timer: 0
+  selection: 0
 --- !u!1 &1052771352
 GameObject:
   m_ObjectHideFlags: 0
@@ -11325,10 +11574,13 @@ MonoBehaviour:
   buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
-  tempTowerClone: {fileID: 0}
-  newTower: {fileID: 0}
+  basicTower: {fileID: 0}
+  frostTower: {fileID: 0}
+  rapidTower: {fileID: 0}
+  builtTower: {fileID: 0}
   gameManagerRef: {fileID: 0}
   timer: 0
+  selection: 0
 --- !u!1 &1054059685
 GameObject:
   m_ObjectHideFlags: 0
@@ -11441,10 +11693,13 @@ MonoBehaviour:
   buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
-  tempTowerClone: {fileID: 0}
-  newTower: {fileID: 0}
+  basicTower: {fileID: 0}
+  frostTower: {fileID: 0}
+  rapidTower: {fileID: 0}
+  builtTower: {fileID: 0}
   gameManagerRef: {fileID: 0}
   timer: 0
+  selection: 0
 --- !u!1 &1056900912
 GameObject:
   m_ObjectHideFlags: 0
@@ -11557,10 +11812,13 @@ MonoBehaviour:
   buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
-  tempTowerClone: {fileID: 0}
-  newTower: {fileID: 0}
+  basicTower: {fileID: 0}
+  frostTower: {fileID: 0}
+  rapidTower: {fileID: 0}
+  builtTower: {fileID: 0}
   gameManagerRef: {fileID: 0}
   timer: 0
+  selection: 0
 --- !u!1 &1058081037
 GameObject:
   m_ObjectHideFlags: 0
@@ -11673,10 +11931,13 @@ MonoBehaviour:
   buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
-  tempTowerClone: {fileID: 0}
-  newTower: {fileID: 0}
+  basicTower: {fileID: 0}
+  frostTower: {fileID: 0}
+  rapidTower: {fileID: 0}
+  builtTower: {fileID: 0}
   gameManagerRef: {fileID: 0}
   timer: 0
+  selection: 0
 --- !u!1 &1068799382
 GameObject:
   m_ObjectHideFlags: 0
@@ -11789,10 +12050,13 @@ MonoBehaviour:
   buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
-  tempTowerClone: {fileID: 0}
-  newTower: {fileID: 0}
+  basicTower: {fileID: 0}
+  frostTower: {fileID: 0}
+  rapidTower: {fileID: 0}
+  builtTower: {fileID: 0}
   gameManagerRef: {fileID: 0}
   timer: 0
+  selection: 0
 --- !u!1 &1074632544
 GameObject:
   m_ObjectHideFlags: 0
@@ -11905,10 +12169,13 @@ MonoBehaviour:
   buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
-  tempTowerClone: {fileID: 0}
-  newTower: {fileID: 0}
+  basicTower: {fileID: 0}
+  frostTower: {fileID: 0}
+  rapidTower: {fileID: 0}
+  builtTower: {fileID: 0}
   gameManagerRef: {fileID: 0}
   timer: 0
+  selection: 0
 --- !u!1 &1077339679
 GameObject:
   m_ObjectHideFlags: 0
@@ -12021,10 +12288,13 @@ MonoBehaviour:
   buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
-  tempTowerClone: {fileID: 0}
-  newTower: {fileID: 0}
+  basicTower: {fileID: 0}
+  frostTower: {fileID: 0}
+  rapidTower: {fileID: 0}
+  builtTower: {fileID: 0}
   gameManagerRef: {fileID: 0}
   timer: 0
+  selection: 0
 --- !u!1 &1082000590
 GameObject:
   m_ObjectHideFlags: 0
@@ -12137,10 +12407,13 @@ MonoBehaviour:
   buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
-  tempTowerClone: {fileID: 0}
-  newTower: {fileID: 0}
+  basicTower: {fileID: 0}
+  frostTower: {fileID: 0}
+  rapidTower: {fileID: 0}
+  builtTower: {fileID: 0}
   gameManagerRef: {fileID: 0}
   timer: 0
+  selection: 0
 --- !u!1001 &1093825720
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12216,9 +12489,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f37f014239fbbc5418d14f9e455a9a39, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameManager: {fileID: 0}
   enemy: {fileID: 1925956016919348, guid: d845f224410176944ab5ae398448ef67, type: 3}
   timeBetweenMobs: 2
   enemiesRemainingToSpawn: 0
+  enemiesInScene: 0
+  waveCounter: 0
 --- !u!1 &1107853232
 GameObject:
   m_ObjectHideFlags: 0
@@ -12331,10 +12607,13 @@ MonoBehaviour:
   buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
-  tempTowerClone: {fileID: 0}
-  newTower: {fileID: 0}
+  basicTower: {fileID: 0}
+  frostTower: {fileID: 0}
+  rapidTower: {fileID: 0}
+  builtTower: {fileID: 0}
   gameManagerRef: {fileID: 0}
   timer: 0
+  selection: 0
 --- !u!1 &1111214476
 GameObject:
   m_ObjectHideFlags: 0
@@ -12447,10 +12726,13 @@ MonoBehaviour:
   buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
-  tempTowerClone: {fileID: 0}
-  newTower: {fileID: 0}
+  basicTower: {fileID: 0}
+  frostTower: {fileID: 0}
+  rapidTower: {fileID: 0}
+  builtTower: {fileID: 0}
   gameManagerRef: {fileID: 0}
   timer: 0
+  selection: 0
 --- !u!1 &1113712688
 GameObject:
   m_ObjectHideFlags: 0
@@ -12563,10 +12845,13 @@ MonoBehaviour:
   buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
-  tempTowerClone: {fileID: 0}
-  newTower: {fileID: 0}
+  basicTower: {fileID: 0}
+  frostTower: {fileID: 0}
+  rapidTower: {fileID: 0}
+  builtTower: {fileID: 0}
   gameManagerRef: {fileID: 0}
   timer: 0
+  selection: 0
 --- !u!1 &1135665576
 GameObject:
   m_ObjectHideFlags: 0
@@ -12760,10 +13045,13 @@ MonoBehaviour:
   buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
-  tempTowerClone: {fileID: 0}
-  newTower: {fileID: 0}
+  basicTower: {fileID: 0}
+  frostTower: {fileID: 0}
+  rapidTower: {fileID: 0}
+  builtTower: {fileID: 0}
   gameManagerRef: {fileID: 0}
   timer: 0
+  selection: 0
 --- !u!1 &1139071577
 GameObject:
   m_ObjectHideFlags: 0
@@ -12876,10 +13164,13 @@ MonoBehaviour:
   buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
-  tempTowerClone: {fileID: 0}
-  newTower: {fileID: 0}
+  basicTower: {fileID: 0}
+  frostTower: {fileID: 0}
+  rapidTower: {fileID: 0}
+  builtTower: {fileID: 0}
   gameManagerRef: {fileID: 0}
   timer: 0
+  selection: 0
 --- !u!1 &1145542794
 GameObject:
   m_ObjectHideFlags: 0
@@ -12992,10 +13283,13 @@ MonoBehaviour:
   buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
-  tempTowerClone: {fileID: 0}
-  newTower: {fileID: 0}
+  basicTower: {fileID: 0}
+  frostTower: {fileID: 0}
+  rapidTower: {fileID: 0}
+  builtTower: {fileID: 0}
   gameManagerRef: {fileID: 0}
   timer: 0
+  selection: 0
 --- !u!1 &1153251775
 GameObject:
   m_ObjectHideFlags: 0
@@ -13108,10 +13402,13 @@ MonoBehaviour:
   buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
-  tempTowerClone: {fileID: 0}
-  newTower: {fileID: 0}
+  basicTower: {fileID: 0}
+  frostTower: {fileID: 0}
+  rapidTower: {fileID: 0}
+  builtTower: {fileID: 0}
   gameManagerRef: {fileID: 0}
   timer: 0
+  selection: 0
 --- !u!1 &1166319110
 GameObject:
   m_ObjectHideFlags: 0
@@ -13305,10 +13602,13 @@ MonoBehaviour:
   buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
-  tempTowerClone: {fileID: 0}
-  newTower: {fileID: 0}
+  basicTower: {fileID: 0}
+  frostTower: {fileID: 0}
+  rapidTower: {fileID: 0}
+  builtTower: {fileID: 0}
   gameManagerRef: {fileID: 0}
   timer: 0
+  selection: 0
 --- !u!1 &1171830314
 GameObject:
   m_ObjectHideFlags: 0
@@ -13421,10 +13721,13 @@ MonoBehaviour:
   buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
-  tempTowerClone: {fileID: 0}
-  newTower: {fileID: 0}
+  basicTower: {fileID: 0}
+  frostTower: {fileID: 0}
+  rapidTower: {fileID: 0}
+  builtTower: {fileID: 0}
   gameManagerRef: {fileID: 0}
   timer: 0
+  selection: 0
 --- !u!1 &1172970457
 GameObject:
   m_ObjectHideFlags: 0
@@ -13537,10 +13840,133 @@ MonoBehaviour:
   buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
-  tempTowerClone: {fileID: 0}
-  newTower: {fileID: 0}
+  basicTower: {fileID: 0}
+  frostTower: {fileID: 0}
+  rapidTower: {fileID: 0}
+  builtTower: {fileID: 0}
   gameManagerRef: {fileID: 0}
   timer: 0
+  selection: 0
+--- !u!1 &1176693090
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1176693091}
+  - component: {fileID: 1176693094}
+  - component: {fileID: 1176693093}
+  - component: {fileID: 1176693092}
+  m_Layer: 5
+  m_Name: BasicTowerButton
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1176693091
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1176693090}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1660368380}
+  m_Father: {fileID: 1513939094}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 220, y: -255}
+  m_SizeDelta: {x: 160, y: 30}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1176693092
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1176693090}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 1176693093}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &1176693093
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1176693090}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1176693094
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1176693090}
+  m_CullTransparentMesh: 0
 --- !u!1 &1179003661
 GameObject:
   m_ObjectHideFlags: 0
@@ -13653,10 +14079,13 @@ MonoBehaviour:
   buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
-  tempTowerClone: {fileID: 0}
-  newTower: {fileID: 0}
+  basicTower: {fileID: 0}
+  frostTower: {fileID: 0}
+  rapidTower: {fileID: 0}
+  builtTower: {fileID: 0}
   gameManagerRef: {fileID: 0}
   timer: 0
+  selection: 0
 --- !u!1 &1186985131
 GameObject:
   m_ObjectHideFlags: 0
@@ -13769,10 +14198,13 @@ MonoBehaviour:
   buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
-  tempTowerClone: {fileID: 0}
-  newTower: {fileID: 0}
+  basicTower: {fileID: 0}
+  frostTower: {fileID: 0}
+  rapidTower: {fileID: 0}
+  builtTower: {fileID: 0}
   gameManagerRef: {fileID: 0}
   timer: 0
+  selection: 0
 --- !u!1 &1187342309
 GameObject:
   m_ObjectHideFlags: 0
@@ -13885,10 +14317,13 @@ MonoBehaviour:
   buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
-  tempTowerClone: {fileID: 0}
-  newTower: {fileID: 0}
+  basicTower: {fileID: 0}
+  frostTower: {fileID: 0}
+  rapidTower: {fileID: 0}
+  builtTower: {fileID: 0}
   gameManagerRef: {fileID: 0}
   timer: 0
+  selection: 0
 --- !u!1 &1208289311
 GameObject:
   m_ObjectHideFlags: 0
@@ -14001,10 +14436,13 @@ MonoBehaviour:
   buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
-  tempTowerClone: {fileID: 0}
-  newTower: {fileID: 0}
+  basicTower: {fileID: 0}
+  frostTower: {fileID: 0}
+  rapidTower: {fileID: 0}
+  builtTower: {fileID: 0}
   gameManagerRef: {fileID: 0}
   timer: 0
+  selection: 0
 --- !u!1 &1219126433
 GameObject:
   m_ObjectHideFlags: 0
@@ -14117,10 +14555,13 @@ MonoBehaviour:
   buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
-  tempTowerClone: {fileID: 0}
-  newTower: {fileID: 0}
+  basicTower: {fileID: 0}
+  frostTower: {fileID: 0}
+  rapidTower: {fileID: 0}
+  builtTower: {fileID: 0}
   gameManagerRef: {fileID: 0}
   timer: 0
+  selection: 0
 --- !u!1 &1220825205
 GameObject:
   m_ObjectHideFlags: 0
@@ -14233,10 +14674,13 @@ MonoBehaviour:
   buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
-  tempTowerClone: {fileID: 0}
-  newTower: {fileID: 0}
+  basicTower: {fileID: 0}
+  frostTower: {fileID: 0}
+  rapidTower: {fileID: 0}
+  builtTower: {fileID: 0}
   gameManagerRef: {fileID: 0}
   timer: 0
+  selection: 0
 --- !u!1 &1228830811
 GameObject:
   m_ObjectHideFlags: 0
@@ -14349,10 +14793,13 @@ MonoBehaviour:
   buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
-  tempTowerClone: {fileID: 0}
-  newTower: {fileID: 0}
+  basicTower: {fileID: 0}
+  frostTower: {fileID: 0}
+  rapidTower: {fileID: 0}
+  builtTower: {fileID: 0}
   gameManagerRef: {fileID: 0}
   timer: 0
+  selection: 0
 --- !u!1 &1246111810
 GameObject:
   m_ObjectHideFlags: 0
@@ -14465,10 +14912,13 @@ MonoBehaviour:
   buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
-  tempTowerClone: {fileID: 0}
-  newTower: {fileID: 0}
+  basicTower: {fileID: 0}
+  frostTower: {fileID: 0}
+  rapidTower: {fileID: 0}
+  builtTower: {fileID: 0}
   gameManagerRef: {fileID: 0}
   timer: 0
+  selection: 0
 --- !u!1 &1256634593
 GameObject:
   m_ObjectHideFlags: 0
@@ -14581,10 +15031,13 @@ MonoBehaviour:
   buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
-  tempTowerClone: {fileID: 0}
-  newTower: {fileID: 0}
+  basicTower: {fileID: 0}
+  frostTower: {fileID: 0}
+  rapidTower: {fileID: 0}
+  builtTower: {fileID: 0}
   gameManagerRef: {fileID: 0}
   timer: 0
+  selection: 0
 --- !u!1 &1259705278
 GameObject:
   m_ObjectHideFlags: 0
@@ -14697,10 +15150,13 @@ MonoBehaviour:
   buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
-  tempTowerClone: {fileID: 0}
-  newTower: {fileID: 0}
+  basicTower: {fileID: 0}
+  frostTower: {fileID: 0}
+  rapidTower: {fileID: 0}
+  builtTower: {fileID: 0}
   gameManagerRef: {fileID: 0}
   timer: 0
+  selection: 0
 --- !u!1 &1265760289
 GameObject:
   m_ObjectHideFlags: 0
@@ -14813,10 +15269,13 @@ MonoBehaviour:
   buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
-  tempTowerClone: {fileID: 0}
-  newTower: {fileID: 0}
+  basicTower: {fileID: 0}
+  frostTower: {fileID: 0}
+  rapidTower: {fileID: 0}
+  builtTower: {fileID: 0}
   gameManagerRef: {fileID: 0}
   timer: 0
+  selection: 0
 --- !u!1 &1277115160
 GameObject:
   m_ObjectHideFlags: 0
@@ -14929,10 +15388,13 @@ MonoBehaviour:
   buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
-  tempTowerClone: {fileID: 0}
-  newTower: {fileID: 0}
+  basicTower: {fileID: 0}
+  frostTower: {fileID: 0}
+  rapidTower: {fileID: 0}
+  builtTower: {fileID: 0}
   gameManagerRef: {fileID: 0}
   timer: 0
+  selection: 0
 --- !u!1001 &1295482407
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15117,10 +15579,13 @@ MonoBehaviour:
   buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
-  tempTowerClone: {fileID: 0}
-  newTower: {fileID: 0}
+  basicTower: {fileID: 0}
+  frostTower: {fileID: 0}
+  rapidTower: {fileID: 0}
+  builtTower: {fileID: 0}
   gameManagerRef: {fileID: 0}
   timer: 0
+  selection: 0
 --- !u!1 &1303259983
 GameObject:
   m_ObjectHideFlags: 0
@@ -15233,10 +15698,13 @@ MonoBehaviour:
   buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
-  tempTowerClone: {fileID: 0}
-  newTower: {fileID: 0}
+  basicTower: {fileID: 0}
+  frostTower: {fileID: 0}
+  rapidTower: {fileID: 0}
+  builtTower: {fileID: 0}
   gameManagerRef: {fileID: 0}
   timer: 0
+  selection: 0
 --- !u!1 &1308226451
 GameObject:
   m_ObjectHideFlags: 0
@@ -15349,10 +15817,13 @@ MonoBehaviour:
   buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
-  tempTowerClone: {fileID: 0}
-  newTower: {fileID: 0}
+  basicTower: {fileID: 0}
+  frostTower: {fileID: 0}
+  rapidTower: {fileID: 0}
+  builtTower: {fileID: 0}
   gameManagerRef: {fileID: 0}
   timer: 0
+  selection: 0
 --- !u!1 &1330941672
 GameObject:
   m_ObjectHideFlags: 0
@@ -15465,10 +15936,13 @@ MonoBehaviour:
   buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
-  tempTowerClone: {fileID: 0}
-  newTower: {fileID: 0}
+  basicTower: {fileID: 0}
+  frostTower: {fileID: 0}
+  rapidTower: {fileID: 0}
+  builtTower: {fileID: 0}
   gameManagerRef: {fileID: 0}
   timer: 0
+  selection: 0
 --- !u!1 &1357184759
 GameObject:
   m_ObjectHideFlags: 0
@@ -15581,10 +16055,13 @@ MonoBehaviour:
   buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
-  tempTowerClone: {fileID: 0}
-  newTower: {fileID: 0}
+  basicTower: {fileID: 0}
+  frostTower: {fileID: 0}
+  rapidTower: {fileID: 0}
+  builtTower: {fileID: 0}
   gameManagerRef: {fileID: 0}
   timer: 0
+  selection: 0
 --- !u!1 &1358638917
 GameObject:
   m_ObjectHideFlags: 0
@@ -15697,10 +16174,13 @@ MonoBehaviour:
   buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
-  tempTowerClone: {fileID: 0}
-  newTower: {fileID: 0}
+  basicTower: {fileID: 0}
+  frostTower: {fileID: 0}
+  rapidTower: {fileID: 0}
+  builtTower: {fileID: 0}
   gameManagerRef: {fileID: 0}
   timer: 0
+  selection: 0
 --- !u!1 &1359167199
 GameObject:
   m_ObjectHideFlags: 0
@@ -15813,10 +16293,13 @@ MonoBehaviour:
   buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
-  tempTowerClone: {fileID: 0}
-  newTower: {fileID: 0}
+  basicTower: {fileID: 0}
+  frostTower: {fileID: 0}
+  rapidTower: {fileID: 0}
+  builtTower: {fileID: 0}
   gameManagerRef: {fileID: 0}
   timer: 0
+  selection: 0
 --- !u!1 &1363048918
 GameObject:
   m_ObjectHideFlags: 0
@@ -15929,10 +16412,13 @@ MonoBehaviour:
   buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
-  tempTowerClone: {fileID: 0}
-  newTower: {fileID: 0}
+  basicTower: {fileID: 0}
+  frostTower: {fileID: 0}
+  rapidTower: {fileID: 0}
+  builtTower: {fileID: 0}
   gameManagerRef: {fileID: 0}
   timer: 0
+  selection: 0
 --- !u!1 &1365665544
 GameObject:
   m_ObjectHideFlags: 0
@@ -16045,10 +16531,13 @@ MonoBehaviour:
   buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
-  tempTowerClone: {fileID: 0}
-  newTower: {fileID: 0}
+  basicTower: {fileID: 0}
+  frostTower: {fileID: 0}
+  rapidTower: {fileID: 0}
+  builtTower: {fileID: 0}
   gameManagerRef: {fileID: 0}
   timer: 0
+  selection: 0
 --- !u!1 &1376124742
 GameObject:
   m_ObjectHideFlags: 0
@@ -16161,10 +16650,13 @@ MonoBehaviour:
   buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
-  tempTowerClone: {fileID: 0}
-  newTower: {fileID: 0}
+  basicTower: {fileID: 0}
+  frostTower: {fileID: 0}
+  rapidTower: {fileID: 0}
+  builtTower: {fileID: 0}
   gameManagerRef: {fileID: 0}
   timer: 0
+  selection: 0
 --- !u!1 &1377189589
 GameObject:
   m_ObjectHideFlags: 0
@@ -16277,10 +16769,92 @@ MonoBehaviour:
   buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
-  tempTowerClone: {fileID: 0}
-  newTower: {fileID: 0}
+  basicTower: {fileID: 0}
+  frostTower: {fileID: 0}
+  rapidTower: {fileID: 0}
+  builtTower: {fileID: 0}
   gameManagerRef: {fileID: 0}
   timer: 0
+  selection: 0
+--- !u!1 &1379811174
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1379811175}
+  - component: {fileID: 1379811177}
+  - component: {fileID: 1379811176}
+  m_Layer: 5
+  m_Name: Text
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1379811175
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1379811174}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2011180957}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1379811176
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1379811174}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 14
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 10
+    m_MaxSize: 40
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: "Rapid Tower (R) \t- 3"
+--- !u!222 &1379811177
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1379811174}
+  m_CullTransparentMesh: 0
 --- !u!1 &1405275440
 GameObject:
   m_ObjectHideFlags: 0
@@ -16393,10 +16967,13 @@ MonoBehaviour:
   buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
-  tempTowerClone: {fileID: 0}
-  newTower: {fileID: 0}
+  basicTower: {fileID: 0}
+  frostTower: {fileID: 0}
+  rapidTower: {fileID: 0}
+  builtTower: {fileID: 0}
   gameManagerRef: {fileID: 0}
   timer: 0
+  selection: 0
 --- !u!1 &1410049953
 GameObject:
   m_ObjectHideFlags: 0
@@ -16509,10 +17086,13 @@ MonoBehaviour:
   buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
-  tempTowerClone: {fileID: 0}
-  newTower: {fileID: 0}
+  basicTower: {fileID: 0}
+  frostTower: {fileID: 0}
+  rapidTower: {fileID: 0}
+  builtTower: {fileID: 0}
   gameManagerRef: {fileID: 0}
   timer: 0
+  selection: 0
 --- !u!1 &1419380443
 GameObject:
   m_ObjectHideFlags: 0
@@ -16625,10 +17205,13 @@ MonoBehaviour:
   buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
-  tempTowerClone: {fileID: 0}
-  newTower: {fileID: 0}
+  basicTower: {fileID: 0}
+  frostTower: {fileID: 0}
+  rapidTower: {fileID: 0}
+  builtTower: {fileID: 0}
   gameManagerRef: {fileID: 0}
   timer: 0
+  selection: 0
 --- !u!1001 &1422867239
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16810,10 +17393,13 @@ MonoBehaviour:
   buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
-  tempTowerClone: {fileID: 0}
-  newTower: {fileID: 0}
+  basicTower: {fileID: 0}
+  frostTower: {fileID: 0}
+  rapidTower: {fileID: 0}
+  builtTower: {fileID: 0}
   gameManagerRef: {fileID: 0}
   timer: 0
+  selection: 0
 --- !u!1 &1433386819
 GameObject:
   m_ObjectHideFlags: 0
@@ -16926,10 +17512,13 @@ MonoBehaviour:
   buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
-  tempTowerClone: {fileID: 0}
-  newTower: {fileID: 0}
+  basicTower: {fileID: 0}
+  frostTower: {fileID: 0}
+  rapidTower: {fileID: 0}
+  builtTower: {fileID: 0}
   gameManagerRef: {fileID: 0}
   timer: 0
+  selection: 0
 --- !u!1 &1442218431
 GameObject:
   m_ObjectHideFlags: 0
@@ -17042,10 +17631,13 @@ MonoBehaviour:
   buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
-  tempTowerClone: {fileID: 0}
-  newTower: {fileID: 0}
+  basicTower: {fileID: 0}
+  frostTower: {fileID: 0}
+  rapidTower: {fileID: 0}
+  builtTower: {fileID: 0}
   gameManagerRef: {fileID: 0}
   timer: 0
+  selection: 0
 --- !u!1 &1453422550
 GameObject:
   m_ObjectHideFlags: 0
@@ -17158,10 +17750,13 @@ MonoBehaviour:
   buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
-  tempTowerClone: {fileID: 0}
-  newTower: {fileID: 0}
+  basicTower: {fileID: 0}
+  frostTower: {fileID: 0}
+  rapidTower: {fileID: 0}
+  builtTower: {fileID: 0}
   gameManagerRef: {fileID: 0}
   timer: 0
+  selection: 0
 --- !u!1 &1457515531
 GameObject:
   m_ObjectHideFlags: 0
@@ -17274,10 +17869,13 @@ MonoBehaviour:
   buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
-  tempTowerClone: {fileID: 0}
-  newTower: {fileID: 0}
+  basicTower: {fileID: 0}
+  frostTower: {fileID: 0}
+  rapidTower: {fileID: 0}
+  builtTower: {fileID: 0}
   gameManagerRef: {fileID: 0}
   timer: 0
+  selection: 0
 --- !u!1 &1458822619
 GameObject:
   m_ObjectHideFlags: 0
@@ -17390,10 +17988,13 @@ MonoBehaviour:
   buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
-  tempTowerClone: {fileID: 0}
-  newTower: {fileID: 0}
+  basicTower: {fileID: 0}
+  frostTower: {fileID: 0}
+  rapidTower: {fileID: 0}
+  builtTower: {fileID: 0}
   gameManagerRef: {fileID: 0}
   timer: 0
+  selection: 0
 --- !u!1 &1461979571
 GameObject:
   m_ObjectHideFlags: 0
@@ -17506,10 +18107,13 @@ MonoBehaviour:
   buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
-  tempTowerClone: {fileID: 0}
-  newTower: {fileID: 0}
+  basicTower: {fileID: 0}
+  frostTower: {fileID: 0}
+  rapidTower: {fileID: 0}
+  builtTower: {fileID: 0}
   gameManagerRef: {fileID: 0}
   timer: 0
+  selection: 0
 --- !u!1 &1471918672
 GameObject:
   m_ObjectHideFlags: 0
@@ -17622,10 +18226,13 @@ MonoBehaviour:
   buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
-  tempTowerClone: {fileID: 0}
-  newTower: {fileID: 0}
+  basicTower: {fileID: 0}
+  frostTower: {fileID: 0}
+  rapidTower: {fileID: 0}
+  builtTower: {fileID: 0}
   gameManagerRef: {fileID: 0}
   timer: 0
+  selection: 0
 --- !u!1 &1477048467
 GameObject:
   m_ObjectHideFlags: 0
@@ -17877,10 +18484,13 @@ MonoBehaviour:
   buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
-  tempTowerClone: {fileID: 0}
-  newTower: {fileID: 0}
+  basicTower: {fileID: 0}
+  frostTower: {fileID: 0}
+  rapidTower: {fileID: 0}
+  builtTower: {fileID: 0}
   gameManagerRef: {fileID: 0}
   timer: 0
+  selection: 0
 --- !u!65 &1477048470
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -18006,10 +18616,13 @@ MonoBehaviour:
   buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
-  tempTowerClone: {fileID: 0}
-  newTower: {fileID: 0}
+  basicTower: {fileID: 0}
+  frostTower: {fileID: 0}
+  rapidTower: {fileID: 0}
+  builtTower: {fileID: 0}
   gameManagerRef: {fileID: 0}
   timer: 0
+  selection: 0
 --- !u!1 &1480672117
 GameObject:
   m_ObjectHideFlags: 0
@@ -18122,10 +18735,13 @@ MonoBehaviour:
   buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
-  tempTowerClone: {fileID: 0}
-  newTower: {fileID: 0}
+  basicTower: {fileID: 0}
+  frostTower: {fileID: 0}
+  rapidTower: {fileID: 0}
+  builtTower: {fileID: 0}
   gameManagerRef: {fileID: 0}
   timer: 0
+  selection: 0
 --- !u!1001 &1486427529
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -18270,6 +18886,107 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1502995312}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1513939090
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1513939094}
+  - component: {fileID: 1513939093}
+  - component: {fileID: 1513939092}
+  - component: {fileID: 1513939091}
+  m_Layer: 5
+  m_Name: BuildMenu
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1513939091
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1513939090}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IgnoreReversedGraphics: 1
+  m_BlockingObjects: 0
+  m_BlockingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+--- !u!114 &1513939092
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1513939090}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_UiScaleMode: 0
+  m_ReferencePixelsPerUnit: 100
+  m_ScaleFactor: 1
+  m_ReferenceResolution: {x: 800, y: 600}
+  m_ScreenMatchMode: 0
+  m_MatchWidthOrHeight: 0
+  m_PhysicalUnit: 3
+  m_FallbackScreenDPI: 96
+  m_DefaultSpriteDPI: 96
+  m_DynamicPixelsPerUnit: 1
+--- !u!223 &1513939093
+Canvas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1513939090}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_RenderMode: 0
+  m_Camera: {fileID: 0}
+  m_PlaneDistance: 100
+  m_PixelPerfect: 0
+  m_ReceivesEvents: 1
+  m_OverrideSorting: 0
+  m_OverridePixelPerfect: 0
+  m_SortingBucketNormalizedSize: 0
+  m_AdditionalShaderChannelsFlag: 0
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_TargetDisplay: 0
+--- !u!224 &1513939094
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1513939090}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0, y: 0, z: 0}
+  m_Children:
+  - {fileID: 1176693091}
+  - {fileID: 1997841575}
+  - {fileID: 2011180957}
+  m_Father: {fileID: 0}
+  m_RootOrder: 11
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0, y: 0}
 --- !u!1 &1517115482
 GameObject:
   m_ObjectHideFlags: 0
@@ -18382,10 +19099,13 @@ MonoBehaviour:
   buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
-  tempTowerClone: {fileID: 0}
-  newTower: {fileID: 0}
+  basicTower: {fileID: 0}
+  frostTower: {fileID: 0}
+  rapidTower: {fileID: 0}
+  builtTower: {fileID: 0}
   gameManagerRef: {fileID: 0}
   timer: 0
+  selection: 0
 --- !u!1 &1524691083
 GameObject:
   m_ObjectHideFlags: 0
@@ -18498,10 +19218,13 @@ MonoBehaviour:
   buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
-  tempTowerClone: {fileID: 0}
-  newTower: {fileID: 0}
+  basicTower: {fileID: 0}
+  frostTower: {fileID: 0}
+  rapidTower: {fileID: 0}
+  builtTower: {fileID: 0}
   gameManagerRef: {fileID: 0}
   timer: 0
+  selection: 0
 --- !u!1 &1530773152
 GameObject:
   m_ObjectHideFlags: 0
@@ -18614,10 +19337,13 @@ MonoBehaviour:
   buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
-  tempTowerClone: {fileID: 0}
-  newTower: {fileID: 0}
+  basicTower: {fileID: 0}
+  frostTower: {fileID: 0}
+  rapidTower: {fileID: 0}
+  builtTower: {fileID: 0}
   gameManagerRef: {fileID: 0}
   timer: 0
+  selection: 0
 --- !u!1 &1544929944
 GameObject:
   m_ObjectHideFlags: 0
@@ -18730,10 +19456,13 @@ MonoBehaviour:
   buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
-  tempTowerClone: {fileID: 0}
-  newTower: {fileID: 0}
+  basicTower: {fileID: 0}
+  frostTower: {fileID: 0}
+  rapidTower: {fileID: 0}
+  builtTower: {fileID: 0}
   gameManagerRef: {fileID: 0}
   timer: 0
+  selection: 0
 --- !u!1 &1548374919
 GameObject:
   m_ObjectHideFlags: 0
@@ -18846,10 +19575,13 @@ MonoBehaviour:
   buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
-  tempTowerClone: {fileID: 0}
-  newTower: {fileID: 0}
+  basicTower: {fileID: 0}
+  frostTower: {fileID: 0}
+  rapidTower: {fileID: 0}
+  builtTower: {fileID: 0}
   gameManagerRef: {fileID: 0}
   timer: 0
+  selection: 0
 --- !u!1 &1550026516
 GameObject:
   m_ObjectHideFlags: 0
@@ -18962,10 +19694,13 @@ MonoBehaviour:
   buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
-  tempTowerClone: {fileID: 0}
-  newTower: {fileID: 0}
+  basicTower: {fileID: 0}
+  frostTower: {fileID: 0}
+  rapidTower: {fileID: 0}
+  builtTower: {fileID: 0}
   gameManagerRef: {fileID: 0}
   timer: 0
+  selection: 0
 --- !u!1 &1557519307
 GameObject:
   m_ObjectHideFlags: 0
@@ -19013,6 +19748,7 @@ MonoBehaviour:
   player1GO: {fileID: 1008225885345260909, guid: 74c1b2ff2eef8304b914d187f40c95c7,
     type: 3}
   ui: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!114 &1557519310
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19026,6 +19762,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   restartButton: {fileID: 1594746669}
+  buildMenu: {fileID: 0}
+  basicTowerButton: {fileID: 0}
+  frostTowerButton: {fileID: 0}
+  rapidTowerButton: {fileID: 0}
 --- !u!1 &1579060851
 GameObject:
   m_ObjectHideFlags: 0
@@ -19138,10 +19878,13 @@ MonoBehaviour:
   buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
-  tempTowerClone: {fileID: 0}
-  newTower: {fileID: 0}
+  basicTower: {fileID: 0}
+  frostTower: {fileID: 0}
+  rapidTower: {fileID: 0}
+  builtTower: {fileID: 0}
   gameManagerRef: {fileID: 0}
   timer: 0
+  selection: 0
 --- !u!1 &1583719983
 GameObject:
   m_ObjectHideFlags: 0
@@ -19254,10 +19997,13 @@ MonoBehaviour:
   buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
-  tempTowerClone: {fileID: 0}
-  newTower: {fileID: 0}
+  basicTower: {fileID: 0}
+  frostTower: {fileID: 0}
+  rapidTower: {fileID: 0}
+  builtTower: {fileID: 0}
   gameManagerRef: {fileID: 0}
   timer: 0
+  selection: 0
 --- !u!1 &1594746667
 GameObject:
   m_ObjectHideFlags: 0
@@ -19490,10 +20236,13 @@ MonoBehaviour:
   buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
-  tempTowerClone: {fileID: 0}
-  newTower: {fileID: 0}
+  basicTower: {fileID: 0}
+  frostTower: {fileID: 0}
+  rapidTower: {fileID: 0}
+  builtTower: {fileID: 0}
   gameManagerRef: {fileID: 0}
   timer: 0
+  selection: 0
 --- !u!1 &1603298867
 GameObject:
   m_ObjectHideFlags: 0
@@ -19606,10 +20355,13 @@ MonoBehaviour:
   buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
-  tempTowerClone: {fileID: 0}
-  newTower: {fileID: 0}
+  basicTower: {fileID: 0}
+  frostTower: {fileID: 0}
+  rapidTower: {fileID: 0}
+  builtTower: {fileID: 0}
   gameManagerRef: {fileID: 0}
   timer: 0
+  selection: 0
 --- !u!1 &1606286060
 GameObject:
   m_ObjectHideFlags: 0
@@ -19722,10 +20474,13 @@ MonoBehaviour:
   buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
-  tempTowerClone: {fileID: 0}
-  newTower: {fileID: 0}
+  basicTower: {fileID: 0}
+  frostTower: {fileID: 0}
+  rapidTower: {fileID: 0}
+  builtTower: {fileID: 0}
   gameManagerRef: {fileID: 0}
   timer: 0
+  selection: 0
 --- !u!1 &1606336712
 GameObject:
   m_ObjectHideFlags: 0
@@ -19838,10 +20593,13 @@ MonoBehaviour:
   buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
-  tempTowerClone: {fileID: 0}
-  newTower: {fileID: 0}
+  basicTower: {fileID: 0}
+  frostTower: {fileID: 0}
+  rapidTower: {fileID: 0}
+  builtTower: {fileID: 0}
   gameManagerRef: {fileID: 0}
   timer: 0
+  selection: 0
 --- !u!1 &1609306855
 GameObject:
   m_ObjectHideFlags: 0
@@ -19954,10 +20712,92 @@ MonoBehaviour:
   buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
-  tempTowerClone: {fileID: 0}
-  newTower: {fileID: 0}
+  basicTower: {fileID: 0}
+  frostTower: {fileID: 0}
+  rapidTower: {fileID: 0}
+  builtTower: {fileID: 0}
   gameManagerRef: {fileID: 0}
   timer: 0
+  selection: 0
+--- !u!1 &1611338135
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1611338136}
+  - component: {fileID: 1611338138}
+  - component: {fileID: 1611338137}
+  m_Layer: 5
+  m_Name: Text
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1611338136
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1611338135}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1997841575}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1611338137
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1611338135}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 14
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 10
+    m_MaxSize: 40
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: "Frost Tower (F) \t- 2"
+--- !u!222 &1611338138
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1611338135}
+  m_CullTransparentMesh: 0
 --- !u!1 &1612828544
 GameObject:
   m_ObjectHideFlags: 0
@@ -20070,10 +20910,13 @@ MonoBehaviour:
   buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
-  tempTowerClone: {fileID: 0}
-  newTower: {fileID: 0}
+  basicTower: {fileID: 0}
+  frostTower: {fileID: 0}
+  rapidTower: {fileID: 0}
+  builtTower: {fileID: 0}
   gameManagerRef: {fileID: 0}
   timer: 0
+  selection: 0
 --- !u!1 &1622795138
 GameObject:
   m_ObjectHideFlags: 0
@@ -20330,10 +21173,13 @@ MonoBehaviour:
   buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
-  tempTowerClone: {fileID: 0}
-  newTower: {fileID: 0}
+  basicTower: {fileID: 0}
+  frostTower: {fileID: 0}
+  rapidTower: {fileID: 0}
+  builtTower: {fileID: 0}
   gameManagerRef: {fileID: 0}
   timer: 0
+  selection: 0
 --- !u!1 &1656738859
 GameObject:
   m_ObjectHideFlags: 0
@@ -20446,10 +21292,92 @@ MonoBehaviour:
   buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
-  tempTowerClone: {fileID: 0}
-  newTower: {fileID: 0}
+  basicTower: {fileID: 0}
+  frostTower: {fileID: 0}
+  rapidTower: {fileID: 0}
+  builtTower: {fileID: 0}
   gameManagerRef: {fileID: 0}
   timer: 0
+  selection: 0
+--- !u!1 &1660368379
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1660368380}
+  - component: {fileID: 1660368382}
+  - component: {fileID: 1660368381}
+  m_Layer: 5
+  m_Name: Text
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1660368380
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1660368379}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1176693091}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1660368381
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1660368379}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 14
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 10
+    m_MaxSize: 40
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: "Basic Tower (B) \t- 1"
+--- !u!222 &1660368382
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1660368379}
+  m_CullTransparentMesh: 0
 --- !u!1 &1662325098
 GameObject:
   m_ObjectHideFlags: 0
@@ -20562,10 +21490,13 @@ MonoBehaviour:
   buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
-  tempTowerClone: {fileID: 0}
-  newTower: {fileID: 0}
+  basicTower: {fileID: 0}
+  frostTower: {fileID: 0}
+  rapidTower: {fileID: 0}
+  builtTower: {fileID: 0}
   gameManagerRef: {fileID: 0}
   timer: 0
+  selection: 0
 --- !u!1 &1667079490
 GameObject:
   m_ObjectHideFlags: 0
@@ -20678,10 +21609,13 @@ MonoBehaviour:
   buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
-  tempTowerClone: {fileID: 0}
-  newTower: {fileID: 0}
+  basicTower: {fileID: 0}
+  frostTower: {fileID: 0}
+  rapidTower: {fileID: 0}
+  builtTower: {fileID: 0}
   gameManagerRef: {fileID: 0}
   timer: 0
+  selection: 0
 --- !u!1 &1678988462
 GameObject:
   m_ObjectHideFlags: 0
@@ -20794,10 +21728,13 @@ MonoBehaviour:
   buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
-  tempTowerClone: {fileID: 0}
-  newTower: {fileID: 0}
+  basicTower: {fileID: 0}
+  frostTower: {fileID: 0}
+  rapidTower: {fileID: 0}
+  builtTower: {fileID: 0}
   gameManagerRef: {fileID: 0}
   timer: 0
+  selection: 0
 --- !u!1 &1685190469
 GameObject:
   m_ObjectHideFlags: 0
@@ -20910,10 +21847,13 @@ MonoBehaviour:
   buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
-  tempTowerClone: {fileID: 0}
-  newTower: {fileID: 0}
+  basicTower: {fileID: 0}
+  frostTower: {fileID: 0}
+  rapidTower: {fileID: 0}
+  builtTower: {fileID: 0}
   gameManagerRef: {fileID: 0}
   timer: 0
+  selection: 0
 --- !u!1 &1700312985
 GameObject:
   m_ObjectHideFlags: 0
@@ -21107,10 +22047,13 @@ MonoBehaviour:
   buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
-  tempTowerClone: {fileID: 0}
-  newTower: {fileID: 0}
+  basicTower: {fileID: 0}
+  frostTower: {fileID: 0}
+  rapidTower: {fileID: 0}
+  builtTower: {fileID: 0}
   gameManagerRef: {fileID: 0}
   timer: 0
+  selection: 0
 --- !u!1 &1715783282
 GameObject:
   m_ObjectHideFlags: 0
@@ -21223,10 +22166,13 @@ MonoBehaviour:
   buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
-  tempTowerClone: {fileID: 0}
-  newTower: {fileID: 0}
+  basicTower: {fileID: 0}
+  frostTower: {fileID: 0}
+  rapidTower: {fileID: 0}
+  builtTower: {fileID: 0}
   gameManagerRef: {fileID: 0}
   timer: 0
+  selection: 0
 --- !u!1 &1722063695
 GameObject:
   m_ObjectHideFlags: 0
@@ -21339,10 +22285,13 @@ MonoBehaviour:
   buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
-  tempTowerClone: {fileID: 0}
-  newTower: {fileID: 0}
+  basicTower: {fileID: 0}
+  frostTower: {fileID: 0}
+  rapidTower: {fileID: 0}
+  builtTower: {fileID: 0}
   gameManagerRef: {fileID: 0}
   timer: 0
+  selection: 0
 --- !u!1 &1727829630
 GameObject:
   m_ObjectHideFlags: 0
@@ -21455,10 +22404,13 @@ MonoBehaviour:
   buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
-  tempTowerClone: {fileID: 0}
-  newTower: {fileID: 0}
+  basicTower: {fileID: 0}
+  frostTower: {fileID: 0}
+  rapidTower: {fileID: 0}
+  builtTower: {fileID: 0}
   gameManagerRef: {fileID: 0}
   timer: 0
+  selection: 0
 --- !u!1 &1731194293
 GameObject:
   m_ObjectHideFlags: 0
@@ -21471,7 +22423,7 @@ GameObject:
   - component: {fileID: 1731194296}
   - component: {fileID: 1731194295}
   m_Layer: 5
-  m_Name: RestartText
+  m_Name: Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -21650,10 +22602,13 @@ MonoBehaviour:
   buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
-  tempTowerClone: {fileID: 0}
-  newTower: {fileID: 0}
+  basicTower: {fileID: 0}
+  frostTower: {fileID: 0}
+  rapidTower: {fileID: 0}
+  builtTower: {fileID: 0}
   gameManagerRef: {fileID: 0}
   timer: 0
+  selection: 0
 --- !u!1 &1759531674
 GameObject:
   m_ObjectHideFlags: 0
@@ -21766,10 +22721,13 @@ MonoBehaviour:
   buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
-  tempTowerClone: {fileID: 0}
-  newTower: {fileID: 0}
+  basicTower: {fileID: 0}
+  frostTower: {fileID: 0}
+  rapidTower: {fileID: 0}
+  builtTower: {fileID: 0}
   gameManagerRef: {fileID: 0}
   timer: 0
+  selection: 0
 --- !u!1 &1768428124
 GameObject:
   m_ObjectHideFlags: 0
@@ -21882,10 +22840,13 @@ MonoBehaviour:
   buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
-  tempTowerClone: {fileID: 0}
-  newTower: {fileID: 0}
+  basicTower: {fileID: 0}
+  frostTower: {fileID: 0}
+  rapidTower: {fileID: 0}
+  builtTower: {fileID: 0}
   gameManagerRef: {fileID: 0}
   timer: 0
+  selection: 0
 --- !u!1 &1788690576
 GameObject:
   m_ObjectHideFlags: 0
@@ -21899,7 +22860,7 @@ GameObject:
   - component: {fileID: 1788690578}
   - component: {fileID: 1788690577}
   m_Layer: 5
-  m_Name: Canvas
+  m_Name: MainMenu
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -22097,10 +23058,13 @@ MonoBehaviour:
   buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
-  tempTowerClone: {fileID: 0}
-  newTower: {fileID: 0}
+  basicTower: {fileID: 0}
+  frostTower: {fileID: 0}
+  rapidTower: {fileID: 0}
+  builtTower: {fileID: 0}
   gameManagerRef: {fileID: 0}
   timer: 0
+  selection: 0
 --- !u!1 &1797465925
 GameObject:
   m_ObjectHideFlags: 0
@@ -22213,10 +23177,13 @@ MonoBehaviour:
   buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
-  tempTowerClone: {fileID: 0}
-  newTower: {fileID: 0}
+  basicTower: {fileID: 0}
+  frostTower: {fileID: 0}
+  rapidTower: {fileID: 0}
+  builtTower: {fileID: 0}
   gameManagerRef: {fileID: 0}
   timer: 0
+  selection: 0
 --- !u!1 &1801217873
 GameObject:
   m_ObjectHideFlags: 0
@@ -22329,10 +23296,13 @@ MonoBehaviour:
   buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
-  tempTowerClone: {fileID: 0}
-  newTower: {fileID: 0}
+  basicTower: {fileID: 0}
+  frostTower: {fileID: 0}
+  rapidTower: {fileID: 0}
+  builtTower: {fileID: 0}
   gameManagerRef: {fileID: 0}
   timer: 0
+  selection: 0
 --- !u!1 &1821091391
 GameObject:
   m_ObjectHideFlags: 0
@@ -22445,10 +23415,13 @@ MonoBehaviour:
   buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
-  tempTowerClone: {fileID: 0}
-  newTower: {fileID: 0}
+  basicTower: {fileID: 0}
+  frostTower: {fileID: 0}
+  rapidTower: {fileID: 0}
+  builtTower: {fileID: 0}
   gameManagerRef: {fileID: 0}
   timer: 0
+  selection: 0
 --- !u!1 &1833822238
 GameObject:
   m_ObjectHideFlags: 0
@@ -22561,10 +23534,13 @@ MonoBehaviour:
   buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
-  tempTowerClone: {fileID: 0}
-  newTower: {fileID: 0}
+  basicTower: {fileID: 0}
+  frostTower: {fileID: 0}
+  rapidTower: {fileID: 0}
+  builtTower: {fileID: 0}
   gameManagerRef: {fileID: 0}
   timer: 0
+  selection: 0
 --- !u!1 &1843467726
 GameObject:
   m_ObjectHideFlags: 0
@@ -22677,10 +23653,13 @@ MonoBehaviour:
   buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
-  tempTowerClone: {fileID: 0}
-  newTower: {fileID: 0}
+  basicTower: {fileID: 0}
+  frostTower: {fileID: 0}
+  rapidTower: {fileID: 0}
+  builtTower: {fileID: 0}
   gameManagerRef: {fileID: 0}
   timer: 0
+  selection: 0
 --- !u!1 &1846502307
 GameObject:
   m_ObjectHideFlags: 0
@@ -22793,10 +23772,13 @@ MonoBehaviour:
   buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
-  tempTowerClone: {fileID: 0}
-  newTower: {fileID: 0}
+  basicTower: {fileID: 0}
+  frostTower: {fileID: 0}
+  rapidTower: {fileID: 0}
+  builtTower: {fileID: 0}
   gameManagerRef: {fileID: 0}
   timer: 0
+  selection: 0
 --- !u!1 &1853524529
 GameObject:
   m_ObjectHideFlags: 0
@@ -22909,10 +23891,13 @@ MonoBehaviour:
   buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
-  tempTowerClone: {fileID: 0}
-  newTower: {fileID: 0}
+  basicTower: {fileID: 0}
+  frostTower: {fileID: 0}
+  rapidTower: {fileID: 0}
+  builtTower: {fileID: 0}
   gameManagerRef: {fileID: 0}
   timer: 0
+  selection: 0
 --- !u!1 &1860055530
 GameObject:
   m_ObjectHideFlags: 0
@@ -23025,10 +24010,13 @@ MonoBehaviour:
   buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
-  tempTowerClone: {fileID: 0}
-  newTower: {fileID: 0}
+  basicTower: {fileID: 0}
+  frostTower: {fileID: 0}
+  rapidTower: {fileID: 0}
+  builtTower: {fileID: 0}
   gameManagerRef: {fileID: 0}
   timer: 0
+  selection: 0
 --- !u!1001 &1863358375
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -23204,10 +24192,13 @@ MonoBehaviour:
   buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
-  tempTowerClone: {fileID: 0}
-  newTower: {fileID: 0}
+  basicTower: {fileID: 0}
+  frostTower: {fileID: 0}
+  rapidTower: {fileID: 0}
+  builtTower: {fileID: 0}
   gameManagerRef: {fileID: 0}
   timer: 0
+  selection: 0
 --- !u!1 &1868769735
 GameObject:
   m_ObjectHideFlags: 0
@@ -23320,10 +24311,13 @@ MonoBehaviour:
   buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
-  tempTowerClone: {fileID: 0}
-  newTower: {fileID: 0}
+  basicTower: {fileID: 0}
+  frostTower: {fileID: 0}
+  rapidTower: {fileID: 0}
+  builtTower: {fileID: 0}
   gameManagerRef: {fileID: 0}
   timer: 0
+  selection: 0
 --- !u!1 &1871173904
 GameObject:
   m_ObjectHideFlags: 0
@@ -23436,10 +24430,13 @@ MonoBehaviour:
   buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
-  tempTowerClone: {fileID: 0}
-  newTower: {fileID: 0}
+  basicTower: {fileID: 0}
+  frostTower: {fileID: 0}
+  rapidTower: {fileID: 0}
+  builtTower: {fileID: 0}
   gameManagerRef: {fileID: 0}
   timer: 0
+  selection: 0
 --- !u!1 &1881998496
 GameObject:
   m_ObjectHideFlags: 0
@@ -23552,10 +24549,13 @@ MonoBehaviour:
   buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
-  tempTowerClone: {fileID: 0}
-  newTower: {fileID: 0}
+  basicTower: {fileID: 0}
+  frostTower: {fileID: 0}
+  rapidTower: {fileID: 0}
+  builtTower: {fileID: 0}
   gameManagerRef: {fileID: 0}
   timer: 0
+  selection: 0
 --- !u!1 &1891082908
 GameObject:
   m_ObjectHideFlags: 0
@@ -23749,10 +24749,13 @@ MonoBehaviour:
   buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
-  tempTowerClone: {fileID: 0}
-  newTower: {fileID: 0}
+  basicTower: {fileID: 0}
+  frostTower: {fileID: 0}
+  rapidTower: {fileID: 0}
+  builtTower: {fileID: 0}
   gameManagerRef: {fileID: 0}
   timer: 0
+  selection: 0
 --- !u!1 &1914021643
 GameObject:
   m_ObjectHideFlags: 0
@@ -23865,10 +24868,13 @@ MonoBehaviour:
   buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
-  tempTowerClone: {fileID: 0}
-  newTower: {fileID: 0}
+  basicTower: {fileID: 0}
+  frostTower: {fileID: 0}
+  rapidTower: {fileID: 0}
+  builtTower: {fileID: 0}
   gameManagerRef: {fileID: 0}
   timer: 0
+  selection: 0
 --- !u!1 &1922540699
 GameObject:
   m_ObjectHideFlags: 0
@@ -23981,10 +24987,13 @@ MonoBehaviour:
   buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
-  tempTowerClone: {fileID: 0}
-  newTower: {fileID: 0}
+  basicTower: {fileID: 0}
+  frostTower: {fileID: 0}
+  rapidTower: {fileID: 0}
+  builtTower: {fileID: 0}
   gameManagerRef: {fileID: 0}
   timer: 0
+  selection: 0
 --- !u!1 &1937123506
 GameObject:
   m_ObjectHideFlags: 0
@@ -24097,10 +25106,13 @@ MonoBehaviour:
   buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
-  tempTowerClone: {fileID: 0}
-  newTower: {fileID: 0}
+  basicTower: {fileID: 0}
+  frostTower: {fileID: 0}
+  rapidTower: {fileID: 0}
+  builtTower: {fileID: 0}
   gameManagerRef: {fileID: 0}
   timer: 0
+  selection: 0
 --- !u!1 &1937998736
 GameObject:
   m_ObjectHideFlags: 0
@@ -24213,10 +25225,13 @@ MonoBehaviour:
   buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
-  tempTowerClone: {fileID: 0}
-  newTower: {fileID: 0}
+  basicTower: {fileID: 0}
+  frostTower: {fileID: 0}
+  rapidTower: {fileID: 0}
+  builtTower: {fileID: 0}
   gameManagerRef: {fileID: 0}
   timer: 0
+  selection: 0
 --- !u!1 &1953615543
 GameObject:
   m_ObjectHideFlags: 0
@@ -24410,10 +25425,13 @@ MonoBehaviour:
   buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
-  tempTowerClone: {fileID: 0}
-  newTower: {fileID: 0}
+  basicTower: {fileID: 0}
+  frostTower: {fileID: 0}
+  rapidTower: {fileID: 0}
+  builtTower: {fileID: 0}
   gameManagerRef: {fileID: 0}
   timer: 0
+  selection: 0
 --- !u!1 &1961024801
 GameObject:
   m_ObjectHideFlags: 0
@@ -24526,10 +25544,13 @@ MonoBehaviour:
   buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
-  tempTowerClone: {fileID: 0}
-  newTower: {fileID: 0}
+  basicTower: {fileID: 0}
+  frostTower: {fileID: 0}
+  rapidTower: {fileID: 0}
+  builtTower: {fileID: 0}
   gameManagerRef: {fileID: 0}
   timer: 0
+  selection: 0
 --- !u!1 &1961940205
 GameObject:
   m_ObjectHideFlags: 0
@@ -24688,10 +25709,13 @@ MonoBehaviour:
   buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
-  tempTowerClone: {fileID: 0}
-  newTower: {fileID: 0}
+  basicTower: {fileID: 0}
+  frostTower: {fileID: 0}
+  rapidTower: {fileID: 0}
+  builtTower: {fileID: 0}
   gameManagerRef: {fileID: 0}
   timer: 0
+  selection: 0
 --- !u!1 &1990854705
 GameObject:
   m_ObjectHideFlags: 0
@@ -24804,10 +25828,13 @@ MonoBehaviour:
   buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
-  tempTowerClone: {fileID: 0}
-  newTower: {fileID: 0}
+  basicTower: {fileID: 0}
+  frostTower: {fileID: 0}
+  rapidTower: {fileID: 0}
+  builtTower: {fileID: 0}
   gameManagerRef: {fileID: 0}
   timer: 0
+  selection: 0
 --- !u!1 &1995959310
 GameObject:
   m_ObjectHideFlags: 0
@@ -24920,10 +25947,253 @@ MonoBehaviour:
   buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
-  tempTowerClone: {fileID: 0}
-  newTower: {fileID: 0}
+  basicTower: {fileID: 0}
+  frostTower: {fileID: 0}
+  rapidTower: {fileID: 0}
+  builtTower: {fileID: 0}
   gameManagerRef: {fileID: 0}
   timer: 0
+  selection: 0
+--- !u!1 &1997841574
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1997841575}
+  - component: {fileID: 1997841578}
+  - component: {fileID: 1997841577}
+  - component: {fileID: 1997841576}
+  m_Layer: 5
+  m_Name: FrostTowerButton
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1997841575
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1997841574}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1611338136}
+  m_Father: {fileID: 1513939094}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 220, y: -285}
+  m_SizeDelta: {x: 160, y: 30}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1997841576
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1997841574}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 1997841577}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &1997841577
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1997841574}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1997841578
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1997841574}
+  m_CullTransparentMesh: 0
+--- !u!1 &2011180956
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2011180957}
+  - component: {fileID: 2011180960}
+  - component: {fileID: 2011180959}
+  - component: {fileID: 2011180958}
+  m_Layer: 5
+  m_Name: RapidTowerButton
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &2011180957
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2011180956}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1379811175}
+  m_Father: {fileID: 1513939094}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 220, y: -315}
+  m_SizeDelta: {x: 160, y: 30}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &2011180958
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2011180956}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 2011180959}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &2011180959
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2011180956}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &2011180960
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2011180956}
+  m_CullTransparentMesh: 0
 --- !u!1 &2031353257
 GameObject:
   m_ObjectHideFlags: 0
@@ -25036,10 +26306,13 @@ MonoBehaviour:
   buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
-  tempTowerClone: {fileID: 0}
-  newTower: {fileID: 0}
+  basicTower: {fileID: 0}
+  frostTower: {fileID: 0}
+  rapidTower: {fileID: 0}
+  builtTower: {fileID: 0}
   gameManagerRef: {fileID: 0}
   timer: 0
+  selection: 0
 --- !u!1 &2043765668
 GameObject:
   m_ObjectHideFlags: 0
@@ -25233,10 +26506,13 @@ MonoBehaviour:
   buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
-  tempTowerClone: {fileID: 0}
-  newTower: {fileID: 0}
+  basicTower: {fileID: 0}
+  frostTower: {fileID: 0}
+  rapidTower: {fileID: 0}
+  builtTower: {fileID: 0}
   gameManagerRef: {fileID: 0}
   timer: 0
+  selection: 0
 --- !u!1 &2045557494
 GameObject:
   m_ObjectHideFlags: 0
@@ -25349,10 +26625,13 @@ MonoBehaviour:
   buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
-  tempTowerClone: {fileID: 0}
-  newTower: {fileID: 0}
+  basicTower: {fileID: 0}
+  frostTower: {fileID: 0}
+  rapidTower: {fileID: 0}
+  builtTower: {fileID: 0}
   gameManagerRef: {fileID: 0}
   timer: 0
+  selection: 0
 --- !u!1 &2053253490
 GameObject:
   m_ObjectHideFlags: 0
@@ -25465,10 +26744,13 @@ MonoBehaviour:
   buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
-  tempTowerClone: {fileID: 0}
-  newTower: {fileID: 0}
+  basicTower: {fileID: 0}
+  frostTower: {fileID: 0}
+  rapidTower: {fileID: 0}
+  builtTower: {fileID: 0}
   gameManagerRef: {fileID: 0}
   timer: 0
+  selection: 0
 --- !u!1001 &2062621437
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -25725,10 +27007,13 @@ MonoBehaviour:
   buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
-  tempTowerClone: {fileID: 0}
-  newTower: {fileID: 0}
+  basicTower: {fileID: 0}
+  frostTower: {fileID: 0}
+  rapidTower: {fileID: 0}
+  builtTower: {fileID: 0}
   gameManagerRef: {fileID: 0}
   timer: 0
+  selection: 0
 --- !u!1 &2068802218
 GameObject:
   m_ObjectHideFlags: 0
@@ -25841,10 +27126,13 @@ MonoBehaviour:
   buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
-  tempTowerClone: {fileID: 0}
-  newTower: {fileID: 0}
+  basicTower: {fileID: 0}
+  frostTower: {fileID: 0}
+  rapidTower: {fileID: 0}
+  builtTower: {fileID: 0}
   gameManagerRef: {fileID: 0}
   timer: 0
+  selection: 0
 --- !u!1001 &2077188456
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -26083,10 +27371,13 @@ MonoBehaviour:
   buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
-  tempTowerClone: {fileID: 0}
-  newTower: {fileID: 0}
+  basicTower: {fileID: 0}
+  frostTower: {fileID: 0}
+  rapidTower: {fileID: 0}
+  builtTower: {fileID: 0}
   gameManagerRef: {fileID: 0}
   timer: 0
+  selection: 0
 --- !u!1 &2093278137
 GameObject:
   m_ObjectHideFlags: 0
@@ -26199,10 +27490,13 @@ MonoBehaviour:
   buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
-  tempTowerClone: {fileID: 0}
-  newTower: {fileID: 0}
+  basicTower: {fileID: 0}
+  frostTower: {fileID: 0}
+  rapidTower: {fileID: 0}
+  builtTower: {fileID: 0}
   gameManagerRef: {fileID: 0}
   timer: 0
+  selection: 0
 --- !u!1 &2099884731
 GameObject:
   m_ObjectHideFlags: 0
@@ -26315,10 +27609,13 @@ MonoBehaviour:
   buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
-  tempTowerClone: {fileID: 0}
-  newTower: {fileID: 0}
+  basicTower: {fileID: 0}
+  frostTower: {fileID: 0}
+  rapidTower: {fileID: 0}
+  builtTower: {fileID: 0}
   gameManagerRef: {fileID: 0}
   timer: 0
+  selection: 0
 --- !u!1 &2119102710
 GameObject:
   m_ObjectHideFlags: 0
@@ -26431,10 +27728,13 @@ MonoBehaviour:
   buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
-  tempTowerClone: {fileID: 0}
-  newTower: {fileID: 0}
+  basicTower: {fileID: 0}
+  frostTower: {fileID: 0}
+  rapidTower: {fileID: 0}
+  builtTower: {fileID: 0}
   gameManagerRef: {fileID: 0}
   timer: 0
+  selection: 0
 --- !u!1001 &2120978127
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -26610,10 +27910,13 @@ MonoBehaviour:
   buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
-  tempTowerClone: {fileID: 0}
-  newTower: {fileID: 0}
+  basicTower: {fileID: 0}
+  frostTower: {fileID: 0}
+  rapidTower: {fileID: 0}
+  builtTower: {fileID: 0}
   gameManagerRef: {fileID: 0}
   timer: 0
+  selection: 0
 --- !u!1 &2127029343
 GameObject:
   m_ObjectHideFlags: 0
@@ -26726,10 +28029,13 @@ MonoBehaviour:
   buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
-  tempTowerClone: {fileID: 0}
-  newTower: {fileID: 0}
+  basicTower: {fileID: 0}
+  frostTower: {fileID: 0}
+  rapidTower: {fileID: 0}
+  builtTower: {fileID: 0}
   gameManagerRef: {fileID: 0}
   timer: 0
+  selection: 0
 --- !u!1 &2130030568
 GameObject:
   m_ObjectHideFlags: 0
@@ -26842,10 +28148,13 @@ MonoBehaviour:
   buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
-  tempTowerClone: {fileID: 0}
-  newTower: {fileID: 0}
+  basicTower: {fileID: 0}
+  frostTower: {fileID: 0}
+  rapidTower: {fileID: 0}
+  builtTower: {fileID: 0}
   gameManagerRef: {fileID: 0}
   timer: 0
+  selection: 0
 --- !u!1 &2133452652
 GameObject:
   m_ObjectHideFlags: 0
@@ -26958,10 +28267,13 @@ MonoBehaviour:
   buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
-  tempTowerClone: {fileID: 0}
-  newTower: {fileID: 0}
+  basicTower: {fileID: 0}
+  frostTower: {fileID: 0}
+  rapidTower: {fileID: 0}
+  builtTower: {fileID: 0}
   gameManagerRef: {fileID: 0}
   timer: 0
+  selection: 0
 --- !u!1 &2136490451
 GameObject:
   m_ObjectHideFlags: 0
@@ -27074,10 +28386,13 @@ MonoBehaviour:
   buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
-  tempTowerClone: {fileID: 0}
-  newTower: {fileID: 0}
+  basicTower: {fileID: 0}
+  frostTower: {fileID: 0}
+  rapidTower: {fileID: 0}
+  builtTower: {fileID: 0}
   gameManagerRef: {fileID: 0}
   timer: 0
+  selection: 0
 --- !u!1 &2139208313
 GameObject:
   m_ObjectHideFlags: 0
@@ -27190,7 +28505,10 @@ MonoBehaviour:
   buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
-  tempTowerClone: {fileID: 0}
-  newTower: {fileID: 0}
+  basicTower: {fileID: 0}
+  frostTower: {fileID: 0}
+  rapidTower: {fileID: 0}
+  builtTower: {fileID: 0}
   gameManagerRef: {fileID: 0}
   timer: 0
+  selection: 0

@@ -13,36 +13,58 @@ public class BuildingManagerScript : MonoBehaviour {
     string buildStateString;
     public bool buildState = false;
     public bool buildableArea = true;
-    public GameObject tempTower = null; // prefab declaration
-    public GameObject tempTowerClone; // placement phase
-    public GameObject newTower; // built phase
+    public GameObject tempTower = null; // placement phase
+    public GameObject basicTower;
+    public GameObject frostTower;
+    public GameObject rapidTower;
+    public GameObject builtTower = null; // built phase
     public GameManager gameManagerRef;
     bool creditWarning;
     public float timer;
     string creditWarningString;
     private GUIStyle guiStyle = new GUIStyle();
+    public enum SELECTION {
+        Invalid,
+        Basic,
+        Frost,
+        Rapid
+    }
+
+    public SELECTION selection;
 
     // Use this for initialization
     void Start () {
         //boxRend = GetComponentInChildren<Renderer>();
-        boxRend = GetComponent<Renderer>();
-        tempTower = (GameObject)Resources.Load("Prefabs/Tower");
         gameManagerRef = GameObject.Find("GameManager").GetComponent<GameManager>();
+        boxRend = GetComponent<Renderer>();
+        basicTower = (GameObject)Resources.Load("Prefabs/Tower_Basic");
+        print("Basic tower assigned to: " + basicTower);
+        frostTower = (GameObject)Resources.Load("Prefabs/Tower_Frost");
+        print("Frost tower assigned to: " + frostTower);
+        rapidTower = (GameObject)Resources.Load("Prefabs/Tower_Rapid");
+        print("Rapid tower assigned to: " + rapidTower);
         creditWarning = false;
         timer = 0;
         creditWarningString = "We need more gold!";
         guiStyle.normal.textColor = Color.red;
         guiStyle.fontSize = 20;
+        selection = SELECTION.Invalid;
     }
 
     void OnMouseEnter()
     {
-        if (buildState == true) {
-            if(buildableArea && gameManagerRef.getPlayerCredit() > 0) {
+        if (buildState == true && selection != SELECTION.Invalid) {
+            if(buildableArea) {
                 boxRend.material.color = Color.green;
                 print(boxRend.material.color);
-                // instantiate temp tower
-                tempTowerClone = Instantiate(tempTower, boxRend.transform.position, boxRend.transform.rotation);
+                // instantiate temp tower - type based on selection
+                if (selection == SELECTION.Basic) {
+                    tempTower = Instantiate(basicTower, boxRend.transform.position, boxRend.transform.rotation);
+                } else if (selection == SELECTION.Frost) {
+                    tempTower = Instantiate(frostTower, boxRend.transform.position, boxRend.transform.rotation);
+                } else if (selection == SELECTION.Rapid) {
+                    tempTower = Instantiate(rapidTower, boxRend.transform.position, boxRend.transform.rotation);
+                }
             }
             else {
                 boxRend.material.color = Color.red;
@@ -53,20 +75,38 @@ public class BuildingManagerScript : MonoBehaviour {
     void OnMouseDown() {
         if (buildState == true && buildableArea) {
 
-            if (gameManagerRef.getPlayerCredit() > 0) {
-                boxRend.material.color = Color.yellow; // set to green temporarily to 
-                print(boxRend.material.color);
-                Destroy(tempTowerClone); // destroy the temp
-                                         // instantiate new tower
-                newTower = Instantiate(tempTower, boxRend.transform.position, boxRend.transform.rotation);
+            
+            boxRend.material.color = Color.yellow; // set to green temporarily to 
+            print(boxRend.material.color);
+            Destroy(tempTower); // destroy the temp
+            // instantiate new tower
+            if(selection == SELECTION.Basic) {
+                builtTower = Instantiate(basicTower, boxRend.transform.position, boxRend.transform.rotation);
                 // access tower script and toggle built state
-                newTower.GetComponentInChildren<TowerScript>().setBuilt();
+                builtTower.GetComponentInChildren<TowerScript>().setBuilt();
+                builtTower.GetComponentInChildren<TowerScript>().setFireRate(0.5f);
                 // spend 1 credit
                 updatePlayerCredit(-1);
+                buildState = false;
+            } else if (selection == SELECTION.Frost) {
+                builtTower = Instantiate(frostTower, boxRend.transform.position, boxRend.transform.rotation);
+                // access tower script and toggle built state
+                builtTower.GetComponentInChildren<TowerScript>().setBuilt();
+                builtTower.GetComponentInChildren<TowerScript>().setFireRate(1f);
+                // spend 2 credits
+                updatePlayerCredit(-2);
+                buildState = false;
+            } else if (selection == SELECTION.Rapid) {
+                builtTower = Instantiate(rapidTower, boxRend.transform.position, boxRend.transform.rotation);
+                // access tower script and toggle built state
+                builtTower.GetComponentInChildren<TowerScript>().setBuilt();
+                builtTower.GetComponentInChildren<TowerScript>().setFireRate(2f);
+                // spend 3 credits
+                updatePlayerCredit(-3);
+                buildState = false;
+            }
 
-                buildableArea = false;
-                print("Construction complete.");
-            } else {
+            else {
                 print("We need more gold!");
                 creditWarning = true;
             }
@@ -76,7 +116,7 @@ public class BuildingManagerScript : MonoBehaviour {
 
     void OnMouseExit() {
         boxRend.material.color = Color.white;
-        Destroy(tempTowerClone);
+        Destroy(tempTower);
     }
 
     void OnGUI()
@@ -110,20 +150,51 @@ public class BuildingManagerScript : MonoBehaviour {
             }
         }
 
+        // B - build state, basic tower selection
         if (Input.GetKeyDown(KeyCode.B)) {
-            buildState = true;
-            print("State changed to build");
-            print("Player 1 credit report from building manager w/ gameManager ref: " + gameManagerRef.getPlayerCredit());
+            // when already in build state
+            if(buildState == true) {
+                // basic tower selected
+                if(gameManagerRef.getPlayerCredit() >= 1) {
+                    selection = SELECTION.Basic;
+                    print("Basic tower selected");
+                }
+            } 
+            // entering build state
+            else {
+                buildState = true;
+                print("State changed to build");
+                print("Player 1 credit report from building manager w/ gameManager ref: " + gameManagerRef.getPlayerCredit());
+            }
+            
         }
 
-        if(Input.GetKeyDown(KeyCode.Escape)) {
+        // F - frost tower selection
+        if (Input.GetKeyDown(KeyCode.F)) {
+            if (buildState == true) {
+                // frost tower selected
+                if (gameManagerRef.getPlayerCredit() >= 2) {
+                    selection = SELECTION.Frost;
+                    print("Frost tower selected");
+                }
+            }
+        }
+
+        // R - rapid tower selection
+        if (Input.GetKeyDown(KeyCode.R)) {
+            if (buildState == true) {
+                // rapid tower selected
+                if (gameManagerRef.getPlayerCredit() >= 3) {
+                    selection = SELECTION.Rapid;
+                    print("Frost tower selected");
+                }
+            }
+        }
+
+        if (Input.GetKeyDown(KeyCode.Escape)) {
             buildState = false;
             print("State changed to play");
         }
-
-        if (Input.GetKeyDown(KeyCode.B)) {
-		    Debug.Log("pressed B");
-		}
 	}
 
     void updatePlayerCredit(int credit) {

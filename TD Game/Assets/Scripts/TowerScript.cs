@@ -10,7 +10,8 @@ public class TowerScript : MonoBehaviour
 	public Material highlightTarget;
     // try max range only
     public float maxRange = 10.0f;
-    public float timeBetweenShots = 2.0f;
+    public float timeBetweenShots;
+    public float fireRate;
     public GameObject projectile;
     public Transform projectileSpawn;
     // public GameObject projectileSpawn;
@@ -37,6 +38,8 @@ public class TowerScript : MonoBehaviour
         Vector3 towerOffset = new Vector3(0, 1.5f, 0);
         towerPosition = this.transform.position + towerOffset;
         projectileSpawn = this.gameObject.transform.GetChild(2);
+        fireRate = 1.0f; // default value
+        timeBetweenShots = 1.0f / fireRate;
     }
        
     // if target exists, fire projectile at it every x seconds
@@ -46,7 +49,7 @@ public class TowerScript : MonoBehaviour
         {
             // create projectile
             //GameObject projectileGO = (GameObject) Instantiate(projectile, this.projectileSpawn.transform.position, this.projectileSpawn.transform.rotation);
-            projectileGO = (GameObject) Instantiate(projectile, projectileSpawn.position, this.projectileSpawn.rotation);
+            projectileGO = Instantiate(projectile, projectileSpawn.position, this.projectileSpawn.rotation);
             // so enemy knows what's hitting it
             projectileGO.tag = "projectile";
             ProjectileScript projectileRef;
@@ -60,7 +63,7 @@ public class TowerScript : MonoBehaviour
             }
 
             // reset timer
-            timeBetweenShots = 2.0f;
+            timeBetweenShots = 1.0f / fireRate;
         }
     }
 
@@ -131,5 +134,14 @@ public class TowerScript : MonoBehaviour
     
     public void setBuilt() {
         built = true;
+    }
+
+    public void setRange(float range) {
+        this.maxRange = range;
+    }
+
+    // fire rate in projectiles per second
+    public void setFireRate(float fireRate) {
+        this.fireRate = fireRate;
     }
 }

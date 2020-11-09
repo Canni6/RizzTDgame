@@ -74,7 +74,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 3737348589ec453478e6b57e2af02c4a, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -145,7 +145,7 @@ MonoBehaviour:
   highlightTarget: {fileID: 0}
   maxRange: 10
   timeBetweenShots: 2
-  projectile: {fileID: 1708403320664592, guid: 6c11627c5aebf1b4daad02673690850d, type: 3}
+  projectile: {fileID: 1708403320664592, guid: 85c8e80497fbd9e47af3aa6a72e804d0, type: 3}
   projectileSpawn: {fileID: 4780915950224994, guid: b61fa7e559b91e1409fe7a1320772488,
     type: 3}
   built: 0
@@ -223,7 +223,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 3737348589ec453478e6b57e2af02c4a, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -319,7 +319,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 3737348589ec453478e6b57e2af02c4a, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -351,7 +351,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4074895850317990}
   m_Layer: 0
-  m_Name: Tower
+  m_Name: Tower_Rapid
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
