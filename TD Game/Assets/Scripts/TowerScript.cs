@@ -22,15 +22,16 @@ public class TowerScript : MonoBehaviour
     
     GameObject closestEnemy = null;
     public Transform target = null;
-
- 
     GameObject projectileGO = null;
 
-
-    private void Awake()
-    {
-
+    // Tower Affix to be applied to projectile as well
+    public enum Affix {
+        Basic,
+        Frost,
+        Rapid
     }
+
+    public Affix affix;
 
     public void Start()
     {
@@ -41,27 +42,31 @@ public class TowerScript : MonoBehaviour
         fireRate = 1.0f; // default value
         timeBetweenShots = 1.0f / fireRate;
     }
-       
+    
+    public void instantiateProjectile() {
+        // create projectile
+        projectileGO = Instantiate(projectile, projectileSpawn.position, this.projectileSpawn.rotation);
+        // assign state for enemy AI interaction
+        projectileGO.tag = "projectile";
+        projectileGO.gameObject.AddComponent<ProjectileScript>();
+        if(affix == TowerScript.Affix.Basic) {
+            projectileGO.GetComponent<ProjectileScript>().setAffix(ProjectileScript.Affix.Basic);
+        } else if (affix == TowerScript.Affix.Frost) {
+            projectileGO.GetComponent<ProjectileScript>().setAffix(ProjectileScript.Affix.Frost);
+        } else if (affix == TowerScript.Affix.Rapid) {
+            projectileGO.GetComponent<ProjectileScript>().setAffix(ProjectileScript.Affix.Rapid);
+        }
+        // set projectile target
+        projectileGO.GetComponent<ProjectileScript>().Seek(target);
+    }
+
+
     // if target exists, fire projectile at it every x seconds
     public void Shoot()
     {
         if (timeBetweenShots <= 0)
         {
-            // create projectile
-            //GameObject projectileGO = (GameObject) Instantiate(projectile, this.projectileSpawn.transform.position, this.projectileSpawn.transform.rotation);
-            projectileGO = Instantiate(projectile, projectileSpawn.position, this.projectileSpawn.rotation);
-            // so enemy knows what's hitting it
-            projectileGO.tag = "projectile";
-            ProjectileScript projectileRef;
-            projectileGO.gameObject.AddComponent<ProjectileScript>();
-            projectileRef = projectileGO.GetComponent<ProjectileScript>();
-            if (projectileRef != null)
-            {
-                projectileRef.Seek(target);
-                print("Target found");
-                print("Target is: " + target);
-            }
-
+            instantiateProjectile();
             // reset timer
             timeBetweenShots = 1.0f / fireRate;
         }
@@ -116,7 +121,6 @@ public class TowerScript : MonoBehaviour
                             https://answers.unity.com/questions/950010/offset-lookat-rotation.html */
 
         // tower target to only consider y axis
-        
         if (target) {
             //projectileScript.target = target;
             //print("target is set");
@@ -143,5 +147,9 @@ public class TowerScript : MonoBehaviour
     // fire rate in projectiles per second
     public void setFireRate(float fireRate) {
         this.fireRate = fireRate;
+    }
+
+    public void setAffix(Affix affix) {
+        this.affix = affix;
     }
 }

@@ -62,8 +62,19 @@ public class EnemyAiScript : MonoBehaviour
 		}
 	}
 
-    void OnCollisionEnter(Collision target) {
-        if (target.gameObject.tag.Equals("projectile") == true) {
+    public void setSpeed(float speed) {
+        this.speed = speed;
+    }
+
+    void OnCollisionEnter(Collision something) {
+        if (something.gameObject.tag.Equals("projectile") == true) {
+            // apply projectile affix debuff - just frost atm
+            if(something.gameObject.GetComponent<ProjectileScript>().getAffix() == ProjectileScript.Affix.Frost) {
+                // apply 50% speed debuff
+                setSpeed(speed * 0.5f);
+                // apply blue color
+                this.gameObject.GetComponent<Renderer>().material.color = Color.blue;
+            }
             health -= 1;
             if(health < 1) {
                 Destroy(gameObject);
@@ -82,4 +93,6 @@ public class EnemyAiScript : MonoBehaviour
             gameManagerRef.loadNextObjective();
         }
     }
+
+    
 }

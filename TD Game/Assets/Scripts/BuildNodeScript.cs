@@ -5,7 +5,7 @@ using UnityEngine.UIElements;
 
 
 /// <summary>
-/// Build Node Script is applied to each build tile - used for mouseover and mouse down during build state.
+/// Build Node Script is applied to each build tile - used for mouseover and mouse down during build state to place tower.
 /// </summary>
 public class BuildNodeScript : MonoBehaviour {
 
@@ -58,6 +58,13 @@ public class BuildNodeScript : MonoBehaviour {
 
     public void instantiateTower(GameObject towerType, float fireRate, int cost) {
         builtTower = Instantiate(towerType, boxRend.transform.position, boxRend.transform.rotation);
+        if(towerType == basicTower) {
+            builtTower.GetComponentInChildren<TowerScript>().setAffix(TowerScript.Affix.Basic);
+        } else if(towerType == frostTower) {
+            builtTower.GetComponentInChildren<TowerScript>().setAffix(TowerScript.Affix.Frost);
+        } else if (towerType == rapidTower) {
+            builtTower.GetComponentInChildren<TowerScript>().setAffix(TowerScript.Affix.Rapid);
+        }
         builtTower.GetComponentInChildren<TowerScript>().setBuilt();
         builtTower.GetComponentInChildren<TowerScript>().setFireRate(fireRate);
         updatePlayerCredit(-cost);

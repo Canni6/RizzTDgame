@@ -6,8 +6,21 @@ public class ProjectileScript : MonoBehaviour
 {
     // target reference for the projectile
     public Transform target;
-    public float speed = 20f;
-    private Vector3 worldUp;
+    public float speed;
+
+    // Projectile affix to be set from Tower. Interacts with enemy AI.
+    public enum Affix {
+        Basic,
+        Frost,
+        Rapid
+    }
+
+    public Affix affix;
+
+    void Start() {
+        // default speed
+        speed = 20f;
+    }
 
     public void Seek (Transform _target)
     {
@@ -43,5 +56,17 @@ public class ProjectileScript : MonoBehaviour
             Destroy(gameObject);
             print("collision - projectile destroyed!");
         }
+    }
+
+    public ProjectileScript.Affix getAffix() {
+        return affix;
+    }
+
+    public void setAffix(Affix affix) {
+        this.affix = affix;
+    }
+
+    public void setSpeed(float speed) {
+        this.speed = speed;
     }
 }
