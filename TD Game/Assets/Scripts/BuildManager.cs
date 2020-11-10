@@ -21,12 +21,13 @@ public class BuildManager : MonoBehaviour
     public SELECTION buildSelection;
     public bool buildState;
     public GameManager gameManager;
-    
+    public UserInterface ui;
 
     // Start is called before the first frame update
     void Start()
     {
         gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
+        ui = GameObject.Find("GameManager").GetComponent<UserInterface>();
         // build variable state
         buildSelection = SELECTION.Invalid;
         buildState = false;
@@ -64,6 +65,7 @@ public class BuildManager : MonoBehaviour
             // entering build state
             else {
                 setBuildState(true);
+                ui.selectButton(ui.buildMenuButton);
                 print("State changed to build");
                 print("Player 1 credit report from building manager w/ gameManager ref: " + gameManager.getPlayerCredit());
             }
@@ -99,7 +101,7 @@ public class BuildManager : MonoBehaviour
     }
 
     void OnGUI() {
-        GUI.Label(new Rect(Screen.width / 2, Screen.height / 2, 1000, 200), buildStateString);
+        GUI.Label(new Rect(Screen.width / 2 - Screen.width / 12, Screen.height - Screen.height / 12, 1000, 200), buildStateString);
         if (creditWarning) {
             GUI.Label(new Rect(Screen.width / 3, Screen.height / 2 + 2 * (Screen.height / 5), 500, 100), creditWarningString, guiStyle);
         }
@@ -124,6 +126,7 @@ public class BuildManager : MonoBehaviour
     public void cancelBuildState() {
         setBuildState(false);
         setSelection(SELECTION.Invalid);
+        ui.hideTowerMenu();
     }
 
     public void updateBuildString() {

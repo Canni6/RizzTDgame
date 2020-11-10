@@ -8,8 +8,9 @@ using UnityEngine.UI;
 public class UserInterface : MonoBehaviour
 {
     public Button restartButton;
-
+    public Button buildMenuButton;
     public GameObject buildMenu;
+    public GameObject towerMenu;
     public Button basicTowerButton;
     public Button frostTowerButton;
     public Button rapidTowerButton;
@@ -19,6 +20,9 @@ public class UserInterface : MonoBehaviour
     {
         restartButton.onClick.AddListener(restartGame);
         buildMenu = GameObject.Find("BuildMenu");
+        buildMenu.SetActive(true);
+        towerMenu = GameObject.Find("TowerMenu");
+        towerMenu.SetActive(false);
     }
 
     // Update is called once per frame
@@ -37,11 +41,19 @@ public class UserInterface : MonoBehaviour
         button.gameObject.SetActive(true);
     }
 
-    public void displayBuildMenu() {
-        buildMenu.gameObject.SetActive(true);
+    public void displayTowerMenu() {
+        towerMenu.gameObject.SetActive(true);
     }
 
-    public void hideBuildMenu() {
-        buildMenu.gameObject.SetActive(false);
+    public void hideTowerMenu() {
+        towerMenu.gameObject.SetActive(false);
+    }
+
+    public void selectButton(Button button) {
+        button.Select();
+        print("Button selected: " + button.name);
+        if(button.name.Equals("BuildMenuButton")) {
+            displayTowerMenu();
+        }
     }
 }

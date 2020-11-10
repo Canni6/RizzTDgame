@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnemyAIscript : MonoBehaviour 
+public class EnemyAiScript : MonoBehaviour 
 {
     GameObject waypointGO;  // defines waypoint gameobject
     Transform targetWaypoint; // defines a movement 

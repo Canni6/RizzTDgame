@@ -95,8 +95,7 @@ public class BuildNodeScript : MonoBehaviour {
     }
 
     public void cancelBuildState() {
-        buildManager.setBuildState(false);
-        buildManager.setSelection(BuildManager.SELECTION.Invalid);
+        buildManager.cancelBuildState();
     }
 
     public bool getBuildState() {

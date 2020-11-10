@@ -296,16 +296,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boxRend: {fileID: 0}
-  buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
   basicTower: {fileID: 0}
   frostTower: {fileID: 0}
   rapidTower: {fileID: 0}
   builtTower: {fileID: 0}
-  gameManagerRef: {fileID: 0}
-  timer: 0
-  selection: 0
+  gameManager: {fileID: 0}
+  buildManager: {fileID: 0}
 --- !u!1 &33395248
 GameObject:
   m_ObjectHideFlags: 0
@@ -577,16 +575,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boxRend: {fileID: 0}
-  buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
   basicTower: {fileID: 0}
   frostTower: {fileID: 0}
   rapidTower: {fileID: 0}
   builtTower: {fileID: 0}
-  gameManagerRef: {fileID: 0}
-  timer: 0
-  selection: 0
+  gameManager: {fileID: 0}
+  buildManager: {fileID: 0}
 --- !u!1 &51633106
 GameObject:
   m_ObjectHideFlags: 0
@@ -696,16 +692,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boxRend: {fileID: 0}
-  buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
   basicTower: {fileID: 0}
   frostTower: {fileID: 0}
   rapidTower: {fileID: 0}
   builtTower: {fileID: 0}
-  gameManagerRef: {fileID: 0}
-  timer: 0
-  selection: 0
+  gameManager: {fileID: 0}
+  buildManager: {fileID: 0}
 --- !u!1 &63754246
 GameObject:
   m_ObjectHideFlags: 0
@@ -815,16 +809,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boxRend: {fileID: 0}
-  buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
   basicTower: {fileID: 0}
   frostTower: {fileID: 0}
   rapidTower: {fileID: 0}
   builtTower: {fileID: 0}
-  gameManagerRef: {fileID: 0}
-  timer: 0
-  selection: 0
+  gameManager: {fileID: 0}
+  buildManager: {fileID: 0}
 --- !u!1 &72180122
 GameObject:
   m_ObjectHideFlags: 0
@@ -1015,16 +1007,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boxRend: {fileID: 0}
-  buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
   basicTower: {fileID: 0}
   frostTower: {fileID: 0}
   rapidTower: {fileID: 0}
   builtTower: {fileID: 0}
-  gameManagerRef: {fileID: 0}
-  timer: 0
-  selection: 0
+  gameManager: {fileID: 0}
+  buildManager: {fileID: 0}
 --- !u!1 &79436847
 GameObject:
   m_ObjectHideFlags: 0
@@ -1134,16 +1124,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boxRend: {fileID: 0}
-  buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
   basicTower: {fileID: 1964124958064930, guid: 4acafbe077a43424c92aa8ff5cd7aae8, type: 3}
   frostTower: {fileID: 1964124958064930, guid: 89b4d89f3b94181498edfd87b541cb89, type: 3}
   rapidTower: {fileID: 1964124958064930, guid: 7c24cd2f5ea7b8f478f590cf490925ae, type: 3}
   builtTower: {fileID: 0}
-  gameManagerRef: {fileID: 0}
-  timer: 0
-  selection: 0
+  gameManager: {fileID: 0}
+  buildManager: {fileID: 0}
 --- !u!1 &86611646
 GameObject:
   m_ObjectHideFlags: 0
@@ -1253,16 +1241,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boxRend: {fileID: 0}
-  buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
   basicTower: {fileID: 0}
   frostTower: {fileID: 0}
   rapidTower: {fileID: 0}
   builtTower: {fileID: 0}
-  gameManagerRef: {fileID: 0}
-  timer: 0
-  selection: 0
+  gameManager: {fileID: 0}
+  buildManager: {fileID: 0}
 --- !u!1 &90617664
 GameObject:
   m_ObjectHideFlags: 0
@@ -1417,16 +1403,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boxRend: {fileID: 0}
-  buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
   basicTower: {fileID: 0}
   frostTower: {fileID: 0}
   rapidTower: {fileID: 0}
   builtTower: {fileID: 0}
-  gameManagerRef: {fileID: 0}
-  timer: 0
-  selection: 0
+  gameManager: {fileID: 0}
+  buildManager: {fileID: 0}
 --- !u!1 &100466182
 GameObject:
   m_ObjectHideFlags: 0
@@ -1536,16 +1520,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boxRend: {fileID: 0}
-  buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
   basicTower: {fileID: 0}
   frostTower: {fileID: 0}
   rapidTower: {fileID: 0}
   builtTower: {fileID: 0}
-  gameManagerRef: {fileID: 0}
-  timer: 0
-  selection: 0
+  gameManager: {fileID: 0}
+  buildManager: {fileID: 0}
 --- !u!1 &104806307
 GameObject:
   m_ObjectHideFlags: 0
@@ -1655,16 +1637,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boxRend: {fileID: 0}
-  buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
   basicTower: {fileID: 0}
   frostTower: {fileID: 0}
   rapidTower: {fileID: 0}
   builtTower: {fileID: 0}
-  gameManagerRef: {fileID: 0}
-  timer: 0
-  selection: 0
+  gameManager: {fileID: 0}
+  buildManager: {fileID: 0}
 --- !u!1 &114925257
 GameObject:
   m_ObjectHideFlags: 0
@@ -1774,16 +1754,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boxRend: {fileID: 0}
-  buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
   basicTower: {fileID: 0}
   frostTower: {fileID: 0}
   rapidTower: {fileID: 0}
   builtTower: {fileID: 0}
-  gameManagerRef: {fileID: 0}
-  timer: 0
-  selection: 0
+  gameManager: {fileID: 0}
+  buildManager: {fileID: 0}
 --- !u!1 &119789041
 GameObject:
   m_ObjectHideFlags: 0
@@ -1893,16 +1871,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boxRend: {fileID: 0}
-  buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
   basicTower: {fileID: 0}
   frostTower: {fileID: 0}
   rapidTower: {fileID: 0}
   builtTower: {fileID: 0}
-  gameManagerRef: {fileID: 0}
-  timer: 0
-  selection: 0
+  gameManager: {fileID: 0}
+  buildManager: {fileID: 0}
 --- !u!1 &126861084
 GameObject:
   m_ObjectHideFlags: 0
@@ -2012,16 +1988,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boxRend: {fileID: 0}
-  buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
   basicTower: {fileID: 0}
   frostTower: {fileID: 0}
   rapidTower: {fileID: 0}
   builtTower: {fileID: 0}
-  gameManagerRef: {fileID: 0}
-  timer: 0
-  selection: 0
+  gameManager: {fileID: 0}
+  buildManager: {fileID: 0}
 --- !u!1 &140101808
 GameObject:
   m_ObjectHideFlags: 0
@@ -2367,16 +2341,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boxRend: {fileID: 0}
-  buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
   basicTower: {fileID: 0}
   frostTower: {fileID: 0}
   rapidTower: {fileID: 0}
   builtTower: {fileID: 0}
-  gameManagerRef: {fileID: 0}
-  timer: 0
-  selection: 0
+  gameManager: {fileID: 0}
+  buildManager: {fileID: 0}
 --- !u!1 &163102672
 GameObject:
   m_ObjectHideFlags: 0
@@ -2486,16 +2458,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boxRend: {fileID: 0}
-  buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
   basicTower: {fileID: 0}
   frostTower: {fileID: 0}
   rapidTower: {fileID: 0}
   builtTower: {fileID: 0}
-  gameManagerRef: {fileID: 0}
-  timer: 0
-  selection: 0
+  gameManager: {fileID: 0}
+  buildManager: {fileID: 0}
 --- !u!1 &175411803
 GameObject:
   m_ObjectHideFlags: 0
@@ -2605,16 +2575,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boxRend: {fileID: 0}
-  buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
   basicTower: {fileID: 0}
   frostTower: {fileID: 0}
   rapidTower: {fileID: 0}
   builtTower: {fileID: 0}
-  gameManagerRef: {fileID: 0}
-  timer: 0
-  selection: 0
+  gameManager: {fileID: 0}
+  buildManager: {fileID: 0}
 --- !u!1 &177362509
 GameObject:
   m_ObjectHideFlags: 0
@@ -2724,16 +2692,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boxRend: {fileID: 0}
-  buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
   basicTower: {fileID: 0}
   frostTower: {fileID: 0}
   rapidTower: {fileID: 0}
   builtTower: {fileID: 0}
-  gameManagerRef: {fileID: 0}
-  timer: 0
-  selection: 0
+  gameManager: {fileID: 0}
+  buildManager: {fileID: 0}
 --- !u!1 &178647815
 GameObject:
   m_ObjectHideFlags: 0
@@ -2843,16 +2809,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boxRend: {fileID: 0}
-  buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
   basicTower: {fileID: 0}
   frostTower: {fileID: 0}
   rapidTower: {fileID: 0}
   builtTower: {fileID: 0}
-  gameManagerRef: {fileID: 0}
-  timer: 0
-  selection: 0
+  gameManager: {fileID: 0}
+  buildManager: {fileID: 0}
 --- !u!1 &224015142
 GameObject:
   m_ObjectHideFlags: 0
@@ -2962,16 +2926,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boxRend: {fileID: 0}
-  buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
   basicTower: {fileID: 0}
   frostTower: {fileID: 0}
   rapidTower: {fileID: 0}
   builtTower: {fileID: 0}
-  gameManagerRef: {fileID: 0}
-  timer: 0
-  selection: 0
+  gameManager: {fileID: 0}
+  buildManager: {fileID: 0}
 --- !u!1001 &228569889
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3035,72 +2997,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 228569889}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &240389790
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 240389793}
-  - component: {fileID: 240389792}
-  - component: {fileID: 240389791}
-  m_Layer: 0
-  m_Name: EventSystem
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &240389791
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 240389790}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4f231c4fb786f3946a6b90b886c48677, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_HorizontalAxis: Horizontal
-  m_VerticalAxis: Vertical
-  m_SubmitButton: Submit
-  m_CancelButton: Cancel
-  m_InputActionsPerSecond: 10
-  m_RepeatDelay: 0.5
-  m_ForceModuleActive: 0
---- !u!114 &240389792
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 240389790}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 76c392e42b5098c458856cdf6ecaaaa1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_FirstSelected: {fileID: 0}
-  m_sendNavigationEvents: 1
-  m_DragThreshold: 10
---- !u!4 &240389793
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 240389790}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 12
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &242946268
 GameObject:
   m_ObjectHideFlags: 0
@@ -3210,16 +3106,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boxRend: {fileID: 0}
-  buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
   basicTower: {fileID: 0}
   frostTower: {fileID: 0}
   rapidTower: {fileID: 0}
   builtTower: {fileID: 0}
-  gameManagerRef: {fileID: 0}
-  timer: 0
-  selection: 0
+  gameManager: {fileID: 0}
+  buildManager: {fileID: 0}
 --- !u!1 &260657074
 GameObject:
   m_ObjectHideFlags: 0
@@ -3329,16 +3223,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boxRend: {fileID: 0}
-  buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
   basicTower: {fileID: 0}
   frostTower: {fileID: 0}
   rapidTower: {fileID: 0}
   builtTower: {fileID: 0}
-  gameManagerRef: {fileID: 0}
-  timer: 0
-  selection: 0
+  gameManager: {fileID: 0}
+  buildManager: {fileID: 0}
 --- !u!1 &269007368
 GameObject:
   m_ObjectHideFlags: 0
@@ -3448,16 +3340,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boxRend: {fileID: 0}
-  buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
   basicTower: {fileID: 0}
   frostTower: {fileID: 0}
   rapidTower: {fileID: 0}
   builtTower: {fileID: 0}
-  gameManagerRef: {fileID: 0}
-  timer: 0
-  selection: 0
+  gameManager: {fileID: 0}
+  buildManager: {fileID: 0}
 --- !u!1 &284240154
 GameObject:
   m_ObjectHideFlags: 0
@@ -3567,16 +3457,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boxRend: {fileID: 0}
-  buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
   basicTower: {fileID: 0}
   frostTower: {fileID: 0}
   rapidTower: {fileID: 0}
   builtTower: {fileID: 0}
-  gameManagerRef: {fileID: 0}
-  timer: 0
-  selection: 0
+  gameManager: {fileID: 0}
+  buildManager: {fileID: 0}
 --- !u!1001 &284282576
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3812,16 +3700,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boxRend: {fileID: 0}
-  buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
   basicTower: {fileID: 0}
   frostTower: {fileID: 0}
   rapidTower: {fileID: 0}
   builtTower: {fileID: 0}
-  gameManagerRef: {fileID: 0}
-  timer: 0
-  selection: 0
+  gameManager: {fileID: 0}
+  buildManager: {fileID: 0}
 --- !u!1 &322461372
 GameObject:
   m_ObjectHideFlags: 0
@@ -3931,16 +3817,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boxRend: {fileID: 0}
-  buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
   basicTower: {fileID: 0}
   frostTower: {fileID: 0}
   rapidTower: {fileID: 0}
   builtTower: {fileID: 0}
-  gameManagerRef: {fileID: 0}
-  timer: 0
-  selection: 0
+  gameManager: {fileID: 0}
+  buildManager: {fileID: 0}
 --- !u!1 &336195959
 GameObject:
   m_ObjectHideFlags: 0
@@ -4050,16 +3934,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boxRend: {fileID: 0}
-  buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
   basicTower: {fileID: 0}
   frostTower: {fileID: 0}
   rapidTower: {fileID: 0}
   builtTower: {fileID: 0}
-  gameManagerRef: {fileID: 0}
-  timer: 0
-  selection: 0
+  gameManager: {fileID: 0}
+  buildManager: {fileID: 0}
 --- !u!1 &342356473
 GameObject:
   m_ObjectHideFlags: 0
@@ -4169,16 +4051,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boxRend: {fileID: 0}
-  buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
   basicTower: {fileID: 0}
   frostTower: {fileID: 0}
   rapidTower: {fileID: 0}
   builtTower: {fileID: 0}
-  gameManagerRef: {fileID: 0}
-  timer: 0
-  selection: 0
+  gameManager: {fileID: 0}
+  buildManager: {fileID: 0}
 --- !u!1 &355033255
 GameObject:
   m_ObjectHideFlags: 0
@@ -4288,16 +4168,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boxRend: {fileID: 0}
-  buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
   basicTower: {fileID: 0}
   frostTower: {fileID: 0}
   rapidTower: {fileID: 0}
   builtTower: {fileID: 0}
-  gameManagerRef: {fileID: 0}
-  timer: 0
-  selection: 0
+  gameManager: {fileID: 0}
+  buildManager: {fileID: 0}
 --- !u!1 &364836107
 GameObject:
   m_ObjectHideFlags: 0
@@ -4407,16 +4285,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boxRend: {fileID: 0}
-  buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
   basicTower: {fileID: 0}
   frostTower: {fileID: 0}
   rapidTower: {fileID: 0}
   builtTower: {fileID: 0}
-  gameManagerRef: {fileID: 0}
-  timer: 0
-  selection: 0
+  gameManager: {fileID: 0}
+  buildManager: {fileID: 0}
 --- !u!1 &365565585
 GameObject:
   m_ObjectHideFlags: 0
@@ -4526,16 +4402,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boxRend: {fileID: 0}
-  buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
   basicTower: {fileID: 0}
   frostTower: {fileID: 0}
   rapidTower: {fileID: 0}
   builtTower: {fileID: 0}
-  gameManagerRef: {fileID: 0}
-  timer: 0
-  selection: 0
+  gameManager: {fileID: 0}
+  buildManager: {fileID: 0}
 --- !u!1 &385850549
 GameObject:
   m_ObjectHideFlags: 0
@@ -4726,16 +4600,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boxRend: {fileID: 0}
-  buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
   basicTower: {fileID: 0}
   frostTower: {fileID: 0}
   rapidTower: {fileID: 0}
   builtTower: {fileID: 0}
-  gameManagerRef: {fileID: 0}
-  timer: 0
-  selection: 0
+  gameManager: {fileID: 0}
+  buildManager: {fileID: 0}
 --- !u!1 &391697152
 GameObject:
   m_ObjectHideFlags: 0
@@ -4845,16 +4717,93 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boxRend: {fileID: 0}
-  buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
   basicTower: {fileID: 0}
   frostTower: {fileID: 0}
   rapidTower: {fileID: 0}
   builtTower: {fileID: 0}
-  gameManagerRef: {fileID: 0}
-  timer: 0
-  selection: 0
+  gameManager: {fileID: 0}
+  buildManager: {fileID: 0}
+--- !u!1 &395320496
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 395320497}
+  - component: {fileID: 395320499}
+  - component: {fileID: 395320498}
+  m_Layer: 5
+  m_Name: Text
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &395320497
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 395320496}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1144636289}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &395320498
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 395320496}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 16
+    m_FontStyle: 1
+    m_BestFit: 0
+    m_MinSize: 1
+    m_MaxSize: 40
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: Build Menu (B)
+--- !u!222 &395320499
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 395320496}
+  m_CullTransparentMesh: 0
 --- !u!1 &410896893
 GameObject:
   m_ObjectHideFlags: 0
@@ -4964,16 +4913,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boxRend: {fileID: 0}
-  buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
   basicTower: {fileID: 0}
   frostTower: {fileID: 0}
   rapidTower: {fileID: 0}
   builtTower: {fileID: 0}
-  gameManagerRef: {fileID: 0}
-  timer: 0
-  selection: 0
+  gameManager: {fileID: 0}
+  buildManager: {fileID: 0}
 --- !u!1 &413058055
 GameObject:
   m_ObjectHideFlags: 0
@@ -5083,16 +5030,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boxRend: {fileID: 0}
-  buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
   basicTower: {fileID: 0}
   frostTower: {fileID: 0}
   rapidTower: {fileID: 0}
   builtTower: {fileID: 0}
-  gameManagerRef: {fileID: 0}
-  timer: 0
-  selection: 0
+  gameManager: {fileID: 0}
+  buildManager: {fileID: 0}
 --- !u!1 &426986237
 GameObject:
   m_ObjectHideFlags: 0
@@ -5202,16 +5147,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boxRend: {fileID: 0}
-  buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
   basicTower: {fileID: 0}
   frostTower: {fileID: 0}
   rapidTower: {fileID: 0}
   builtTower: {fileID: 0}
-  gameManagerRef: {fileID: 0}
-  timer: 0
-  selection: 0
+  gameManager: {fileID: 0}
+  buildManager: {fileID: 0}
 --- !u!1 &434253068
 GameObject:
   m_ObjectHideFlags: 0
@@ -5321,16 +5264,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boxRend: {fileID: 0}
-  buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
   basicTower: {fileID: 0}
   frostTower: {fileID: 0}
   rapidTower: {fileID: 0}
   builtTower: {fileID: 0}
-  gameManagerRef: {fileID: 0}
-  timer: 0
-  selection: 0
+  gameManager: {fileID: 0}
+  buildManager: {fileID: 0}
 --- !u!1 &440898059
 GameObject:
   m_ObjectHideFlags: 0
@@ -5521,16 +5462,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boxRend: {fileID: 0}
-  buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
   basicTower: {fileID: 0}
   frostTower: {fileID: 0}
   rapidTower: {fileID: 0}
   builtTower: {fileID: 0}
-  gameManagerRef: {fileID: 0}
-  timer: 0
-  selection: 0
+  gameManager: {fileID: 0}
+  buildManager: {fileID: 0}
 --- !u!1 &464775913
 GameObject:
   m_ObjectHideFlags: 0
@@ -5640,16 +5579,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boxRend: {fileID: 0}
-  buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
   basicTower: {fileID: 0}
   frostTower: {fileID: 0}
   rapidTower: {fileID: 0}
   builtTower: {fileID: 0}
-  gameManagerRef: {fileID: 0}
-  timer: 0
-  selection: 0
+  gameManager: {fileID: 0}
+  buildManager: {fileID: 0}
 --- !u!1 &470365122
 GameObject:
   m_ObjectHideFlags: 0
@@ -5759,16 +5696,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boxRend: {fileID: 0}
-  buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
   basicTower: {fileID: 0}
   frostTower: {fileID: 0}
   rapidTower: {fileID: 0}
   builtTower: {fileID: 0}
-  gameManagerRef: {fileID: 0}
-  timer: 0
-  selection: 0
+  gameManager: {fileID: 0}
+  buildManager: {fileID: 0}
 --- !u!1 &472498136
 GameObject:
   m_ObjectHideFlags: 0
@@ -5878,16 +5813,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boxRend: {fileID: 0}
-  buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
   basicTower: {fileID: 0}
   frostTower: {fileID: 0}
   rapidTower: {fileID: 0}
   builtTower: {fileID: 0}
-  gameManagerRef: {fileID: 0}
-  timer: 0
-  selection: 0
+  gameManager: {fileID: 0}
+  buildManager: {fileID: 0}
 --- !u!1 &477465617
 GameObject:
   m_ObjectHideFlags: 0
@@ -5997,16 +5930,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boxRend: {fileID: 0}
-  buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
   basicTower: {fileID: 0}
   frostTower: {fileID: 0}
   rapidTower: {fileID: 0}
   builtTower: {fileID: 0}
-  gameManagerRef: {fileID: 0}
-  timer: 0
-  selection: 0
+  gameManager: {fileID: 0}
+  buildManager: {fileID: 0}
 --- !u!1 &497513183
 GameObject:
   m_ObjectHideFlags: 0
@@ -6211,16 +6142,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boxRend: {fileID: 0}
-  buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
   basicTower: {fileID: 0}
   frostTower: {fileID: 0}
   rapidTower: {fileID: 0}
   builtTower: {fileID: 0}
-  gameManagerRef: {fileID: 0}
-  timer: 0
-  selection: 0
+  gameManager: {fileID: 0}
+  buildManager: {fileID: 0}
 --- !u!1 &525317217
 GameObject:
   m_ObjectHideFlags: 0
@@ -6411,16 +6340,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boxRend: {fileID: 0}
-  buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
   basicTower: {fileID: 0}
   frostTower: {fileID: 0}
   rapidTower: {fileID: 0}
   builtTower: {fileID: 0}
-  gameManagerRef: {fileID: 0}
-  timer: 0
-  selection: 0
+  gameManager: {fileID: 0}
+  buildManager: {fileID: 0}
 --- !u!1 &562930370
 GameObject:
   m_ObjectHideFlags: 0
@@ -6530,16 +6457,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boxRend: {fileID: 0}
-  buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
   basicTower: {fileID: 0}
   frostTower: {fileID: 0}
   rapidTower: {fileID: 0}
   builtTower: {fileID: 0}
-  gameManagerRef: {fileID: 0}
-  timer: 0
-  selection: 0
+  gameManager: {fileID: 0}
+  buildManager: {fileID: 0}
 --- !u!1 &570608260
 GameObject:
   m_ObjectHideFlags: 0
@@ -6649,16 +6574,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boxRend: {fileID: 0}
-  buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
   basicTower: {fileID: 0}
   frostTower: {fileID: 0}
   rapidTower: {fileID: 0}
   builtTower: {fileID: 0}
-  gameManagerRef: {fileID: 0}
-  timer: 0
-  selection: 0
+  gameManager: {fileID: 0}
+  buildManager: {fileID: 0}
 --- !u!1 &575643700
 GameObject:
   m_ObjectHideFlags: 0
@@ -6768,16 +6691,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boxRend: {fileID: 0}
-  buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
   basicTower: {fileID: 0}
   frostTower: {fileID: 0}
   rapidTower: {fileID: 0}
   builtTower: {fileID: 0}
-  gameManagerRef: {fileID: 0}
-  timer: 0
-  selection: 0
+  gameManager: {fileID: 0}
+  buildManager: {fileID: 0}
 --- !u!1 &575778286
 GameObject:
   m_ObjectHideFlags: 0
@@ -6887,16 +6808,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boxRend: {fileID: 0}
-  buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
   basicTower: {fileID: 0}
   frostTower: {fileID: 0}
   rapidTower: {fileID: 0}
   builtTower: {fileID: 0}
-  gameManagerRef: {fileID: 0}
-  timer: 0
-  selection: 0
+  gameManager: {fileID: 0}
+  buildManager: {fileID: 0}
 --- !u!1 &576418820
 GameObject:
   m_ObjectHideFlags: 0
@@ -7006,16 +6925,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boxRend: {fileID: 0}
-  buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
   basicTower: {fileID: 0}
   frostTower: {fileID: 0}
   rapidTower: {fileID: 0}
   builtTower: {fileID: 0}
-  gameManagerRef: {fileID: 0}
-  timer: 0
-  selection: 0
+  gameManager: {fileID: 0}
+  buildManager: {fileID: 0}
 --- !u!1 &594196491
 GameObject:
   m_ObjectHideFlags: 0
@@ -7125,16 +7042,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boxRend: {fileID: 0}
-  buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
   basicTower: {fileID: 0}
   frostTower: {fileID: 0}
   rapidTower: {fileID: 0}
   builtTower: {fileID: 0}
-  gameManagerRef: {fileID: 0}
-  timer: 0
-  selection: 0
+  gameManager: {fileID: 0}
+  buildManager: {fileID: 0}
 --- !u!1 &599853812
 GameObject:
   m_ObjectHideFlags: 0
@@ -7244,16 +7159,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boxRend: {fileID: 0}
-  buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
   basicTower: {fileID: 0}
   frostTower: {fileID: 0}
   rapidTower: {fileID: 0}
   builtTower: {fileID: 0}
-  gameManagerRef: {fileID: 0}
-  timer: 0
-  selection: 0
+  gameManager: {fileID: 0}
+  buildManager: {fileID: 0}
 --- !u!1 &615965510
 GameObject:
   m_ObjectHideFlags: 0
@@ -7363,16 +7276,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boxRend: {fileID: 0}
-  buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
   basicTower: {fileID: 0}
   frostTower: {fileID: 0}
   rapidTower: {fileID: 0}
   builtTower: {fileID: 0}
-  gameManagerRef: {fileID: 0}
-  timer: 0
-  selection: 0
+  gameManager: {fileID: 0}
+  buildManager: {fileID: 0}
 --- !u!1 &631477663
 GameObject:
   m_ObjectHideFlags: 0
@@ -7574,16 +7485,134 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boxRend: {fileID: 0}
-  buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
   basicTower: {fileID: 0}
   frostTower: {fileID: 0}
   rapidTower: {fileID: 0}
   builtTower: {fileID: 0}
-  gameManagerRef: {fileID: 0}
-  timer: 0
-  selection: 0
+  gameManager: {fileID: 0}
+  buildManager: {fileID: 0}
+--- !u!1 &652488602
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 652488603}
+  - component: {fileID: 652488606}
+  - component: {fileID: 652488605}
+  - component: {fileID: 652488604}
+  m_Layer: 0
+  m_Name: Towers
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &652488603
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 652488602}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1666895583}
+  m_Father: {fileID: 903356700}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 576.8, y: 109.7}
+  m_SizeDelta: {x: 100, y: 25}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &652488604
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 652488602}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 652488605}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &652488605
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 652488602}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &652488606
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 652488602}
+  m_CullTransparentMesh: 0
 --- !u!1001 &657575038
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7756,16 +7785,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boxRend: {fileID: 0}
-  buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
   basicTower: {fileID: 0}
   frostTower: {fileID: 0}
   rapidTower: {fileID: 0}
   builtTower: {fileID: 0}
-  gameManagerRef: {fileID: 0}
-  timer: 0
-  selection: 0
+  gameManager: {fileID: 0}
+  buildManager: {fileID: 0}
 --- !u!1 &678601602
 GameObject:
   m_ObjectHideFlags: 0
@@ -7875,16 +7902,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boxRend: {fileID: 0}
-  buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
   basicTower: {fileID: 0}
   frostTower: {fileID: 0}
   rapidTower: {fileID: 0}
   builtTower: {fileID: 0}
-  gameManagerRef: {fileID: 0}
-  timer: 0
-  selection: 0
+  gameManager: {fileID: 0}
+  buildManager: {fileID: 0}
 --- !u!1 &684398122
 GameObject:
   m_ObjectHideFlags: 0
@@ -7994,16 +8019,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boxRend: {fileID: 0}
-  buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
   basicTower: {fileID: 0}
   frostTower: {fileID: 0}
   rapidTower: {fileID: 0}
   builtTower: {fileID: 0}
-  gameManagerRef: {fileID: 0}
-  timer: 0
-  selection: 0
+  gameManager: {fileID: 0}
+  buildManager: {fileID: 0}
 --- !u!1 &722625218
 GameObject:
   m_ObjectHideFlags: 0
@@ -8113,16 +8136,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boxRend: {fileID: 0}
-  buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
   basicTower: {fileID: 0}
   frostTower: {fileID: 0}
   rapidTower: {fileID: 0}
   builtTower: {fileID: 0}
-  gameManagerRef: {fileID: 0}
-  timer: 0
-  selection: 0
+  gameManager: {fileID: 0}
+  buildManager: {fileID: 0}
 --- !u!1 &730674220
 GameObject:
   m_ObjectHideFlags: 0
@@ -8232,16 +8253,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boxRend: {fileID: 0}
-  buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
   basicTower: {fileID: 0}
   frostTower: {fileID: 0}
   rapidTower: {fileID: 0}
   builtTower: {fileID: 0}
-  gameManagerRef: {fileID: 0}
-  timer: 0
-  selection: 0
+  gameManager: {fileID: 0}
+  buildManager: {fileID: 0}
 --- !u!1 &743762057
 GameObject:
   m_ObjectHideFlags: 0
@@ -8351,16 +8370,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boxRend: {fileID: 0}
-  buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
   basicTower: {fileID: 0}
   frostTower: {fileID: 0}
   rapidTower: {fileID: 0}
   builtTower: {fileID: 0}
-  gameManagerRef: {fileID: 0}
-  timer: 0
-  selection: 0
+  gameManager: {fileID: 0}
+  buildManager: {fileID: 0}
 --- !u!1 &743916828
 GameObject:
   m_ObjectHideFlags: 0
@@ -8470,16 +8487,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boxRend: {fileID: 0}
-  buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
   basicTower: {fileID: 0}
   frostTower: {fileID: 0}
   rapidTower: {fileID: 0}
   builtTower: {fileID: 0}
-  gameManagerRef: {fileID: 0}
-  timer: 0
-  selection: 0
+  gameManager: {fileID: 0}
+  buildManager: {fileID: 0}
 --- !u!1 &755285606
 GameObject:
   m_ObjectHideFlags: 0
@@ -8589,16 +8604,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boxRend: {fileID: 0}
-  buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
   basicTower: {fileID: 0}
   frostTower: {fileID: 0}
   rapidTower: {fileID: 0}
   builtTower: {fileID: 0}
-  gameManagerRef: {fileID: 0}
-  timer: 0
-  selection: 0
+  gameManager: {fileID: 0}
+  buildManager: {fileID: 0}
 --- !u!1 &758114674
 GameObject:
   m_ObjectHideFlags: 0
@@ -8708,16 +8721,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boxRend: {fileID: 0}
-  buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
   basicTower: {fileID: 0}
   frostTower: {fileID: 0}
   rapidTower: {fileID: 0}
   builtTower: {fileID: 0}
-  gameManagerRef: {fileID: 0}
-  timer: 0
-  selection: 0
+  gameManager: {fileID: 0}
+  buildManager: {fileID: 0}
 --- !u!1 &772307692
 GameObject:
   m_ObjectHideFlags: 0
@@ -8827,16 +8838,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boxRend: {fileID: 0}
-  buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
   basicTower: {fileID: 0}
   frostTower: {fileID: 0}
   rapidTower: {fileID: 0}
   builtTower: {fileID: 0}
-  gameManagerRef: {fileID: 0}
-  timer: 0
-  selection: 0
+  gameManager: {fileID: 0}
+  buildManager: {fileID: 0}
 --- !u!1 &785145279
 GameObject:
   m_ObjectHideFlags: 0
@@ -8946,16 +8955,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boxRend: {fileID: 0}
-  buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
   basicTower: {fileID: 0}
   frostTower: {fileID: 0}
   rapidTower: {fileID: 0}
   builtTower: {fileID: 0}
-  gameManagerRef: {fileID: 0}
-  timer: 0
-  selection: 0
+  gameManager: {fileID: 0}
+  buildManager: {fileID: 0}
 --- !u!1 &798562611
 GameObject:
   m_ObjectHideFlags: 0
@@ -9065,16 +9072,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boxRend: {fileID: 0}
-  buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
   basicTower: {fileID: 0}
   frostTower: {fileID: 0}
   rapidTower: {fileID: 0}
   builtTower: {fileID: 0}
-  gameManagerRef: {fileID: 0}
-  timer: 0
-  selection: 0
+  gameManager: {fileID: 0}
+  buildManager: {fileID: 0}
 --- !u!1 &806273626
 GameObject:
   m_ObjectHideFlags: 0
@@ -9184,16 +9189,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boxRend: {fileID: 0}
-  buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
   basicTower: {fileID: 0}
   frostTower: {fileID: 0}
   rapidTower: {fileID: 0}
   builtTower: {fileID: 0}
-  gameManagerRef: {fileID: 0}
-  timer: 0
-  selection: 0
+  gameManager: {fileID: 0}
+  buildManager: {fileID: 0}
 --- !u!1 &811702145
 GameObject:
   m_ObjectHideFlags: 0
@@ -9303,16 +9306,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boxRend: {fileID: 0}
-  buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
   basicTower: {fileID: 0}
   frostTower: {fileID: 0}
   rapidTower: {fileID: 0}
   builtTower: {fileID: 0}
-  gameManagerRef: {fileID: 0}
-  timer: 0
-  selection: 0
+  gameManager: {fileID: 0}
+  buildManager: {fileID: 0}
 --- !u!1 &818392524
 GameObject:
   m_ObjectHideFlags: 0
@@ -9422,16 +9423,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boxRend: {fileID: 0}
-  buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
   basicTower: {fileID: 0}
   frostTower: {fileID: 0}
   rapidTower: {fileID: 0}
   builtTower: {fileID: 0}
-  gameManagerRef: {fileID: 0}
-  timer: 0
-  selection: 0
+  gameManager: {fileID: 0}
+  buildManager: {fileID: 0}
 --- !u!1 &828098051
 GameObject:
   m_ObjectHideFlags: 0
@@ -9541,16 +9540,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boxRend: {fileID: 0}
-  buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
   basicTower: {fileID: 0}
   frostTower: {fileID: 0}
   rapidTower: {fileID: 0}
   builtTower: {fileID: 0}
-  gameManagerRef: {fileID: 0}
-  timer: 0
-  selection: 0
+  gameManager: {fileID: 0}
+  buildManager: {fileID: 0}
 --- !u!1 &857268691
 GameObject:
   m_ObjectHideFlags: 0
@@ -9660,16 +9657,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boxRend: {fileID: 0}
-  buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
   basicTower: {fileID: 0}
   frostTower: {fileID: 0}
   rapidTower: {fileID: 0}
   builtTower: {fileID: 0}
-  gameManagerRef: {fileID: 0}
-  timer: 0
-  selection: 0
+  gameManager: {fileID: 0}
+  buildManager: {fileID: 0}
 --- !u!1 &877641674
 GameObject:
   m_ObjectHideFlags: 0
@@ -9779,16 +9774,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boxRend: {fileID: 0}
-  buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
   basicTower: {fileID: 0}
   frostTower: {fileID: 0}
   rapidTower: {fileID: 0}
   builtTower: {fileID: 0}
-  gameManagerRef: {fileID: 0}
-  timer: 0
-  selection: 0
+  gameManager: {fileID: 0}
+  buildManager: {fileID: 0}
 --- !u!1 &891814161
 GameObject:
   m_ObjectHideFlags: 0
@@ -9898,16 +9891,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boxRend: {fileID: 0}
-  buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
   basicTower: {fileID: 0}
   frostTower: {fileID: 0}
   rapidTower: {fileID: 0}
   builtTower: {fileID: 0}
-  gameManagerRef: {fileID: 0}
-  timer: 0
-  selection: 0
+  gameManager: {fileID: 0}
+  buildManager: {fileID: 0}
 --- !u!1001 &900125670
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9971,6 +9962,455 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 900125670}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &903356699
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 903356700}
+  - component: {fileID: 903356702}
+  - component: {fileID: 903356701}
+  - component: {fileID: 903356703}
+  m_Layer: 0
+  m_Name: TowerMenu
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &903356700
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 903356699}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 652488603}
+  - {fileID: 1176693091}
+  - {fileID: 1997841575}
+  - {fileID: 2011180957}
+  m_Father: {fileID: 1513939094}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -357, y: -334}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &903356701
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 903356699}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color:
+    r: 1
+    g: 1
+    b: 1
+    a: 1
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  <useLegacyMeshGeneration>k__BackingField: 1
+  m_Maskable: 1
+  m_IsMaskingGraphic: 0
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_CallsDirty: 1
+  m_text: 
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 0}
+  m_currentFontAsset: {fileID: 0}
+  m_isSDFShader: 0
+  m_sharedMaterial: {fileID: 0}
+  m_currentMaterial: {fileID: 0}
+  m_currentMaterialIndex: 0
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_isMaterialDirty: 0
+  m_fontColor32:
+    rgba: 4294967295
+  m_fontColor:
+    r: 1
+    g: 1
+    b: 1
+    a: 1
+  m_underlineColor:
+    rgba: 4294967295
+  m_strikethroughColor:
+    rgba: 4294967295
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft:
+      r: 1
+      g: 1
+      b: 1
+      a: 1
+    topRight:
+      r: 1
+      g: 1
+      b: 1
+      a: 1
+    bottomLeft:
+      r: 1
+      g: 1
+      b: 1
+      a: 1
+    bottomRight:
+      r: 1
+      g: 1
+      b: 1
+      a: 1
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_tintSprite: 0
+  m_spriteColor:
+    rgba: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyle:
+    m_Name: 
+    m_HashCode: 0
+    m_OpeningDefinition: 
+    m_ClosingDefinition: 
+    m_OpeningTagArray: 
+    m_ClosingTagArray: 
+  m_TextStyleHashCode: 0
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    rgba: 4294967295
+  m_outlineColor:
+    rgba: 4278190080
+  m_outlineWidth: 0
+  m_fontSize: 36
+  m_currentFontSize: 0
+  m_fontSizeBase: 36
+  m_fontWeight: 400
+  m_FontWeightInternal: 400
+  m_enableAutoSizing: 0
+  m_maxFontSize: 0
+  m_minFontSize: 0
+  m_AutoSizeIterationCount: 0
+  m_AutoSizeMaxIterationCount: 100
+  m_IsAutoSizePointSizeSet: 0
+  m_fontSizeMin: 0
+  m_fontSizeMax: 0
+  m_fontStyle: 0
+  m_FontStyleInternal: 0
+  m_isUsingBold: 0
+  m_HorizontalAlignment: 1
+  m_VerticalAlignment: 256
+  m_textAlignment: 65535
+  m_lineJustification: 0
+  m_textContainerLocalCorners:
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  m_characterSpacing: 0
+  m_cSpacing: 0
+  m_monoSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingDelta: 0
+  m_lineHeight: -32767
+  m_IsDrivenLineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_charWidthAdjDelta: 0
+  m_enableWordWrapping: 0
+  m_isCharacterWrappingEnabled: 0
+  m_isNonBreakingSpace: 0
+  m_isIgnoringAlignment: 0
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_firstOverflowCharacterIndex: -1
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_isTextTruncated: 0
+  m_enableKerning: 0
+  m_GlyphHorizontalAdvanceAdjustment: 0
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOverlay: 0
+  m_isOrthographic: 0
+  m_isCullingEnabled: 0
+  m_isMaskingEnabled: 0
+  isMaskUpdateRequired: 0
+  m_ignoreCulling: 1
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_renderMode: 255
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 1
+  m_firstVisibleCharacter: 0
+  m_maxVisibleCharacters: 99999
+  m_maxVisibleWords: 99999
+  m_maxVisibleLines: 99999
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_isNewPage: 0
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_marginLeft: 0
+  m_marginRight: 0
+  m_marginWidth: 100
+  m_marginHeight: 100
+  m_width: -1
+  m_textInfo: {textComponent: {fileID: 0}, characterCount: 0, spriteCount: 0, spaceCount: 0,
+    wordCount: 0, linkCount: 0, lineCount: 0, pageCount: 0, materialCount: 0}
+  m_havePropertiesChanged: 0
+  m_isUsingLegacyAnimationComponent: 0
+  m_transform: {fileID: 0}
+  m_rectTransform: {fileID: 903356700}
+  m_PreviousRectTransformSize: {x: 100, y: 100}
+  m_PreviousPivotPosition: {x: 0.5, y: 0.5}
+  <autoSizeTextContainer>k__BackingField: 0
+  m_autoSizeTextContainer: 0
+  m_mesh: {fileID: 0}
+  m_isVolumetricText: 0
+  m_spriteAnimator: {fileID: 0}
+  m_flexibleHeight: -1
+  m_flexibleWidth: -1
+  m_minWidth: 0
+  m_minHeight: 0
+  m_maxWidth: 0
+  m_maxHeight: 0
+  m_LayoutElement: {fileID: 0}
+  m_preferredWidth: 0
+  m_renderedWidth: 0
+  m_isPreferredWidthDirty: 1
+  m_preferredHeight: 0
+  m_renderedHeight: 0
+  m_isPreferredHeightDirty: 1
+  m_isCalculatingPreferredValues: 0
+  m_layoutPriority: 0
+  m_isLayoutDirty: 0
+  m_isAwake: 0
+  m_isWaitingOnResourceLoad: 1
+  m_isInputParsingRequired: 0
+  m_inputSource: 0
+  m_fontScale: 0
+  m_fontScaleMultiplier: 0
+  m_htmlTag: []
+  m_attributeParameterValues:
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  tag_LineIndent: 0
+  tag_Indent: 0
+  tag_NoParsing: 0
+  m_isParsingText: 0
+  m_FXMatrix:
+    e00: 0
+    e01: 0
+    e02: 0
+    e03: 0
+    e10: 0
+    e11: 0
+    e12: 0
+    e13: 0
+    e20: 0
+    e21: 0
+    e22: 0
+    e23: 0
+    e30: 0
+    e31: 0
+    e32: 0
+    e33: 0
+  m_isFXMatrixSet: 0
+  m_InternalParsingBufferSize: 0
+  m_input_CharArray: []
+  m_charArray_Length: 0
+  m_totalCharacterCount: 0
+  m_characterCount: 0
+  m_firstCharacterOfLine: 0
+  m_firstVisibleCharacterOfLine: 0
+  m_lastCharacterOfLine: 0
+  m_lastVisibleCharacterOfLine: 0
+  m_lineNumber: 0
+  m_lineVisibleCharacterCount: 0
+  m_pageNumber: 0
+  m_PageAscender: 0
+  m_maxTextAscender: 0
+  m_maxCapHeight: 0
+  m_ElementAscender: 0
+  m_ElementDescender: 0
+  m_maxLineAscender: 0
+  m_maxLineDescender: 0
+  m_startOfLineAscender: 0
+  m_startOfLineDescender: 0
+  m_lineOffset: 0
+  m_htmlColor:
+    rgba: 4294967295
+  m_colorGradientPreset: {fileID: 0}
+  m_colorGradientPresetIsTinted: 0
+  m_tabSpacing: 0
+  m_spacing: 0
+  m_TextStyleStackDepth: 0
+  m_ItalicAngle: 0
+  m_padding: 0
+  m_baselineOffset: 0
+  m_xAdvance: 0
+  m_textElementType: 0
+  m_cached_TextElement:
+    m_ElementType: 0
+    m_Unicode: 0
+    m_TextAsset: {fileID: 0}
+    m_Glyph:
+      m_Index: 0
+      m_Metrics:
+        m_Width: 0
+        m_Height: 0
+        m_HorizontalBearingX: 0
+        m_HorizontalBearingY: 0
+        m_HorizontalAdvance: 0
+      m_GlyphRect:
+        m_X: 0
+        m_Y: 0
+        m_Width: 0
+        m_Height: 0
+      m_Scale: 1
+      m_AtlasIndex: 0
+    m_GlyphIndex: 0
+    m_Scale: 0
+  m_defaultSpriteAsset: {fileID: 0}
+  m_currentSpriteAsset: {fileID: 0}
+  m_spriteCount: 0
+  m_spriteIndex: 0
+  m_spriteAnimationID: 0
+  m_ignoreActiveState: 0
+  m_hasFontAssetChanged: 0
+  m_subTextObjects:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  m_previousLossyScaleY: -1
+  m_RectTransformCorners:
+  - {x: -50, y: -50, z: 0}
+  - {x: -50, y: 50, z: 0}
+  - {x: 50, y: 50, z: 0}
+  - {x: 50, y: -50, z: 0}
+  m_canvasRenderer: {fileID: 0}
+  m_canvas: {fileID: 1513939093}
+  m_isFirstAllocation: 0
+  m_max_characters: 8
+  m_baseMaterial: {fileID: 0}
+  m_isScrollRegionSet: 0
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+  m_EnvMapMatrix:
+    e00: 0
+    e01: 0
+    e02: 0
+    e03: 0
+    e10: 0
+    e11: 0
+    e12: 0
+    e13: 0
+    e20: 0
+    e21: 0
+    e22: 0
+    e23: 0
+    e30: 0
+    e31: 0
+    e32: 0
+    e33: 0
+  m_isRebuildingLayout: 0
+  m_ClipRect:
+    x: 0
+    y: 0
+    width: 0
+    height: 0
+  m_ValidRect: 0
+--- !u!222 &903356702
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 903356699}
+  m_CullTransparentMesh: 0
+--- !u!114 &903356703
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 903356699}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 0}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &912390552
 GameObject:
   m_ObjectHideFlags: 0
@@ -10080,16 +10520,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boxRend: {fileID: 0}
-  buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
   basicTower: {fileID: 0}
   frostTower: {fileID: 0}
   rapidTower: {fileID: 0}
   builtTower: {fileID: 0}
-  gameManagerRef: {fileID: 0}
-  timer: 0
-  selection: 0
+  gameManager: {fileID: 0}
+  buildManager: {fileID: 0}
 --- !u!1 &920008546
 GameObject:
   m_ObjectHideFlags: 0
@@ -10199,16 +10637,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boxRend: {fileID: 0}
-  buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
   basicTower: {fileID: 0}
   frostTower: {fileID: 0}
   rapidTower: {fileID: 0}
   builtTower: {fileID: 0}
-  gameManagerRef: {fileID: 0}
-  timer: 0
-  selection: 0
+  gameManager: {fileID: 0}
+  buildManager: {fileID: 0}
 --- !u!1 &935299185
 GameObject:
   m_ObjectHideFlags: 0
@@ -10318,16 +10754,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boxRend: {fileID: 0}
-  buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
   basicTower: {fileID: 0}
   frostTower: {fileID: 0}
   rapidTower: {fileID: 0}
   builtTower: {fileID: 0}
-  gameManagerRef: {fileID: 0}
-  timer: 0
-  selection: 0
+  gameManager: {fileID: 0}
+  buildManager: {fileID: 0}
 --- !u!1 &935567401
 GameObject:
   m_ObjectHideFlags: 0
@@ -10437,16 +10871,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boxRend: {fileID: 0}
-  buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
   basicTower: {fileID: 0}
   frostTower: {fileID: 0}
   rapidTower: {fileID: 0}
   builtTower: {fileID: 0}
-  gameManagerRef: {fileID: 0}
-  timer: 0
-  selection: 0
+  gameManager: {fileID: 0}
+  buildManager: {fileID: 0}
 --- !u!1 &936000811
 GameObject:
   m_ObjectHideFlags: 0
@@ -10556,16 +10988,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boxRend: {fileID: 0}
-  buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
   basicTower: {fileID: 0}
   frostTower: {fileID: 0}
   rapidTower: {fileID: 0}
   builtTower: {fileID: 0}
-  gameManagerRef: {fileID: 0}
-  timer: 0
-  selection: 0
+  gameManager: {fileID: 0}
+  buildManager: {fileID: 0}
 --- !u!1 &936672549
 GameObject:
   m_ObjectHideFlags: 0
@@ -10675,16 +11105,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boxRend: {fileID: 0}
-  buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
   basicTower: {fileID: 0}
   frostTower: {fileID: 0}
   rapidTower: {fileID: 0}
   builtTower: {fileID: 0}
-  gameManagerRef: {fileID: 0}
-  timer: 0
-  selection: 0
+  gameManager: {fileID: 0}
+  buildManager: {fileID: 0}
 --- !u!1 &973484184
 GameObject:
   m_ObjectHideFlags: 0
@@ -10794,16 +11222,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boxRend: {fileID: 0}
-  buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
   basicTower: {fileID: 0}
   frostTower: {fileID: 0}
   rapidTower: {fileID: 0}
   builtTower: {fileID: 0}
-  gameManagerRef: {fileID: 0}
-  timer: 0
-  selection: 0
+  gameManager: {fileID: 0}
+  buildManager: {fileID: 0}
 --- !u!1001 &984974722
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10976,16 +11402,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boxRend: {fileID: 0}
-  buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
   basicTower: {fileID: 0}
   frostTower: {fileID: 0}
   rapidTower: {fileID: 0}
   builtTower: {fileID: 0}
-  gameManagerRef: {fileID: 0}
-  timer: 0
-  selection: 0
+  gameManager: {fileID: 0}
+  buildManager: {fileID: 0}
 --- !u!1 &1017324671
 GameObject:
   m_ObjectHideFlags: 0
@@ -11095,16 +11519,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boxRend: {fileID: 0}
-  buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
   basicTower: {fileID: 0}
   frostTower: {fileID: 0}
   rapidTower: {fileID: 0}
   builtTower: {fileID: 0}
-  gameManagerRef: {fileID: 0}
-  timer: 0
-  selection: 0
+  gameManager: {fileID: 0}
+  buildManager: {fileID: 0}
 --- !u!1 &1022089444
 GameObject:
   m_ObjectHideFlags: 0
@@ -11214,16 +11636,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boxRend: {fileID: 0}
-  buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
   basicTower: {fileID: 0}
   frostTower: {fileID: 0}
   rapidTower: {fileID: 0}
   builtTower: {fileID: 0}
-  gameManagerRef: {fileID: 0}
-  timer: 0
-  selection: 0
+  gameManager: {fileID: 0}
+  buildManager: {fileID: 0}
 --- !u!1 &1028096241
 GameObject:
   m_ObjectHideFlags: 0
@@ -11333,16 +11753,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boxRend: {fileID: 0}
-  buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
   basicTower: {fileID: 0}
   frostTower: {fileID: 0}
   rapidTower: {fileID: 0}
   builtTower: {fileID: 0}
-  gameManagerRef: {fileID: 0}
-  timer: 0
-  selection: 0
+  gameManager: {fileID: 0}
+  buildManager: {fileID: 0}
 --- !u!1 &1042766024
 GameObject:
   m_ObjectHideFlags: 0
@@ -11452,16 +11870,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boxRend: {fileID: 0}
-  buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
   basicTower: {fileID: 0}
   frostTower: {fileID: 0}
   rapidTower: {fileID: 0}
   builtTower: {fileID: 0}
-  gameManagerRef: {fileID: 0}
-  timer: 0
-  selection: 0
+  gameManager: {fileID: 0}
+  buildManager: {fileID: 0}
 --- !u!1 &1052771352
 GameObject:
   m_ObjectHideFlags: 0
@@ -11571,16 +11987,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boxRend: {fileID: 0}
-  buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
   basicTower: {fileID: 0}
   frostTower: {fileID: 0}
   rapidTower: {fileID: 0}
   builtTower: {fileID: 0}
-  gameManagerRef: {fileID: 0}
-  timer: 0
-  selection: 0
+  gameManager: {fileID: 0}
+  buildManager: {fileID: 0}
 --- !u!1 &1054059685
 GameObject:
   m_ObjectHideFlags: 0
@@ -11690,16 +12104,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boxRend: {fileID: 0}
-  buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
   basicTower: {fileID: 0}
   frostTower: {fileID: 0}
   rapidTower: {fileID: 0}
   builtTower: {fileID: 0}
-  gameManagerRef: {fileID: 0}
-  timer: 0
-  selection: 0
+  gameManager: {fileID: 0}
+  buildManager: {fileID: 0}
 --- !u!1 &1056900912
 GameObject:
   m_ObjectHideFlags: 0
@@ -11809,16 +12221,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boxRend: {fileID: 0}
-  buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
   basicTower: {fileID: 0}
   frostTower: {fileID: 0}
   rapidTower: {fileID: 0}
   builtTower: {fileID: 0}
-  gameManagerRef: {fileID: 0}
-  timer: 0
-  selection: 0
+  gameManager: {fileID: 0}
+  buildManager: {fileID: 0}
 --- !u!1 &1058081037
 GameObject:
   m_ObjectHideFlags: 0
@@ -11928,16 +12338,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boxRend: {fileID: 0}
-  buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
   basicTower: {fileID: 0}
   frostTower: {fileID: 0}
   rapidTower: {fileID: 0}
   builtTower: {fileID: 0}
-  gameManagerRef: {fileID: 0}
-  timer: 0
-  selection: 0
+  gameManager: {fileID: 0}
+  buildManager: {fileID: 0}
 --- !u!1 &1068799382
 GameObject:
   m_ObjectHideFlags: 0
@@ -12047,16 +12455,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boxRend: {fileID: 0}
-  buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
   basicTower: {fileID: 0}
   frostTower: {fileID: 0}
   rapidTower: {fileID: 0}
   builtTower: {fileID: 0}
-  gameManagerRef: {fileID: 0}
-  timer: 0
-  selection: 0
+  gameManager: {fileID: 0}
+  buildManager: {fileID: 0}
 --- !u!1 &1074632544
 GameObject:
   m_ObjectHideFlags: 0
@@ -12166,16 +12572,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boxRend: {fileID: 0}
-  buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
   basicTower: {fileID: 0}
   frostTower: {fileID: 0}
   rapidTower: {fileID: 0}
   builtTower: {fileID: 0}
-  gameManagerRef: {fileID: 0}
-  timer: 0
-  selection: 0
+  gameManager: {fileID: 0}
+  buildManager: {fileID: 0}
 --- !u!1 &1077339679
 GameObject:
   m_ObjectHideFlags: 0
@@ -12285,16 +12689,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boxRend: {fileID: 0}
-  buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
   basicTower: {fileID: 0}
   frostTower: {fileID: 0}
   rapidTower: {fileID: 0}
   builtTower: {fileID: 0}
-  gameManagerRef: {fileID: 0}
-  timer: 0
-  selection: 0
+  gameManager: {fileID: 0}
+  buildManager: {fileID: 0}
 --- !u!1 &1082000590
 GameObject:
   m_ObjectHideFlags: 0
@@ -12404,16 +12806,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boxRend: {fileID: 0}
-  buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
   basicTower: {fileID: 0}
   frostTower: {fileID: 0}
   rapidTower: {fileID: 0}
   builtTower: {fileID: 0}
-  gameManagerRef: {fileID: 0}
-  timer: 0
-  selection: 0
+  gameManager: {fileID: 0}
+  buildManager: {fileID: 0}
 --- !u!1001 &1093825720
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12604,16 +13004,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boxRend: {fileID: 0}
-  buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
   basicTower: {fileID: 0}
   frostTower: {fileID: 0}
   rapidTower: {fileID: 0}
   builtTower: {fileID: 0}
-  gameManagerRef: {fileID: 0}
-  timer: 0
-  selection: 0
+  gameManager: {fileID: 0}
+  buildManager: {fileID: 0}
 --- !u!1 &1111214476
 GameObject:
   m_ObjectHideFlags: 0
@@ -12723,16 +13121,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boxRend: {fileID: 0}
-  buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
   basicTower: {fileID: 0}
   frostTower: {fileID: 0}
   rapidTower: {fileID: 0}
   builtTower: {fileID: 0}
-  gameManagerRef: {fileID: 0}
-  timer: 0
-  selection: 0
+  gameManager: {fileID: 0}
+  buildManager: {fileID: 0}
 --- !u!1 &1113712688
 GameObject:
   m_ObjectHideFlags: 0
@@ -12842,16 +13238,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boxRend: {fileID: 0}
-  buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
   basicTower: {fileID: 0}
   frostTower: {fileID: 0}
   rapidTower: {fileID: 0}
   builtTower: {fileID: 0}
-  gameManagerRef: {fileID: 0}
-  timer: 0
-  selection: 0
+  gameManager: {fileID: 0}
+  buildManager: {fileID: 0}
 --- !u!1 &1135665576
 GameObject:
   m_ObjectHideFlags: 0
@@ -13042,16 +13436,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boxRend: {fileID: 0}
-  buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
   basicTower: {fileID: 0}
   frostTower: {fileID: 0}
   rapidTower: {fileID: 0}
   builtTower: {fileID: 0}
-  gameManagerRef: {fileID: 0}
-  timer: 0
-  selection: 0
+  gameManager: {fileID: 0}
+  buildManager: {fileID: 0}
 --- !u!1 &1139071577
 GameObject:
   m_ObjectHideFlags: 0
@@ -13161,16 +13553,134 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boxRend: {fileID: 0}
-  buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
   basicTower: {fileID: 0}
   frostTower: {fileID: 0}
   rapidTower: {fileID: 0}
   builtTower: {fileID: 0}
-  gameManagerRef: {fileID: 0}
-  timer: 0
-  selection: 0
+  gameManager: {fileID: 0}
+  buildManager: {fileID: 0}
+--- !u!1 &1144636288
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1144636289}
+  - component: {fileID: 1144636292}
+  - component: {fileID: 1144636291}
+  - component: {fileID: 1144636290}
+  m_Layer: 5
+  m_Name: BuildMenuButton
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1144636289
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1144636288}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 395320497}
+  m_Father: {fileID: 1513939094}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: -255}
+  m_SizeDelta: {x: 160, y: 30}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1144636290
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1144636288}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 1144636291}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &1144636291
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1144636288}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1144636292
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1144636288}
+  m_CullTransparentMesh: 0
 --- !u!1 &1145542794
 GameObject:
   m_ObjectHideFlags: 0
@@ -13280,16 +13790,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boxRend: {fileID: 0}
-  buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
   basicTower: {fileID: 0}
   frostTower: {fileID: 0}
   rapidTower: {fileID: 0}
   builtTower: {fileID: 0}
-  gameManagerRef: {fileID: 0}
-  timer: 0
-  selection: 0
+  gameManager: {fileID: 0}
+  buildManager: {fileID: 0}
 --- !u!1 &1153251775
 GameObject:
   m_ObjectHideFlags: 0
@@ -13399,16 +13907,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boxRend: {fileID: 0}
-  buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
   basicTower: {fileID: 0}
   frostTower: {fileID: 0}
   rapidTower: {fileID: 0}
   builtTower: {fileID: 0}
-  gameManagerRef: {fileID: 0}
-  timer: 0
-  selection: 0
+  gameManager: {fileID: 0}
+  buildManager: {fileID: 0}
 --- !u!1 &1166319110
 GameObject:
   m_ObjectHideFlags: 0
@@ -13599,16 +14105,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boxRend: {fileID: 0}
-  buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
   basicTower: {fileID: 0}
   frostTower: {fileID: 0}
   rapidTower: {fileID: 0}
   builtTower: {fileID: 0}
-  gameManagerRef: {fileID: 0}
-  timer: 0
-  selection: 0
+  gameManager: {fileID: 0}
+  buildManager: {fileID: 0}
 --- !u!1 &1171830314
 GameObject:
   m_ObjectHideFlags: 0
@@ -13718,16 +14222,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boxRend: {fileID: 0}
-  buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
   basicTower: {fileID: 0}
   frostTower: {fileID: 0}
   rapidTower: {fileID: 0}
   builtTower: {fileID: 0}
-  gameManagerRef: {fileID: 0}
-  timer: 0
-  selection: 0
+  gameManager: {fileID: 0}
+  buildManager: {fileID: 0}
 --- !u!1 &1172970457
 GameObject:
   m_ObjectHideFlags: 0
@@ -13837,16 +14339,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boxRend: {fileID: 0}
-  buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
   basicTower: {fileID: 0}
   frostTower: {fileID: 0}
   rapidTower: {fileID: 0}
   builtTower: {fileID: 0}
-  gameManagerRef: {fileID: 0}
-  timer: 0
-  selection: 0
+  gameManager: {fileID: 0}
+  buildManager: {fileID: 0}
 --- !u!1 &1176693090
 GameObject:
   m_ObjectHideFlags: 0
@@ -13873,17 +14373,17 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1176693090}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1660368380}
-  m_Father: {fileID: 1513939094}
-  m_RootOrder: 0
+  m_Father: {fileID: 903356700}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 220, y: -255}
+  m_AnchoredPosition: {x: 577, y: 79}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1176693092
@@ -14076,16 +14576,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boxRend: {fileID: 0}
-  buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
   basicTower: {fileID: 0}
   frostTower: {fileID: 0}
   rapidTower: {fileID: 0}
   builtTower: {fileID: 0}
-  gameManagerRef: {fileID: 0}
-  timer: 0
-  selection: 0
+  gameManager: {fileID: 0}
+  buildManager: {fileID: 0}
 --- !u!1 &1186985131
 GameObject:
   m_ObjectHideFlags: 0
@@ -14195,16 +14693,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boxRend: {fileID: 0}
-  buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
   basicTower: {fileID: 0}
   frostTower: {fileID: 0}
   rapidTower: {fileID: 0}
   builtTower: {fileID: 0}
-  gameManagerRef: {fileID: 0}
-  timer: 0
-  selection: 0
+  gameManager: {fileID: 0}
+  buildManager: {fileID: 0}
 --- !u!1 &1187342309
 GameObject:
   m_ObjectHideFlags: 0
@@ -14314,16 +14810,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boxRend: {fileID: 0}
-  buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
   basicTower: {fileID: 0}
   frostTower: {fileID: 0}
   rapidTower: {fileID: 0}
   builtTower: {fileID: 0}
-  gameManagerRef: {fileID: 0}
-  timer: 0
-  selection: 0
+  gameManager: {fileID: 0}
+  buildManager: {fileID: 0}
 --- !u!1 &1208289311
 GameObject:
   m_ObjectHideFlags: 0
@@ -14433,16 +14927,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boxRend: {fileID: 0}
-  buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
   basicTower: {fileID: 0}
   frostTower: {fileID: 0}
   rapidTower: {fileID: 0}
   builtTower: {fileID: 0}
-  gameManagerRef: {fileID: 0}
-  timer: 0
-  selection: 0
+  gameManager: {fileID: 0}
+  buildManager: {fileID: 0}
 --- !u!1 &1219126433
 GameObject:
   m_ObjectHideFlags: 0
@@ -14552,16 +15044,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boxRend: {fileID: 0}
-  buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
   basicTower: {fileID: 0}
   frostTower: {fileID: 0}
   rapidTower: {fileID: 0}
   builtTower: {fileID: 0}
-  gameManagerRef: {fileID: 0}
-  timer: 0
-  selection: 0
+  gameManager: {fileID: 0}
+  buildManager: {fileID: 0}
 --- !u!1 &1220825205
 GameObject:
   m_ObjectHideFlags: 0
@@ -14671,16 +15161,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boxRend: {fileID: 0}
-  buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
   basicTower: {fileID: 0}
   frostTower: {fileID: 0}
   rapidTower: {fileID: 0}
   builtTower: {fileID: 0}
-  gameManagerRef: {fileID: 0}
-  timer: 0
-  selection: 0
+  gameManager: {fileID: 0}
+  buildManager: {fileID: 0}
 --- !u!1 &1228830811
 GameObject:
   m_ObjectHideFlags: 0
@@ -14790,16 +15278,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boxRend: {fileID: 0}
-  buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
   basicTower: {fileID: 0}
   frostTower: {fileID: 0}
   rapidTower: {fileID: 0}
   builtTower: {fileID: 0}
-  gameManagerRef: {fileID: 0}
-  timer: 0
-  selection: 0
+  gameManager: {fileID: 0}
+  buildManager: {fileID: 0}
 --- !u!1 &1246111810
 GameObject:
   m_ObjectHideFlags: 0
@@ -14909,16 +15395,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boxRend: {fileID: 0}
-  buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
   basicTower: {fileID: 0}
   frostTower: {fileID: 0}
   rapidTower: {fileID: 0}
   builtTower: {fileID: 0}
-  gameManagerRef: {fileID: 0}
-  timer: 0
-  selection: 0
+  gameManager: {fileID: 0}
+  buildManager: {fileID: 0}
 --- !u!1 &1256634593
 GameObject:
   m_ObjectHideFlags: 0
@@ -15028,16 +15512,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boxRend: {fileID: 0}
-  buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
   basicTower: {fileID: 0}
   frostTower: {fileID: 0}
   rapidTower: {fileID: 0}
   builtTower: {fileID: 0}
-  gameManagerRef: {fileID: 0}
-  timer: 0
-  selection: 0
+  gameManager: {fileID: 0}
+  buildManager: {fileID: 0}
 --- !u!1 &1259705278
 GameObject:
   m_ObjectHideFlags: 0
@@ -15147,16 +15629,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boxRend: {fileID: 0}
-  buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
   basicTower: {fileID: 0}
   frostTower: {fileID: 0}
   rapidTower: {fileID: 0}
   builtTower: {fileID: 0}
-  gameManagerRef: {fileID: 0}
-  timer: 0
-  selection: 0
+  gameManager: {fileID: 0}
+  buildManager: {fileID: 0}
 --- !u!1 &1265760289
 GameObject:
   m_ObjectHideFlags: 0
@@ -15266,16 +15746,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boxRend: {fileID: 0}
-  buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
   basicTower: {fileID: 0}
   frostTower: {fileID: 0}
   rapidTower: {fileID: 0}
   builtTower: {fileID: 0}
-  gameManagerRef: {fileID: 0}
-  timer: 0
-  selection: 0
+  gameManager: {fileID: 0}
+  buildManager: {fileID: 0}
 --- !u!1 &1277115160
 GameObject:
   m_ObjectHideFlags: 0
@@ -15385,16 +15863,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boxRend: {fileID: 0}
-  buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
   basicTower: {fileID: 0}
   frostTower: {fileID: 0}
   rapidTower: {fileID: 0}
   builtTower: {fileID: 0}
-  gameManagerRef: {fileID: 0}
-  timer: 0
-  selection: 0
+  gameManager: {fileID: 0}
+  buildManager: {fileID: 0}
 --- !u!1001 &1295482407
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15576,16 +16052,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boxRend: {fileID: 0}
-  buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
   basicTower: {fileID: 0}
   frostTower: {fileID: 0}
   rapidTower: {fileID: 0}
   builtTower: {fileID: 0}
-  gameManagerRef: {fileID: 0}
-  timer: 0
-  selection: 0
+  gameManager: {fileID: 0}
+  buildManager: {fileID: 0}
 --- !u!1 &1303259983
 GameObject:
   m_ObjectHideFlags: 0
@@ -15695,16 +16169,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boxRend: {fileID: 0}
-  buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
   basicTower: {fileID: 0}
   frostTower: {fileID: 0}
   rapidTower: {fileID: 0}
   builtTower: {fileID: 0}
-  gameManagerRef: {fileID: 0}
-  timer: 0
-  selection: 0
+  gameManager: {fileID: 0}
+  buildManager: {fileID: 0}
 --- !u!1 &1308226451
 GameObject:
   m_ObjectHideFlags: 0
@@ -15814,16 +16286,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boxRend: {fileID: 0}
-  buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
   basicTower: {fileID: 0}
   frostTower: {fileID: 0}
   rapidTower: {fileID: 0}
   builtTower: {fileID: 0}
-  gameManagerRef: {fileID: 0}
-  timer: 0
-  selection: 0
+  gameManager: {fileID: 0}
+  buildManager: {fileID: 0}
 --- !u!1 &1330941672
 GameObject:
   m_ObjectHideFlags: 0
@@ -15933,16 +16403,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boxRend: {fileID: 0}
-  buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
   basicTower: {fileID: 0}
   frostTower: {fileID: 0}
   rapidTower: {fileID: 0}
   builtTower: {fileID: 0}
-  gameManagerRef: {fileID: 0}
-  timer: 0
-  selection: 0
+  gameManager: {fileID: 0}
+  buildManager: {fileID: 0}
 --- !u!1 &1357184759
 GameObject:
   m_ObjectHideFlags: 0
@@ -16052,16 +16520,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boxRend: {fileID: 0}
-  buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
   basicTower: {fileID: 0}
   frostTower: {fileID: 0}
   rapidTower: {fileID: 0}
   builtTower: {fileID: 0}
-  gameManagerRef: {fileID: 0}
-  timer: 0
-  selection: 0
+  gameManager: {fileID: 0}
+  buildManager: {fileID: 0}
 --- !u!1 &1358638917
 GameObject:
   m_ObjectHideFlags: 0
@@ -16171,16 +16637,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boxRend: {fileID: 0}
-  buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
   basicTower: {fileID: 0}
   frostTower: {fileID: 0}
   rapidTower: {fileID: 0}
   builtTower: {fileID: 0}
-  gameManagerRef: {fileID: 0}
-  timer: 0
-  selection: 0
+  gameManager: {fileID: 0}
+  buildManager: {fileID: 0}
 --- !u!1 &1359167199
 GameObject:
   m_ObjectHideFlags: 0
@@ -16290,16 +16754,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boxRend: {fileID: 0}
-  buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
   basicTower: {fileID: 0}
   frostTower: {fileID: 0}
   rapidTower: {fileID: 0}
   builtTower: {fileID: 0}
-  gameManagerRef: {fileID: 0}
-  timer: 0
-  selection: 0
+  gameManager: {fileID: 0}
+  buildManager: {fileID: 0}
 --- !u!1 &1363048918
 GameObject:
   m_ObjectHideFlags: 0
@@ -16409,16 +16871,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boxRend: {fileID: 0}
-  buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
   basicTower: {fileID: 0}
   frostTower: {fileID: 0}
   rapidTower: {fileID: 0}
   builtTower: {fileID: 0}
-  gameManagerRef: {fileID: 0}
-  timer: 0
-  selection: 0
+  gameManager: {fileID: 0}
+  buildManager: {fileID: 0}
 --- !u!1 &1365665544
 GameObject:
   m_ObjectHideFlags: 0
@@ -16528,16 +16988,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boxRend: {fileID: 0}
-  buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
   basicTower: {fileID: 0}
   frostTower: {fileID: 0}
   rapidTower: {fileID: 0}
   builtTower: {fileID: 0}
-  gameManagerRef: {fileID: 0}
-  timer: 0
-  selection: 0
+  gameManager: {fileID: 0}
+  buildManager: {fileID: 0}
 --- !u!1 &1376124742
 GameObject:
   m_ObjectHideFlags: 0
@@ -16647,16 +17105,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boxRend: {fileID: 0}
-  buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
   basicTower: {fileID: 0}
   frostTower: {fileID: 0}
   rapidTower: {fileID: 0}
   builtTower: {fileID: 0}
-  gameManagerRef: {fileID: 0}
-  timer: 0
-  selection: 0
+  gameManager: {fileID: 0}
+  buildManager: {fileID: 0}
 --- !u!1 &1377189589
 GameObject:
   m_ObjectHideFlags: 0
@@ -16766,16 +17222,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boxRend: {fileID: 0}
-  buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
   basicTower: {fileID: 0}
   frostTower: {fileID: 0}
   rapidTower: {fileID: 0}
   builtTower: {fileID: 0}
-  gameManagerRef: {fileID: 0}
-  timer: 0
-  selection: 0
+  gameManager: {fileID: 0}
+  buildManager: {fileID: 0}
 --- !u!1 &1379811174
 GameObject:
   m_ObjectHideFlags: 0
@@ -16826,7 +17280,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_Color: {r: 1, g: 0, b: 0, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -16836,7 +17290,7 @@ MonoBehaviour:
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
     m_FontSize: 14
-    m_FontStyle: 0
+    m_FontStyle: 1
     m_BestFit: 0
     m_MinSize: 10
     m_MaxSize: 40
@@ -16846,7 +17300,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Rapid Tower (R) \t- 3"
+  m_Text: "Rapid Tower (R) \t| 3"
 --- !u!222 &1379811177
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -16964,16 +17418,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boxRend: {fileID: 0}
-  buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
   basicTower: {fileID: 0}
   frostTower: {fileID: 0}
   rapidTower: {fileID: 0}
   builtTower: {fileID: 0}
-  gameManagerRef: {fileID: 0}
-  timer: 0
-  selection: 0
+  gameManager: {fileID: 0}
+  buildManager: {fileID: 0}
 --- !u!1 &1410049953
 GameObject:
   m_ObjectHideFlags: 0
@@ -17083,16 +17535,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boxRend: {fileID: 0}
-  buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
   basicTower: {fileID: 0}
   frostTower: {fileID: 0}
   rapidTower: {fileID: 0}
   builtTower: {fileID: 0}
-  gameManagerRef: {fileID: 0}
-  timer: 0
-  selection: 0
+  gameManager: {fileID: 0}
+  buildManager: {fileID: 0}
 --- !u!1 &1419380443
 GameObject:
   m_ObjectHideFlags: 0
@@ -17202,16 +17652,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boxRend: {fileID: 0}
-  buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
   basicTower: {fileID: 0}
   frostTower: {fileID: 0}
   rapidTower: {fileID: 0}
   builtTower: {fileID: 0}
-  gameManagerRef: {fileID: 0}
-  timer: 0
-  selection: 0
+  gameManager: {fileID: 0}
+  buildManager: {fileID: 0}
 --- !u!1001 &1422867239
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17390,16 +17838,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boxRend: {fileID: 0}
-  buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
   basicTower: {fileID: 0}
   frostTower: {fileID: 0}
   rapidTower: {fileID: 0}
   builtTower: {fileID: 0}
-  gameManagerRef: {fileID: 0}
-  timer: 0
-  selection: 0
+  gameManager: {fileID: 0}
+  buildManager: {fileID: 0}
 --- !u!1 &1433386819
 GameObject:
   m_ObjectHideFlags: 0
@@ -17509,16 +17955,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boxRend: {fileID: 0}
-  buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
   basicTower: {fileID: 0}
   frostTower: {fileID: 0}
   rapidTower: {fileID: 0}
   builtTower: {fileID: 0}
-  gameManagerRef: {fileID: 0}
-  timer: 0
-  selection: 0
+  gameManager: {fileID: 0}
+  buildManager: {fileID: 0}
 --- !u!1 &1442218431
 GameObject:
   m_ObjectHideFlags: 0
@@ -17628,16 +18072,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boxRend: {fileID: 0}
-  buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
   basicTower: {fileID: 0}
   frostTower: {fileID: 0}
   rapidTower: {fileID: 0}
   builtTower: {fileID: 0}
-  gameManagerRef: {fileID: 0}
-  timer: 0
-  selection: 0
+  gameManager: {fileID: 0}
+  buildManager: {fileID: 0}
 --- !u!1 &1453422550
 GameObject:
   m_ObjectHideFlags: 0
@@ -17747,16 +18189,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boxRend: {fileID: 0}
-  buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
   basicTower: {fileID: 0}
   frostTower: {fileID: 0}
   rapidTower: {fileID: 0}
   builtTower: {fileID: 0}
-  gameManagerRef: {fileID: 0}
-  timer: 0
-  selection: 0
+  gameManager: {fileID: 0}
+  buildManager: {fileID: 0}
 --- !u!1 &1457515531
 GameObject:
   m_ObjectHideFlags: 0
@@ -17866,16 +18306,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boxRend: {fileID: 0}
-  buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
   basicTower: {fileID: 0}
   frostTower: {fileID: 0}
   rapidTower: {fileID: 0}
   builtTower: {fileID: 0}
-  gameManagerRef: {fileID: 0}
-  timer: 0
-  selection: 0
+  gameManager: {fileID: 0}
+  buildManager: {fileID: 0}
 --- !u!1 &1458822619
 GameObject:
   m_ObjectHideFlags: 0
@@ -17985,16 +18423,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boxRend: {fileID: 0}
-  buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
   basicTower: {fileID: 0}
   frostTower: {fileID: 0}
   rapidTower: {fileID: 0}
   builtTower: {fileID: 0}
-  gameManagerRef: {fileID: 0}
-  timer: 0
-  selection: 0
+  gameManager: {fileID: 0}
+  buildManager: {fileID: 0}
 --- !u!1 &1461979571
 GameObject:
   m_ObjectHideFlags: 0
@@ -18104,16 +18540,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boxRend: {fileID: 0}
-  buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
   basicTower: {fileID: 0}
   frostTower: {fileID: 0}
   rapidTower: {fileID: 0}
   builtTower: {fileID: 0}
-  gameManagerRef: {fileID: 0}
-  timer: 0
-  selection: 0
+  gameManager: {fileID: 0}
+  buildManager: {fileID: 0}
 --- !u!1 &1471918672
 GameObject:
   m_ObjectHideFlags: 0
@@ -18223,16 +18657,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boxRend: {fileID: 0}
-  buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
   basicTower: {fileID: 0}
   frostTower: {fileID: 0}
   rapidTower: {fileID: 0}
   builtTower: {fileID: 0}
-  gameManagerRef: {fileID: 0}
-  timer: 0
-  selection: 0
+  gameManager: {fileID: 0}
+  buildManager: {fileID: 0}
 --- !u!1 &1477048467
 GameObject:
   m_ObjectHideFlags: 0
@@ -18481,16 +18913,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boxRend: {fileID: 0}
-  buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
   basicTower: {fileID: 0}
   frostTower: {fileID: 0}
   rapidTower: {fileID: 0}
   builtTower: {fileID: 0}
-  gameManagerRef: {fileID: 0}
-  timer: 0
-  selection: 0
+  gameManager: {fileID: 0}
+  buildManager: {fileID: 0}
 --- !u!65 &1477048470
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -18613,16 +19043,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boxRend: {fileID: 0}
-  buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
   basicTower: {fileID: 0}
   frostTower: {fileID: 0}
   rapidTower: {fileID: 0}
   builtTower: {fileID: 0}
-  gameManagerRef: {fileID: 0}
-  timer: 0
-  selection: 0
+  gameManager: {fileID: 0}
+  buildManager: {fileID: 0}
 --- !u!1 &1480672117
 GameObject:
   m_ObjectHideFlags: 0
@@ -18732,16 +19160,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boxRend: {fileID: 0}
-  buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
   basicTower: {fileID: 0}
   frostTower: {fileID: 0}
   rapidTower: {fileID: 0}
   builtTower: {fileID: 0}
-  gameManagerRef: {fileID: 0}
-  timer: 0
-  selection: 0
+  gameManager: {fileID: 0}
+  buildManager: {fileID: 0}
 --- !u!1001 &1486427529
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -18976,9 +19402,8 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
-  - {fileID: 1176693091}
-  - {fileID: 1997841575}
-  - {fileID: 2011180957}
+  - {fileID: 1144636289}
+  - {fileID: 903356700}
   m_Father: {fileID: 0}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -19096,16 +19521,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boxRend: {fileID: 0}
-  buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
   basicTower: {fileID: 0}
   frostTower: {fileID: 0}
   rapidTower: {fileID: 0}
   builtTower: {fileID: 0}
-  gameManagerRef: {fileID: 0}
-  timer: 0
-  selection: 0
+  gameManager: {fileID: 0}
+  buildManager: {fileID: 0}
 --- !u!1 &1524691083
 GameObject:
   m_ObjectHideFlags: 0
@@ -19215,16 +19638,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boxRend: {fileID: 0}
-  buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
   basicTower: {fileID: 0}
   frostTower: {fileID: 0}
   rapidTower: {fileID: 0}
   builtTower: {fileID: 0}
-  gameManagerRef: {fileID: 0}
-  timer: 0
-  selection: 0
+  gameManager: {fileID: 0}
+  buildManager: {fileID: 0}
 --- !u!1 &1530773152
 GameObject:
   m_ObjectHideFlags: 0
@@ -19334,16 +19755,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boxRend: {fileID: 0}
-  buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
   basicTower: {fileID: 0}
   frostTower: {fileID: 0}
   rapidTower: {fileID: 0}
   builtTower: {fileID: 0}
-  gameManagerRef: {fileID: 0}
-  timer: 0
-  selection: 0
+  gameManager: {fileID: 0}
+  buildManager: {fileID: 0}
 --- !u!1 &1544929944
 GameObject:
   m_ObjectHideFlags: 0
@@ -19453,16 +19872,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boxRend: {fileID: 0}
-  buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
   basicTower: {fileID: 0}
   frostTower: {fileID: 0}
   rapidTower: {fileID: 0}
   builtTower: {fileID: 0}
-  gameManagerRef: {fileID: 0}
-  timer: 0
-  selection: 0
+  gameManager: {fileID: 0}
+  buildManager: {fileID: 0}
 --- !u!1 &1548374919
 GameObject:
   m_ObjectHideFlags: 0
@@ -19572,16 +19989,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boxRend: {fileID: 0}
-  buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
   basicTower: {fileID: 0}
   frostTower: {fileID: 0}
   rapidTower: {fileID: 0}
   builtTower: {fileID: 0}
-  gameManagerRef: {fileID: 0}
-  timer: 0
-  selection: 0
+  gameManager: {fileID: 0}
+  buildManager: {fileID: 0}
 --- !u!1 &1550026516
 GameObject:
   m_ObjectHideFlags: 0
@@ -19691,16 +20106,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boxRend: {fileID: 0}
-  buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
   basicTower: {fileID: 0}
   frostTower: {fileID: 0}
   rapidTower: {fileID: 0}
   builtTower: {fileID: 0}
-  gameManagerRef: {fileID: 0}
-  timer: 0
-  selection: 0
+  gameManager: {fileID: 0}
+  buildManager: {fileID: 0}
 --- !u!1 &1557519307
 GameObject:
   m_ObjectHideFlags: 0
@@ -19712,6 +20125,7 @@ GameObject:
   - component: {fileID: 1557519308}
   - component: {fileID: 1557519309}
   - component: {fileID: 1557519310}
+  - component: {fileID: 1557519311}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: GameManager
@@ -19762,10 +20176,29 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   restartButton: {fileID: 1594746669}
+  buildMenuButton: {fileID: 1144636290}
   buildMenu: {fileID: 0}
+  towerMenu: {fileID: 0}
   basicTowerButton: {fileID: 0}
   frostTowerButton: {fileID: 0}
   rapidTowerButton: {fileID: 0}
+--- !u!114 &1557519311
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1557519307}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 446a994ea7c1c2344b10416b07da62d5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timer: 0
+  buildSelection: 0
+  buildState: 0
+  gameManager: {fileID: 0}
+  ui: {fileID: 0}
 --- !u!1 &1579060851
 GameObject:
   m_ObjectHideFlags: 0
@@ -19875,16 +20308,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boxRend: {fileID: 0}
-  buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
   basicTower: {fileID: 0}
   frostTower: {fileID: 0}
   rapidTower: {fileID: 0}
   builtTower: {fileID: 0}
-  gameManagerRef: {fileID: 0}
-  timer: 0
-  selection: 0
+  gameManager: {fileID: 0}
+  buildManager: {fileID: 0}
 --- !u!1 &1583719983
 GameObject:
   m_ObjectHideFlags: 0
@@ -19994,16 +20425,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boxRend: {fileID: 0}
-  buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
   basicTower: {fileID: 0}
   frostTower: {fileID: 0}
   rapidTower: {fileID: 0}
   builtTower: {fileID: 0}
-  gameManagerRef: {fileID: 0}
-  timer: 0
-  selection: 0
+  gameManager: {fileID: 0}
+  buildManager: {fileID: 0}
 --- !u!1 &1594746667
 GameObject:
   m_ObjectHideFlags: 0
@@ -20233,16 +20662,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boxRend: {fileID: 0}
-  buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
   basicTower: {fileID: 0}
   frostTower: {fileID: 0}
   rapidTower: {fileID: 0}
   builtTower: {fileID: 0}
-  gameManagerRef: {fileID: 0}
-  timer: 0
-  selection: 0
+  gameManager: {fileID: 0}
+  buildManager: {fileID: 0}
 --- !u!1 &1603298867
 GameObject:
   m_ObjectHideFlags: 0
@@ -20352,16 +20779,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boxRend: {fileID: 0}
-  buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
   basicTower: {fileID: 0}
   frostTower: {fileID: 0}
   rapidTower: {fileID: 0}
   builtTower: {fileID: 0}
-  gameManagerRef: {fileID: 0}
-  timer: 0
-  selection: 0
+  gameManager: {fileID: 0}
+  buildManager: {fileID: 0}
 --- !u!1 &1606286060
 GameObject:
   m_ObjectHideFlags: 0
@@ -20471,16 +20896,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boxRend: {fileID: 0}
-  buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
   basicTower: {fileID: 0}
   frostTower: {fileID: 0}
   rapidTower: {fileID: 0}
   builtTower: {fileID: 0}
-  gameManagerRef: {fileID: 0}
-  timer: 0
-  selection: 0
+  gameManager: {fileID: 0}
+  buildManager: {fileID: 0}
 --- !u!1 &1606336712
 GameObject:
   m_ObjectHideFlags: 0
@@ -20590,16 +21013,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boxRend: {fileID: 0}
-  buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
   basicTower: {fileID: 0}
   frostTower: {fileID: 0}
   rapidTower: {fileID: 0}
   builtTower: {fileID: 0}
-  gameManagerRef: {fileID: 0}
-  timer: 0
-  selection: 0
+  gameManager: {fileID: 0}
+  buildManager: {fileID: 0}
 --- !u!1 &1609306855
 GameObject:
   m_ObjectHideFlags: 0
@@ -20709,16 +21130,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boxRend: {fileID: 0}
-  buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
   basicTower: {fileID: 0}
   frostTower: {fileID: 0}
   rapidTower: {fileID: 0}
   builtTower: {fileID: 0}
-  gameManagerRef: {fileID: 0}
-  timer: 0
-  selection: 0
+  gameManager: {fileID: 0}
+  buildManager: {fileID: 0}
 --- !u!1 &1611338135
 GameObject:
   m_ObjectHideFlags: 0
@@ -20769,7 +21188,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_Color: {r: 0, g: 0.015405907, b: 0.9056604, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -20779,7 +21198,7 @@ MonoBehaviour:
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
     m_FontSize: 14
-    m_FontStyle: 0
+    m_FontStyle: 1
     m_BestFit: 0
     m_MinSize: 10
     m_MaxSize: 40
@@ -20789,7 +21208,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Frost Tower (F) \t- 2"
+  m_Text: "Frost Tower (F) \t\t| 2"
 --- !u!222 &1611338138
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -20907,16 +21326,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boxRend: {fileID: 0}
-  buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
   basicTower: {fileID: 0}
   frostTower: {fileID: 0}
   rapidTower: {fileID: 0}
   builtTower: {fileID: 0}
-  gameManagerRef: {fileID: 0}
-  timer: 0
-  selection: 0
+  gameManager: {fileID: 0}
+  buildManager: {fileID: 0}
 --- !u!1 &1622795138
 GameObject:
   m_ObjectHideFlags: 0
@@ -21170,16 +21587,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boxRend: {fileID: 0}
-  buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
   basicTower: {fileID: 0}
   frostTower: {fileID: 0}
   rapidTower: {fileID: 0}
   builtTower: {fileID: 0}
-  gameManagerRef: {fileID: 0}
-  timer: 0
-  selection: 0
+  gameManager: {fileID: 0}
+  buildManager: {fileID: 0}
 --- !u!1 &1656738859
 GameObject:
   m_ObjectHideFlags: 0
@@ -21289,16 +21704,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boxRend: {fileID: 0}
-  buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
   basicTower: {fileID: 0}
   frostTower: {fileID: 0}
   rapidTower: {fileID: 0}
   builtTower: {fileID: 0}
-  gameManagerRef: {fileID: 0}
-  timer: 0
-  selection: 0
+  gameManager: {fileID: 0}
+  buildManager: {fileID: 0}
 --- !u!1 &1660368379
 GameObject:
   m_ObjectHideFlags: 0
@@ -21359,7 +21772,7 @@ MonoBehaviour:
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
     m_FontSize: 14
-    m_FontStyle: 0
+    m_FontStyle: 1
     m_BestFit: 0
     m_MinSize: 10
     m_MaxSize: 40
@@ -21369,7 +21782,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Basic Tower (B) \t- 1"
+  m_Text: "Basic Tower (B) \t\t| 1"
 --- !u!222 &1660368382
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -21487,16 +21900,93 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boxRend: {fileID: 0}
-  buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
   basicTower: {fileID: 0}
   frostTower: {fileID: 0}
   rapidTower: {fileID: 0}
   builtTower: {fileID: 0}
-  gameManagerRef: {fileID: 0}
-  timer: 0
-  selection: 0
+  gameManager: {fileID: 0}
+  buildManager: {fileID: 0}
+--- !u!1 &1666895582
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1666895583}
+  - component: {fileID: 1666895585}
+  - component: {fileID: 1666895584}
+  m_Layer: 0
+  m_Name: Text
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1666895583
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1666895582}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 652488603}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1666895584
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1666895582}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 16
+    m_FontStyle: 1
+    m_BestFit: 0
+    m_MinSize: 1
+    m_MaxSize: 40
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: Towers
+--- !u!222 &1666895585
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1666895582}
+  m_CullTransparentMesh: 0
 --- !u!1 &1667079490
 GameObject:
   m_ObjectHideFlags: 0
@@ -21606,16 +22096,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boxRend: {fileID: 0}
-  buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
   basicTower: {fileID: 0}
   frostTower: {fileID: 0}
   rapidTower: {fileID: 0}
   builtTower: {fileID: 0}
-  gameManagerRef: {fileID: 0}
-  timer: 0
-  selection: 0
+  gameManager: {fileID: 0}
+  buildManager: {fileID: 0}
 --- !u!1 &1678988462
 GameObject:
   m_ObjectHideFlags: 0
@@ -21725,16 +22213,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boxRend: {fileID: 0}
-  buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
   basicTower: {fileID: 0}
   frostTower: {fileID: 0}
   rapidTower: {fileID: 0}
   builtTower: {fileID: 0}
-  gameManagerRef: {fileID: 0}
-  timer: 0
-  selection: 0
+  gameManager: {fileID: 0}
+  buildManager: {fileID: 0}
 --- !u!1 &1685190469
 GameObject:
   m_ObjectHideFlags: 0
@@ -21844,16 +22330,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boxRend: {fileID: 0}
-  buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
   basicTower: {fileID: 0}
   frostTower: {fileID: 0}
   rapidTower: {fileID: 0}
   builtTower: {fileID: 0}
-  gameManagerRef: {fileID: 0}
-  timer: 0
-  selection: 0
+  gameManager: {fileID: 0}
+  buildManager: {fileID: 0}
 --- !u!1 &1700312985
 GameObject:
   m_ObjectHideFlags: 0
@@ -22044,16 +22528,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boxRend: {fileID: 0}
-  buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
   basicTower: {fileID: 0}
   frostTower: {fileID: 0}
   rapidTower: {fileID: 0}
   builtTower: {fileID: 0}
-  gameManagerRef: {fileID: 0}
-  timer: 0
-  selection: 0
+  gameManager: {fileID: 0}
+  buildManager: {fileID: 0}
 --- !u!1 &1715783282
 GameObject:
   m_ObjectHideFlags: 0
@@ -22163,16 +22645,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boxRend: {fileID: 0}
-  buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
   basicTower: {fileID: 0}
   frostTower: {fileID: 0}
   rapidTower: {fileID: 0}
   builtTower: {fileID: 0}
-  gameManagerRef: {fileID: 0}
-  timer: 0
-  selection: 0
+  gameManager: {fileID: 0}
+  buildManager: {fileID: 0}
 --- !u!1 &1722063695
 GameObject:
   m_ObjectHideFlags: 0
@@ -22282,16 +22762,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boxRend: {fileID: 0}
-  buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
   basicTower: {fileID: 0}
   frostTower: {fileID: 0}
   rapidTower: {fileID: 0}
   builtTower: {fileID: 0}
-  gameManagerRef: {fileID: 0}
-  timer: 0
-  selection: 0
+  gameManager: {fileID: 0}
+  buildManager: {fileID: 0}
 --- !u!1 &1727829630
 GameObject:
   m_ObjectHideFlags: 0
@@ -22401,16 +22879,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boxRend: {fileID: 0}
-  buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
   basicTower: {fileID: 0}
   frostTower: {fileID: 0}
   rapidTower: {fileID: 0}
   builtTower: {fileID: 0}
-  gameManagerRef: {fileID: 0}
-  timer: 0
-  selection: 0
+  gameManager: {fileID: 0}
+  buildManager: {fileID: 0}
 --- !u!1 &1731194293
 GameObject:
   m_ObjectHideFlags: 0
@@ -22599,16 +23075,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boxRend: {fileID: 0}
-  buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
   basicTower: {fileID: 0}
   frostTower: {fileID: 0}
   rapidTower: {fileID: 0}
   builtTower: {fileID: 0}
-  gameManagerRef: {fileID: 0}
-  timer: 0
-  selection: 0
+  gameManager: {fileID: 0}
+  buildManager: {fileID: 0}
 --- !u!1 &1759531674
 GameObject:
   m_ObjectHideFlags: 0
@@ -22718,16 +23192,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boxRend: {fileID: 0}
-  buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
   basicTower: {fileID: 0}
   frostTower: {fileID: 0}
   rapidTower: {fileID: 0}
   builtTower: {fileID: 0}
-  gameManagerRef: {fileID: 0}
-  timer: 0
-  selection: 0
+  gameManager: {fileID: 0}
+  buildManager: {fileID: 0}
 --- !u!1 &1768428124
 GameObject:
   m_ObjectHideFlags: 0
@@ -22837,16 +23309,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boxRend: {fileID: 0}
-  buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
   basicTower: {fileID: 0}
   frostTower: {fileID: 0}
   rapidTower: {fileID: 0}
   builtTower: {fileID: 0}
-  gameManagerRef: {fileID: 0}
-  timer: 0
-  selection: 0
+  gameManager: {fileID: 0}
+  buildManager: {fileID: 0}
 --- !u!1 &1788690576
 GameObject:
   m_ObjectHideFlags: 0
@@ -23055,16 +23525,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boxRend: {fileID: 0}
-  buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
   basicTower: {fileID: 0}
   frostTower: {fileID: 0}
   rapidTower: {fileID: 0}
   builtTower: {fileID: 0}
-  gameManagerRef: {fileID: 0}
-  timer: 0
-  selection: 0
+  gameManager: {fileID: 0}
+  buildManager: {fileID: 0}
 --- !u!1 &1797465925
 GameObject:
   m_ObjectHideFlags: 0
@@ -23174,16 +23642,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boxRend: {fileID: 0}
-  buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
   basicTower: {fileID: 0}
   frostTower: {fileID: 0}
   rapidTower: {fileID: 0}
   builtTower: {fileID: 0}
-  gameManagerRef: {fileID: 0}
-  timer: 0
-  selection: 0
+  gameManager: {fileID: 0}
+  buildManager: {fileID: 0}
 --- !u!1 &1801217873
 GameObject:
   m_ObjectHideFlags: 0
@@ -23293,16 +23759,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boxRend: {fileID: 0}
-  buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
   basicTower: {fileID: 0}
   frostTower: {fileID: 0}
   rapidTower: {fileID: 0}
   builtTower: {fileID: 0}
-  gameManagerRef: {fileID: 0}
-  timer: 0
-  selection: 0
+  gameManager: {fileID: 0}
+  buildManager: {fileID: 0}
 --- !u!1 &1821091391
 GameObject:
   m_ObjectHideFlags: 0
@@ -23412,16 +23876,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boxRend: {fileID: 0}
-  buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
   basicTower: {fileID: 0}
   frostTower: {fileID: 0}
   rapidTower: {fileID: 0}
   builtTower: {fileID: 0}
-  gameManagerRef: {fileID: 0}
-  timer: 0
-  selection: 0
+  gameManager: {fileID: 0}
+  buildManager: {fileID: 0}
 --- !u!1 &1833822238
 GameObject:
   m_ObjectHideFlags: 0
@@ -23531,16 +23993,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boxRend: {fileID: 0}
-  buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
   basicTower: {fileID: 0}
   frostTower: {fileID: 0}
   rapidTower: {fileID: 0}
   builtTower: {fileID: 0}
-  gameManagerRef: {fileID: 0}
-  timer: 0
-  selection: 0
+  gameManager: {fileID: 0}
+  buildManager: {fileID: 0}
 --- !u!1 &1843467726
 GameObject:
   m_ObjectHideFlags: 0
@@ -23650,16 +24110,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boxRend: {fileID: 0}
-  buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
   basicTower: {fileID: 0}
   frostTower: {fileID: 0}
   rapidTower: {fileID: 0}
   builtTower: {fileID: 0}
-  gameManagerRef: {fileID: 0}
-  timer: 0
-  selection: 0
+  gameManager: {fileID: 0}
+  buildManager: {fileID: 0}
 --- !u!1 &1846502307
 GameObject:
   m_ObjectHideFlags: 0
@@ -23769,16 +24227,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boxRend: {fileID: 0}
-  buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
   basicTower: {fileID: 0}
   frostTower: {fileID: 0}
   rapidTower: {fileID: 0}
   builtTower: {fileID: 0}
-  gameManagerRef: {fileID: 0}
-  timer: 0
-  selection: 0
+  gameManager: {fileID: 0}
+  buildManager: {fileID: 0}
 --- !u!1 &1853524529
 GameObject:
   m_ObjectHideFlags: 0
@@ -23888,16 +24344,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boxRend: {fileID: 0}
-  buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
   basicTower: {fileID: 0}
   frostTower: {fileID: 0}
   rapidTower: {fileID: 0}
   builtTower: {fileID: 0}
-  gameManagerRef: {fileID: 0}
-  timer: 0
-  selection: 0
+  gameManager: {fileID: 0}
+  buildManager: {fileID: 0}
 --- !u!1 &1860055530
 GameObject:
   m_ObjectHideFlags: 0
@@ -24007,16 +24461,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boxRend: {fileID: 0}
-  buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
   basicTower: {fileID: 0}
   frostTower: {fileID: 0}
   rapidTower: {fileID: 0}
   builtTower: {fileID: 0}
-  gameManagerRef: {fileID: 0}
-  timer: 0
-  selection: 0
+  gameManager: {fileID: 0}
+  buildManager: {fileID: 0}
 --- !u!1001 &1863358375
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -24189,16 +24641,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boxRend: {fileID: 0}
-  buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
   basicTower: {fileID: 0}
   frostTower: {fileID: 0}
   rapidTower: {fileID: 0}
   builtTower: {fileID: 0}
-  gameManagerRef: {fileID: 0}
-  timer: 0
-  selection: 0
+  gameManager: {fileID: 0}
+  buildManager: {fileID: 0}
 --- !u!1 &1868769735
 GameObject:
   m_ObjectHideFlags: 0
@@ -24308,16 +24758,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boxRend: {fileID: 0}
-  buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
   basicTower: {fileID: 0}
   frostTower: {fileID: 0}
   rapidTower: {fileID: 0}
   builtTower: {fileID: 0}
-  gameManagerRef: {fileID: 0}
-  timer: 0
-  selection: 0
+  gameManager: {fileID: 0}
+  buildManager: {fileID: 0}
 --- !u!1 &1871173904
 GameObject:
   m_ObjectHideFlags: 0
@@ -24427,16 +24875,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boxRend: {fileID: 0}
-  buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
   basicTower: {fileID: 0}
   frostTower: {fileID: 0}
   rapidTower: {fileID: 0}
   builtTower: {fileID: 0}
-  gameManagerRef: {fileID: 0}
-  timer: 0
-  selection: 0
+  gameManager: {fileID: 0}
+  buildManager: {fileID: 0}
 --- !u!1 &1881998496
 GameObject:
   m_ObjectHideFlags: 0
@@ -24546,16 +24992,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boxRend: {fileID: 0}
-  buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
   basicTower: {fileID: 0}
   frostTower: {fileID: 0}
   rapidTower: {fileID: 0}
   builtTower: {fileID: 0}
-  gameManagerRef: {fileID: 0}
-  timer: 0
-  selection: 0
+  gameManager: {fileID: 0}
+  buildManager: {fileID: 0}
 --- !u!1 &1891082908
 GameObject:
   m_ObjectHideFlags: 0
@@ -24746,16 +25190,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boxRend: {fileID: 0}
-  buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
   basicTower: {fileID: 0}
   frostTower: {fileID: 0}
   rapidTower: {fileID: 0}
   builtTower: {fileID: 0}
-  gameManagerRef: {fileID: 0}
-  timer: 0
-  selection: 0
+  gameManager: {fileID: 0}
+  buildManager: {fileID: 0}
 --- !u!1 &1914021643
 GameObject:
   m_ObjectHideFlags: 0
@@ -24865,16 +25307,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boxRend: {fileID: 0}
-  buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
   basicTower: {fileID: 0}
   frostTower: {fileID: 0}
   rapidTower: {fileID: 0}
   builtTower: {fileID: 0}
-  gameManagerRef: {fileID: 0}
-  timer: 0
-  selection: 0
+  gameManager: {fileID: 0}
+  buildManager: {fileID: 0}
 --- !u!1 &1922540699
 GameObject:
   m_ObjectHideFlags: 0
@@ -24984,16 +25424,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boxRend: {fileID: 0}
-  buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
   basicTower: {fileID: 0}
   frostTower: {fileID: 0}
   rapidTower: {fileID: 0}
   builtTower: {fileID: 0}
-  gameManagerRef: {fileID: 0}
-  timer: 0
-  selection: 0
+  gameManager: {fileID: 0}
+  buildManager: {fileID: 0}
 --- !u!1 &1937123506
 GameObject:
   m_ObjectHideFlags: 0
@@ -25103,16 +25541,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boxRend: {fileID: 0}
-  buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
   basicTower: {fileID: 0}
   frostTower: {fileID: 0}
   rapidTower: {fileID: 0}
   builtTower: {fileID: 0}
-  gameManagerRef: {fileID: 0}
-  timer: 0
-  selection: 0
+  gameManager: {fileID: 0}
+  buildManager: {fileID: 0}
 --- !u!1 &1937998736
 GameObject:
   m_ObjectHideFlags: 0
@@ -25222,16 +25658,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boxRend: {fileID: 0}
-  buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
   basicTower: {fileID: 0}
   frostTower: {fileID: 0}
   rapidTower: {fileID: 0}
   builtTower: {fileID: 0}
-  gameManagerRef: {fileID: 0}
-  timer: 0
-  selection: 0
+  gameManager: {fileID: 0}
+  buildManager: {fileID: 0}
 --- !u!1 &1953615543
 GameObject:
   m_ObjectHideFlags: 0
@@ -25422,16 +25856,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boxRend: {fileID: 0}
-  buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
   basicTower: {fileID: 0}
   frostTower: {fileID: 0}
   rapidTower: {fileID: 0}
   builtTower: {fileID: 0}
-  gameManagerRef: {fileID: 0}
-  timer: 0
-  selection: 0
+  gameManager: {fileID: 0}
+  buildManager: {fileID: 0}
 --- !u!1 &1961024801
 GameObject:
   m_ObjectHideFlags: 0
@@ -25541,16 +25973,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boxRend: {fileID: 0}
-  buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
   basicTower: {fileID: 0}
   frostTower: {fileID: 0}
   rapidTower: {fileID: 0}
   builtTower: {fileID: 0}
-  gameManagerRef: {fileID: 0}
-  timer: 0
-  selection: 0
+  gameManager: {fileID: 0}
+  buildManager: {fileID: 0}
 --- !u!1 &1961940205
 GameObject:
   m_ObjectHideFlags: 0
@@ -25706,16 +26136,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boxRend: {fileID: 0}
-  buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
   basicTower: {fileID: 0}
   frostTower: {fileID: 0}
   rapidTower: {fileID: 0}
   builtTower: {fileID: 0}
-  gameManagerRef: {fileID: 0}
-  timer: 0
-  selection: 0
+  gameManager: {fileID: 0}
+  buildManager: {fileID: 0}
 --- !u!1 &1990854705
 GameObject:
   m_ObjectHideFlags: 0
@@ -25825,16 +26253,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boxRend: {fileID: 0}
-  buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
   basicTower: {fileID: 0}
   frostTower: {fileID: 0}
   rapidTower: {fileID: 0}
   builtTower: {fileID: 0}
-  gameManagerRef: {fileID: 0}
-  timer: 0
-  selection: 0
+  gameManager: {fileID: 0}
+  buildManager: {fileID: 0}
 --- !u!1 &1995959310
 GameObject:
   m_ObjectHideFlags: 0
@@ -25944,16 +26370,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boxRend: {fileID: 0}
-  buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
   basicTower: {fileID: 0}
   frostTower: {fileID: 0}
   rapidTower: {fileID: 0}
   builtTower: {fileID: 0}
-  gameManagerRef: {fileID: 0}
-  timer: 0
-  selection: 0
+  gameManager: {fileID: 0}
+  buildManager: {fileID: 0}
 --- !u!1 &1997841574
 GameObject:
   m_ObjectHideFlags: 0
@@ -25980,17 +26404,17 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1997841574}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1611338136}
-  m_Father: {fileID: 1513939094}
-  m_RootOrder: 1
+  m_Father: {fileID: 903356700}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 220, y: -285}
+  m_AnchoredPosition: {x: 577, y: 49}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1997841576
@@ -26100,17 +26524,17 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2011180956}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1379811175}
-  m_Father: {fileID: 1513939094}
-  m_RootOrder: 2
+  m_Father: {fileID: 903356700}
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 220, y: -315}
+  m_AnchoredPosition: {x: 577, y: 19}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2011180958
@@ -26303,16 +26727,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boxRend: {fileID: 0}
-  buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
   basicTower: {fileID: 0}
   frostTower: {fileID: 0}
   rapidTower: {fileID: 0}
   builtTower: {fileID: 0}
-  gameManagerRef: {fileID: 0}
-  timer: 0
-  selection: 0
+  gameManager: {fileID: 0}
+  buildManager: {fileID: 0}
 --- !u!1 &2043765668
 GameObject:
   m_ObjectHideFlags: 0
@@ -26503,16 +26925,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boxRend: {fileID: 0}
-  buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
   basicTower: {fileID: 0}
   frostTower: {fileID: 0}
   rapidTower: {fileID: 0}
   builtTower: {fileID: 0}
-  gameManagerRef: {fileID: 0}
-  timer: 0
-  selection: 0
+  gameManager: {fileID: 0}
+  buildManager: {fileID: 0}
 --- !u!1 &2045557494
 GameObject:
   m_ObjectHideFlags: 0
@@ -26622,16 +27042,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boxRend: {fileID: 0}
-  buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
   basicTower: {fileID: 0}
   frostTower: {fileID: 0}
   rapidTower: {fileID: 0}
   builtTower: {fileID: 0}
-  gameManagerRef: {fileID: 0}
-  timer: 0
-  selection: 0
+  gameManager: {fileID: 0}
+  buildManager: {fileID: 0}
 --- !u!1 &2053253490
 GameObject:
   m_ObjectHideFlags: 0
@@ -26741,16 +27159,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boxRend: {fileID: 0}
-  buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
   basicTower: {fileID: 0}
   frostTower: {fileID: 0}
   rapidTower: {fileID: 0}
   builtTower: {fileID: 0}
-  gameManagerRef: {fileID: 0}
-  timer: 0
-  selection: 0
+  gameManager: {fileID: 0}
+  buildManager: {fileID: 0}
 --- !u!1001 &2062621437
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -27004,16 +27420,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boxRend: {fileID: 0}
-  buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
   basicTower: {fileID: 0}
   frostTower: {fileID: 0}
   rapidTower: {fileID: 0}
   builtTower: {fileID: 0}
-  gameManagerRef: {fileID: 0}
-  timer: 0
-  selection: 0
+  gameManager: {fileID: 0}
+  buildManager: {fileID: 0}
 --- !u!1 &2068802218
 GameObject:
   m_ObjectHideFlags: 0
@@ -27123,16 +27537,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boxRend: {fileID: 0}
-  buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
   basicTower: {fileID: 0}
   frostTower: {fileID: 0}
   rapidTower: {fileID: 0}
   builtTower: {fileID: 0}
-  gameManagerRef: {fileID: 0}
-  timer: 0
-  selection: 0
+  gameManager: {fileID: 0}
+  buildManager: {fileID: 0}
 --- !u!1001 &2077188456
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -27368,16 +27780,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boxRend: {fileID: 0}
-  buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
   basicTower: {fileID: 0}
   frostTower: {fileID: 0}
   rapidTower: {fileID: 0}
   builtTower: {fileID: 0}
-  gameManagerRef: {fileID: 0}
-  timer: 0
-  selection: 0
+  gameManager: {fileID: 0}
+  buildManager: {fileID: 0}
 --- !u!1 &2093278137
 GameObject:
   m_ObjectHideFlags: 0
@@ -27487,16 +27897,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boxRend: {fileID: 0}
-  buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
   basicTower: {fileID: 0}
   frostTower: {fileID: 0}
   rapidTower: {fileID: 0}
   builtTower: {fileID: 0}
-  gameManagerRef: {fileID: 0}
-  timer: 0
-  selection: 0
+  gameManager: {fileID: 0}
+  buildManager: {fileID: 0}
 --- !u!1 &2099884731
 GameObject:
   m_ObjectHideFlags: 0
@@ -27606,16 +28014,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boxRend: {fileID: 0}
-  buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
   basicTower: {fileID: 0}
   frostTower: {fileID: 0}
   rapidTower: {fileID: 0}
   builtTower: {fileID: 0}
-  gameManagerRef: {fileID: 0}
-  timer: 0
-  selection: 0
+  gameManager: {fileID: 0}
+  buildManager: {fileID: 0}
 --- !u!1 &2119102710
 GameObject:
   m_ObjectHideFlags: 0
@@ -27725,16 +28131,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boxRend: {fileID: 0}
-  buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
   basicTower: {fileID: 0}
   frostTower: {fileID: 0}
   rapidTower: {fileID: 0}
   builtTower: {fileID: 0}
-  gameManagerRef: {fileID: 0}
-  timer: 0
-  selection: 0
+  gameManager: {fileID: 0}
+  buildManager: {fileID: 0}
 --- !u!1001 &2120978127
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -27907,16 +28311,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boxRend: {fileID: 0}
-  buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
   basicTower: {fileID: 0}
   frostTower: {fileID: 0}
   rapidTower: {fileID: 0}
   builtTower: {fileID: 0}
-  gameManagerRef: {fileID: 0}
-  timer: 0
-  selection: 0
+  gameManager: {fileID: 0}
+  buildManager: {fileID: 0}
 --- !u!1 &2127029343
 GameObject:
   m_ObjectHideFlags: 0
@@ -28026,16 +28428,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boxRend: {fileID: 0}
-  buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
   basicTower: {fileID: 0}
   frostTower: {fileID: 0}
   rapidTower: {fileID: 0}
   builtTower: {fileID: 0}
-  gameManagerRef: {fileID: 0}
-  timer: 0
-  selection: 0
+  gameManager: {fileID: 0}
+  buildManager: {fileID: 0}
 --- !u!1 &2130030568
 GameObject:
   m_ObjectHideFlags: 0
@@ -28145,16 +28545,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boxRend: {fileID: 0}
-  buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
   basicTower: {fileID: 0}
   frostTower: {fileID: 0}
   rapidTower: {fileID: 0}
   builtTower: {fileID: 0}
-  gameManagerRef: {fileID: 0}
-  timer: 0
-  selection: 0
+  gameManager: {fileID: 0}
+  buildManager: {fileID: 0}
 --- !u!1 &2133452652
 GameObject:
   m_ObjectHideFlags: 0
@@ -28264,16 +28662,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boxRend: {fileID: 0}
-  buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
   basicTower: {fileID: 0}
   frostTower: {fileID: 0}
   rapidTower: {fileID: 0}
   builtTower: {fileID: 0}
-  gameManagerRef: {fileID: 0}
-  timer: 0
-  selection: 0
+  gameManager: {fileID: 0}
+  buildManager: {fileID: 0}
 --- !u!1 &2136490451
 GameObject:
   m_ObjectHideFlags: 0
@@ -28383,16 +28779,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boxRend: {fileID: 0}
-  buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
   basicTower: {fileID: 0}
   frostTower: {fileID: 0}
   rapidTower: {fileID: 0}
   builtTower: {fileID: 0}
-  gameManagerRef: {fileID: 0}
-  timer: 0
-  selection: 0
+  gameManager: {fileID: 0}
+  buildManager: {fileID: 0}
 --- !u!1 &2139208313
 GameObject:
   m_ObjectHideFlags: 0
@@ -28502,13 +28896,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boxRend: {fileID: 0}
-  buildState: 0
   buildableArea: 1
   tempTower: {fileID: 0}
   basicTower: {fileID: 0}
   frostTower: {fileID: 0}
   rapidTower: {fileID: 0}
   builtTower: {fileID: 0}
-  gameManagerRef: {fileID: 0}
-  timer: 0
-  selection: 0
+  gameManager: {fileID: 0}
+  buildManager: {fileID: 0}
