@@ -12,22 +12,28 @@ public class SpawnerScript : MonoBehaviour {
 	public Wave currentWave;
 
 	public int waveCounter;
-	public Wave wave0 = new Wave("Rizzes", 3, 6.0f, 5);
-	public Wave wave1 = new Wave("Jizzes", 2, 8.0f, 10);
-	public Wave[] waves = new Wave[2];
-	
+	public Wave wave0 = new Wave("Bindis #1", 3, 6.0f, 5);
+	public Wave wave1 = new Wave("Snags #2", 6, 8.0f, 5);
+	public Wave wave2 = new Wave("BoatBungs #3", 10, 8.0f, 5);
+	public Wave wave3 = new Wave("Magpies #4", 15, 8.0f, 5);
+	public Wave boss = new Wave("Digimin #5 (Boss)", 50, 4.0f, 1);
+	public Wave[] waves;
+
+	Vector3 startPosition;
 
 	// Use this for initialization
 	void Start ()
     {
+		waves = new Wave[] { wave0, wave1, wave2, wave3, boss };
 		gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
 		waveCounter = 0;
-		waves[0] = wave0;
-		waves[1] = wave1;
 		currentWave = waves[waveCounter];
 		enemiesRemainingToSpawn = currentWave.getSize();
 		enemiesInScene = 0;
-    }
+		// make start green
+		this.gameObject.GetComponent<Renderer>().material.color = Color.green;
+		startPosition = this.transform.position;
+	}
 	
 	// Update is called once per frame
 	void Update ()
@@ -35,11 +41,12 @@ public class SpawnerScript : MonoBehaviour {
 		timeBetweenMobs -= Time.deltaTime;
 		if(timeBetweenMobs <= 0.0f && enemiesRemainingToSpawn > 0) 
 		{
-            Instantiate(enemy);
+            Instantiate(enemy, startPosition, Quaternion.Euler(0f, 0f, 0f));
 			enemiesInScene += 1;
             timeBetweenMobs = 2.0f;
 			enemiesRemainingToSpawn--;
 		}
+		this.gameObject.transform.Rotate(75 * Time.deltaTime, 0, 0);
 	}
 	
 	public void removeEnemy() {
@@ -63,6 +70,7 @@ public class SpawnerScript : MonoBehaviour {
 			currentWave = waves[waveCounter];
 			enemiesRemainingToSpawn = currentWave.getSize();
 			enemiesInScene = 0;
+			gameManager.updateWaveString();
 		}
 	}
 

@@ -56,4 +56,8 @@ public class UserInterface : MonoBehaviour
             displayTowerMenu();
         }
     }
+    public void OnSelect() {
+        this.gameObject.GetComponent<Image>().color = Color.white;
+    }
+
 }

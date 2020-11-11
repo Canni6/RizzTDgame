@@ -38,8 +38,7 @@ public class TowerScript : MonoBehaviour
         // locate tower
         Vector3 towerOffset = new Vector3(0, 1.5f, 0);
         towerPosition = this.transform.position + towerOffset;
-        projectileSpawn = this.gameObject.transform.GetChild(2);
-        fireRate = 1.0f; // default value
+        projectileSpawn = this.gameObject.transform.GetChild(2); // hard-coded attached object index
         timeBetweenShots = 1.0f / fireRate;
     }
     
@@ -49,11 +48,11 @@ public class TowerScript : MonoBehaviour
         // assign state for enemy AI interaction
         projectileGO.tag = "projectile";
         projectileGO.gameObject.AddComponent<ProjectileScript>();
-        if(affix == TowerScript.Affix.Basic) {
+        if(affix == Affix.Basic) {
             projectileGO.GetComponent<ProjectileScript>().setAffix(ProjectileScript.Affix.Basic);
-        } else if (affix == TowerScript.Affix.Frost) {
+        } else if (affix == Affix.Frost) {
             projectileGO.GetComponent<ProjectileScript>().setAffix(ProjectileScript.Affix.Frost);
-        } else if (affix == TowerScript.Affix.Rapid) {
+        } else if (affix == Affix.Rapid) {
             projectileGO.GetComponent<ProjectileScript>().setAffix(ProjectileScript.Affix.Rapid);
         }
         // set projectile target

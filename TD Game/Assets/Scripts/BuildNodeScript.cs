@@ -6,6 +6,7 @@ using UnityEngine.UIElements;
 
 /// <summary>
 /// Build Node Script is applied to each build tile - used for mouseover and mouse down during build state to place tower.
+/// - Responsible for constructing tower on build node and assigning tower properties
 /// </summary>
 public class BuildNodeScript : MonoBehaviour {
 

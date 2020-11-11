@@ -58,7 +58,8 @@ public class BuildManager : MonoBehaviour
             if (buildState == true) {
                 // basic tower selected
                 if (gameManager.getPlayerCredit() >= 1) {
-                    setSelection(BuildManager.SELECTION.Basic);
+                    setSelection(SELECTION.Basic);
+                    ui.selectButton(ui.basicTowerButton);
                     print("Basic tower selected");
                 }
             }
@@ -77,7 +78,8 @@ public class BuildManager : MonoBehaviour
             if (buildState == true) {
                 // frost tower selected
                 if (gameManager.getPlayerCredit() >= 2) {
-                    setSelection(BuildManager.SELECTION.Frost);
+                    setSelection(SELECTION.Frost);
+                    ui.selectButton(ui.frostTowerButton);
                     print("Frost tower selected");
                 }
             }
@@ -88,8 +90,9 @@ public class BuildManager : MonoBehaviour
             if (buildState == true) {
                 // rapid tower selected
                 if (gameManager.getPlayerCredit() >= 3) {
-                    setSelection(BuildManager.SELECTION.Rapid);
-                    print("Frost tower selected");
+                    setSelection(SELECTION.Rapid);
+                    ui.selectButton(ui.rapidTowerButton);
+                    print("Rapid tower selected");
                 }
             }
         }

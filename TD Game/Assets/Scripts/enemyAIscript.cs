@@ -70,8 +70,10 @@ public class EnemyAiScript : MonoBehaviour
         if (something.gameObject.tag.Equals("projectile") == true) {
             // apply projectile affix debuff - just frost atm
             if(something.gameObject.GetComponent<ProjectileScript>().getAffix() == ProjectileScript.Affix.Frost) {
-                // apply 50% speed debuff
-                setSpeed(speed * 0.5f);
+                // apply 50% speed debuff (min speed cap)
+                if(speed > 0.01f) {
+                    setSpeed(speed * 0.5f);
+                }
                 // apply blue color
                 this.gameObject.GetComponent<Renderer>().material.color = Color.blue;
             }

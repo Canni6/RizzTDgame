@@ -58,7 +58,7 @@ public class ProjectileScript : MonoBehaviour
         }
     }
 
-    public ProjectileScript.Affix getAffix() {
+    public Affix getAffix() {
         return affix;
     }
 

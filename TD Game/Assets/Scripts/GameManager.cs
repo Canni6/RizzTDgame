@@ -91,4 +91,8 @@ public class GameManager : MonoBehaviour {
     public void setGameWon() {
         gameWon = true;
     }
+
+    public void updateWaveString() {
+        currentWaveString = "Current wave: " + spawner.getCurrentWave().getName();
+    }
 }
