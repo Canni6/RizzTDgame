@@ -21,7 +21,7 @@ public class EnemyAiScript : MonoBehaviour
         gameManager = GameObject.Find("GameManager");
         gameManagerRef = gameManager.GetComponent<GameManager>();
         waypointGO = GameObject.Find("Waypoints");
-        spawner = GameObject.Find("start").GetComponent<SpawnerScript>();
+        spawner = gameManager.GetComponent<SpawnerScript>();
         speed = spawner.getCurrentWave().getSpeed();
         health = spawner.getCurrentWave().getHealth();
         waypointCount = waypointGO.transform.childCount;

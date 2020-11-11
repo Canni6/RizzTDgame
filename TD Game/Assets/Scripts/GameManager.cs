@@ -11,7 +11,6 @@ public class GameManager : MonoBehaviour {
     public GameObject player1GO = null;
     // references to player scripts on the game objects
     Player player1Ref;
-    //Player player2ref;
     string playerCreditString;
     string playerLifeString;
     string gameOverString;
@@ -30,7 +29,7 @@ public class GameManager : MonoBehaviour {
         player1GO = GameObject.Find("Player");
         player1Ref = player1GO.GetComponent<Player>();
         ui = GetComponent<UserInterface>();
-        spawner = GameObject.Find("start").GetComponent<SpawnerScript>();
+        spawner = GetComponent<SpawnerScript>();
         // Add some credit using player script reference
         player1Ref.addCredit(5);
         playerCreditString = "Credit: " + player1Ref.getCredit();

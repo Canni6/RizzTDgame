@@ -28,18 +28,18 @@ public class BuildNodeScript : MonoBehaviour {
         gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
         buildManager = GameObject.Find("GameManager").GetComponent<BuildManager>();
         boxRend = GetComponent<Renderer>();
+        boxRend.enabled = false;
         basicTower = (GameObject)Resources.Load("Prefabs/Tower_Basic");
         print("Basic tower assigned to: " + basicTower);
         frostTower = (GameObject)Resources.Load("Prefabs/Tower_Frost");
         print("Frost tower assigned to: " + frostTower);
         rapidTower = (GameObject)Resources.Load("Prefabs/Tower_Rapid");
         print("Rapid tower assigned to: " + rapidTower);
-        this.gameObject.GetComponent<Renderer>().enabled = false;
     }
 
     void OnMouseEnter()
     {
-        this.gameObject.GetComponent<Renderer>().enabled = true;
+        boxRend.enabled = true;
         if (getBuildState() == true && getBuildSelection() != BuildManager.SELECTION.Invalid) {
             if(buildableArea) {
                 boxRend.material.color = Color.green;
@@ -102,7 +102,7 @@ public class BuildNodeScript : MonoBehaviour {
     void OnMouseExit() {
         boxRend.material.color = Color.white;
         Destroy(tempTower);
-        this.gameObject.GetComponent<Renderer>().enabled = false;
+        boxRend.enabled = false;
     }
 
     public void cancelBuildState() {

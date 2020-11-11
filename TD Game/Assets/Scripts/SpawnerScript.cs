@@ -6,6 +6,8 @@ public class SpawnerScript : MonoBehaviour {
 
 	public GameManager gameManager;
 	public GameObject enemy;
+	public GameObject start;
+
 	public float timeBetweenMobs = 2.0f;
 	public int enemiesRemainingToSpawn;
 	public int enemiesInScene;
@@ -24,15 +26,15 @@ public class SpawnerScript : MonoBehaviour {
 	// Use this for initialization
 	void Start ()
     {
+		start = GameObject.Find("start");
+		start.GetComponent<Renderer>().material.color = Color.green;
+		startPosition = start.transform.position;
 		waves = new Wave[] { wave0, wave1, wave2, wave3, boss };
 		gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
 		waveCounter = 0;
 		currentWave = waves[waveCounter];
 		enemiesRemainingToSpawn = currentWave.getSize();
 		enemiesInScene = 0;
-		// make start green
-		this.gameObject.GetComponent<Renderer>().material.color = Color.green;
-		startPosition = this.transform.position;
 	}
 	
 	// Update is called once per frame
@@ -46,7 +48,7 @@ public class SpawnerScript : MonoBehaviour {
             timeBetweenMobs = 2.0f;
 			enemiesRemainingToSpawn--;
 		}
-		this.gameObject.transform.Rotate(75 * Time.deltaTime, 0, 0);
+		start.transform.Rotate(75 * Time.deltaTime, 0, 0);
 	}
 	
 	public void removeEnemy() {
