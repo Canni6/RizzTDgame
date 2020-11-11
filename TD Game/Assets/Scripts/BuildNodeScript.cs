@@ -34,10 +34,12 @@ public class BuildNodeScript : MonoBehaviour {
         print("Frost tower assigned to: " + frostTower);
         rapidTower = (GameObject)Resources.Load("Prefabs/Tower_Rapid");
         print("Rapid tower assigned to: " + rapidTower);
+        this.gameObject.GetComponent<Renderer>().enabled = false;
     }
 
     void OnMouseEnter()
     {
+        this.gameObject.GetComponent<Renderer>().enabled = true;
         if (getBuildState() == true && getBuildSelection() != BuildManager.SELECTION.Invalid) {
             if(buildableArea) {
                 boxRend.material.color = Color.green;
@@ -100,6 +102,7 @@ public class BuildNodeScript : MonoBehaviour {
     void OnMouseExit() {
         boxRend.material.color = Color.white;
         Destroy(tempTower);
+        this.gameObject.GetComponent<Renderer>().enabled = false;
     }
 
     public void cancelBuildState() {
