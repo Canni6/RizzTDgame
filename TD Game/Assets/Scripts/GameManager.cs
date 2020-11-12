@@ -22,7 +22,6 @@ public class GameManager : MonoBehaviour {
     public UserInterface ui;
     public SpawnerScript spawner;
 
-
     // Start is called before the first frame update
     void Start() {
         // instantiate players and add Player scripts to them
@@ -38,10 +37,8 @@ public class GameManager : MonoBehaviour {
         guiStyle.fontSize = 30;
         gameOverString = "GAME OVER!";
         gameWonString = "YOU WIN!";
-        currentWaveString = "Current wave: " + spawner.getCurrentWave().getName();
         gameOver = false;
         gameWon = false;
-        
     }
 
     // Update is called once per frame
@@ -62,7 +59,7 @@ public class GameManager : MonoBehaviour {
         player1Ref.addLife(life);
         playerLifeString = "Life: " + player1Ref.getLife().ToString();
         if(player1Ref.getLife() < 1) {
-            gameOver = true;
+            setGameOver();
             ui.displayButton(ui.restartButton);
         }
     }
@@ -71,6 +68,7 @@ public class GameManager : MonoBehaviour {
         GUI.Label(new Rect(Screen.width / 2 - Screen.width / 8, Screen.height / 2 - Screen.height / 3, 1000, 200), playerCreditString);
         GUI.Label(new Rect(Screen.width / 2 - Screen.width / 4, Screen.height / 2 - Screen.height / 3, 1000, 200), playerLifeString);
         GUI.Label(new Rect(Screen.width / 2, Screen.height / 2 - Screen.height / 3, 1000, 200), currentWaveString);
+        
         if (gameOver) {
             guiStyle.normal.textColor = Color.red;
             guiStyle.fontSize = 30;
@@ -89,6 +87,12 @@ public class GameManager : MonoBehaviour {
 
     public void setGameWon() {
         gameWon = true;
+        spawner.gameObject.SetActive(false);
+    }
+
+    public void setGameOver() {
+        gameOver = true;
+        spawner.gameObject.SetActive(false);
     }
 
     public void updateWaveString() {

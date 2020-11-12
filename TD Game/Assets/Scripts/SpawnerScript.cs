@@ -11,9 +11,9 @@ public class SpawnerScript : MonoBehaviour {
 	public float timeBetweenMobs = 2.0f;
 	public int enemiesRemainingToSpawn;
 	public int enemiesInScene;
-	public Wave currentWave;
 
 	public int waveCounter;
+	public Wave currentWave;
 	public Wave wave0 = new Wave("Bindis #1", 3, 6.0f, 5);
 	public Wave wave1 = new Wave("Snags #2", 6, 8.0f, 5);
 	public Wave wave2 = new Wave("BoatBungs #3", 10, 8.0f, 5);
@@ -27,14 +27,15 @@ public class SpawnerScript : MonoBehaviour {
 	void Start ()
     {
 		start = GameObject.Find("start");
+		gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
 		start.GetComponent<Renderer>().material.color = Color.green;
 		startPosition = start.transform.position;
 		waves = new Wave[] { wave0, wave1, wave2, wave3, boss };
-		gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
 		waveCounter = 0;
 		currentWave = waves[waveCounter];
 		enemiesRemainingToSpawn = currentWave.getSize();
 		enemiesInScene = 0;
+		gameManager.updateWaveString();
 	}
 	
 	// Update is called once per frame

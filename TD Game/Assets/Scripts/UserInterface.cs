@@ -21,6 +21,16 @@ public class UserInterface : MonoBehaviour
         restartButton.onClick.AddListener(restartGame);
         buildMenu = GameObject.Find("BuildMenu");
         buildMenu.SetActive(true);
+        // switch on children buttons
+        for(int i = 0; i < buildMenu.transform.childCount; ++i) {
+            buildMenu.transform.GetChild(i).gameObject.SetActive(true);
+            // switch on next level hierarchy children buttons - applies to current Tower Menu hierarchy
+            if(buildMenu.transform.GetChild(i).transform.childCount > 0) {
+                for(int j = 0; j < buildMenu.transform.GetChild(i).transform.childCount; ++j) {
+                    buildMenu.transform.GetChild(i).transform.GetChild(j).gameObject.SetActive(true);
+                }
+            }
+        }
         towerMenu = GameObject.Find("TowerMenu");
         towerMenu.SetActive(false);
     }
