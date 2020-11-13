@@ -21,6 +21,11 @@ public class GameManager : MonoBehaviour {
     private GUIStyle guiStyle = new GUIStyle();
     public UserInterface ui;
     public SpawnerScript spawner;
+    public GameObject towerGOSelected;
+    public GameObject nodeGOSelected;
+    public bool towerSelected = false;
+
+    public Material materialNodeDefault;
 
     // Start is called before the first frame update
     void Start() {
@@ -39,6 +44,7 @@ public class GameManager : MonoBehaviour {
         gameWonString = "YOU WIN!";
         gameOver = false;
         gameWon = false;
+        materialNodeDefault = (Material)Resources.Load("Materials/Basic");
     }
 
     // Update is called once per frame
@@ -97,5 +103,31 @@ public class GameManager : MonoBehaviour {
 
     public void updateWaveString() {
         currentWaveString = "Current wave: " + spawner.getCurrentWave().getName();
+    }
+
+    public GameObject getTowerSelected() {
+        return towerGOSelected;
+    }
+
+    public void setNodeTowerSelected(GameObject node, GameObject tower) {
+        // deselect currently selected node
+        if(nodeGOSelected != null) {
+            nodeGOSelected.gameObject.GetComponent<Renderer>().material = materialNodeDefault;
+            nodeGOSelected.gameObject.GetComponent<BuildNodeScript>().deselectTower();
+        }
+        towerGOSelected = tower;
+        nodeGOSelected = node;
+        towerSelected = true;
+    }
+
+    public void deselectTower() {
+        if(nodeGOSelected != null) {
+            nodeGOSelected.gameObject.GetComponent<Renderer>().material.color = Color.white;
+            nodeGOSelected.gameObject.GetComponent<Renderer>().enabled = false;
+            nodeGOSelected.gameObject.GetComponent<BuildNodeScript>().setTowerSelected(false);
+        }
+        towerSelected = false;
+        nodeGOSelected = null;
+        towerGOSelected = null;
     }
 }

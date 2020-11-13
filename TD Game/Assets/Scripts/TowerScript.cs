@@ -24,6 +24,10 @@ public class TowerScript : MonoBehaviour
     public Transform target = null;
     GameObject projectileGO = null;
 
+    // store alternate initial and temporary material for mouseover
+    public Material materialInit;
+    public Material materialTemp;
+
     // Tower Affix to be applied to projectile as well
     public enum Affix {
         Basic,
@@ -35,6 +39,9 @@ public class TowerScript : MonoBehaviour
 
     public void Start()
     {
+        // get the tower base's material
+        materialInit = gameObject.transform.GetChild(0).GetComponent<Renderer>().material;
+        materialTemp = (Material)Resources.Load("Materials/Tower_Highlight");
         // locate tower
         Vector3 towerOffset = new Vector3(0, 1.5f, 0);
         towerPosition = this.transform.position + towerOffset;
@@ -150,5 +157,14 @@ public class TowerScript : MonoBehaviour
 
     public void setAffix(Affix affix) {
         this.affix = affix;
+    }
+    
+    // Selectable Towers
+    void OnMouseEnter() {
+        gameObject.transform.GetChild(0).GetComponent<Renderer>().material = materialTemp;
+    }
+
+    void OnMouseExit() {
+        gameObject.transform.GetChild(0).GetComponent<Renderer>().material = materialInit;
     }
 }

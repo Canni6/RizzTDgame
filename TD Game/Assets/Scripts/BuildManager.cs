@@ -130,6 +130,10 @@ public class BuildManager : MonoBehaviour
         setBuildState(false);
         setSelection(SELECTION.Invalid);
         ui.hideTowerMenu();
+        // deselect the tower when in play state and cancel is called
+        if(getBuildState() == false) {
+            gameManager.deselectTower();
+        }
     }
 
     public void updateBuildString() {

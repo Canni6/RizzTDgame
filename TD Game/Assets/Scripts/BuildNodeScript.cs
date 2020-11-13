@@ -21,6 +21,11 @@ public class BuildNodeScript : MonoBehaviour {
     public GameObject builtTower = null; // built phase
     public GameManager gameManager;
     public BuildManager buildManager;
+    // store alternate initial and temporary material for mouseover
+    public Material materialInit;
+    public Material materialTemp;
+
+    public bool towerSelected = false;
 
     // Use this for initialization
     void Start () {
@@ -29,6 +34,8 @@ public class BuildNodeScript : MonoBehaviour {
         buildManager = GameObject.Find("GameManager").GetComponent<BuildManager>();
         boxRend = GetComponent<Renderer>();
         boxRend.enabled = false;
+        materialInit = boxRend.material;
+        materialTemp = (Material)Resources.Load("Materials/Tower_Highlight");
         basicTower = (GameObject)Resources.Load("Prefabs/Tower_Basic");
         print("Basic tower assigned to: " + basicTower);
         frostTower = (GameObject)Resources.Load("Prefabs/Tower_Frost");
@@ -39,9 +46,12 @@ public class BuildNodeScript : MonoBehaviour {
 
     void OnMouseEnter()
     {
-        boxRend.enabled = true;
+        if(towerSelected || !buildableArea) {
+            boxRend.enabled = true;
+        }
         if (getBuildState() == true && getBuildSelection() != BuildManager.SELECTION.Invalid) {
             if(buildableArea) {
+                boxRend.enabled = true;
                 boxRend.material.color = Color.green;
                 print(boxRend.material.color);
                 // instantiate temp tower - type based on selection
@@ -72,12 +82,11 @@ public class BuildNodeScript : MonoBehaviour {
         builtTower.GetComponentInChildren<TowerScript>().setFireRate(fireRate);
         updatePlayerCredit(-cost);
         cancelBuildState();
+        buildableArea = false;
     }
 
     void OnMouseDown() {
         if (getBuildState() == true && buildableArea) {
-            boxRend.material.color = Color.yellow; // set to green temporarily to 
-            print(boxRend.material.color);
             Destroy(tempTower); // destroy the temp
 
             // instantiate new tower
@@ -95,14 +104,17 @@ public class BuildNodeScript : MonoBehaviour {
                 print("We need more gold!");
                 buildManager.setCreditWarning(true);
             }
-            
+        } else if(!buildableArea) {
+            selectTower();
         }
     }
 
     void OnMouseExit() {
-        boxRend.material.color = Color.white;
         Destroy(tempTower);
-        boxRend.enabled = false;
+        if(!towerSelected) {
+            boxRend.enabled = false;
+            boxRend.material.color = Color.white;
+        }
     }
 
     public void cancelBuildState() {
@@ -119,5 +131,23 @@ public class BuildNodeScript : MonoBehaviour {
 
     void updatePlayerCredit(int credit) {
         gameManager.addPlayerCredit(credit);
+    }
+
+    public void deselectTower() {
+        towerSelected = false;
+        boxRend.material.color = Color.white;
+        boxRend.enabled = false;
+        gameManager.deselectTower();
+    }
+
+    public void selectTower() {
+        // 'Select' the node and tower and highlight it
+        gameManager.setNodeTowerSelected(gameObject, builtTower);
+        boxRend.material = (Material)Resources.Load("Materials/Tower_Highlight");
+        towerSelected = true;
+    }
+
+    public void setTowerSelected(bool state) {
+        towerSelected = state;
     }
 }
