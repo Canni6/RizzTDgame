@@ -18,7 +18,6 @@ public class UserInterface : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        restartButton.onClick.AddListener(restartGame);
         buildMenu = GameObject.Find("BuildMenu");
         buildMenu.SetActive(true);
         // switch on children buttons
@@ -33,6 +32,7 @@ public class UserInterface : MonoBehaviour
         }
         towerMenu = GameObject.Find("TowerMenu");
         towerMenu.SetActive(false);
+        restartButton.onClick.AddListener(restartGame);
     }
 
     // Update is called once per frame
