@@ -67,7 +67,7 @@ public class UserInterface : MonoBehaviour
         }
     }
     public void OnSelect() {
-        this.gameObject.GetComponent<Image>().color = Color.white;
+        this.gameObject.GetComponent<Image>().color = Color.yellow;
     }
 
 }

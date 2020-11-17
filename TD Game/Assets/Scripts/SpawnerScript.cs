@@ -20,6 +20,7 @@ public class SpawnerScript : MonoBehaviour {
 	public Wave wave3 = new Wave("Magpies #4", 15, 8.0f, 5);
 	public Wave boss = new Wave("Digimin #5 (Boss)", 50, 4.0f, 1);
 	public Wave[] waves;
+	public bool active;
 
 	Vector3 startPosition;
 
@@ -36,20 +37,23 @@ public class SpawnerScript : MonoBehaviour {
 		enemiesRemainingToSpawn = currentWave.getSize();
 		enemiesInScene = 0;
 		gameManager.updateWaveString();
+		active = true;
 	}
 	
 	// Update is called once per frame
 	void Update ()
     {
-		timeBetweenMobs -= Time.deltaTime;
-		if(timeBetweenMobs <= 0.0f && enemiesRemainingToSpawn > 0) 
-		{
-            Instantiate(enemy, startPosition, Quaternion.Euler(0f, 0f, 0f));
-			enemiesInScene += 1;
-            timeBetweenMobs = 2.0f;
-			enemiesRemainingToSpawn--;
+		if(active) {
+			timeBetweenMobs -= Time.deltaTime;
+			if (timeBetweenMobs <= 0.0f && enemiesRemainingToSpawn > 0) {
+				Instantiate(enemy, startPosition, Quaternion.Euler(0f, 0f, 0f));
+				enemiesInScene += 1;
+				timeBetweenMobs = 2.0f;
+				enemiesRemainingToSpawn--;
+			}
+			start.transform.Rotate(75 * Time.deltaTime, 0, 0);
 		}
-		start.transform.Rotate(75 * Time.deltaTime, 0, 0);
+		
 	}
 	
 	public void removeEnemy() {
@@ -79,6 +83,10 @@ public class SpawnerScript : MonoBehaviour {
 
 	public Wave getCurrentWave() {
 		return currentWave;
+    }
+
+	public void setSpawnState(bool state) {
+		this.active = state;
     }
 
 }

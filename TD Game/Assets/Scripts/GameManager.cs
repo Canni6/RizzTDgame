@@ -98,12 +98,14 @@ public class GameManager : MonoBehaviour {
 
     public void setGameWon() {
         gameWon = true;
-        spawner.gameObject.SetActive(false);
+        spawner.setSpawnState(false);
+        ui.restartButton.gameObject.SetActive(true);
     }
 
     public void setGameOver() {
         gameOver = true;
-        spawner.gameObject.SetActive(false);
+        spawner.setSpawnState(false);
+        ui.restartButton.gameObject.SetActive(true);
     }
 
     public void updateWaveString() {
