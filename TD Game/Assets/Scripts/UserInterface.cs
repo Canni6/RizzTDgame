@@ -4,6 +4,7 @@ using UnityEditor;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using UnityEngine.EventSystems;
 
 public class UserInterface : MonoBehaviour
 {
@@ -57,17 +58,22 @@ public class UserInterface : MonoBehaviour
 
     public void hideTowerMenu() {
         towerMenu.gameObject.SetActive(false);
+        buildMenuButton.gameObject.GetComponent<Image>().color = Color.white;
     }
 
     public void selectButton(Button button) {
-        button.Select();
+        // reset all button colors
+        for(int i = 0; i < towerMenu.transform.childCount; ++i) {
+            towerMenu.transform.GetChild(i).gameObject.GetComponent<Image>().color = Color.white;
+        }
+        button.gameObject.GetComponent<Image>().color = Color.yellow;
         print("Button selected: " + button.name);
         if(button.name.Equals("BuildMenuButton")) {
             displayTowerMenu();
         }
     }
     public void OnSelect() {
-        this.gameObject.GetComponent<Image>().color = Color.yellow;
+        //this.gameObject.GetComponent<Image>().color = Color.yellow;
     }
 
 }

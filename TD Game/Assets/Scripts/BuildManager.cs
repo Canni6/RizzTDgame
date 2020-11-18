@@ -60,7 +60,6 @@ public class BuildManager : MonoBehaviour
                 if (gameManager.getPlayerCredit() >= 1) {
                     setSelection(SELECTION.Basic);
                     ui.selectButton(ui.basicTowerButton);
-                    print("Basic tower selected");
                 }
             }
             // entering build state
@@ -68,7 +67,6 @@ public class BuildManager : MonoBehaviour
                 setBuildState(true);
                 ui.selectButton(ui.buildMenuButton);
                 print("State changed to build");
-                print("Player 1 credit report from building manager w/ gameManager ref: " + gameManager.getPlayerCredit());
             }
 
         }
@@ -80,7 +78,6 @@ public class BuildManager : MonoBehaviour
                 if (gameManager.getPlayerCredit() >= 2) {
                     setSelection(SELECTION.Frost);
                     ui.selectButton(ui.frostTowerButton);
-                    print("Frost tower selected");
                 }
             }
         }
@@ -92,7 +89,6 @@ public class BuildManager : MonoBehaviour
                 if (gameManager.getPlayerCredit() >= 3) {
                     setSelection(SELECTION.Rapid);
                     ui.selectButton(ui.rapidTowerButton);
-                    print("Rapid tower selected");
                 }
             }
         }
