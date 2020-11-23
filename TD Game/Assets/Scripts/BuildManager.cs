@@ -17,9 +17,11 @@ public class BuildManager : MonoBehaviour
     private GUIStyle guiStyle = new GUIStyle();
     string build = "--Build State--";
     string play = "--Play State--";
+    string sell = "--Sell State--";
     string buildStateString;
     public SELECTION buildSelection;
     public bool buildState;
+    public bool sellState;
     public GameManager gameManager;
     public UserInterface ui;
 
@@ -93,6 +95,13 @@ public class BuildManager : MonoBehaviour
             }
         }
 
+        if (Input.GetKeyDown(KeyCode.S)) {
+            cancelBuildState();
+            enterSellState();
+            print("State changed to sell");
+        }
+
+        // Esc - cancel existing menus/actions
         if (Input.GetKeyDown(KeyCode.Escape)) {
             cancelBuildState();
             print("State changed to play");
@@ -143,5 +152,9 @@ public class BuildManager : MonoBehaviour
 
     public void setCreditWarning(bool state) {
         creditWarning = state;
+    }
+
+    public void enterSellState() {
+        sellState = true;
     }
 }

@@ -23,7 +23,7 @@ public class GameManager : MonoBehaviour {
     public SpawnerScript spawner;
     public GameObject towerGOSelected;
     public GameObject nodeGOSelected;
-    public bool towerSelected = false;
+    public bool towerSelectState = false;
     public string towerSelectedString;
 
     public Material materialNodeDefault;
@@ -75,8 +75,8 @@ public class GameManager : MonoBehaviour {
         GUI.Label(new Rect(Screen.width / 2 - Screen.width / 8, Screen.height / 2 - Screen.height / 3, 1000, 200), playerCreditString);
         GUI.Label(new Rect(Screen.width / 2 - Screen.width / 4, Screen.height / 2 - Screen.height / 3, 1000, 200), playerLifeString);
         GUI.Label(new Rect(Screen.width / 2, Screen.height / 2 - Screen.height / 3, 1000, 200), currentWaveString);
-        if(towerSelected && towerGOSelected != null) {
-            towerSelectedString = "Tower selected: " + towerGOSelected.ToString();
+        if(towerSelectState && towerGOSelected != null) {
+            towerSelectedString = "Tower type selected: " + towerGOSelected.GetComponentInChildren<TowerScript>().getAffix();
             GUI.Label(new Rect(Screen.width / 2 - Screen.width / 4, 0 + Screen.height / 7, 1000, 200), towerSelectedString);
         }
         
@@ -113,7 +113,7 @@ public class GameManager : MonoBehaviour {
     }
 
     public void updateTowerSelectedString() {
-        towerSelectedString = "Tower selected: " + towerGOSelected.ToString();
+        towerSelectedString = "Tower type selected: " + towerGOSelected.GetComponentInChildren<TowerScript>().getAffix();
     }
 
     public GameObject getTowerSelected() {
@@ -128,8 +128,8 @@ public class GameManager : MonoBehaviour {
         }
         towerGOSelected = tower;
         nodeGOSelected = node;
-        towerSelected = true;
-        towerSelectedString = "Tower selected: " + towerGOSelected.ToString();
+        towerSelectState = true;
+        towerSelectedString = "Tower type selected: " + towerGOSelected.GetComponentInChildren<TowerScript>().getAffix();
     }
 
     public void deselectTower() {
@@ -138,8 +138,16 @@ public class GameManager : MonoBehaviour {
             nodeGOSelected.gameObject.GetComponent<Renderer>().enabled = false;
             nodeGOSelected.gameObject.GetComponent<BuildNodeScript>().setTowerSelected(false);
         }
-        towerSelected = false;
+        towerSelectState = false;
         nodeGOSelected = null;
         towerGOSelected = null;
+    }
+
+    public bool getTowerSelectState() {
+        return towerSelectState;
+    }
+
+    public void setTowerSelectState(bool state) {
+        towerSelectState = state;
     }
 }

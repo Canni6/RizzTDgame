@@ -36,7 +36,7 @@ public class BuildNodeScript : MonoBehaviour {
         boxRend.enabled = false;
         materialInit = boxRend.material;
         materialTemp = (Material)Resources.Load("Materials/Tower_Highlight");
-        basicTower = (GameObject)Resources.Load("Prefabs/Tower_Basic");
+        basicTower = (GameObject)Resources.Load("Prefabs/Tower_Prototype_0");
         print("Basic tower assigned to: " + basicTower);
         frostTower = (GameObject)Resources.Load("Prefabs/Tower_Frost");
         print("Frost tower assigned to: " + frostTower);

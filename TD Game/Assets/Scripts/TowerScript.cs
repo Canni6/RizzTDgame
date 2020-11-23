@@ -158,6 +158,10 @@ public class TowerScript : MonoBehaviour
     public void setAffix(Affix affix) {
         this.affix = affix;
     }
+
+    public Affix getAffix() {
+        return affix;
+    }
     
     // Selectable Towers
     void OnMouseEnter() {
