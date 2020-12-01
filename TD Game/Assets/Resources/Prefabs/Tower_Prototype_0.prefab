@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2640384677020290253}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: BulletSpawnPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -40,7 +40,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5078579864373318196}
   - component: {fileID: 8301504051531472434}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Turret
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -96,7 +96,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4067397402420374909}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -128,7 +128,7 @@ GameObject:
   - component: {fileID: 6851225987762696027}
   - component: {fileID: 7153069948620956083}
   - component: {fileID: 4822818789328711249}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Turret_model
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -207,7 +207,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6010852582862230194}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Tower_Prototype_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -241,7 +241,7 @@ GameObject:
   - component: {fileID: 4070518408977926907}
   - component: {fileID: 9208553273983253520}
   - component: {fileID: 7424838394031115506}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Base
   m_TagString: Untagged
   m_Icon: {fileID: 0}

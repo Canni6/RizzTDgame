@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 33024874844698454}
   - component: {fileID: 136504860369862268}
   - component: {fileID: 23339698798387980}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Cylinder (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -106,7 +106,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4220073341970860}
   - component: {fileID: 8526677824304703815}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Turret
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -145,11 +145,15 @@ MonoBehaviour:
   highlightTarget: {fileID: 0}
   maxRange: 10
   timeBetweenShots: 2
+  fireRate: 0
   projectile: {fileID: 1708403320664592, guid: dcda6862cda0b4843b8452f49c03ad69, type: 3}
   projectileSpawn: {fileID: 4780915950224994, guid: b61fa7e559b91e1409fe7a1320772488,
     type: 3}
   built: 0
   target: {fileID: 0}
+  materialInit: {fileID: 0}
+  materialTemp: {fileID: 0}
+  affix: 0
 --- !u!1 &1563601285914270
 GameObject:
   m_ObjectHideFlags: 0
@@ -162,7 +166,7 @@ GameObject:
   - component: {fileID: 33355641822154902}
   - component: {fileID: 65980178175131674}
   - component: {fileID: 23396826293575128}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Base
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -257,7 +261,7 @@ GameObject:
   - component: {fileID: 33763284826440974}
   - component: {fileID: 136500824184103712}
   - component: {fileID: 23747934159408898}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Cylinder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -350,7 +354,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4074895850317990}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Tower_Frost
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -382,7 +386,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6013271291805544704}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: BulletSpawnPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
