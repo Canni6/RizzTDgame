@@ -96,9 +96,12 @@ public class BuildManager : MonoBehaviour
         }
 
         if (Input.GetKeyDown(KeyCode.S)) {
+            // check if a build node is selected for selling
+            if (gameManager.getTowerSelectState()) {
+                gameManager.sellTowerSelected();
+                print("Tower sold");
+            }
             cancelBuildState();
-            enterSellState();
-            print("State changed to sell");
         }
 
         // Esc - cancel existing menus/actions
@@ -154,7 +157,4 @@ public class BuildManager : MonoBehaviour
         creditWarning = state;
     }
 
-    public void enterSellState() {
-        sellState = true;
-    }
 }

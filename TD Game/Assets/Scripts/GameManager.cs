@@ -28,6 +28,11 @@ public class GameManager : MonoBehaviour {
 
     public Material materialNodeDefault;
 
+    // tower construction value
+    const int value_basic = 2;
+    const int value_frost = 4;
+    const int value_rapid = 8;
+
     // Start is called before the first frame update
     void Start() {
         // instantiate players and add Player scripts to them
@@ -74,7 +79,7 @@ public class GameManager : MonoBehaviour {
     private void OnGUI() {
         GUI.Label(new Rect(Screen.width / 2 - Screen.width / 8, Screen.height / 2 - Screen.height / 3, 1000, 200), playerCreditString);
         GUI.Label(new Rect(Screen.width / 2 - Screen.width / 4, Screen.height / 2 - Screen.height / 3, 1000, 200), playerLifeString);
-        GUI.Label(new Rect(Screen.width / 2, Screen.height / 2 - Screen.height / 3, 1000, 200), currentWaveString);
+        GUI.Label(new Rect(Screen.width / 2 + 20, Screen.height / 2 - Screen.height / 3, 1000, 200), currentWaveString);
         if(towerSelectState && towerGOSelected != null) {
             towerSelectedString = "Tower type selected: " + towerGOSelected.GetComponentInChildren<TowerScript>().getAffix();
             GUI.Label(new Rect(Screen.width / 2 - Screen.width / 4, 0 + Screen.height / 7, 1000, 200), towerSelectedString);
@@ -116,6 +121,10 @@ public class GameManager : MonoBehaviour {
         towerSelectedString = "Tower type selected: " + towerGOSelected.GetComponentInChildren<TowerScript>().getAffix();
     }
 
+    public void updatePlayerCreditString() {
+        playerCreditString = "Credit: " + player1Ref.getCredit();
+    }
+
     public GameObject getTowerSelected() {
         return towerGOSelected;
     }
@@ -149,5 +158,29 @@ public class GameManager : MonoBehaviour {
 
     public void setTowerSelectState(bool state) {
         towerSelectState = state;
+    }
+
+    public void sellTowerSelected() {
+        // refund money
+        if(towerGOSelected) {
+            player1Ref.addCredit(+1 * convertAffixToValue(towerGOSelected.GetComponentInChildren<TowerScript>().getAffix()));
+            updatePlayerCreditString();
+        }
+        // make buildable again
+        nodeGOSelected.GetComponentInChildren<BuildNodeScript>().buildableArea = true;
+        // destroy GO
+        Destroy(towerGOSelected);
+    }
+
+    public int convertAffixToValue(TowerScript.Affix affix) {
+        int value = 0;
+        if(affix == TowerScript.Affix.Basic) {
+            value = value_basic / 2;
+        } else if (affix == TowerScript.Affix.Frost) {
+            value = value_frost / 2;
+        } else if (affix == TowerScript.Affix.Rapid) {
+            value = value_rapid / 2;
+        }
+        return value;
     }
 }

@@ -51,7 +51,7 @@ public class SpawnerScript : MonoBehaviour {
 				timeBetweenMobs = 2.0f;
 				enemiesRemainingToSpawn--;
 			}
-			start.transform.Rotate(75 * Time.deltaTime, 0, 0);
+			start.transform.Rotate(0, -100 * Time.deltaTime, 0);
 		}
 		
 	}
