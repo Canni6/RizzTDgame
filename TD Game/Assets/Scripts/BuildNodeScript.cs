@@ -25,6 +25,8 @@ public class BuildNodeScript : MonoBehaviour {
     public Material materialInit;
     public Material materialTemp;
 
+    public Vector3 towerPosition;
+
     public bool towerSelected = false;
 
     // Use this for initialization
@@ -53,14 +55,15 @@ public class BuildNodeScript : MonoBehaviour {
             if(buildableArea) {
                 boxRend.enabled = true;
                 boxRend.material.color = Color.green;
+                towerPosition = boxRend.transform.position + new Vector3 (0, 1, 0); // account for box vertical height to place tower
                 print(boxRend.material.color);
                 // instantiate temp tower - type based on selection
                 if (getBuildSelection() == BuildManager.SELECTION.Basic) {
-                    tempTower = Instantiate(basicTower, boxRend.transform.position, boxRend.transform.rotation);
+                    tempTower = Instantiate(basicTower, towerPosition, boxRend.transform.rotation);
                 } else if (getBuildSelection() == BuildManager.SELECTION.Frost) {
-                    tempTower = Instantiate(frostTower, boxRend.transform.position, boxRend.transform.rotation);
+                    tempTower = Instantiate(frostTower, towerPosition, boxRend.transform.rotation);
                 } else if (getBuildSelection() == BuildManager.SELECTION.Rapid) {
-                    tempTower = Instantiate(rapidTower, boxRend.transform.position, boxRend.transform.rotation);
+                    tempTower = Instantiate(rapidTower, towerPosition, boxRend.transform.rotation);
                 }
             }
             else {
@@ -70,7 +73,7 @@ public class BuildNodeScript : MonoBehaviour {
     }
 
     public void instantiateTower(GameObject towerType, float fireRate, int cost) {
-        builtTower = Instantiate(towerType, boxRend.transform.position, boxRend.transform.rotation);
+        builtTower = Instantiate(towerType, towerPosition, boxRend.transform.rotation);
         if(towerType == basicTower) {
             builtTower.GetComponentInChildren<TowerScript>().setAffix(TowerScript.Affix.Basic);
         } else if(towerType == frostTower) {
