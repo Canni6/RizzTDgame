@@ -306,6 +306,7 @@ MonoBehaviour:
   buildManager: {fileID: 0}
   materialInit: {fileID: 0}
   materialTemp: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
   towerSelected: 0
 --- !u!1 &33395248
 GameObject:
@@ -588,6 +589,7 @@ MonoBehaviour:
   buildManager: {fileID: 0}
   materialInit: {fileID: 0}
   materialTemp: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
   towerSelected: 0
 --- !u!1 &51633106
 GameObject:
@@ -708,6 +710,7 @@ MonoBehaviour:
   buildManager: {fileID: 0}
   materialInit: {fileID: 0}
   materialTemp: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
   towerSelected: 0
 --- !u!1 &63754246
 GameObject:
@@ -828,6 +831,7 @@ MonoBehaviour:
   buildManager: {fileID: 0}
   materialInit: {fileID: 0}
   materialTemp: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
   towerSelected: 0
 --- !u!1 &72180122
 GameObject:
@@ -1029,6 +1033,7 @@ MonoBehaviour:
   buildManager: {fileID: 0}
   materialInit: {fileID: 0}
   materialTemp: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
   towerSelected: 0
 --- !u!1 &79436847
 GameObject:
@@ -1149,6 +1154,7 @@ MonoBehaviour:
   buildManager: {fileID: 0}
   materialInit: {fileID: 0}
   materialTemp: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
   towerSelected: 0
 --- !u!1 &86611646
 GameObject:
@@ -1269,6 +1275,7 @@ MonoBehaviour:
   buildManager: {fileID: 0}
   materialInit: {fileID: 0}
   materialTemp: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
   towerSelected: 0
 --- !u!1 &90617664
 GameObject:
@@ -1434,6 +1441,7 @@ MonoBehaviour:
   buildManager: {fileID: 0}
   materialInit: {fileID: 0}
   materialTemp: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
   towerSelected: 0
 --- !u!1 &100466182
 GameObject:
@@ -1554,6 +1562,7 @@ MonoBehaviour:
   buildManager: {fileID: 0}
   materialInit: {fileID: 0}
   materialTemp: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
   towerSelected: 0
 --- !u!1 &104806307
 GameObject:
@@ -1674,6 +1683,7 @@ MonoBehaviour:
   buildManager: {fileID: 0}
   materialInit: {fileID: 0}
   materialTemp: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
   towerSelected: 0
 --- !u!1 &114925257
 GameObject:
@@ -1794,6 +1804,7 @@ MonoBehaviour:
   buildManager: {fileID: 0}
   materialInit: {fileID: 0}
   materialTemp: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
   towerSelected: 0
 --- !u!1 &119789041
 GameObject:
@@ -1914,6 +1925,7 @@ MonoBehaviour:
   buildManager: {fileID: 0}
   materialInit: {fileID: 0}
   materialTemp: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
   towerSelected: 0
 --- !u!1 &126861084
 GameObject:
@@ -2034,6 +2046,7 @@ MonoBehaviour:
   buildManager: {fileID: 0}
   materialInit: {fileID: 0}
   materialTemp: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
   towerSelected: 0
 --- !u!1 &140101808
 GameObject:
@@ -2390,6 +2403,7 @@ MonoBehaviour:
   buildManager: {fileID: 0}
   materialInit: {fileID: 0}
   materialTemp: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
   towerSelected: 0
 --- !u!1 &163102672
 GameObject:
@@ -2510,6 +2524,7 @@ MonoBehaviour:
   buildManager: {fileID: 0}
   materialInit: {fileID: 0}
   materialTemp: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
   towerSelected: 0
 --- !u!1 &175411803
 GameObject:
@@ -2630,6 +2645,7 @@ MonoBehaviour:
   buildManager: {fileID: 0}
   materialInit: {fileID: 0}
   materialTemp: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
   towerSelected: 0
 --- !u!1 &177362509
 GameObject:
@@ -2750,6 +2766,7 @@ MonoBehaviour:
   buildManager: {fileID: 0}
   materialInit: {fileID: 0}
   materialTemp: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
   towerSelected: 0
 --- !u!1 &178647815
 GameObject:
@@ -2870,6 +2887,7 @@ MonoBehaviour:
   buildManager: {fileID: 0}
   materialInit: {fileID: 0}
   materialTemp: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
   towerSelected: 0
 --- !u!1 &224015142
 GameObject:
@@ -2990,6 +3008,7 @@ MonoBehaviour:
   buildManager: {fileID: 0}
   materialInit: {fileID: 0}
   materialTemp: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
   towerSelected: 0
 --- !u!1001 &228569889
 PrefabInstance:
@@ -3173,6 +3192,7 @@ MonoBehaviour:
   buildManager: {fileID: 0}
   materialInit: {fileID: 0}
   materialTemp: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
   towerSelected: 0
 --- !u!1 &260657074
 GameObject:
@@ -3293,6 +3313,7 @@ MonoBehaviour:
   buildManager: {fileID: 0}
   materialInit: {fileID: 0}
   materialTemp: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
   towerSelected: 0
 --- !u!1 &269007368
 GameObject:
@@ -3413,6 +3434,7 @@ MonoBehaviour:
   buildManager: {fileID: 0}
   materialInit: {fileID: 0}
   materialTemp: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
   towerSelected: 0
 --- !u!1 &284240154
 GameObject:
@@ -3533,6 +3555,7 @@ MonoBehaviour:
   buildManager: {fileID: 0}
   materialInit: {fileID: 0}
   materialTemp: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
   towerSelected: 0
 --- !u!1001 &284282576
 PrefabInstance:
@@ -3779,6 +3802,7 @@ MonoBehaviour:
   buildManager: {fileID: 0}
   materialInit: {fileID: 0}
   materialTemp: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
   towerSelected: 0
 --- !u!1 &322461372
 GameObject:
@@ -3899,6 +3923,7 @@ MonoBehaviour:
   buildManager: {fileID: 0}
   materialInit: {fileID: 0}
   materialTemp: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
   towerSelected: 0
 --- !u!1 &336195959
 GameObject:
@@ -4019,6 +4044,7 @@ MonoBehaviour:
   buildManager: {fileID: 0}
   materialInit: {fileID: 0}
   materialTemp: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
   towerSelected: 0
 --- !u!1 &342356473
 GameObject:
@@ -4139,6 +4165,7 @@ MonoBehaviour:
   buildManager: {fileID: 0}
   materialInit: {fileID: 0}
   materialTemp: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
   towerSelected: 0
 --- !u!1 &355033255
 GameObject:
@@ -4259,6 +4286,7 @@ MonoBehaviour:
   buildManager: {fileID: 0}
   materialInit: {fileID: 0}
   materialTemp: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
   towerSelected: 0
 --- !u!1 &364836107
 GameObject:
@@ -4379,6 +4407,7 @@ MonoBehaviour:
   buildManager: {fileID: 0}
   materialInit: {fileID: 0}
   materialTemp: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
   towerSelected: 0
 --- !u!1 &365565585
 GameObject:
@@ -4499,6 +4528,7 @@ MonoBehaviour:
   buildManager: {fileID: 0}
   materialInit: {fileID: 0}
   materialTemp: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
   towerSelected: 0
 --- !u!1 &385850549
 GameObject:
@@ -4700,6 +4730,7 @@ MonoBehaviour:
   buildManager: {fileID: 0}
   materialInit: {fileID: 0}
   materialTemp: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
   towerSelected: 0
 --- !u!1 &391697152
 GameObject:
@@ -4820,6 +4851,7 @@ MonoBehaviour:
   buildManager: {fileID: 0}
   materialInit: {fileID: 0}
   materialTemp: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
   towerSelected: 0
 --- !u!1 &395320496
 GameObject:
@@ -5019,6 +5051,7 @@ MonoBehaviour:
   buildManager: {fileID: 0}
   materialInit: {fileID: 0}
   materialTemp: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
   towerSelected: 0
 --- !u!1 &413058055
 GameObject:
@@ -5139,6 +5172,7 @@ MonoBehaviour:
   buildManager: {fileID: 0}
   materialInit: {fileID: 0}
   materialTemp: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
   towerSelected: 0
 --- !u!1 &426986237
 GameObject:
@@ -5259,6 +5293,7 @@ MonoBehaviour:
   buildManager: {fileID: 0}
   materialInit: {fileID: 0}
   materialTemp: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
   towerSelected: 0
 --- !u!1 &434253068
 GameObject:
@@ -5379,6 +5414,7 @@ MonoBehaviour:
   buildManager: {fileID: 0}
   materialInit: {fileID: 0}
   materialTemp: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
   towerSelected: 0
 --- !u!1 &440898059
 GameObject:
@@ -5580,6 +5616,7 @@ MonoBehaviour:
   buildManager: {fileID: 0}
   materialInit: {fileID: 0}
   materialTemp: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
   towerSelected: 0
 --- !u!1 &464775913
 GameObject:
@@ -5700,6 +5737,7 @@ MonoBehaviour:
   buildManager: {fileID: 0}
   materialInit: {fileID: 0}
   materialTemp: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
   towerSelected: 0
 --- !u!1 &470365122
 GameObject:
@@ -5820,6 +5858,7 @@ MonoBehaviour:
   buildManager: {fileID: 0}
   materialInit: {fileID: 0}
   materialTemp: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
   towerSelected: 0
 --- !u!1 &472498136
 GameObject:
@@ -5940,6 +5979,7 @@ MonoBehaviour:
   buildManager: {fileID: 0}
   materialInit: {fileID: 0}
   materialTemp: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
   towerSelected: 0
 --- !u!1 &477465617
 GameObject:
@@ -6060,6 +6100,7 @@ MonoBehaviour:
   buildManager: {fileID: 0}
   materialInit: {fileID: 0}
   materialTemp: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
   towerSelected: 0
 --- !u!1 &497513183
 GameObject:
@@ -6073,7 +6114,7 @@ GameObject:
   - component: {fileID: 497513187}
   - component: {fileID: 497513186}
   - component: {fileID: 497513185}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: GroundPlane
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6088,8 +6129,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 497513183}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -1, z: 0}
-  m_LocalScale: {x: 1000, y: 1, z: 1000}
+  m_LocalPosition: {x: 37.5, y: -1, z: -37.5}
+  m_LocalScale: {x: 100, y: 1, z: 100}
   m_Children: []
   m_Father: {fileID: 1961940206}
   m_RootOrder: 0
@@ -6275,6 +6316,7 @@ MonoBehaviour:
   buildManager: {fileID: 0}
   materialInit: {fileID: 0}
   materialTemp: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
   towerSelected: 0
 --- !u!1 &525317217
 GameObject:
@@ -6476,6 +6518,7 @@ MonoBehaviour:
   buildManager: {fileID: 0}
   materialInit: {fileID: 0}
   materialTemp: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
   towerSelected: 0
 --- !u!1 &562930370
 GameObject:
@@ -6596,6 +6639,7 @@ MonoBehaviour:
   buildManager: {fileID: 0}
   materialInit: {fileID: 0}
   materialTemp: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
   towerSelected: 0
 --- !u!1 &570608260
 GameObject:
@@ -6716,6 +6760,7 @@ MonoBehaviour:
   buildManager: {fileID: 0}
   materialInit: {fileID: 0}
   materialTemp: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
   towerSelected: 0
 --- !u!1 &575643700
 GameObject:
@@ -6836,6 +6881,7 @@ MonoBehaviour:
   buildManager: {fileID: 0}
   materialInit: {fileID: 0}
   materialTemp: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
   towerSelected: 0
 --- !u!1 &575778286
 GameObject:
@@ -6956,6 +7002,7 @@ MonoBehaviour:
   buildManager: {fileID: 0}
   materialInit: {fileID: 0}
   materialTemp: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
   towerSelected: 0
 --- !u!1 &576418820
 GameObject:
@@ -7076,6 +7123,7 @@ MonoBehaviour:
   buildManager: {fileID: 0}
   materialInit: {fileID: 0}
   materialTemp: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
   towerSelected: 0
 --- !u!1 &594196491
 GameObject:
@@ -7196,6 +7244,7 @@ MonoBehaviour:
   buildManager: {fileID: 0}
   materialInit: {fileID: 0}
   materialTemp: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
   towerSelected: 0
 --- !u!1 &599853812
 GameObject:
@@ -7316,6 +7365,7 @@ MonoBehaviour:
   buildManager: {fileID: 0}
   materialInit: {fileID: 0}
   materialTemp: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
   towerSelected: 0
 --- !u!1 &615965510
 GameObject:
@@ -7436,6 +7486,7 @@ MonoBehaviour:
   buildManager: {fileID: 0}
   materialInit: {fileID: 0}
   materialTemp: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
   towerSelected: 0
 --- !u!1 &631477663
 GameObject:
@@ -7648,6 +7699,7 @@ MonoBehaviour:
   buildManager: {fileID: 0}
   materialInit: {fileID: 0}
   materialTemp: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
   towerSelected: 0
 --- !u!1 &652488602
 GameObject:
@@ -7951,6 +8003,7 @@ MonoBehaviour:
   buildManager: {fileID: 0}
   materialInit: {fileID: 0}
   materialTemp: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
   towerSelected: 0
 --- !u!1 &678601602
 GameObject:
@@ -8071,6 +8124,7 @@ MonoBehaviour:
   buildManager: {fileID: 0}
   materialInit: {fileID: 0}
   materialTemp: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
   towerSelected: 0
 --- !u!1 &684398122
 GameObject:
@@ -8191,6 +8245,7 @@ MonoBehaviour:
   buildManager: {fileID: 0}
   materialInit: {fileID: 0}
   materialTemp: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
   towerSelected: 0
 --- !u!1 &722625218
 GameObject:
@@ -8311,6 +8366,7 @@ MonoBehaviour:
   buildManager: {fileID: 0}
   materialInit: {fileID: 0}
   materialTemp: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
   towerSelected: 0
 --- !u!1 &730674220
 GameObject:
@@ -8431,6 +8487,7 @@ MonoBehaviour:
   buildManager: {fileID: 0}
   materialInit: {fileID: 0}
   materialTemp: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
   towerSelected: 0
 --- !u!1 &743762057
 GameObject:
@@ -8551,6 +8608,7 @@ MonoBehaviour:
   buildManager: {fileID: 0}
   materialInit: {fileID: 0}
   materialTemp: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
   towerSelected: 0
 --- !u!1 &743916828
 GameObject:
@@ -8671,6 +8729,7 @@ MonoBehaviour:
   buildManager: {fileID: 0}
   materialInit: {fileID: 0}
   materialTemp: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
   towerSelected: 0
 --- !u!1 &755285606
 GameObject:
@@ -8791,6 +8850,7 @@ MonoBehaviour:
   buildManager: {fileID: 0}
   materialInit: {fileID: 0}
   materialTemp: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
   towerSelected: 0
 --- !u!1 &758114674
 GameObject:
@@ -8911,6 +8971,7 @@ MonoBehaviour:
   buildManager: {fileID: 0}
   materialInit: {fileID: 0}
   materialTemp: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
   towerSelected: 0
 --- !u!1 &772307692
 GameObject:
@@ -9031,6 +9092,7 @@ MonoBehaviour:
   buildManager: {fileID: 0}
   materialInit: {fileID: 0}
   materialTemp: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
   towerSelected: 0
 --- !u!1001 &783010589
 PrefabInstance:
@@ -9235,6 +9297,7 @@ MonoBehaviour:
   buildManager: {fileID: 0}
   materialInit: {fileID: 0}
   materialTemp: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
   towerSelected: 0
 --- !u!1 &798562611
 GameObject:
@@ -9355,6 +9418,7 @@ MonoBehaviour:
   buildManager: {fileID: 0}
   materialInit: {fileID: 0}
   materialTemp: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
   towerSelected: 0
 --- !u!1 &806273626
 GameObject:
@@ -9475,6 +9539,7 @@ MonoBehaviour:
   buildManager: {fileID: 0}
   materialInit: {fileID: 0}
   materialTemp: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
   towerSelected: 0
 --- !u!1 &811702145
 GameObject:
@@ -9595,6 +9660,7 @@ MonoBehaviour:
   buildManager: {fileID: 0}
   materialInit: {fileID: 0}
   materialTemp: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
   towerSelected: 0
 --- !u!1 &818392524
 GameObject:
@@ -9715,6 +9781,7 @@ MonoBehaviour:
   buildManager: {fileID: 0}
   materialInit: {fileID: 0}
   materialTemp: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
   towerSelected: 0
 --- !u!1 &828098051
 GameObject:
@@ -9835,6 +9902,7 @@ MonoBehaviour:
   buildManager: {fileID: 0}
   materialInit: {fileID: 0}
   materialTemp: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
   towerSelected: 0
 --- !u!1 &857268691
 GameObject:
@@ -9955,6 +10023,7 @@ MonoBehaviour:
   buildManager: {fileID: 0}
   materialInit: {fileID: 0}
   materialTemp: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
   towerSelected: 0
 --- !u!1 &877641674
 GameObject:
@@ -10075,6 +10144,7 @@ MonoBehaviour:
   buildManager: {fileID: 0}
   materialInit: {fileID: 0}
   materialTemp: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
   towerSelected: 0
 --- !u!1 &891814161
 GameObject:
@@ -10195,6 +10265,7 @@ MonoBehaviour:
   buildManager: {fileID: 0}
   materialInit: {fileID: 0}
   materialTemp: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
   towerSelected: 0
 --- !u!1001 &900125670
 PrefabInstance:
@@ -10426,6 +10497,7 @@ MonoBehaviour:
   buildManager: {fileID: 0}
   materialInit: {fileID: 0}
   materialTemp: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
   towerSelected: 0
 --- !u!1 &920008546
 GameObject:
@@ -10546,6 +10618,7 @@ MonoBehaviour:
   buildManager: {fileID: 0}
   materialInit: {fileID: 0}
   materialTemp: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
   towerSelected: 0
 --- !u!1 &935299185
 GameObject:
@@ -10666,6 +10739,7 @@ MonoBehaviour:
   buildManager: {fileID: 0}
   materialInit: {fileID: 0}
   materialTemp: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
   towerSelected: 0
 --- !u!1 &935567401
 GameObject:
@@ -10786,6 +10860,7 @@ MonoBehaviour:
   buildManager: {fileID: 0}
   materialInit: {fileID: 0}
   materialTemp: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
   towerSelected: 0
 --- !u!1 &936000811
 GameObject:
@@ -10906,6 +10981,7 @@ MonoBehaviour:
   buildManager: {fileID: 0}
   materialInit: {fileID: 0}
   materialTemp: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
   towerSelected: 0
 --- !u!1 &936672549
 GameObject:
@@ -11026,6 +11102,7 @@ MonoBehaviour:
   buildManager: {fileID: 0}
   materialInit: {fileID: 0}
   materialTemp: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
   towerSelected: 0
 --- !u!1 &973484184
 GameObject:
@@ -11146,6 +11223,7 @@ MonoBehaviour:
   buildManager: {fileID: 0}
   materialInit: {fileID: 0}
   materialTemp: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
   towerSelected: 0
 --- !u!1001 &984974722
 PrefabInstance:
@@ -11329,6 +11407,7 @@ MonoBehaviour:
   buildManager: {fileID: 0}
   materialInit: {fileID: 0}
   materialTemp: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
   towerSelected: 0
 --- !u!1 &1017324671
 GameObject:
@@ -11449,6 +11528,7 @@ MonoBehaviour:
   buildManager: {fileID: 0}
   materialInit: {fileID: 0}
   materialTemp: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
   towerSelected: 0
 --- !u!1 &1022089444
 GameObject:
@@ -11569,6 +11649,7 @@ MonoBehaviour:
   buildManager: {fileID: 0}
   materialInit: {fileID: 0}
   materialTemp: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
   towerSelected: 0
 --- !u!1 &1028096241
 GameObject:
@@ -11689,6 +11770,7 @@ MonoBehaviour:
   buildManager: {fileID: 0}
   materialInit: {fileID: 0}
   materialTemp: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
   towerSelected: 0
 --- !u!1 &1042766024
 GameObject:
@@ -11809,6 +11891,7 @@ MonoBehaviour:
   buildManager: {fileID: 0}
   materialInit: {fileID: 0}
   materialTemp: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
   towerSelected: 0
 --- !u!1 &1052771352
 GameObject:
@@ -11929,6 +12012,7 @@ MonoBehaviour:
   buildManager: {fileID: 0}
   materialInit: {fileID: 0}
   materialTemp: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
   towerSelected: 0
 --- !u!1 &1054059685
 GameObject:
@@ -12049,6 +12133,7 @@ MonoBehaviour:
   buildManager: {fileID: 0}
   materialInit: {fileID: 0}
   materialTemp: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
   towerSelected: 0
 --- !u!1 &1056900912
 GameObject:
@@ -12169,6 +12254,7 @@ MonoBehaviour:
   buildManager: {fileID: 0}
   materialInit: {fileID: 0}
   materialTemp: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
   towerSelected: 0
 --- !u!1 &1058081037
 GameObject:
@@ -12289,6 +12375,7 @@ MonoBehaviour:
   buildManager: {fileID: 0}
   materialInit: {fileID: 0}
   materialTemp: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
   towerSelected: 0
 --- !u!1 &1068799382
 GameObject:
@@ -12409,6 +12496,7 @@ MonoBehaviour:
   buildManager: {fileID: 0}
   materialInit: {fileID: 0}
   materialTemp: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
   towerSelected: 0
 --- !u!1 &1074632544
 GameObject:
@@ -12529,6 +12617,7 @@ MonoBehaviour:
   buildManager: {fileID: 0}
   materialInit: {fileID: 0}
   materialTemp: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
   towerSelected: 0
 --- !u!1 &1077339679
 GameObject:
@@ -12649,6 +12738,7 @@ MonoBehaviour:
   buildManager: {fileID: 0}
   materialInit: {fileID: 0}
   materialTemp: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
   towerSelected: 0
 --- !u!1 &1082000590
 GameObject:
@@ -12769,6 +12859,7 @@ MonoBehaviour:
   buildManager: {fileID: 0}
   materialInit: {fileID: 0}
   materialTemp: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
   towerSelected: 0
 --- !u!1 &1107853232
 GameObject:
@@ -12889,6 +12980,7 @@ MonoBehaviour:
   buildManager: {fileID: 0}
   materialInit: {fileID: 0}
   materialTemp: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
   towerSelected: 0
 --- !u!1 &1111214476
 GameObject:
@@ -13009,6 +13101,7 @@ MonoBehaviour:
   buildManager: {fileID: 0}
   materialInit: {fileID: 0}
   materialTemp: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
   towerSelected: 0
 --- !u!1 &1113712688
 GameObject:
@@ -13129,6 +13222,7 @@ MonoBehaviour:
   buildManager: {fileID: 0}
   materialInit: {fileID: 0}
   materialTemp: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
   towerSelected: 0
 --- !u!1 &1137392482
 GameObject:
@@ -13249,6 +13343,7 @@ MonoBehaviour:
   buildManager: {fileID: 0}
   materialInit: {fileID: 0}
   materialTemp: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
   towerSelected: 0
 --- !u!1 &1139071577
 GameObject:
@@ -13369,6 +13464,7 @@ MonoBehaviour:
   buildManager: {fileID: 0}
   materialInit: {fileID: 0}
   materialTemp: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
   towerSelected: 0
 --- !u!1 &1144636288
 GameObject:
@@ -13609,6 +13705,7 @@ MonoBehaviour:
   buildManager: {fileID: 0}
   materialInit: {fileID: 0}
   materialTemp: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
   towerSelected: 0
 --- !u!1 &1153251775
 GameObject:
@@ -13729,6 +13826,7 @@ MonoBehaviour:
   buildManager: {fileID: 0}
   materialInit: {fileID: 0}
   materialTemp: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
   towerSelected: 0
 --- !u!1 &1166319110
 GameObject:
@@ -13930,6 +14028,7 @@ MonoBehaviour:
   buildManager: {fileID: 0}
   materialInit: {fileID: 0}
   materialTemp: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
   towerSelected: 0
 --- !u!1 &1171830314
 GameObject:
@@ -14050,6 +14149,7 @@ MonoBehaviour:
   buildManager: {fileID: 0}
   materialInit: {fileID: 0}
   materialTemp: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
   towerSelected: 0
 --- !u!1 &1172970457
 GameObject:
@@ -14170,6 +14270,7 @@ MonoBehaviour:
   buildManager: {fileID: 0}
   materialInit: {fileID: 0}
   materialTemp: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
   towerSelected: 0
 --- !u!1 &1176693090
 GameObject:
@@ -14410,6 +14511,7 @@ MonoBehaviour:
   buildManager: {fileID: 0}
   materialInit: {fileID: 0}
   materialTemp: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
   towerSelected: 0
 --- !u!1 &1186985131
 GameObject:
@@ -14530,6 +14632,7 @@ MonoBehaviour:
   buildManager: {fileID: 0}
   materialInit: {fileID: 0}
   materialTemp: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
   towerSelected: 0
 --- !u!1 &1187342309
 GameObject:
@@ -14650,6 +14753,7 @@ MonoBehaviour:
   buildManager: {fileID: 0}
   materialInit: {fileID: 0}
   materialTemp: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
   towerSelected: 0
 --- !u!1 &1208289311
 GameObject:
@@ -14770,6 +14874,7 @@ MonoBehaviour:
   buildManager: {fileID: 0}
   materialInit: {fileID: 0}
   materialTemp: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
   towerSelected: 0
 --- !u!1 &1219126433
 GameObject:
@@ -14890,6 +14995,7 @@ MonoBehaviour:
   buildManager: {fileID: 0}
   materialInit: {fileID: 0}
   materialTemp: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
   towerSelected: 0
 --- !u!1 &1220825205
 GameObject:
@@ -15010,6 +15116,7 @@ MonoBehaviour:
   buildManager: {fileID: 0}
   materialInit: {fileID: 0}
   materialTemp: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
   towerSelected: 0
 --- !u!1 &1228830811
 GameObject:
@@ -15130,6 +15237,7 @@ MonoBehaviour:
   buildManager: {fileID: 0}
   materialInit: {fileID: 0}
   materialTemp: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
   towerSelected: 0
 --- !u!1 &1243170180
 GameObject:
@@ -15316,6 +15424,7 @@ MonoBehaviour:
   buildManager: {fileID: 0}
   materialInit: {fileID: 0}
   materialTemp: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
   towerSelected: 0
 --- !u!1 &1256634593
 GameObject:
@@ -15436,6 +15545,7 @@ MonoBehaviour:
   buildManager: {fileID: 0}
   materialInit: {fileID: 0}
   materialTemp: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
   towerSelected: 0
 --- !u!1 &1259705278
 GameObject:
@@ -15556,6 +15666,7 @@ MonoBehaviour:
   buildManager: {fileID: 0}
   materialInit: {fileID: 0}
   materialTemp: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
   towerSelected: 0
 --- !u!1 &1265760289
 GameObject:
@@ -15676,6 +15787,7 @@ MonoBehaviour:
   buildManager: {fileID: 0}
   materialInit: {fileID: 0}
   materialTemp: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
   towerSelected: 0
 --- !u!1 &1277115160
 GameObject:
@@ -15796,6 +15908,7 @@ MonoBehaviour:
   buildManager: {fileID: 0}
   materialInit: {fileID: 0}
   materialTemp: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
   towerSelected: 0
 --- !u!1001 &1295482407
 PrefabInstance:
@@ -15988,6 +16101,7 @@ MonoBehaviour:
   buildManager: {fileID: 0}
   materialInit: {fileID: 0}
   materialTemp: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
   towerSelected: 0
 --- !u!1 &1303259983
 GameObject:
@@ -16108,6 +16222,7 @@ MonoBehaviour:
   buildManager: {fileID: 0}
   materialInit: {fileID: 0}
   materialTemp: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
   towerSelected: 0
 --- !u!1 &1308226451
 GameObject:
@@ -16228,6 +16343,7 @@ MonoBehaviour:
   buildManager: {fileID: 0}
   materialInit: {fileID: 0}
   materialTemp: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
   towerSelected: 0
 --- !u!1 &1330941672
 GameObject:
@@ -16348,6 +16464,7 @@ MonoBehaviour:
   buildManager: {fileID: 0}
   materialInit: {fileID: 0}
   materialTemp: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
   towerSelected: 0
 --- !u!1 &1357184759
 GameObject:
@@ -16468,6 +16585,7 @@ MonoBehaviour:
   buildManager: {fileID: 0}
   materialInit: {fileID: 0}
   materialTemp: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
   towerSelected: 0
 --- !u!1 &1358638917
 GameObject:
@@ -16588,6 +16706,7 @@ MonoBehaviour:
   buildManager: {fileID: 0}
   materialInit: {fileID: 0}
   materialTemp: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
   towerSelected: 0
 --- !u!1 &1359167199
 GameObject:
@@ -16708,6 +16827,7 @@ MonoBehaviour:
   buildManager: {fileID: 0}
   materialInit: {fileID: 0}
   materialTemp: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
   towerSelected: 0
 --- !u!1 &1363048918
 GameObject:
@@ -16828,6 +16948,7 @@ MonoBehaviour:
   buildManager: {fileID: 0}
   materialInit: {fileID: 0}
   materialTemp: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
   towerSelected: 0
 --- !u!1 &1365665544
 GameObject:
@@ -16948,6 +17069,7 @@ MonoBehaviour:
   buildManager: {fileID: 0}
   materialInit: {fileID: 0}
   materialTemp: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
   towerSelected: 0
 --- !u!1 &1376124742
 GameObject:
@@ -17068,6 +17190,7 @@ MonoBehaviour:
   buildManager: {fileID: 0}
   materialInit: {fileID: 0}
   materialTemp: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
   towerSelected: 0
 --- !u!1 &1377189589
 GameObject:
@@ -17188,6 +17311,7 @@ MonoBehaviour:
   buildManager: {fileID: 0}
   materialInit: {fileID: 0}
   materialTemp: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
   towerSelected: 0
 --- !u!1 &1379811174
 GameObject:
@@ -17387,6 +17511,7 @@ MonoBehaviour:
   buildManager: {fileID: 0}
   materialInit: {fileID: 0}
   materialTemp: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
   towerSelected: 0
 --- !u!1 &1410049953
 GameObject:
@@ -17507,6 +17632,7 @@ MonoBehaviour:
   buildManager: {fileID: 0}
   materialInit: {fileID: 0}
   materialTemp: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
   towerSelected: 0
 --- !u!1 &1419380443
 GameObject:
@@ -17627,6 +17753,7 @@ MonoBehaviour:
   buildManager: {fileID: 0}
   materialInit: {fileID: 0}
   materialTemp: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
   towerSelected: 0
 --- !u!1001 &1422867239
 PrefabInstance:
@@ -17643,17 +17770,17 @@ PrefabInstance:
     - target: {fileID: 8800744780197729360, guid: 74c1b2ff2eef8304b914d187f40c95c7,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 63.00379
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8800744780197729360, guid: 74c1b2ff2eef8304b914d187f40c95c7,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.7907429
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8800744780197729360, guid: 74c1b2ff2eef8304b914d187f40c95c7,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -13.533506
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8800744780197729360, guid: 74c1b2ff2eef8304b914d187f40c95c7,
         type: 3}
@@ -17816,6 +17943,7 @@ MonoBehaviour:
   buildManager: {fileID: 0}
   materialInit: {fileID: 0}
   materialTemp: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
   towerSelected: 0
 --- !u!1 &1433386819
 GameObject:
@@ -17936,6 +18064,7 @@ MonoBehaviour:
   buildManager: {fileID: 0}
   materialInit: {fileID: 0}
   materialTemp: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
   towerSelected: 0
 --- !u!1 &1442218431
 GameObject:
@@ -18056,6 +18185,7 @@ MonoBehaviour:
   buildManager: {fileID: 0}
   materialInit: {fileID: 0}
   materialTemp: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
   towerSelected: 0
 --- !u!1 &1453422550
 GameObject:
@@ -18176,6 +18306,7 @@ MonoBehaviour:
   buildManager: {fileID: 0}
   materialInit: {fileID: 0}
   materialTemp: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
   towerSelected: 0
 --- !u!1 &1457515531
 GameObject:
@@ -18296,6 +18427,7 @@ MonoBehaviour:
   buildManager: {fileID: 0}
   materialInit: {fileID: 0}
   materialTemp: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
   towerSelected: 0
 --- !u!1 &1458822619
 GameObject:
@@ -18416,6 +18548,7 @@ MonoBehaviour:
   buildManager: {fileID: 0}
   materialInit: {fileID: 0}
   materialTemp: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
   towerSelected: 0
 --- !u!1 &1461979571
 GameObject:
@@ -18536,6 +18669,7 @@ MonoBehaviour:
   buildManager: {fileID: 0}
   materialInit: {fileID: 0}
   materialTemp: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
   towerSelected: 0
 --- !u!1 &1471918672
 GameObject:
@@ -18656,6 +18790,7 @@ MonoBehaviour:
   buildManager: {fileID: 0}
   materialInit: {fileID: 0}
   materialTemp: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
   towerSelected: 0
 --- !u!1 &1477048467
 GameObject:
@@ -18916,6 +19051,7 @@ MonoBehaviour:
   buildManager: {fileID: 0}
   materialInit: {fileID: 0}
   materialTemp: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
   towerSelected: 0
 --- !u!65 &1477048470
 BoxCollider:
@@ -19090,6 +19226,7 @@ MonoBehaviour:
   buildManager: {fileID: 0}
   materialInit: {fileID: 0}
   materialTemp: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
   towerSelected: 0
 --- !u!1 &1480672117
 GameObject:
@@ -19210,6 +19347,7 @@ MonoBehaviour:
   buildManager: {fileID: 0}
   materialInit: {fileID: 0}
   materialTemp: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
   towerSelected: 0
 --- !u!1001 &1486427529
 PrefabInstance:
@@ -19574,6 +19712,7 @@ MonoBehaviour:
   buildManager: {fileID: 0}
   materialInit: {fileID: 0}
   materialTemp: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
   towerSelected: 0
 --- !u!1 &1524691083
 GameObject:
@@ -19694,6 +19833,7 @@ MonoBehaviour:
   buildManager: {fileID: 0}
   materialInit: {fileID: 0}
   materialTemp: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
   towerSelected: 0
 --- !u!1 &1530773152
 GameObject:
@@ -19814,6 +19954,7 @@ MonoBehaviour:
   buildManager: {fileID: 0}
   materialInit: {fileID: 0}
   materialTemp: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
   towerSelected: 0
 --- !u!1 &1544929944
 GameObject:
@@ -19934,6 +20075,7 @@ MonoBehaviour:
   buildManager: {fileID: 0}
   materialInit: {fileID: 0}
   materialTemp: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
   towerSelected: 0
 --- !u!1 &1548374919
 GameObject:
@@ -20054,6 +20196,7 @@ MonoBehaviour:
   buildManager: {fileID: 0}
   materialInit: {fileID: 0}
   materialTemp: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
   towerSelected: 0
 --- !u!1 &1550026516
 GameObject:
@@ -20174,6 +20317,7 @@ MonoBehaviour:
   buildManager: {fileID: 0}
   materialInit: {fileID: 0}
   materialTemp: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
   towerSelected: 0
 --- !u!1 &1557519307
 GameObject:
@@ -20406,6 +20550,7 @@ MonoBehaviour:
   buildManager: {fileID: 0}
   materialInit: {fileID: 0}
   materialTemp: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
   towerSelected: 0
 --- !u!1 &1583719983
 GameObject:
@@ -20526,6 +20671,7 @@ MonoBehaviour:
   buildManager: {fileID: 0}
   materialInit: {fileID: 0}
   materialTemp: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
   towerSelected: 0
 --- !u!1 &1594746667
 GameObject:
@@ -20766,6 +20912,7 @@ MonoBehaviour:
   buildManager: {fileID: 0}
   materialInit: {fileID: 0}
   materialTemp: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
   towerSelected: 0
 --- !u!1 &1603298867
 GameObject:
@@ -20886,6 +21033,7 @@ MonoBehaviour:
   buildManager: {fileID: 0}
   materialInit: {fileID: 0}
   materialTemp: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
   towerSelected: 0
 --- !u!1 &1606286060
 GameObject:
@@ -21006,6 +21154,7 @@ MonoBehaviour:
   buildManager: {fileID: 0}
   materialInit: {fileID: 0}
   materialTemp: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
   towerSelected: 0
 --- !u!1 &1606336712
 GameObject:
@@ -21126,6 +21275,7 @@ MonoBehaviour:
   buildManager: {fileID: 0}
   materialInit: {fileID: 0}
   materialTemp: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
   towerSelected: 0
 --- !u!1 &1609306855
 GameObject:
@@ -21246,6 +21396,7 @@ MonoBehaviour:
   buildManager: {fileID: 0}
   materialInit: {fileID: 0}
   materialTemp: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
   towerSelected: 0
 --- !u!1 &1611338135
 GameObject:
@@ -21445,6 +21596,7 @@ MonoBehaviour:
   buildManager: {fileID: 0}
   materialInit: {fileID: 0}
   materialTemp: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
   towerSelected: 0
 --- !u!1 &1622795138
 GameObject:
@@ -21709,6 +21861,7 @@ MonoBehaviour:
   buildManager: {fileID: 0}
   materialInit: {fileID: 0}
   materialTemp: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
   towerSelected: 0
 --- !u!1 &1656738859
 GameObject:
@@ -21829,6 +21982,7 @@ MonoBehaviour:
   buildManager: {fileID: 0}
   materialInit: {fileID: 0}
   materialTemp: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
   towerSelected: 0
 --- !u!1 &1660368379
 GameObject:
@@ -22028,6 +22182,7 @@ MonoBehaviour:
   buildManager: {fileID: 0}
   materialInit: {fileID: 0}
   materialTemp: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
   towerSelected: 0
 --- !u!1 &1666895582
 GameObject:
@@ -22227,6 +22382,7 @@ MonoBehaviour:
   buildManager: {fileID: 0}
   materialInit: {fileID: 0}
   materialTemp: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
   towerSelected: 0
 --- !u!1 &1678988462
 GameObject:
@@ -22347,6 +22503,7 @@ MonoBehaviour:
   buildManager: {fileID: 0}
   materialInit: {fileID: 0}
   materialTemp: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
   towerSelected: 0
 --- !u!1 &1685190469
 GameObject:
@@ -22467,6 +22624,7 @@ MonoBehaviour:
   buildManager: {fileID: 0}
   materialInit: {fileID: 0}
   materialTemp: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
   towerSelected: 0
 --- !u!1 &1700312985
 GameObject:
@@ -22668,6 +22826,7 @@ MonoBehaviour:
   buildManager: {fileID: 0}
   materialInit: {fileID: 0}
   materialTemp: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
   towerSelected: 0
 --- !u!1 &1715783282
 GameObject:
@@ -22788,6 +22947,7 @@ MonoBehaviour:
   buildManager: {fileID: 0}
   materialInit: {fileID: 0}
   materialTemp: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
   towerSelected: 0
 --- !u!1 &1722063695
 GameObject:
@@ -22908,6 +23068,7 @@ MonoBehaviour:
   buildManager: {fileID: 0}
   materialInit: {fileID: 0}
   materialTemp: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
   towerSelected: 0
 --- !u!1 &1727829630
 GameObject:
@@ -23028,6 +23189,7 @@ MonoBehaviour:
   buildManager: {fileID: 0}
   materialInit: {fileID: 0}
   materialTemp: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
   towerSelected: 0
 --- !u!1 &1731194293
 GameObject:
@@ -23227,6 +23389,7 @@ MonoBehaviour:
   buildManager: {fileID: 0}
   materialInit: {fileID: 0}
   materialTemp: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
   towerSelected: 0
 --- !u!1 &1759531674
 GameObject:
@@ -23347,6 +23510,7 @@ MonoBehaviour:
   buildManager: {fileID: 0}
   materialInit: {fileID: 0}
   materialTemp: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
   towerSelected: 0
 --- !u!1 &1768428124
 GameObject:
@@ -23467,6 +23631,7 @@ MonoBehaviour:
   buildManager: {fileID: 0}
   materialInit: {fileID: 0}
   materialTemp: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
   towerSelected: 0
 --- !u!1 &1788690576
 GameObject:
@@ -23686,6 +23851,7 @@ MonoBehaviour:
   buildManager: {fileID: 0}
   materialInit: {fileID: 0}
   materialTemp: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
   towerSelected: 0
 --- !u!1 &1797465925
 GameObject:
@@ -23806,6 +23972,7 @@ MonoBehaviour:
   buildManager: {fileID: 0}
   materialInit: {fileID: 0}
   materialTemp: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
   towerSelected: 0
 --- !u!1 &1801217873
 GameObject:
@@ -23926,6 +24093,7 @@ MonoBehaviour:
   buildManager: {fileID: 0}
   materialInit: {fileID: 0}
   materialTemp: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
   towerSelected: 0
 --- !u!1 &1821091391
 GameObject:
@@ -24046,6 +24214,7 @@ MonoBehaviour:
   buildManager: {fileID: 0}
   materialInit: {fileID: 0}
   materialTemp: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
   towerSelected: 0
 --- !u!1 &1833822238
 GameObject:
@@ -24166,6 +24335,7 @@ MonoBehaviour:
   buildManager: {fileID: 0}
   materialInit: {fileID: 0}
   materialTemp: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
   towerSelected: 0
 --- !u!1 &1843467726
 GameObject:
@@ -24286,6 +24456,7 @@ MonoBehaviour:
   buildManager: {fileID: 0}
   materialInit: {fileID: 0}
   materialTemp: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
   towerSelected: 0
 --- !u!1 &1846502307
 GameObject:
@@ -24406,6 +24577,7 @@ MonoBehaviour:
   buildManager: {fileID: 0}
   materialInit: {fileID: 0}
   materialTemp: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
   towerSelected: 0
 --- !u!1 &1853524529
 GameObject:
@@ -24526,6 +24698,7 @@ MonoBehaviour:
   buildManager: {fileID: 0}
   materialInit: {fileID: 0}
   materialTemp: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
   towerSelected: 0
 --- !u!1 &1860055530
 GameObject:
@@ -24646,6 +24819,7 @@ MonoBehaviour:
   buildManager: {fileID: 0}
   materialInit: {fileID: 0}
   materialTemp: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
   towerSelected: 0
 --- !u!1001 &1863358375
 PrefabInstance:
@@ -24829,6 +25003,7 @@ MonoBehaviour:
   buildManager: {fileID: 0}
   materialInit: {fileID: 0}
   materialTemp: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
   towerSelected: 0
 --- !u!1 &1868769735
 GameObject:
@@ -24949,6 +25124,7 @@ MonoBehaviour:
   buildManager: {fileID: 0}
   materialInit: {fileID: 0}
   materialTemp: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
   towerSelected: 0
 --- !u!1 &1871173904
 GameObject:
@@ -25069,6 +25245,7 @@ MonoBehaviour:
   buildManager: {fileID: 0}
   materialInit: {fileID: 0}
   materialTemp: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
   towerSelected: 0
 --- !u!1 &1881998496
 GameObject:
@@ -25189,6 +25366,7 @@ MonoBehaviour:
   buildManager: {fileID: 0}
   materialInit: {fileID: 0}
   materialTemp: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
   towerSelected: 0
 --- !u!1 &1891082908
 GameObject:
@@ -25390,6 +25568,7 @@ MonoBehaviour:
   buildManager: {fileID: 0}
   materialInit: {fileID: 0}
   materialTemp: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
   towerSelected: 0
 --- !u!1 &1914021643
 GameObject:
@@ -25510,6 +25689,7 @@ MonoBehaviour:
   buildManager: {fileID: 0}
   materialInit: {fileID: 0}
   materialTemp: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
   towerSelected: 0
 --- !u!1 &1922540699
 GameObject:
@@ -25630,6 +25810,7 @@ MonoBehaviour:
   buildManager: {fileID: 0}
   materialInit: {fileID: 0}
   materialTemp: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
   towerSelected: 0
 --- !u!1 &1937123506
 GameObject:
@@ -25750,6 +25931,7 @@ MonoBehaviour:
   buildManager: {fileID: 0}
   materialInit: {fileID: 0}
   materialTemp: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
   towerSelected: 0
 --- !u!1 &1937998736
 GameObject:
@@ -25870,6 +26052,7 @@ MonoBehaviour:
   buildManager: {fileID: 0}
   materialInit: {fileID: 0}
   materialTemp: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
   towerSelected: 0
 --- !u!1 &1953615543
 GameObject:
@@ -26071,6 +26254,7 @@ MonoBehaviour:
   buildManager: {fileID: 0}
   materialInit: {fileID: 0}
   materialTemp: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
   towerSelected: 0
 --- !u!1 &1961024801
 GameObject:
@@ -26191,6 +26375,7 @@ MonoBehaviour:
   buildManager: {fileID: 0}
   materialInit: {fileID: 0}
   materialTemp: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
   towerSelected: 0
 --- !u!1 &1961940205
 GameObject:
@@ -26357,6 +26542,7 @@ MonoBehaviour:
   buildManager: {fileID: 0}
   materialInit: {fileID: 0}
   materialTemp: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
   towerSelected: 0
 --- !u!1 &1990854705
 GameObject:
@@ -26477,6 +26663,7 @@ MonoBehaviour:
   buildManager: {fileID: 0}
   materialInit: {fileID: 0}
   materialTemp: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
   towerSelected: 0
 --- !u!1 &1995959310
 GameObject:
@@ -26597,6 +26784,7 @@ MonoBehaviour:
   buildManager: {fileID: 0}
   materialInit: {fileID: 0}
   materialTemp: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
   towerSelected: 0
 --- !u!1 &1997841574
 GameObject:
@@ -26957,6 +27145,7 @@ MonoBehaviour:
   buildManager: {fileID: 0}
   materialInit: {fileID: 0}
   materialTemp: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
   towerSelected: 0
 --- !u!1 &2043765668
 GameObject:
@@ -27158,6 +27347,7 @@ MonoBehaviour:
   buildManager: {fileID: 0}
   materialInit: {fileID: 0}
   materialTemp: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
   towerSelected: 0
 --- !u!1 &2045557494
 GameObject:
@@ -27278,6 +27468,7 @@ MonoBehaviour:
   buildManager: {fileID: 0}
   materialInit: {fileID: 0}
   materialTemp: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
   towerSelected: 0
 --- !u!1 &2053253490
 GameObject:
@@ -27398,6 +27589,7 @@ MonoBehaviour:
   buildManager: {fileID: 0}
   materialInit: {fileID: 0}
   materialTemp: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
   towerSelected: 0
 --- !u!1001 &2062621437
 PrefabInstance:
@@ -27662,6 +27854,7 @@ MonoBehaviour:
   buildManager: {fileID: 0}
   materialInit: {fileID: 0}
   materialTemp: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
   towerSelected: 0
 --- !u!1 &2068802218
 GameObject:
@@ -27782,6 +27975,7 @@ MonoBehaviour:
   buildManager: {fileID: 0}
   materialInit: {fileID: 0}
   materialTemp: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
   towerSelected: 0
 --- !u!1001 &2077188456
 PrefabInstance:
@@ -28028,6 +28222,7 @@ MonoBehaviour:
   buildManager: {fileID: 0}
   materialInit: {fileID: 0}
   materialTemp: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
   towerSelected: 0
 --- !u!1 &2093278137
 GameObject:
@@ -28148,6 +28343,7 @@ MonoBehaviour:
   buildManager: {fileID: 0}
   materialInit: {fileID: 0}
   materialTemp: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
   towerSelected: 0
 --- !u!1 &2099884731
 GameObject:
@@ -28268,6 +28464,7 @@ MonoBehaviour:
   buildManager: {fileID: 0}
   materialInit: {fileID: 0}
   materialTemp: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
   towerSelected: 0
 --- !u!1 &2119102710
 GameObject:
@@ -28388,6 +28585,7 @@ MonoBehaviour:
   buildManager: {fileID: 0}
   materialInit: {fileID: 0}
   materialTemp: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
   towerSelected: 0
 --- !u!1001 &2120978127
 PrefabInstance:
@@ -28571,6 +28769,7 @@ MonoBehaviour:
   buildManager: {fileID: 0}
   materialInit: {fileID: 0}
   materialTemp: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
   towerSelected: 0
 --- !u!1 &2127029343
 GameObject:
@@ -28691,6 +28890,7 @@ MonoBehaviour:
   buildManager: {fileID: 0}
   materialInit: {fileID: 0}
   materialTemp: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
   towerSelected: 0
 --- !u!1 &2130030568
 GameObject:
@@ -28811,6 +29011,7 @@ MonoBehaviour:
   buildManager: {fileID: 0}
   materialInit: {fileID: 0}
   materialTemp: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
   towerSelected: 0
 --- !u!1 &2133452652
 GameObject:
@@ -28931,6 +29132,7 @@ MonoBehaviour:
   buildManager: {fileID: 0}
   materialInit: {fileID: 0}
   materialTemp: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
   towerSelected: 0
 --- !u!1 &2136490451
 GameObject:
@@ -29051,6 +29253,7 @@ MonoBehaviour:
   buildManager: {fileID: 0}
   materialInit: {fileID: 0}
   materialTemp: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
   towerSelected: 0
 --- !u!1 &2139208313
 GameObject:
@@ -29171,6 +29374,7 @@ MonoBehaviour:
   buildManager: {fileID: 0}
   materialInit: {fileID: 0}
   materialTemp: {fileID: 0}
+  towerPosition: {x: 0, y: 0, z: 0}
   towerSelected: 0
 --- !u!1001 &8468675559258228252
 PrefabInstance:
