@@ -16,6 +16,21 @@ public class UserInterface : MonoBehaviour
     public Button frostTowerButton;
     public Button rapidTowerButton;
 
+    // Method to get texture from Prefab preview to use as icon for GUI
+    public static Texture2D GetAssetPreview(Object asset) {
+        return AssetPreview.GetAssetPreview(asset);
+    }
+
+    // Method to encode texture as png image for icon.
+    public static byte[] EncodeToPNG(Texture2D tex) {
+        return EncodeToPNG(tex);
+    }
+
+    // Method to write bytes to file
+    public static void WriteAllBytes(string path, byte[] bytes) { }
+
+    
+
     // Start is called before the first frame update
     void Start()
     {
@@ -34,6 +49,17 @@ public class UserInterface : MonoBehaviour
         towerMenu = GameObject.Find("TowerMenu");
         towerMenu.SetActive(false);
         restartButton.onClick.AddListener(restartGame);
+
+        // /start ** TESTING THIS CODE ** - may break other UI or game functionality
+
+        // Write basic tower prefab preview to file for use as icon
+        Object towerBasic_Prefab = Resources.Load("Assets/AResources/Prefabs/Tower_Prototype_0.prefab");
+        Texture2D towerBasic_Texture = GetAssetPreview(towerBasic_Prefab);
+        byte[] towerBasic_File = EncodeToPNG(towerBasic_Texture);
+        // For testing purposes, also write to a file in the project folder
+        WriteAllBytes(Application.dataPath + "/../towerBasic_Icon.png", towerBasic_File);
+
+        // /end ** TESTING THIS CODE ** - may break other UI or game functionality
     }
 
     // Update is called once per frame

@@ -86,6 +86,7 @@ public class BuildNodeScript : MonoBehaviour {
         updatePlayerCredit(-cost);
         cancelBuildState();
         buildableArea = false;
+        print("buildable area set to false!");
     }
 
     void OnMouseDown() {
