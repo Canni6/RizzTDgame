@@ -10,6 +10,7 @@ public class UserInterface : MonoBehaviour
 {
     public Button restartButton;
     public Button buildMenuButton;
+    public GameObject sellMenuButton;
     public GameObject buildMenu;
     public GameObject towerMenu;
     public Button basicTowerButton;
@@ -46,6 +47,8 @@ public class UserInterface : MonoBehaviour
                 }
             }
         }
+        sellMenuButton = GameObject.Find("SellMenuButton");
+        sellMenuButton.SetActive(false);
         towerMenu = GameObject.Find("TowerMenu");
         towerMenu.SetActive(false);
         restartButton.onClick.AddListener(restartGame);
@@ -76,6 +79,10 @@ public class UserInterface : MonoBehaviour
 
     public void displayButton(Button button) {
         button.gameObject.SetActive(true);
+    }
+
+    public void hideButton(Button button) {
+        button.gameObject.SetActive(false);
     }
 
     public void displayTowerMenu() {

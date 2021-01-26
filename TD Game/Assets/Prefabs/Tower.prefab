@@ -27,7 +27,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1152062406031268}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 2, z: 0}
+  m_LocalPosition: {x: 0, y: 4, z: 0}
   m_LocalScale: {x: 2, y: 0.5, z: 2}
   m_Children: []
   m_Father: {fileID: 4220073341970860}
@@ -145,11 +145,15 @@ MonoBehaviour:
   highlightTarget: {fileID: 0}
   maxRange: 10
   timeBetweenShots: 2
+  fireRate: 0
   projectile: {fileID: 1708403320664592, guid: 6c11627c5aebf1b4daad02673690850d, type: 3}
   projectileSpawn: {fileID: 4780915950224994, guid: b61fa7e559b91e1409fe7a1320772488,
     type: 3}
   built: 0
   target: {fileID: 0}
+  materialInit: {fileID: 0}
+  materialTemp: {fileID: 0}
+  affix: 0
 --- !u!1 &1563601285914270
 GameObject:
   m_ObjectHideFlags: 0
@@ -177,8 +181,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1563601285914270}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 2, y: 2, z: 2}
+  m_LocalPosition: {x: 0, y: 1, z: 0}
+  m_LocalScale: {x: 2, y: 4, z: 2}
   m_Children: []
   m_Father: {fileID: 4074895850317990}
   m_RootOrder: 0
@@ -272,7 +276,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1886707951886682}
   m_LocalRotation: {x: -0, y: -0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: 0.5, y: 2, z: 0}
+  m_LocalPosition: {x: 0.5, y: 4, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4220073341970860}

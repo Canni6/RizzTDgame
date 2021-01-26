@@ -17,7 +17,7 @@ public class BuildManager : MonoBehaviour
     private GUIStyle guiStyle = new GUIStyle();
     string build = "--Build State--";
     string play = "--Play State--";
-    string sell = "--Sell State--";
+    // string sell = "--Sell State--";
     string buildStateString;
     public SELECTION buildSelection;
     public bool buildState;

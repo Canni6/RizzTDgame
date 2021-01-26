@@ -25,6 +25,7 @@ public class GameManager : MonoBehaviour {
     public GameObject nodeGOSelected;
     public bool towerSelectState = false;
     public string towerSelectedString;
+    public GameObject sellMenuButton;
 
     public Material materialNodeDefault;
 
@@ -51,6 +52,7 @@ public class GameManager : MonoBehaviour {
         gameOver = false;
         gameWon = false;
         materialNodeDefault = (Material)Resources.Load("Materials/Basic");
+        sellMenuButton = GameObject.Find("SellMenuButton");
     }
 
     // Update is called once per frame
@@ -130,7 +132,7 @@ public class GameManager : MonoBehaviour {
     }
 
     public void setNodeTowerSelected(GameObject node, GameObject tower) {
-        // deselect currently selected node
+        // deselect previously selected node
         if(nodeGOSelected != null) {
             nodeGOSelected.gameObject.GetComponent<Renderer>().material = materialNodeDefault;
             nodeGOSelected.gameObject.GetComponent<BuildNodeScript>().deselectTower();
@@ -139,6 +141,7 @@ public class GameManager : MonoBehaviour {
         nodeGOSelected = node;
         towerSelectState = true;
         towerSelectedString = "Tower type selected: " + towerGOSelected.GetComponentInChildren<TowerScript>().getAffix();
+        sellMenuButton.SetActive(true);
     }
 
     public void deselectTower() {
@@ -150,6 +153,7 @@ public class GameManager : MonoBehaviour {
         towerSelectState = false;
         nodeGOSelected = null;
         towerGOSelected = null;
+        sellMenuButton.SetActive(false);
     }
 
     public bool getTowerSelectState() {
@@ -170,6 +174,8 @@ public class GameManager : MonoBehaviour {
         nodeGOSelected.GetComponentInChildren<BuildNodeScript>().buildableArea = true;
         // destroy GO
         Destroy(towerGOSelected);
+        sellMenuButton.SetActive(false);
+        
     }
 
     public int convertAffixToValue(TowerScript.Affix affix) {
