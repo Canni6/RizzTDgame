@@ -12,5 +12,5 @@ This project was inspired by the game genre that became popular during the peak 
 
 The objective was to develop a tower defence game that harkens back to those days to share with my mates.
 
-## WIP (as at 11/11/2020):
-![](2020_11_11_RizzTD_zeEarth.gif)
+## WIP (as at 28/01/2021):
+![](2021_01_28_RizzTD_progress.gif)
