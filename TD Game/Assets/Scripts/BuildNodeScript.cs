@@ -94,16 +94,21 @@ public class BuildNodeScript : MonoBehaviour {
             Destroy(tempTower); // destroy the temp
 
             // instantiate new tower
-            if(getBuildSelection() == BuildManager.SELECTION.Basic) {
-                instantiateTower(basicTower, 0.5f, 1);
+            if (getBuildSelection() == BuildManager.SELECTION.Basic) {
+                instantiateTower(basicTower, BuildManager.rate_basic, BuildManager.value_basic);
 
-            } else if (getBuildSelection() == BuildManager.SELECTION.Frost) {
-                instantiateTower(frostTower, 1.0f, 2);
-
-            } else if (getBuildSelection() == BuildManager.SELECTION.Rapid) {
-                instantiateTower(rapidTower, 2.0f, 3);
             }
+            else if (getBuildSelection() == BuildManager.SELECTION.Frost) {
+                instantiateTower(frostTower, BuildManager.rate_basic, BuildManager.value_frost);
 
+            }
+            else if (getBuildSelection() == BuildManager.SELECTION.Rapid) {
+                instantiateTower(rapidTower, BuildManager.rate_basic, BuildManager.value_rapid);
+            }
+            else if (getBuildSelection() == BuildManager.SELECTION.Invalid) {
+                print("Clicked on tiles without build type selected");
+            }
+            // else valid selection but insufficient credit
             else {
                 print("We need more gold!");
                 buildManager.setCreditWarning(true);

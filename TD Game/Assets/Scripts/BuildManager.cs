@@ -25,6 +25,15 @@ public class BuildManager : MonoBehaviour
     public GameManager gameManager;
     public UserInterface ui;
 
+    // tower construction value
+    public const int value_basic = 2;
+    public const int value_frost = 4;
+    public const int value_rapid = 8;
+
+    public const float rate_basic = 0.5f;
+    public const float rate_frost = 1f;
+    public const float rate_rapid = 2f;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -59,9 +68,14 @@ public class BuildManager : MonoBehaviour
             // when already in build state
             if (buildState == true) {
                 // basic tower selected
-                if (gameManager.getPlayerCredit() >= 1) {
+                if (gameManager.getPlayerCredit() >= value_basic) {
                     setSelection(SELECTION.Basic);
                     ui.selectButton(ui.basicTowerButton);
+                    print("basic tower selected");
+                }
+                else {
+                    setCreditWarning(true);
+                    print("we need more gold");
                 }
             }
             // entering build state
@@ -77,9 +91,13 @@ public class BuildManager : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.F)) {
             if (buildState == true) {
                 // frost tower selected
-                if (gameManager.getPlayerCredit() >= 2) {
+                if (gameManager.getPlayerCredit() >= value_frost) {
                     setSelection(SELECTION.Frost);
                     ui.selectButton(ui.frostTowerButton);
+                }
+                else {
+                    setCreditWarning(true);
+                    print("we need more gold");
                 }
             }
         }
@@ -88,9 +106,13 @@ public class BuildManager : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.R)) {
             if (buildState == true) {
                 // rapid tower selected
-                if (gameManager.getPlayerCredit() >= 3) {
+                if (gameManager.getPlayerCredit() >= value_rapid) {
                     setSelection(SELECTION.Rapid);
                     ui.selectButton(ui.rapidTowerButton);
+                }
+                else {
+                    setCreditWarning(true);
+                    print("we need more gold");
                 }
             }
         }

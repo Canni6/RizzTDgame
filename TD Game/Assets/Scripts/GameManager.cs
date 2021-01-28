@@ -8,9 +8,8 @@ using UnityEngine.UI;
 public class GameManager : MonoBehaviour {
 
     // reference to player 1 game object
-    public GameObject player1GO = null;
+    public GameObject player1GO;
     // references to player scripts on the game objects
-    Player player1Ref;
     string playerCreditString;
     string playerLifeString;
     string gameOverString;
@@ -29,22 +28,16 @@ public class GameManager : MonoBehaviour {
 
     public Material materialNodeDefault;
 
-    // tower construction value
-    const int value_basic = 2;
-    const int value_frost = 4;
-    const int value_rapid = 8;
-
     // Start is called before the first frame update
     void Start() {
         // instantiate players and add Player scripts to them
-        player1GO = GameObject.Find("Player");
-        player1Ref = player1GO.GetComponent<Player>();
+        player1GO = GameObject.Find("Player1");
         ui = GetComponent<UserInterface>();
         spawner = GetComponent<SpawnerScript>();
-        // Add some credit using player script reference
-        player1Ref.addCredit(5);
-        playerCreditString = "Credit: " + player1Ref.getCredit();
-        playerLifeString = "Life: " + player1Ref.getLife().ToString();
+        player1GO.GetComponent<Player>().addCredit(5);
+        player1GO.GetComponent<Player>().addLife(5);
+        playerCreditString = "Credit: " + player1GO.GetComponent<Player>().getCredit();
+        playerLifeString = "Life: " + player1GO.GetComponent<Player>().getLife().ToString();
         guiStyle.normal.textColor = Color.red;
         guiStyle.fontSize = 30;
         gameOverString = "GAME OVER!";
@@ -61,18 +54,18 @@ public class GameManager : MonoBehaviour {
     }
 
     public int getPlayerCredit() {
-        return player1Ref.getCredit();
+        return player1GO.GetComponent<Player>().getCredit();
     }
 
     public void addPlayerCredit(int credit) {
-        player1Ref.addCredit(credit);
-        playerCreditString = "Credit: " + player1Ref.getCredit();
+        player1GO.GetComponent<Player>().addCredit(credit);
+        playerCreditString = "Credit: " + player1GO.GetComponent<Player>().getCredit();
     }
 
     public void addPlayerLife(int life) {
-        player1Ref.addLife(life);
-        playerLifeString = "Life: " + player1Ref.getLife().ToString();
-        if(player1Ref.getLife() < 1) {
+        player1GO.GetComponent<Player>().addLife(life);
+        playerLifeString = "Life: " + player1GO.GetComponent<Player>().getLife().ToString();
+        if(player1GO.GetComponent<Player>().getLife() < 1) {
             setGameOver();
             ui.displayButton(ui.restartButton);
         }
@@ -124,7 +117,7 @@ public class GameManager : MonoBehaviour {
     }
 
     public void updatePlayerCreditString() {
-        playerCreditString = "Credit: " + player1Ref.getCredit();
+        playerCreditString = "Credit: " + player1GO.GetComponent<Player>().getCredit();
     }
 
     public GameObject getTowerSelected() {
@@ -167,7 +160,7 @@ public class GameManager : MonoBehaviour {
     public void sellTowerSelected() {
         // refund money
         if(towerGOSelected) {
-            player1Ref.addCredit(+1 * convertAffixToValue(towerGOSelected.GetComponentInChildren<TowerScript>().getAffix()));
+            player1GO.GetComponent<Player>().addCredit(+1 * convertAffixToSellValue(towerGOSelected.GetComponentInChildren<TowerScript>().getAffix()));
             updatePlayerCreditString();
         }
         // make buildable again
@@ -178,14 +171,14 @@ public class GameManager : MonoBehaviour {
         
     }
 
-    public int convertAffixToValue(TowerScript.Affix affix) {
+    public int convertAffixToSellValue(TowerScript.Affix affix) {
         int value = 0;
         if(affix == TowerScript.Affix.Basic) {
-            value = value_basic / 2;
+            value = BuildManager.value_basic / 2;
         } else if (affix == TowerScript.Affix.Frost) {
-            value = value_frost / 2;
+            value = BuildManager.value_frost / 2;
         } else if (affix == TowerScript.Affix.Rapid) {
-            value = value_rapid / 2;
+            value = BuildManager.value_rapid / 2;
         }
         return value;
     }
