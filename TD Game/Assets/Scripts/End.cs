@@ -15,6 +15,6 @@ public class End : MonoBehaviour
     void Update()
     {
         // rotate anticlockwise
-        this.gameObject.transform.Rotate(0, -20 * Time.deltaTime, 0);
+        this.gameObject.transform.Rotate(0, -10 * Time.deltaTime, 0);
     }
 }

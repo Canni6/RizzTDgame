@@ -6,14 +6,15 @@ using UnityEngine;
 public class EnemyAiScript : MonoBehaviour 
 {
     GameObject waypointGO;  // defines waypoint gameobject
-    Transform targetWaypoint; // defines a movement 
-    int waypointIndex = 0;
+    public Transform targetWaypoint; // defines a movement 
+    public int waypointIndex = 0;
     public float speed;
     GameObject gameManager;
     GameManager gameManagerRef;
     SpawnerScript spawner;
     public int health;
     public int waypointCount;
+    public float distanceToTarget;
 
 
 	// Use this for initialization
@@ -25,12 +26,14 @@ public class EnemyAiScript : MonoBehaviour
         speed = spawner.getCurrentWave().getSpeed();
         health = spawner.getCurrentWave().getHealth();
         waypointCount = waypointGO.transform.childCount;
+        
     }
     void GetNextWaypoint() {
         if(waypointIndex < (waypointCount)) {
             waypointGO.transform.GetChild(waypointIndex);
             targetWaypoint = waypointGO.transform.GetChild(waypointIndex);
             waypointIndex++;
+            transform.LookAt(targetWaypoint);
         }
         else {
             ReachedGoal();
@@ -51,14 +54,11 @@ public class EnemyAiScript : MonoBehaviour
         }
 	    float step = speed * Time.deltaTime; // step size is equal to speed times frame time.
 	    transform.position = Vector3.MoveTowards (transform.position, targetWaypoint.position, step);
-	    Vector3 direction = targetWaypoint.position - this.transform.localPosition; // direction to our target
-	    if (direction.magnitude <= step) {
-            // we reached the waypoint
+        // distance to our target
+        Vector3 targetDirection = targetWaypoint.position - transform.localPosition;
+        // if we reached the waypoint
+        if (targetDirection.magnitude <= step) {            
             GetNextWaypoint();
-		}
-	    else {
-	        //move towards waypoint
-		    transform.Translate( direction.normalized * step );
 		}
 	}
 
