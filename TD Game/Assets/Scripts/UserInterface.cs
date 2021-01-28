@@ -36,7 +36,7 @@ public class UserInterface : MonoBehaviour
     {
         buildMenu = GameObject.Find("BuildMenu");
         buildMenu.SetActive(true);
-        buildMenuButton = buildMenu.GetComponent<Button>();
+        buildMenuButton = buildMenu.transform.GetChild(0).GetComponent<Button>();
         // switch on children buttons
         for (int i = 0; i < buildMenu.transform.childCount; ++i) {
             buildMenu.transform.GetChild(i).gameObject.SetActive(true);
