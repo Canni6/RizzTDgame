@@ -25,8 +25,8 @@ public class GameManager : MonoBehaviour {
     public bool towerSelectState = false;
     public string towerSelectedString;
     public GameObject sellMenuButton;
-
     public Material materialNodeDefault;
+    //public AudioSource audioSource;
 
     // Start is called before the first frame update
     void Start() {
@@ -46,6 +46,8 @@ public class GameManager : MonoBehaviour {
         gameWon = false;
         materialNodeDefault = (Material)Resources.Load("Materials/Basic");
         sellMenuButton = GameObject.Find("SellMenuButton");
+        //audioSource.clip = (AudioClip)Resources.Load("Sounds/recording_68_trim");
+        //audioSource.Play();
     }
 
     // Update is called once per frame

@@ -67,63 +67,30 @@ public class BuildManager : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.B)) {
             // when already in build state
             if (buildState == true) {
-                // basic tower selected
-                if (gameManager.getPlayerCredit() >= value_basic) {
-                    setSelection(SELECTION.Basic);
-                    ui.selectButton(ui.basicTowerButton);
-                    print("basic tower selected");
-                }
-                else {
-                    setCreditWarning(true);
-                    print("we need more gold");
-                }
+                // attempt to build basic tower
+                buildTower(SELECTION.Basic);
             }
             // entering build state
             else {
-                setBuildState(true);
-                ui.selectButton(ui.buildMenuButton);
-                print("State changed to build");
+                enterBuild();
             }
 
         }
-
         // F - frost tower selection
         if (Input.GetKeyDown(KeyCode.F)) {
             if (buildState == true) {
-                // frost tower selected
-                if (gameManager.getPlayerCredit() >= value_frost) {
-                    setSelection(SELECTION.Frost);
-                    ui.selectButton(ui.frostTowerButton);
-                }
-                else {
-                    setCreditWarning(true);
-                    print("we need more gold");
-                }
+                buildTower(SELECTION.Frost);
             }
         }
-
         // R - rapid tower selection
         if (Input.GetKeyDown(KeyCode.R)) {
             if (buildState == true) {
-                // rapid tower selected
-                if (gameManager.getPlayerCredit() >= value_rapid) {
-                    setSelection(SELECTION.Rapid);
-                    ui.selectButton(ui.rapidTowerButton);
-                }
-                else {
-                    setCreditWarning(true);
-                    print("we need more gold");
-                }
+                buildTower(SELECTION.Rapid);
             }
         }
-
+        // S - sell tower
         if (Input.GetKeyDown(KeyCode.S)) {
-            // check if a build node is selected for selling
-            if (gameManager.getTowerSelectState()) {
-                gameManager.sellTowerSelected();
-                print("Tower sold");
-            }
-            cancelBuildState();
+            sellTower();
         }
 
         // Esc - cancel existing menus/actions
@@ -164,6 +131,7 @@ public class BuildManager : MonoBehaviour
         if(getBuildState() == false) {
             gameManager.deselectTower();
         }
+        ui.hideButton(ui.cancelMenuButton);
     }
 
     public void updateBuildString() {
@@ -177,6 +145,40 @@ public class BuildManager : MonoBehaviour
 
     public void setCreditWarning(bool state) {
         creditWarning = state;
+    }
+
+    public void buildTower(SELECTION buildSelection) {
+        if(buildSelection == SELECTION.Basic && gameManager.getPlayerCredit() >= value_basic) {
+            ui.selectButton(ui.basicTowerButton);
+            print("basic tower selected");
+        } else if(buildSelection == SELECTION.Frost && gameManager.getPlayerCredit() >= value_frost) {
+            ui.selectButton(ui.frostTowerButton);
+            print("frost tower selected");
+        } else if(buildSelection == SELECTION.Rapid && gameManager.getPlayerCredit() >= value_rapid) {
+            ui.selectButton(ui.rapidTowerButton);
+            print("rapid tower selected");
+        } else {
+            setSelection(SELECTION.Invalid);
+            setCreditWarning(true);
+            print("we need more gold");
+        }
+    }
+
+    public void sellTower() {
+        // check if a build node is selected for selling
+        if (gameManager.getTowerSelectState()) {
+            gameManager.sellTowerSelected();
+            print("Tower sold");
+        }
+        cancelBuildState();
+    }
+
+    public void enterBuild() {
+        setBuildState(true);
+        ui.selectButton(ui.buildMenuButton);
+        ui.displayTowerMenu();
+        ui.displayButton(ui.cancelMenuButton);
+        print("State changed to build");
     }
 
 }

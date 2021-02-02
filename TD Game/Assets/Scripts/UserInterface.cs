@@ -7,14 +7,17 @@ using UnityEngine.EventSystems;
 
 public class UserInterface : MonoBehaviour
 {
-    public GameObject sellMenuButton;
+    //public GameObject sellMenuButton;
     public GameObject buildMenu;
     public GameObject towerMenu;
     public Button buildMenuButton;
+    public Button sellMenuButton;
+    public Button cancelMenuButton;
     public Button restartButton;
     public Button basicTowerButton;
     public Button frostTowerButton;
     public Button rapidTowerButton;
+    public BuildManager buildManager;
 
     // Method to get texture from Prefab preview to use as icon for GUI
     //public static Texture2D GetAssetPreview(Object asset) {
@@ -34,9 +37,11 @@ public class UserInterface : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        buildManager = GameObject.Find("GameManager").GetComponent<BuildManager>();
         buildMenu = GameObject.Find("BuildMenu");
         buildMenu.SetActive(true);
-        buildMenuButton = buildMenu.transform.GetChild(0).GetComponent<Button>();
+        buildMenuButton = buildMenu.transform.GetChild(0).GetComponent<Button>();     
+        buildMenuButton.onClick.AddListener(displayTowerMenu);
         // switch on children buttons
         for (int i = 0; i < buildMenu.transform.childCount; ++i) {
             buildMenu.transform.GetChild(i).gameObject.SetActive(true);
@@ -47,12 +52,23 @@ public class UserInterface : MonoBehaviour
                 }
             }
         }
-        sellMenuButton = GameObject.Find("SellMenuButton");
-        sellMenuButton.SetActive(false);
         towerMenu = GameObject.Find("TowerMenu");
         towerMenu.SetActive(false);
+        sellMenuButton = buildMenu.transform.GetChild(2).GetComponent<Button>();
+        cancelMenuButton = buildMenu.transform.GetChild(3).GetComponent<Button>();
+        // mouse support
+        buildMenuButton.onClick.AddListener(buildManager.enterBuild);
+        cancelMenuButton.onClick.AddListener(buildManager.cancelBuildState);
+        sellMenuButton.onClick.AddListener(buildManager.sellTower);
+        towerMenu.transform.GetChild(1).GetComponent<Button>().onClick.AddListener(buildBasic);
+        towerMenu.transform.GetChild(2).GetComponent<Button>().onClick.AddListener(buildFrost);
+        towerMenu.transform.GetChild(3).GetComponent<Button>().onClick.AddListener(buildRapid);
+
         restartButton = GameObject.Find("RestartButton").GetComponent<Button>();
         restartButton.onClick.AddListener(restartGame);
+        // hide buttons until used
+        hideButton(sellMenuButton);
+        hideButton(cancelMenuButton);
         hideButton(restartButton);
 
         // /start ** TESTING THIS CODE ** - may break other UI or game functionality
@@ -103,12 +119,23 @@ public class UserInterface : MonoBehaviour
         }
         button.gameObject.GetComponent<Image>().color = Color.yellow;
         print("Button selected: " + button.name);
-        if(button.name.Equals("BuildMenuButton")) {
-            displayTowerMenu();
-        }
     }
     public void OnSelect() {
         //this.gameObject.GetComponent<Image>().color = Color.yellow;
     }
 
+    public void buildBasic() {
+        buildManager.setSelection(BuildManager.SELECTION.Basic);
+        buildManager.buildTower(BuildManager.SELECTION.Basic);
+    }
+
+    public void buildFrost() {
+        buildManager.setSelection(BuildManager.SELECTION.Frost);
+        buildManager.buildTower(BuildManager.SELECTION.Frost);
+    }
+
+    public void buildRapid() {
+        buildManager.setSelection(BuildManager.SELECTION.Rapid);
+        buildManager.buildTower(BuildManager.SELECTION.Rapid);
+    }
 }
