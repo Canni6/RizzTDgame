@@ -15,7 +15,7 @@ public class TitleScript : MonoBehaviour {
     void Start() {
         playButton.onClick.AddListener(startGame);
         exitButton.onClick.AddListener(exitGame);
-        lobbyMusic.clip = (AudioClip)Resources.Load("Sounds/recording_68_trim");
+        lobbyMusic.clip = (AudioClip)Resources.Load("Sounds/audio_title_song");
         lobbyMusic.Play();
     }
 

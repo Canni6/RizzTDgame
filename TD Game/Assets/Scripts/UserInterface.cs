@@ -138,4 +138,11 @@ public class UserInterface : MonoBehaviour
         buildManager.setSelection(BuildManager.SELECTION.Rapid);
         buildManager.buildTower(BuildManager.SELECTION.Rapid);
     }
+
+    public void resetButtons() {
+        // reset all button colors
+        for (int i = 0; i < towerMenu.transform.childCount; ++i) {
+            towerMenu.transform.GetChild(i).gameObject.GetComponent<Image>().color = Color.white;
+        }
+    }
 }

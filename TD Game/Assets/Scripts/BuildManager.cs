@@ -23,6 +23,7 @@ public class BuildManager : MonoBehaviour
     public bool buildState;
     public bool sellState;
     public GameManager gameManager;
+    public SoundManager soundManager;
     public UserInterface ui;
 
     // tower construction value
@@ -38,6 +39,7 @@ public class BuildManager : MonoBehaviour
     void Start()
     {
         gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
+        soundManager = GameObject.Find("GameManager").GetComponent<SoundManager>();
         ui = GameObject.Find("GameManager").GetComponent<UserInterface>();
         // build variable state
         buildSelection = SELECTION.Invalid;
@@ -68,6 +70,7 @@ public class BuildManager : MonoBehaviour
             // when already in build state
             if (buildState == true) {
                 // attempt to build basic tower
+                setSelection(SELECTION.Basic);
                 buildTower(SELECTION.Basic);
             }
             // entering build state
@@ -79,12 +82,14 @@ public class BuildManager : MonoBehaviour
         // F - frost tower selection
         if (Input.GetKeyDown(KeyCode.F)) {
             if (buildState == true) {
+                setSelection(SELECTION.Frost);
                 buildTower(SELECTION.Frost);
             }
         }
         // R - rapid tower selection
         if (Input.GetKeyDown(KeyCode.R)) {
             if (buildState == true) {
+                setSelection(SELECTION.Rapid);
                 buildTower(SELECTION.Rapid);
             }
         }
@@ -161,6 +166,8 @@ public class BuildManager : MonoBehaviour
             setSelection(SELECTION.Invalid);
             setCreditWarning(true);
             print("we need more gold");
+            soundManager.playSound(soundManager.audioDeclined);
+            ui.resetButtons();
         }
     }
 
