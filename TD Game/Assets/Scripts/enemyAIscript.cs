@@ -15,12 +15,14 @@ public class EnemyAiScript : MonoBehaviour
     public int health;
     public int waypointCount;
     public float distanceToTarget;
+    public SoundManager soundManager;
 
 
 	// Use this for initialization
     void Start () {
         gameManager = GameObject.Find("GameManager");
         gameManagerRef = gameManager.GetComponent<GameManager>();
+        soundManager = gameManager.GetComponent<SoundManager>();
         waypointGO = GameObject.Find("Waypoints");
         spawner = gameManager.GetComponent<SpawnerScript>();
         speed = spawner.getCurrentWave().getSpeed();
@@ -45,6 +47,7 @@ public class EnemyAiScript : MonoBehaviour
         gameManagerRef.addPlayerLife(-1);
         print("Reached goal");
         spawner.removeEnemy();
+        soundManager.playSound(soundManager.audioDeathBio);
         checkEndRound();
     }
     // Update is called once per frame
@@ -84,6 +87,7 @@ public class EnemyAiScript : MonoBehaviour
                 gameManagerRef.addPlayerCredit(1);
                 print("Added to player score");
                 spawner.removeEnemy();
+                soundManager.playSound(soundManager.audioDeathBio);
                 // check end of round condition
                 checkEndRound();
             }

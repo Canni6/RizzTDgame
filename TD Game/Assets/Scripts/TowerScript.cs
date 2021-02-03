@@ -23,6 +23,8 @@ public class TowerScript : MonoBehaviour
     GameObject closestEnemy = null;
     public Transform target = null;
     GameObject projectileGO = null;
+    public GameObject gameManager;
+    public SoundManager soundManager;
 
     // store alternate initial and temporary material for mouseover
     public Material materialInit;
@@ -39,6 +41,8 @@ public class TowerScript : MonoBehaviour
 
     public void Start()
     {
+        gameManager = GameObject.Find("GameManager");
+        soundManager = gameManager.GetComponent<SoundManager>();
         // get the tower base's material
         materialInit = gameObject.transform.GetChild(0).GetComponent<Renderer>().material;
         materialTemp = (Material)Resources.Load("Materials/Tower_Highlight");
@@ -73,6 +77,12 @@ public class TowerScript : MonoBehaviour
         if (timeBetweenShots <= 0)
         {
             instantiateProjectile();
+            if (affix == Affix.Rapid) {
+                soundManager.playSound(soundManager.audioShotRapid);
+            }
+            else {
+                soundManager.playSound(soundManager.audioShotCannon);
+            }
             // reset timer
             timeBetweenShots = 1.0f / fireRate;
         }

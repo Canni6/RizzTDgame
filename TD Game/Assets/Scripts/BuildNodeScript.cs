@@ -20,6 +20,7 @@ public class BuildNodeScript : MonoBehaviour {
     public GameObject rapidTower;
     public GameObject builtTower = null; // built phase
     public GameManager gameManager;
+    public SoundManager soundManager;
     public BuildManager buildManager;
     // store alternate initial and temporary material for mouseover
     public Material materialInit;
@@ -34,6 +35,7 @@ public class BuildNodeScript : MonoBehaviour {
         //boxRend = GetComponentInChildren<Renderer>();
         gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
         buildManager = GameObject.Find("GameManager").GetComponent<BuildManager>();
+        soundManager = gameManager.GetComponent<SoundManager>();
         boxRend = GetComponent<Renderer>();
         boxRend.enabled = false;
         materialInit = boxRend.material;
@@ -87,6 +89,7 @@ public class BuildNodeScript : MonoBehaviour {
         cancelBuildState();
         buildableArea = false;
         print("buildable area set to false!");
+        soundManager.playSound(soundManager.audioBuild);
     }
 
     void OnMouseDown() {
@@ -99,11 +102,11 @@ public class BuildNodeScript : MonoBehaviour {
 
             }
             else if (getBuildSelection() == BuildManager.SELECTION.Frost) {
-                instantiateTower(frostTower, BuildManager.rate_basic, BuildManager.value_frost);
+                instantiateTower(frostTower, BuildManager.rate_frost, BuildManager.value_frost);
 
             }
             else if (getBuildSelection() == BuildManager.SELECTION.Rapid) {
-                instantiateTower(rapidTower, BuildManager.rate_basic, BuildManager.value_rapid);
+                instantiateTower(rapidTower, BuildManager.rate_rapid, BuildManager.value_rapid);
             }
             else if (getBuildSelection() == BuildManager.SELECTION.Invalid) {
                 print("Clicked on tiles without build type selected");

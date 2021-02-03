@@ -5,22 +5,28 @@ using UnityEngine;
 public class SpawnerScript : MonoBehaviour {
 
 	public GameManager gameManager;
+	public SoundManager soundManager;
 	public GameObject enemy;
 	public GameObject start;
 
 	public float timeBetweenMobs = 2.0f;
+	public float countdown = 10.0f;
 	public int enemiesRemainingToSpawn;
 	public int enemiesInScene;
 
 	public int waveCounter;
 	public Wave currentWave;
-	public Wave wave0 = new Wave("Bindis #1", 3, 6.0f, 5);
-	public Wave wave1 = new Wave("Snags #2", 6, 8.0f, 5);
-	public Wave wave2 = new Wave("BoatBungs #3", 10, 8.0f, 5);
-	public Wave wave3 = new Wave("Magpies #4", 15, 8.0f, 5);
-	public Wave boss = new Wave("Digimin #5 (Boss)", 50, 4.0f, 1);
+	public Wave wave0 = new Wave("Dots #1", 3, 6.0f, 5);
+	public Wave wave1 = new Wave("MoreDots #2", 6, 8.0f, 5);
+	public Wave wave2 = new Wave("Whelps #3", 10, 10.0f, 5);
+	public Wave wave3 = new Wave("ManyWhelps #4", 10, 10.0f, 10);
+	public Wave boss = new Wave("Handle it! #5 (Boss)", 50, 4.0f, 1);
 	public Wave[] waves;
 	public bool active;
+	public bool counted;
+	public string countString;
+	public float countMax = 10.0f;
+	private GUIStyle guiStyle = new GUIStyle();
 
 	Vector3 startPosition;
 
@@ -29,6 +35,7 @@ public class SpawnerScript : MonoBehaviour {
     {
 		start = GameObject.Find("start");
 		gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
+		soundManager = gameManager.GetComponent<SoundManager>();
 		start.GetComponent<Renderer>().material.color = Color.green;
 		startPosition = start.transform.position;
 		waves = new Wave[] { wave0, wave1, wave2, wave3, boss };
@@ -38,12 +45,27 @@ public class SpawnerScript : MonoBehaviour {
 		enemiesInScene = 0;
 		gameManager.updateWaveString();
 		active = true;
+		counted = false;
+		guiStyle.normal.textColor = Color.red;
+		guiStyle.fontSize = 30;
 	}
 	
 	// Update is called once per frame
 	void Update ()
     {
-		if(active) {
+		countdown -= Time.deltaTime;
+		countString = Mathf.Round(countdown).ToString();
+		if (countdown >= 0.0f) {
+			// play sound each second of countdown
+			if(countMax - countdown > 1.0f) {
+				countMax -= 1;
+				playBlip();
+            }
+		}
+		else {
+			counted = true;
+        }
+		if(active && counted) {
 			timeBetweenMobs -= Time.deltaTime;
 			if (timeBetweenMobs <= 0.0f && enemiesRemainingToSpawn > 0) {
 				Instantiate(enemy, startPosition, Quaternion.Euler(0f, 0f, 0f));
@@ -55,7 +77,14 @@ public class SpawnerScript : MonoBehaviour {
 		}
 		
 	}
-	
+
+	void OnGUI() {
+		if(!counted) {
+			GUI.Label(new Rect(Screen.width / 2, Screen.height / 4, 1000, 200), countString, guiStyle);
+		}
+		
+	}
+
 	public void removeEnemy() {
 		enemiesInScene -= 1;
     }
@@ -89,4 +118,7 @@ public class SpawnerScript : MonoBehaviour {
 		this.active = state;
     }
 
+	public void playBlip() {
+		soundManager.playSound(soundManager.audioButtonBlip);
+    }
 }

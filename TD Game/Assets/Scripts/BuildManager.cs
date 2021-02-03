@@ -31,8 +31,8 @@ public class BuildManager : MonoBehaviour
     public const int value_frost = 4;
     public const int value_rapid = 8;
 
-    public const float rate_basic = 0.5f;
-    public const float rate_frost = 1f;
+    public const float rate_basic = 1f;
+    public const float rate_frost = 0.5f;
     public const float rate_rapid = 2f;
 
     // Start is called before the first frame update
@@ -76,6 +76,7 @@ public class BuildManager : MonoBehaviour
             // entering build state
             else {
                 enterBuild();
+                soundManager.playSound(soundManager.audioButtonBlip);
             }
 
         }
@@ -108,7 +109,7 @@ public class BuildManager : MonoBehaviour
     void OnGUI() {
         GUI.Label(new Rect(Screen.width / 2 - Screen.width / 12, Screen.height - Screen.height / 12, 1000, 200), buildStateString);
         if (creditWarning) {
-            GUI.Label(new Rect(Screen.width / 3, Screen.height / 2 + 2 * (Screen.height / 5), 500, 100), creditWarningString, guiStyle);
+            GUI.Label(new Rect(Screen.width * 0.55f, Screen.height / 2 + 2 * (Screen.height / 4), 500, 100), creditWarningString, guiStyle);
         }
     }
 
@@ -156,12 +157,15 @@ public class BuildManager : MonoBehaviour
         if(buildSelection == SELECTION.Basic && gameManager.getPlayerCredit() >= value_basic) {
             ui.selectButton(ui.basicTowerButton);
             print("basic tower selected");
+            soundManager.playSound(soundManager.audioButtonBlip);
         } else if(buildSelection == SELECTION.Frost && gameManager.getPlayerCredit() >= value_frost) {
             ui.selectButton(ui.frostTowerButton);
             print("frost tower selected");
+            soundManager.playSound(soundManager.audioButtonBlip);
         } else if(buildSelection == SELECTION.Rapid && gameManager.getPlayerCredit() >= value_rapid) {
             ui.selectButton(ui.rapidTowerButton);
             print("rapid tower selected");
+            soundManager.playSound(soundManager.audioButtonBlip);
         } else {
             setSelection(SELECTION.Invalid);
             setCreditWarning(true);
@@ -176,6 +180,7 @@ public class BuildManager : MonoBehaviour
         if (gameManager.getTowerSelectState()) {
             gameManager.sellTowerSelected();
             print("Tower sold");
+            soundManager.playSound(soundManager.audioDeathMech);
         }
         cancelBuildState();
     }

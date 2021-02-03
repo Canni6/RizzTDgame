@@ -31,8 +31,8 @@ public class TitleScript : MonoBehaviour {
 
     public void exitGame() {
         // Application.Quit() does not work in the editor so
-        // UnityEditor.EditorApplication.isPlaying needs to be set to false to end the game
-        UnityEditor.EditorApplication.isPlaying = false;
+        // UnityEditor.EditorApplication.isPlaying needs to be set to false to end the game if using editor to quit
+        //UnityEditor.EditorApplication.isPlaying = false;
         Application.Quit();
     }
 }

@@ -92,7 +92,7 @@ public class UserInterface : MonoBehaviour
     void restartGame() {
         print("Game restarted");
         print("Active scene is: " + SceneManager.GetActiveScene().ToString());
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene(1);
     }
 
     public void displayButton(Button button) {

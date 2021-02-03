@@ -74,9 +74,9 @@ public class GameManager : MonoBehaviour {
     }
 
     private void OnGUI() {
-        GUI.Label(new Rect(Screen.width / 2 - Screen.width / 8, Screen.height / 2 - Screen.height / 3, 1000, 200), playerCreditString);
-        GUI.Label(new Rect(Screen.width / 2 - Screen.width / 4, Screen.height / 2 - Screen.height / 3, 1000, 200), playerLifeString);
-        GUI.Label(new Rect(Screen.width / 2 + 20, Screen.height / 2 - Screen.height / 3, 1000, 200), currentWaveString);
+        GUI.Label(new Rect(Screen.width / 2 - Screen.width / 8 + 200, Screen.height / 2 - Screen.height / 3, 1000, 200), playerLifeString);
+        GUI.Label(new Rect(Screen.width / 2 - Screen.width / 16 + 200, Screen.height / 2 - Screen.height / 3, 1000, 200), playerCreditString);
+        GUI.Label(new Rect(Screen.width / 2 + 200, Screen.height / 2 - Screen.height / 3, 1000, 200), currentWaveString);
         if(towerSelectState && towerGOSelected != null) {
             towerSelectedString = "Tower type selected: " + towerGOSelected.GetComponentInChildren<TowerScript>().getAffix();
             GUI.Label(new Rect(Screen.width / 2 - Screen.width / 4, 0 + Screen.height / 7, 1000, 200), towerSelectedString);
@@ -85,7 +85,7 @@ public class GameManager : MonoBehaviour {
         if (gameOver) {
             guiStyle.normal.textColor = Color.red;
             guiStyle.fontSize = 30;
-            GUI.Label(new Rect(Screen.width / 2 - Screen.width / 8, Screen.height / 2 - Screen.height / 12, 1000, 200), gameOverString, guiStyle);
+            GUI.Label(new Rect(Screen.width / 2 - Screen.width / 24, Screen.height / 2 - Screen.height / 6, 1000, 200), gameOverString, guiStyle);
         } else if(gameWon) {
             guiStyle.normal.textColor = Color.green;
             guiStyle.fontSize = 30;
