@@ -7,6 +7,12 @@ public class SpawnerScript : MonoBehaviour {
 	public GameManager gameManager;
 	public SoundManager soundManager;
 	public GameObject enemy;
+	public GameObject[] enemies;
+	public GameObject enemy1;
+	public GameObject enemy2;
+	public GameObject enemy3;
+	public GameObject enemy4;
+	public GameObject enemy5;
 	public GameObject start;
 
 	public float timeBetweenMobs = 2.0f;
@@ -16,11 +22,11 @@ public class SpawnerScript : MonoBehaviour {
 
 	public int waveCounter;
 	public Wave currentWave;
-	public Wave wave0 = new Wave("Dots #1", 3, 6.0f, 5);
-	public Wave wave1 = new Wave("MoreDots #2", 6, 8.0f, 5);
-	public Wave wave2 = new Wave("Whelps #3", 10, 10.0f, 5);
-	public Wave wave3 = new Wave("ManyWhelps #4", 10, 10.0f, 10);
-	public Wave boss = new Wave("Handle it! #5 (Boss)", 50, 4.0f, 1);
+	public Wave wave1;
+	public Wave wave2;
+	public Wave wave3;
+	public Wave wave4;
+	public Wave boss;
 	public Wave[] waves;
 	public bool active;
 	public bool counted;
@@ -33,14 +39,30 @@ public class SpawnerScript : MonoBehaviour {
 	// Use this for initialization
 	void Start ()
     {
+		// enemy config setup
+		enemy1 = (GameObject)Resources.Load("Prefabs/enemy1");
+		enemy2 = (GameObject)Resources.Load("Prefabs/enemy2");
+		enemy3 = (GameObject)Resources.Load("Prefabs/enemy3");
+		enemy4 = (GameObject)Resources.Load("Prefabs/enemy4");
+		enemy5 = (GameObject)Resources.Load("Prefabs/enemy5");
+		enemies = new GameObject[] { enemy1, enemy2, enemy3, enemy4, enemy5 };
+		// wave config setup
+		wave1 = new Wave("Dots #1", 3, 6.0f, 5, enemy1);
+		wave2 = new Wave("MoreDots #2", 6, 8.0f, 5, enemy2);
+		wave3 = new Wave("Whelps #3", 10, 10.0f, 5, enemy3);
+		wave4 = new Wave("ManyWhelps #4", 10, 10.0f, 10, enemy4);
+		boss = new Wave("Handle it! #5 (Boss)", 50, 4.0f, 1, enemy5);
+		waves = new Wave[] { wave1, wave2, wave3, wave4, boss };
+
+		// initialisation variables
 		start = GameObject.Find("start");
 		gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
 		soundManager = gameManager.GetComponent<SoundManager>();
 		start.GetComponent<Renderer>().material.color = Color.green;
 		startPosition = start.transform.position;
-		waves = new Wave[] { wave0, wave1, wave2, wave3, boss };
 		waveCounter = 0;
 		currentWave = waves[waveCounter];
+		enemy = enemies[waveCounter];
 		enemiesRemainingToSpawn = currentWave.getSize();
 		enemiesInScene = 0;
 		gameManager.updateWaveString();
@@ -104,6 +126,7 @@ public class SpawnerScript : MonoBehaviour {
 			gameManager.setGameWon();
         } else {
 			currentWave = waves[waveCounter];
+			enemy = enemies[waveCounter];
 			enemiesRemainingToSpawn = currentWave.getSize();
 			enemiesInScene = 0;
 			gameManager.updateWaveString();

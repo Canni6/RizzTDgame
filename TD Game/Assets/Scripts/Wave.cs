@@ -20,14 +20,16 @@ public class Wave
     private float speed;
     private TYPE type;
     private int size;
+    private GameObject go;
 
     // unspecified Wave type constructor
-    public Wave(string name, int health, float speed, int size) {
+    public Wave(string name, int health, float speed, int size, GameObject go) {
         this.name = name;
         this.health = health;
         this.speed = speed;
         this.size = size;
         this.type = TYPE.Standard;
+        this.go = go;
     }
 
     public Wave(string name, int health, float speed, int size, TYPE type) {

@@ -18,6 +18,7 @@ public class GameManager : MonoBehaviour {
     bool gameOver;
     bool gameWon;
     private GUIStyle guiStyle = new GUIStyle();
+    private GUIStyle topDisplayStyle = new GUIStyle();
     public UserInterface ui;
     public SpawnerScript spawner;
     public GameObject towerGOSelected;
@@ -40,6 +41,8 @@ public class GameManager : MonoBehaviour {
         playerLifeString = "Life: " + player1GO.GetComponent<Player>().getLife().ToString();
         guiStyle.normal.textColor = Color.red;
         guiStyle.fontSize = 30;
+        topDisplayStyle.normal.textColor = Color.green;
+        topDisplayStyle.fontSize = 20;
         gameOverString = "GAME OVER!";
         gameWonString = "YOU WIN!";
         gameOver = false;
@@ -74,9 +77,9 @@ public class GameManager : MonoBehaviour {
     }
 
     private void OnGUI() {
-        GUI.Label(new Rect(Screen.width / 2 - Screen.width / 8 + 200, Screen.height / 2 - Screen.height / 3, 1000, 200), playerLifeString);
-        GUI.Label(new Rect(Screen.width / 2 - Screen.width / 16 + 200, Screen.height / 2 - Screen.height / 3, 1000, 200), playerCreditString);
-        GUI.Label(new Rect(Screen.width / 2 + 200, Screen.height / 2 - Screen.height / 3, 1000, 200), currentWaveString);
+        GUI.Label(new Rect(Screen.width / 2 - Screen.width / 8, Screen.height / 2 - Screen.height / 3, 1000, 200), playerLifeString, topDisplayStyle);
+        GUI.Label(new Rect(Screen.width / 2 - Screen.width / 16 + 100, Screen.height / 2 - Screen.height / 3, 1000, 200), playerCreditString, topDisplayStyle);
+        GUI.Label(new Rect(Screen.width / 2 + 200, Screen.height / 2 - Screen.height / 3, 1000, 200), currentWaveString, topDisplayStyle);
         if(towerSelectState && towerGOSelected != null) {
             towerSelectedString = "Tower type selected: " + towerGOSelected.GetComponentInChildren<TowerScript>().getAffix();
             GUI.Label(new Rect(Screen.width / 2 - Screen.width / 4, 0 + Screen.height / 7, 1000, 200), towerSelectedString);
