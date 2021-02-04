@@ -2,8 +2,8 @@
 
 ## Summary
 ### Goal: Tower Defence Game Prototype
-### Theme: TBC
-### Music/Sound: Guitar & Electronic Samples
+### Theme: Off-World
+### Music/Sound: Guitars, around-the-house objects
 ### Models/Art: Blender/Unity
 
 Project Description:

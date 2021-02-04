@@ -15,8 +15,7 @@ public class SpawnerScript : MonoBehaviour {
 	public GameObject enemy5;
 	public GameObject start;
 
-	public float timeBetweenMobs = 2.0f;
-	public float countdown = 10.0f;
+	public float timeBetweenMobs;
 	public int enemiesRemainingToSpawn;
 	public int enemiesInScene;
 
@@ -31,7 +30,8 @@ public class SpawnerScript : MonoBehaviour {
 	public bool active;
 	public bool counted;
 	public string countString;
-	public float countMax = 10.0f;
+	public float countMax;
+	public float countdown;
 	private GUIStyle guiStyle = new GUIStyle();
 
 	Vector3 startPosition;
@@ -50,11 +50,14 @@ public class SpawnerScript : MonoBehaviour {
 		wave1 = new Wave("Dots #1", 3, 6.0f, 5, enemy1);
 		wave2 = new Wave("MoreDots #2", 6, 8.0f, 5, enemy2);
 		wave3 = new Wave("Whelps #3", 10, 10.0f, 5, enemy3);
-		wave4 = new Wave("ManyWhelps #4", 10, 10.0f, 10, enemy4);
-		boss = new Wave("Handle it! #5 (Boss)", 50, 4.0f, 1, enemy5);
+		wave4 = new Wave("ManyWhelps! #4", 5, 15.0f, 20, enemy4);
+		boss = new Wave("Handle it! #5 (Boss)", 100, 4.0f, 1, enemy5);
 		waves = new Wave[] { wave1, wave2, wave3, wave4, boss };
 
 		// initialisation variables
+		timeBetweenMobs = 2.0f;
+		countMax = 5.0f;
+		countdown = countMax;
 		start = GameObject.Find("start");
 		gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
 		soundManager = gameManager.GetComponent<SoundManager>();

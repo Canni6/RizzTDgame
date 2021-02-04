@@ -13,9 +13,13 @@ public class EnemyAiScript : MonoBehaviour
     GameManager gameManagerRef;
     SpawnerScript spawner;
     public int health;
+    public int healthMax;
     public int waypointCount;
     public float distanceToTarget;
     public SoundManager soundManager;
+    public GameObject healthBar;
+    Vector3 healthBarOffset;
+    Vector3 healthBarScale;
 
 
 	// Use this for initialization
@@ -26,9 +30,15 @@ public class EnemyAiScript : MonoBehaviour
         waypointGO = GameObject.Find("Waypoints");
         spawner = gameManager.GetComponent<SpawnerScript>();
         speed = spawner.getCurrentWave().getSpeed();
-        health = spawner.getCurrentWave().getHealth();
+        healthMax = spawner.getCurrentWave().getHealth();
+        health = healthMax;
         waypointCount = waypointGO.transform.childCount;
+        healthBar = (GameObject)Resources.Load("Prefabs/healthBar");
+        healthBarOffset = new Vector3(0.0f, 5.0f, 0.0f);
         
+        healthBar = Instantiate(healthBar, transform);
+        healthBarScale = new Vector3(health / healthMax, healthBar.transform.localScale.y, healthBar.transform.localScale.z);
+        healthBar.transform.position = transform.position + healthBarOffset;
     }
     void GetNextWaypoint() {
         if(waypointIndex < (waypointCount)) {
@@ -56,7 +66,10 @@ public class EnemyAiScript : MonoBehaviour
             GetNextWaypoint();
         }
 	    float step = speed * Time.deltaTime; // step size is equal to speed times frame time.
+        // move enemy
 	    transform.position = Vector3.MoveTowards (transform.position, targetWaypoint.position, step);
+        // move health bar as well
+        healthBar.transform.position = transform.position + healthBarOffset;
         // distance to our target
         Vector3 targetDirection = targetWaypoint.position - transform.localPosition;
         // if we reached the waypoint
@@ -72,7 +85,8 @@ public class EnemyAiScript : MonoBehaviour
     void OnCollisionEnter(Collision something) {
         if (something.gameObject.tag.Equals("projectile") == true) {
             // apply projectile affix debuff - just frost atm
-            if(something.gameObject.GetComponent<ProjectileScript>().getAffix() == ProjectileScript.Affix.Frost) {
+            if(something.gameObject.GetComponent<ProjectileScript>().getAffix() 
+                == ProjectileScript.Affix.Frost) {
                 // apply 50% speed debuff (min speed cap)
                 if(speed > 2f) {
                     setSpeed(speed * 0.5f);
@@ -81,7 +95,12 @@ public class EnemyAiScript : MonoBehaviour
                 this.gameObject.GetComponent<Renderer>().material.color = Color.blue;
             }
             health -= 1;
-            if(health < 1) {
+            // update health bar
+            healthBar.transform.localScale = new Vector3(healthBar.transform.localScale.x *
+                                            ((float)health / (float)healthMax), 
+                                            healthBar.transform.localScale.y,
+                                            healthBar.transform.localScale.z);
+            if (health < 1) {
                 Destroy(gameObject);
                 print("collision - enemy destroyed!");
                 gameManagerRef.addPlayerCredit(1);

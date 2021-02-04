@@ -89,10 +89,11 @@ public class GameManager : MonoBehaviour {
             guiStyle.normal.textColor = Color.red;
             guiStyle.fontSize = 30;
             GUI.Label(new Rect(Screen.width / 2 - Screen.width / 24, Screen.height / 2 - Screen.height / 6, 1000, 200), gameOverString, guiStyle);
-        } else if(gameWon) {
+        }
+        else if (gameWon) {
             guiStyle.normal.textColor = Color.green;
             guiStyle.fontSize = 30;
-            GUI.Label(new Rect(Screen.width / 2 - Screen.width / 8, Screen.height / 2 - Screen.height / 12, 1000, 200), gameWonString, guiStyle);
+            GUI.Label(new Rect(Screen.width / 2 - 70, Screen.height / 2 - Screen.height / 10, 1000, 200), gameWonString, guiStyle);
             ui.displayButton(ui.restartButton);
         }
     }
