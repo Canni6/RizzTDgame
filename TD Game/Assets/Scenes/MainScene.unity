@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44497013, g: 0.49454945, b: 0.5736796, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -22227,9 +22227,14 @@ MonoBehaviour:
   gameManager: {fileID: 0}
   soundManager: {fileID: 0}
   enemy: {fileID: 6389034070254698084, guid: 18d5b9a10374d1c40b12b869e69e00e7, type: 3}
+  enemies: []
+  enemy1: {fileID: 0}
+  enemy2: {fileID: 0}
+  enemy3: {fileID: 0}
+  enemy4: {fileID: 0}
+  enemy5: {fileID: 0}
   start: {fileID: 0}
   timeBetweenMobs: 2
-  countdown: 10
   enemiesRemainingToSpawn: 0
   enemiesInScene: 0
   waveCounter: 0
@@ -22237,6 +22242,7 @@ MonoBehaviour:
   counted: 0
   countString: 
   countMax: 10
+  countdown: 10
 --- !u!114 &1557519313
 MonoBehaviour:
   m_ObjectHideFlags: 0
