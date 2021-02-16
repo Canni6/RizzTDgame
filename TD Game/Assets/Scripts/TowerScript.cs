@@ -36,6 +36,11 @@ public class TowerScript : MonoBehaviour
         Frost,
         Rapid
     }
+    public enum Range {
+        Basic = 10,
+        Frost = 15,
+        Rapid = 15
+    }
 
     public Affix affix;
 
@@ -154,6 +159,10 @@ public class TowerScript : MonoBehaviour
     
     public void setBuilt() {
         built = true;
+    }
+
+    public float getRange() {
+        return maxRange;
     }
 
     public void setRange(float range) {

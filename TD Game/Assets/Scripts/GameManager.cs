@@ -77,9 +77,9 @@ public class GameManager : MonoBehaviour {
     }
 
     private void OnGUI() {
-        GUI.Label(new Rect(Screen.width / 2 - Screen.width / 8, Screen.height / 2 - Screen.height / 3, 1000, 200), playerLifeString, topDisplayStyle);
-        GUI.Label(new Rect(Screen.width / 2 - Screen.width / 16 + 100, Screen.height / 2 - Screen.height / 3, 1000, 200), playerCreditString, topDisplayStyle);
-        GUI.Label(new Rect(Screen.width / 2 + 200, Screen.height / 2 - Screen.height / 3, 1000, 200), currentWaveString, topDisplayStyle);
+        GUI.Label(new Rect(Screen.width / 2 - Screen.width / 8, Screen.height / 2 - Screen.height / 3 - 80, 1000, 200), playerLifeString, topDisplayStyle);
+        GUI.Label(new Rect(Screen.width / 2 - Screen.width / 16 + 100, Screen.height / 2 - Screen.height / 3 - 80, 1000, 200), playerCreditString, topDisplayStyle);
+        GUI.Label(new Rect(Screen.width / 2 + 100, Screen.height / 2 - Screen.height / 3 - 80, 1000, 200), currentWaveString, topDisplayStyle);
         if(towerSelectState && towerGOSelected != null) {
             towerSelectedString = "Tower type selected: " + towerGOSelected.GetComponentInChildren<TowerScript>().getAffix();
             GUI.Label(new Rect(Screen.width / 2 - Screen.width / 4, 0 + Screen.height / 7, 1000, 200), towerSelectedString);
@@ -148,6 +148,7 @@ public class GameManager : MonoBehaviour {
             nodeGOSelected.gameObject.GetComponent<Renderer>().material.color = Color.white;
             nodeGOSelected.gameObject.GetComponent<Renderer>().enabled = false;
             nodeGOSelected.gameObject.GetComponent<BuildNodeScript>().setTowerSelected(false);
+            nodeGOSelected.gameObject.GetComponent<BuildNodeScript>().hideIndicator();
         }
         towerSelectState = false;
         nodeGOSelected = null;

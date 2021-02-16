@@ -14,11 +14,14 @@ public class BuildNodeScript : MonoBehaviour {
     RaycastHit hit;
     public Renderer boxRend;
     public bool buildableArea = true;
-    public GameObject tempTower = null; // placement phase
+    public GameObject tempTower; // placement phase
     public GameObject basicTower;
     public GameObject frostTower;
     public GameObject rapidTower;
-    public GameObject builtTower = null; // built phase
+    public GameObject builtTower; // built phase
+    public GameObject rangeIndicator;
+    public GameObject tempIndicator;
+    public GameObject builtIndicator;
     public GameManager gameManager;
     public SoundManager soundManager;
     public BuildManager buildManager;
@@ -46,6 +49,7 @@ public class BuildNodeScript : MonoBehaviour {
         print("Frost tower assigned to: " + frostTower);
         rapidTower = (GameObject)Resources.Load("Prefabs/Tower_Rapid");
         print("Rapid tower assigned to: " + rapidTower);
+        rangeIndicator = (GameObject)Resources.Load("Prefabs/ring_unit");
     }
 
     void OnMouseEnter()
@@ -62,11 +66,18 @@ public class BuildNodeScript : MonoBehaviour {
                 // instantiate temp tower - type based on selection
                 if (getBuildSelection() == BuildManager.SELECTION.Basic) {
                     tempTower = Instantiate(basicTower, towerPosition, boxRend.transform.rotation);
+                    tempTower.GetComponentInChildren<TowerScript>().setRange((float)TowerScript.Range.Basic);
+                    addTempIndicator(tempTower);
                 } else if (getBuildSelection() == BuildManager.SELECTION.Frost) {
                     tempTower = Instantiate(frostTower, towerPosition, boxRend.transform.rotation);
+                    tempTower.GetComponentInChildren<TowerScript>().setRange((float)TowerScript.Range.Frost);
+                    addTempIndicator(tempTower);
                 } else if (getBuildSelection() == BuildManager.SELECTION.Rapid) {
                     tempTower = Instantiate(rapidTower, towerPosition, boxRend.transform.rotation);
+                    tempTower.GetComponentInChildren<TowerScript>().setRange((float)TowerScript.Range.Rapid);
+                    addTempIndicator(tempTower);
                 }
+                
             }
             else {
                 boxRend.material.color = Color.red;
@@ -74,17 +85,23 @@ public class BuildNodeScript : MonoBehaviour {
         }
     }
 
-    public void instantiateTower(GameObject towerType, float fireRate, int cost) {
+    public void buildTower(GameObject towerType, float fireRate, int cost) {
         builtTower = Instantiate(towerType, towerPosition, boxRend.transform.rotation);
         if(towerType == basicTower) {
             builtTower.GetComponentInChildren<TowerScript>().setAffix(TowerScript.Affix.Basic);
+            builtTower.GetComponentInChildren<TowerScript>().setRange((float)TowerScript.Range.Basic);
         } else if(towerType == frostTower) {
             builtTower.GetComponentInChildren<TowerScript>().setAffix(TowerScript.Affix.Frost);
+            builtTower.GetComponentInChildren<TowerScript>().setRange((float)TowerScript.Range.Frost);
         } else if (towerType == rapidTower) {
             builtTower.GetComponentInChildren<TowerScript>().setAffix(TowerScript.Affix.Rapid);
+            builtTower.GetComponentInChildren<TowerScript>().setRange((float)TowerScript.Range.Rapid);
         }
         builtTower.GetComponentInChildren<TowerScript>().setBuilt();
         builtTower.GetComponentInChildren<TowerScript>().setFireRate(fireRate);
+        addBuiltIndicator(builtTower);
+        // hide indicator when built - only display during tower selection
+        builtIndicator.SetActive(false);
         updatePlayerCredit(-cost);
         cancelBuildState();
         buildableArea = false;
@@ -94,19 +111,18 @@ public class BuildNodeScript : MonoBehaviour {
 
     void OnMouseDown() {
         if (getBuildState() == true && buildableArea) {
-            Destroy(tempTower); // destroy the temp
-
+            removeTempTower();
             // instantiate new tower
             if (getBuildSelection() == BuildManager.SELECTION.Basic) {
-                instantiateTower(basicTower, BuildManager.rate_basic, BuildManager.value_basic);
+                buildTower(basicTower, BuildManager.rate_basic, BuildManager.value_basic);
 
             }
             else if (getBuildSelection() == BuildManager.SELECTION.Frost) {
-                instantiateTower(frostTower, BuildManager.rate_frost, BuildManager.value_frost);
+                buildTower(frostTower, BuildManager.rate_frost, BuildManager.value_frost);
 
             }
             else if (getBuildSelection() == BuildManager.SELECTION.Rapid) {
-                instantiateTower(rapidTower, BuildManager.rate_rapid, BuildManager.value_rapid);
+                buildTower(rapidTower, BuildManager.rate_rapid, BuildManager.value_rapid);
             }
             else if (getBuildSelection() == BuildManager.SELECTION.Invalid) {
                 print("Clicked on tiles without build type selected");
@@ -122,7 +138,7 @@ public class BuildNodeScript : MonoBehaviour {
     }
 
     void OnMouseExit() {
-        Destroy(tempTower);
+        removeTempTower();
         if(!towerSelected) {
             boxRend.enabled = false;
             boxRend.material.color = Color.white;
@@ -146,6 +162,7 @@ public class BuildNodeScript : MonoBehaviour {
     }
 
     public void deselectTower() {
+        builtIndicator.SetActive(false);
         towerSelected = false;
         boxRend.material.color = Color.white;
         boxRend.enabled = false;
@@ -157,9 +174,35 @@ public class BuildNodeScript : MonoBehaviour {
         gameManager.setNodeTowerSelected(gameObject, builtTower);
         boxRend.material = (Material)Resources.Load("Materials/Tower_Highlight");
         towerSelected = true;
+        builtIndicator.SetActive(true);
     }
 
     public void setTowerSelected(bool state) {
         towerSelected = state;
+    }
+
+    public void removeTempTower() {
+        Destroy(tempTower);
+        Destroy(tempIndicator);
+    }
+
+    public void hideIndicator() {
+        builtIndicator.SetActive(false);
+    }
+
+    public void addBuiltIndicator(GameObject tower) {
+        builtIndicator = Instantiate(rangeIndicator, towerPosition, boxRend.transform.rotation);
+        // resize range indicator on x:z axis (unit circle scale)
+        builtIndicator.transform.localScale += 
+            new Vector3(tower.GetComponentInChildren<TowerScript>().getRange(),
+            0.0f, tower.GetComponentInChildren<TowerScript>().getRange());
+    }
+
+    public void addTempIndicator(GameObject tower) {
+        tempIndicator = Instantiate(rangeIndicator, towerPosition, boxRend.transform.rotation);
+        // resize range indicator on x:z axis (unit circle scale)
+        tempIndicator.transform.localScale += 
+            new Vector3(tower.GetComponentInChildren<TowerScript>().getRange(),
+            0.0f, tower.GetComponentInChildren<TowerScript>().getRange());
     }
 }
