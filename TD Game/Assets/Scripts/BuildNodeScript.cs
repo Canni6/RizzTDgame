@@ -31,6 +31,7 @@ public class BuildNodeScript : MonoBehaviour {
 
     public Vector3 towerPosition;
     public bool towerSelected = false;
+    public bool towerPlanned = false;
     public GUIStyle proposedTowerStyle = new GUIStyle();
 
 
@@ -57,7 +58,7 @@ public class BuildNodeScript : MonoBehaviour {
         rangeIndicator = (GameObject)Resources.Load("Prefabs/ring_unit");
     }
 
-    void OnMouseEnter()
+    void OnMouseOver()
     {
         if(towerSelected || !buildableArea) {
             boxRend.enabled = true;
@@ -68,6 +69,10 @@ public class BuildNodeScript : MonoBehaviour {
                 boxRend.material.color = Color.green;
                 towerPosition = boxRend.transform.position + new Vector3 (0, 1, 0); // account for box vertical height to place tower
                 print(boxRend.material.color);
+                if(towerPlanned) {
+                    removeTempTower();
+                    towerPlanned = false;
+                }
                 planTower();                
             }
             else {
@@ -202,16 +207,19 @@ public class BuildNodeScript : MonoBehaviour {
             tempTower = Instantiate(basicTower, towerPosition, boxRend.transform.rotation);
             tempTower.GetComponentInChildren<TowerScript>().setAffix(TowerScript.Affix.Basic);
             addTempIndicator(tempTower);
+            towerPlanned = true;
         }
         else if (getBuildSelection() == BuildManager.SELECTION.Frost) {
             tempTower = Instantiate(frostTower, towerPosition, boxRend.transform.rotation);
             tempTower.GetComponentInChildren<TowerScript>().setAffix(TowerScript.Affix.Frost);
             addTempIndicator(tempTower);
+            towerPlanned = true;
         }
         else if (getBuildSelection() == BuildManager.SELECTION.Rapid) {
             tempTower = Instantiate(rapidTower, towerPosition, boxRend.transform.rotation);
             tempTower.GetComponentInChildren<TowerScript>().setAffix(TowerScript.Affix.Rapid);
             addTempIndicator(tempTower);
+            towerPlanned = true;
         }
         //if (getBuildSelection() != BuildManager.SELECTION.Invalid) {
         //    gameManager.setTowerPlanned(tempTower);
