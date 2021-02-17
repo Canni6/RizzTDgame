@@ -53,7 +53,28 @@ public class UserInterface : MonoBehaviour
             }
         }
         towerMenu = GameObject.Find("TowerMenu");
+        Button towersButton = towerMenu.transform.GetChild(0).GetComponent<Button>();
+        towersButton.transform.GetChild(0).GetComponent<Text>().text = "Towers\t\t\t\t\t\t" +
+                                                                        "| Cost\t| Range\t| Fire-Rate";
+        Button basicTowerButton = towerMenu.transform.GetChild(1).GetComponent<Button>();
+        basicTowerButton.transform.GetChild(0).GetComponent<Text>().text = "Basic Tower (B) \t\t\t| "
+                                                    + BuildManager.value_basic + "\t\t| "
+                                                    + BuildManager.range_basic + "\t\t\t| "
+                                                    + BuildManager.rate_basic;
+        Button frostTowerButton = towerMenu.transform.GetChild(2).GetComponent<Button>();
+        frostTowerButton.transform.GetChild(0).GetComponent<Text>().text = "Frost Tower (F) \t\t\t| "
+                                                    + BuildManager.value_frost + "\t\t| "
+                                                    + BuildManager.range_frost + "\t\t\t| "
+                                                    + BuildManager.rate_frost;
+        Button rapidTowerButton = towerMenu.transform.GetChild(3).GetComponent<Button>();
+        rapidTowerButton.transform.GetChild(0).GetComponent<Text>().text = "Rapid Tower (R) \t\t| "
+                                                    + BuildManager.value_rapid + "\t\t| "
+                                                    + BuildManager.range_rapid + "\t\t\t| "
+                                                    + BuildManager.rate_rapid;
         towerMenu.SetActive(false);
+        
+
+        
         sellMenuButton = buildMenu.transform.GetChild(2).GetComponent<Button>();
         cancelMenuButton = buildMenu.transform.GetChild(3).GetComponent<Button>();
         // mouse support
@@ -126,17 +147,17 @@ public class UserInterface : MonoBehaviour
 
     public void buildBasic() {
         buildManager.setSelection(BuildManager.SELECTION.Basic);
-        buildManager.buildTower(BuildManager.SELECTION.Basic);
+        buildManager.planTower(BuildManager.SELECTION.Basic);
     }
 
     public void buildFrost() {
         buildManager.setSelection(BuildManager.SELECTION.Frost);
-        buildManager.buildTower(BuildManager.SELECTION.Frost);
+        buildManager.planTower(BuildManager.SELECTION.Frost);
     }
 
     public void buildRapid() {
         buildManager.setSelection(BuildManager.SELECTION.Rapid);
-        buildManager.buildTower(BuildManager.SELECTION.Rapid);
+        buildManager.planTower(BuildManager.SELECTION.Rapid);
     }
 
     public void resetButtons() {

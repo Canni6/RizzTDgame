@@ -30,8 +30,13 @@ public class BuildNodeScript : MonoBehaviour {
     public Material materialTemp;
 
     public Vector3 towerPosition;
-
     public bool towerSelected = false;
+    public GUIStyle proposedTowerStyle = new GUIStyle();
+
+
+    void OnGUI() {
+        
+    }
 
     // Use this for initialization
     void Start () {
@@ -63,21 +68,7 @@ public class BuildNodeScript : MonoBehaviour {
                 boxRend.material.color = Color.green;
                 towerPosition = boxRend.transform.position + new Vector3 (0, 1, 0); // account for box vertical height to place tower
                 print(boxRend.material.color);
-                // instantiate temp tower - type based on selection
-                if (getBuildSelection() == BuildManager.SELECTION.Basic) {
-                    tempTower = Instantiate(basicTower, towerPosition, boxRend.transform.rotation);
-                    tempTower.GetComponentInChildren<TowerScript>().setRange((float)TowerScript.Range.Basic);
-                    addTempIndicator(tempTower);
-                } else if (getBuildSelection() == BuildManager.SELECTION.Frost) {
-                    tempTower = Instantiate(frostTower, towerPosition, boxRend.transform.rotation);
-                    tempTower.GetComponentInChildren<TowerScript>().setRange((float)TowerScript.Range.Frost);
-                    addTempIndicator(tempTower);
-                } else if (getBuildSelection() == BuildManager.SELECTION.Rapid) {
-                    tempTower = Instantiate(rapidTower, towerPosition, boxRend.transform.rotation);
-                    tempTower.GetComponentInChildren<TowerScript>().setRange((float)TowerScript.Range.Rapid);
-                    addTempIndicator(tempTower);
-                }
-                
+                planTower();                
             }
             else {
                 boxRend.material.color = Color.red;
@@ -85,20 +76,16 @@ public class BuildNodeScript : MonoBehaviour {
         }
     }
 
-    public void buildTower(GameObject towerType, float fireRate, int cost) {
+    public void placeTower(GameObject towerType, float fireRate, int cost) {
         builtTower = Instantiate(towerType, towerPosition, boxRend.transform.rotation);
         if(towerType == basicTower) {
             builtTower.GetComponentInChildren<TowerScript>().setAffix(TowerScript.Affix.Basic);
-            builtTower.GetComponentInChildren<TowerScript>().setRange((float)TowerScript.Range.Basic);
         } else if(towerType == frostTower) {
             builtTower.GetComponentInChildren<TowerScript>().setAffix(TowerScript.Affix.Frost);
-            builtTower.GetComponentInChildren<TowerScript>().setRange((float)TowerScript.Range.Frost);
         } else if (towerType == rapidTower) {
             builtTower.GetComponentInChildren<TowerScript>().setAffix(TowerScript.Affix.Rapid);
-            builtTower.GetComponentInChildren<TowerScript>().setRange((float)TowerScript.Range.Rapid);
         }
         builtTower.GetComponentInChildren<TowerScript>().setBuilt();
-        builtTower.GetComponentInChildren<TowerScript>().setFireRate(fireRate);
         addBuiltIndicator(builtTower);
         // hide indicator when built - only display during tower selection
         builtIndicator.SetActive(false);
@@ -114,15 +101,15 @@ public class BuildNodeScript : MonoBehaviour {
             removeTempTower();
             // instantiate new tower
             if (getBuildSelection() == BuildManager.SELECTION.Basic) {
-                buildTower(basicTower, BuildManager.rate_basic, BuildManager.value_basic);
+                placeTower(basicTower, BuildManager.rate_basic, BuildManager.value_basic);
 
             }
             else if (getBuildSelection() == BuildManager.SELECTION.Frost) {
-                buildTower(frostTower, BuildManager.rate_frost, BuildManager.value_frost);
+                placeTower(frostTower, BuildManager.rate_frost, BuildManager.value_frost);
 
             }
             else if (getBuildSelection() == BuildManager.SELECTION.Rapid) {
-                buildTower(rapidTower, BuildManager.rate_rapid, BuildManager.value_rapid);
+                placeTower(rapidTower, BuildManager.rate_rapid, BuildManager.value_rapid);
             }
             else if (getBuildSelection() == BuildManager.SELECTION.Invalid) {
                 print("Clicked on tiles without build type selected");
@@ -133,7 +120,10 @@ public class BuildNodeScript : MonoBehaviour {
                 buildManager.setCreditWarning(true);
             }
         } else if(!buildableArea) {
-            selectTower();
+            //// don't select tower during build phase
+            //if(getBuildState() == false) {
+                selectTower();
+            //}
         }
     }
 
@@ -204,5 +194,27 @@ public class BuildNodeScript : MonoBehaviour {
         tempIndicator.transform.localScale += 
             new Vector3(tower.GetComponentInChildren<TowerScript>().getRange(),
             0.0f, tower.GetComponentInChildren<TowerScript>().getRange());
+    }
+
+    public void planTower() {
+        // instantiate temp tower - type based on selection
+        if (getBuildSelection() == BuildManager.SELECTION.Basic) {
+            tempTower = Instantiate(basicTower, towerPosition, boxRend.transform.rotation);
+            tempTower.GetComponentInChildren<TowerScript>().setAffix(TowerScript.Affix.Basic);
+            addTempIndicator(tempTower);
+        }
+        else if (getBuildSelection() == BuildManager.SELECTION.Frost) {
+            tempTower = Instantiate(frostTower, towerPosition, boxRend.transform.rotation);
+            tempTower.GetComponentInChildren<TowerScript>().setAffix(TowerScript.Affix.Frost);
+            addTempIndicator(tempTower);
+        }
+        else if (getBuildSelection() == BuildManager.SELECTION.Rapid) {
+            tempTower = Instantiate(rapidTower, towerPosition, boxRend.transform.rotation);
+            tempTower.GetComponentInChildren<TowerScript>().setAffix(TowerScript.Affix.Rapid);
+            addTempIndicator(tempTower);
+        }
+        //if (getBuildSelection() != BuildManager.SELECTION.Invalid) {
+        //    gameManager.setTowerPlanned(tempTower);
+        //}
     }
 }

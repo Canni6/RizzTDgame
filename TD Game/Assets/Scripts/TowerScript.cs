@@ -36,11 +36,6 @@ public class TowerScript : MonoBehaviour
         Frost,
         Rapid
     }
-    public enum Range {
-        Basic = 10,
-        Frost = 15,
-        Rapid = 15
-    }
 
     public Affix affix;
 
@@ -174,8 +169,24 @@ public class TowerScript : MonoBehaviour
         this.fireRate = fireRate;
     }
 
+    public float getFireRate() {
+        return fireRate;
+    }
+
     public void setAffix(Affix affix) {
         this.affix = affix;
+        if(affix == Affix.Basic) {
+            setRange(BuildManager.range_basic);
+            setFireRate(BuildManager.rate_basic);
+        }
+        if(affix == Affix.Frost) {
+            setRange(BuildManager.range_frost);
+            setFireRate(BuildManager.rate_frost);
+        }
+        if(affix == Affix.Rapid) {
+            setRange(BuildManager.range_rapid);
+            setFireRate(BuildManager.rate_rapid);
+        }
     }
 
     public Affix getAffix() {

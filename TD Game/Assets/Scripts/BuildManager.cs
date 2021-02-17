@@ -31,9 +31,15 @@ public class BuildManager : MonoBehaviour
     public const int value_frost = 4;
     public const int value_rapid = 8;
 
+    public const float range_basic = 10.0f;
+    public const float range_frost = 15.0f;
+    public const float range_rapid = 7.5f;
+
     public const float rate_basic = 1f;
     public const float rate_frost = 0.5f;
     public const float rate_rapid = 2f;
+
+    
 
     // Start is called before the first frame update
     void Start()
@@ -71,7 +77,7 @@ public class BuildManager : MonoBehaviour
             if (buildState == true) {
                 // attempt to build basic tower
                 setSelection(SELECTION.Basic);
-                buildTower(SELECTION.Basic);
+                planTower(SELECTION.Basic);
             }
             // entering build state
             else {
@@ -84,14 +90,14 @@ public class BuildManager : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.F)) {
             if (buildState == true) {
                 setSelection(SELECTION.Frost);
-                buildTower(SELECTION.Frost);
+                planTower(SELECTION.Frost);
             }
         }
         // R - rapid tower selection
         if (Input.GetKeyDown(KeyCode.R)) {
             if (buildState == true) {
                 setSelection(SELECTION.Rapid);
-                buildTower(SELECTION.Rapid);
+                planTower(SELECTION.Rapid);
             }
         }
         // S - sell tower
@@ -138,6 +144,7 @@ public class BuildManager : MonoBehaviour
             gameManager.deselectTower();
         }
         ui.hideButton(ui.cancelMenuButton);
+        //gameManager.setTowerPlannedState(false);
     }
 
     public void updateBuildString() {
@@ -153,25 +160,30 @@ public class BuildManager : MonoBehaviour
         creditWarning = state;
     }
 
-    public void buildTower(SELECTION buildSelection) {
+    public void planTower(SELECTION buildSelection) {
         if(buildSelection == SELECTION.Basic && gameManager.getPlayerCredit() >= value_basic) {
             ui.selectButton(ui.basicTowerButton);
             print("basic tower selected");
             soundManager.playSound(soundManager.audioButtonBlip);
+            //gameManager.setTowerPlannedState(true);
         } else if(buildSelection == SELECTION.Frost && gameManager.getPlayerCredit() >= value_frost) {
             ui.selectButton(ui.frostTowerButton);
             print("frost tower selected");
             soundManager.playSound(soundManager.audioButtonBlip);
+            //gameManager.setTowerPlannedState(true);
         } else if(buildSelection == SELECTION.Rapid && gameManager.getPlayerCredit() >= value_rapid) {
             ui.selectButton(ui.rapidTowerButton);
             print("rapid tower selected");
             soundManager.playSound(soundManager.audioButtonBlip);
+            //gameManager.setTowerPlannedState(true);
+
         } else {
             setSelection(SELECTION.Invalid);
             setCreditWarning(true);
             print("we need more gold");
             soundManager.playSound(soundManager.audioDeclined);
             ui.resetButtons();
+            //gameManager.setTowerPlannedState(false);
         }
     }
 
@@ -190,6 +202,7 @@ public class BuildManager : MonoBehaviour
         ui.selectButton(ui.buildMenuButton);
         ui.displayTowerMenu();
         ui.displayButton(ui.cancelMenuButton);
+        gameManager.deselectTower();
         print("State changed to build");
     }
 

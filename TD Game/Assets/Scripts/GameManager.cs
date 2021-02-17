@@ -18,15 +18,23 @@ public class GameManager : MonoBehaviour {
     bool gameOver;
     bool gameWon;
     private GUIStyle guiStyle = new GUIStyle();
-    private GUIStyle topDisplayStyle = new GUIStyle();
+    private GUIStyle mainDisplayStyle = new GUIStyle();
+    private GUIStyle towerSelectStyle = new GUIStyle();
+    //private GUIStyle towerPlannedStyle = new GUIStyle();
     public UserInterface ui;
     public SpawnerScript spawner;
     public GameObject towerGOSelected;
+    //public GameObject towerGOPlanned;
     public GameObject nodeGOSelected;
     public bool towerSelectState = false;
+    //public bool towerPlannedState = false;
     public string towerSelectedString;
+    //public string towerPlannedString;
     public GameObject sellMenuButton;
     public Material materialNodeDefault;
+    private float scale;
+    public GameObject mainCamera;
+    public Vector3 camPos;
     //public AudioSource audioSource;
 
     // Start is called before the first frame update
@@ -41,22 +49,52 @@ public class GameManager : MonoBehaviour {
         playerLifeString = "Life: " + player1GO.GetComponent<Player>().getLife().ToString();
         guiStyle.normal.textColor = Color.red;
         guiStyle.fontSize = 30;
-        topDisplayStyle.normal.textColor = Color.green;
-        topDisplayStyle.fontSize = 20;
+        mainDisplayStyle.normal.textColor = Color.green;
+        mainDisplayStyle.fontSize = 20;
+        towerSelectStyle.normal.textColor = Color.yellow;
+        towerSelectStyle.fontSize = 20;
+        //towerPlannedStyle.normal.textColor = Color.cyan;
+        //towerPlannedStyle.fontSize = 20;
         gameOverString = "GAME OVER!";
         gameWonString = "YOU WIN!";
         gameOver = false;
         gameWon = false;
         materialNodeDefault = (Material)Resources.Load("Materials/Basic");
         sellMenuButton = GameObject.Find("SellMenuButton");
+        //scale = 10f;
+        //mainCamera = GameObject.Find("Main Camera");
+        //Camera.main.clearFlags = CameraClearFlags.SolidColor;
+        //camPos = mainCamera.transform.position;
         //audioSource.clip = (AudioClip)Resources.Load("Sounds/recording_68_trim");
         //audioSource.Play();
     }
 
     // Update is called once per frame
-    void Update() {
+    //void Update() {
+    //    camPos.y += Input.mouseScrollDelta.y * scale;
+    //    Camera.main.transform.position.Set(camPos.x, camPos.y, camPos.z);
+    //}
+
+    // TEST CODE BEGIN
+    void Awake() {
+        //GameObject go = GameObject.CreatePrimitive(PrimitiveType.Sphere);
+        //sphere = go.transform;
+
+        //// create a yellow quad
+        //go = GameObject.CreatePrimitive(PrimitiveType.Quad);
+        //go.transform.Rotate(new Vector3(90.0f, 0.0f, 0.0f));
+        //go.transform.localScale = new Vector3(4.0f, 4.0f, 4.0f);
+        //go.GetComponent<Renderer>().material.color = new Color(0.75f, 0.75f, 0.0f, 0.5f);
+
+        //// change the camera color and position
+        //Camera.main.clearFlags = CameraClearFlags.SolidColor;
+        //Camera.main.transform.position = new Vector3(2, 1, 5);
+        //Camera.main.transform.Rotate(0, -160, 0);
+
         
     }
+
+    // TEST CODE END
 
     public int getPlayerCredit() {
         return player1GO.GetComponent<Player>().getCredit();
@@ -77,25 +115,53 @@ public class GameManager : MonoBehaviour {
     }
 
     private void OnGUI() {
-        GUI.Label(new Rect(Screen.width / 2 - Screen.width / 8, Screen.height / 2 - Screen.height / 3 - 80, 1000, 200), playerLifeString, topDisplayStyle);
-        GUI.Label(new Rect(Screen.width / 2 - Screen.width / 16 + 100, Screen.height / 2 - Screen.height / 3 - 80, 1000, 200), playerCreditString, topDisplayStyle);
-        GUI.Label(new Rect(Screen.width / 2 + 100, Screen.height / 2 - Screen.height / 3 - 80, 1000, 200), currentWaveString, topDisplayStyle);
+        GUI.Label(new Rect(Screen.width / 24, Screen.height / 24, 1000, 200), 
+            currentWaveString, mainDisplayStyle);
+        GUI.Label(new Rect(Screen.width / 24, Screen.height / 24 + 25, 1000, 200), 
+            playerLifeString, mainDisplayStyle);
+        GUI.Label(new Rect(Screen.width / 24, Screen.height / 24 + 50, 1000, 200), 
+            playerCreditString, mainDisplayStyle);
+        
+        // display selected tower info
         if(towerSelectState && towerGOSelected != null) {
-            towerSelectedString = "Tower type selected: " + towerGOSelected.GetComponentInChildren<TowerScript>().getAffix();
-            GUI.Label(new Rect(Screen.width / 2 - Screen.width / 4, 0 + Screen.height / 7, 1000, 200), towerSelectedString);
+            towerSelectedString = "Selected tower: " + 
+                towerGOSelected.GetComponentInChildren<TowerScript>().getAffix()
+                + "\n" + "Range: " + towerGOSelected.GetComponentInChildren<TowerScript>().getRange()
+                + "\n" + "Fire-rate: " + towerGOSelected.GetComponentInChildren<TowerScript>().getFireRate();
+            GUI.Label(new Rect(Screen.width / 24, Screen.height / 24 + 100, 1000, 200), 
+                        towerSelectedString, towerSelectStyle);
         }
+        //// display planned tower info
+        //if(towerPlannedState && towerGOPlanned != null) {
+        //    towerPlannedString = "Planned tower: " +
+        //        towerGOPlanned.GetComponentInChildren<TowerScript>().getAffix()
+        //        + "\n" + "Range: " + towerGOPlanned.GetComponentInChildren<TowerScript>().getRange()
+        //        + "\n" + "Fire-rate: " + towerGOPlanned.GetComponentInChildren<TowerScript>().getFireRate();
+        //    GUI.Label(new Rect(Screen.width / 24, Screen.height / 24 + 100, 1000, 200),
+        //                towerPlannedString, towerPlannedStyle);
+        //}
         
         if (gameOver) {
             guiStyle.normal.textColor = Color.red;
             guiStyle.fontSize = 30;
-            GUI.Label(new Rect(Screen.width / 2 - Screen.width / 24, Screen.height / 2 - Screen.height / 6, 1000, 200), gameOverString, guiStyle);
+            GUI.Label(new Rect(Screen.width / 2 - Screen.width / 24, 
+                        Screen.height / 2 - Screen.height / 6, 1000, 200), gameOverString, guiStyle);
         }
         else if (gameWon) {
             guiStyle.normal.textColor = Color.green;
             guiStyle.fontSize = 30;
-            GUI.Label(new Rect(Screen.width / 2 - 70, Screen.height / 2 - Screen.height / 10, 1000, 200), gameWonString, guiStyle);
+            GUI.Label(new Rect(Screen.width / 2 - 70, Screen.height / 2 - 
+                        Screen.height / 10 - 50, 1000, 200), gameWonString, guiStyle);
             ui.displayButton(ui.restartButton);
         }
+        
+        
+
+        //// TEST CODE BEGIN
+        //Vector3 pos = sphere.position;
+        //pos.y += Input.mouseScrollDelta.y * scale;
+        //sphere.position = pos;
+        //// TEST CODE END
     }
 
     public void loadNextObjective() {
@@ -118,9 +184,9 @@ public class GameManager : MonoBehaviour {
         currentWaveString = "Current wave: " + spawner.getCurrentWave().getName();
     }
 
-    public void updateTowerSelectedString() {
-        towerSelectedString = "Tower type selected: " + towerGOSelected.GetComponentInChildren<TowerScript>().getAffix();
-    }
+    //public void updateTowerSelectedString() {
+    //    towerSelectedString = "Tower type selected: " + towerGOSelected.GetComponentInChildren<TowerScript>().getAffix();
+    //}
 
     public void updatePlayerCreditString() {
         playerCreditString = "Credit: " + player1GO.GetComponent<Player>().getCredit();
@@ -143,6 +209,10 @@ public class GameManager : MonoBehaviour {
         sellMenuButton.SetActive(true);
     }
 
+    //public void setTowerPlanned(GameObject tower) {
+    //    towerGOPlanned = tower;
+    //}
+
     public void deselectTower() {
         if(nodeGOSelected != null) {
             nodeGOSelected.gameObject.GetComponent<Renderer>().material.color = Color.white;
@@ -163,6 +233,10 @@ public class GameManager : MonoBehaviour {
     public void setTowerSelectState(bool state) {
         towerSelectState = state;
     }
+
+    //public void setTowerPlannedState(bool state) {
+    //    towerPlannedState = state;
+    //}
 
     public void sellTowerSelected() {
         // refund money
