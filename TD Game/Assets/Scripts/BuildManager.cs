@@ -113,7 +113,7 @@ public class BuildManager : MonoBehaviour
     }
 
     void OnGUI() {
-        GUI.Label(new Rect(Screen.width / 2 - Screen.width / 12, Screen.height - Screen.height / 12, 1000, 200), buildStateString);
+        // GUI.Label(new Rect(Screen.width / 2 - Screen.width / 12, Screen.height - Screen.height / 12, 1000, 200), buildStateString);
         if (creditWarning) {
             GUI.Label(new Rect(Screen.width * 0.55f, Screen.height / 2 + 2 * (Screen.height / 4), 500, 100), creditWarningString, guiStyle);
         }

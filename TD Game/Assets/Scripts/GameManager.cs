@@ -131,15 +131,6 @@ public class GameManager : MonoBehaviour {
             GUI.Label(new Rect(Screen.width / 24, Screen.height / 24 + 100, 1000, 200), 
                         towerSelectedString, towerSelectStyle);
         }
-        //// display planned tower info
-        //if(towerPlannedState && towerGOPlanned != null) {
-        //    towerPlannedString = "Planned tower: " +
-        //        towerGOPlanned.GetComponentInChildren<TowerScript>().getAffix()
-        //        + "\n" + "Range: " + towerGOPlanned.GetComponentInChildren<TowerScript>().getRange()
-        //        + "\n" + "Fire-rate: " + towerGOPlanned.GetComponentInChildren<TowerScript>().getFireRate();
-        //    GUI.Label(new Rect(Screen.width / 24, Screen.height / 24 + 100, 1000, 200),
-        //                towerPlannedString, towerPlannedStyle);
-        //}
         
         if (gameOver) {
             guiStyle.normal.textColor = Color.red;
