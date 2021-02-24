@@ -50,11 +50,11 @@ public class BuildNodeScript : MonoBehaviour {
         materialInit = boxRend.material;
         materialTemp = (Material)Resources.Load("Materials/Tower_Highlight");
         basicTower = (GameObject)Resources.Load("Prefabs/Tower_Prototype_0");
-        print("Basic tower assigned to: " + basicTower);
+        //print("Basic tower assigned to: " + basicTower);
         frostTower = (GameObject)Resources.Load("Prefabs/Tower_Frost");
-        print("Frost tower assigned to: " + frostTower);
+        //print("Frost tower assigned to: " + frostTower);
         rapidTower = (GameObject)Resources.Load("Prefabs/Tower_Rapid");
-        print("Rapid tower assigned to: " + rapidTower);
+        //print("Rapid tower assigned to: " + rapidTower);
         rangeIndicator = (GameObject)Resources.Load("Prefabs/ring_unit");
     }
 
@@ -68,7 +68,7 @@ public class BuildNodeScript : MonoBehaviour {
                 boxRend.enabled = true;
                 boxRend.material.color = Color.green;
                 towerPosition = boxRend.transform.position + new Vector3 (0, 1, 0); // account for box vertical height to place tower
-                print(boxRend.material.color);
+                //print(boxRend.material.color);
                 if(towerPlanned) {
                     removeTempTower();
                     towerPlanned = false;
@@ -97,7 +97,7 @@ public class BuildNodeScript : MonoBehaviour {
         updatePlayerCredit(-cost);
         cancelBuildState();
         buildableArea = false;
-        print("buildable area set to false!");
+        //print("buildable area set to false!");
         soundManager.playSound(soundManager.audioBuild);
     }
 
@@ -117,11 +117,11 @@ public class BuildNodeScript : MonoBehaviour {
                 placeTower(rapidTower, BuildManager.rate_rapid, BuildManager.value_rapid);
             }
             else if (getBuildSelection() == BuildManager.SELECTION.Invalid) {
-                print("Clicked on tiles without build type selected");
+                //print("Clicked on tiles without build type selected");
             }
             // else valid selection but insufficient credit
             else {
-                print("We need more gold!");
+                //print("We need more gold!");
                 buildManager.setCreditWarning(true);
             }
         } else if(!buildableArea) {

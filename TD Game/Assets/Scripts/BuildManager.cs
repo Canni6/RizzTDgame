@@ -24,6 +24,7 @@ public class BuildManager : MonoBehaviour
     public bool sellState;
     public GameManager gameManager;
     public SoundManager soundManager;
+    public PauseMenu pauseMenu;
     public UserInterface ui;
 
     // tower construction value
@@ -31,9 +32,9 @@ public class BuildManager : MonoBehaviour
     public const int value_frost = 4;
     public const int value_rapid = 8;
 
-    public const float range_basic = 10.0f;
-    public const float range_frost = 15.0f;
-    public const float range_rapid = 7.5f;
+    public const float range_basic = 10f;
+    public const float range_frost = 12.5f;
+    public const float range_rapid = 15f;
 
     public const float rate_basic = 1f;
     public const float rate_frost = 0.5f;
@@ -46,6 +47,7 @@ public class BuildManager : MonoBehaviour
     {
         gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
         soundManager = GameObject.Find("GameManager").GetComponent<SoundManager>();
+        pauseMenu = GameObject.Find("GameManager").GetComponent<PauseMenu>();
         ui = GameObject.Find("GameManager").GetComponent<UserInterface>();
         // build variable state
         buildSelection = SELECTION.Invalid;
@@ -107,8 +109,12 @@ public class BuildManager : MonoBehaviour
 
         // Esc - cancel existing menus/actions
         if (Input.GetKeyDown(KeyCode.Escape)) {
-            cancelBuildState();
-            print("State changed to play");
+            if(!buildState) {
+                pauseMenu.pauseGame();
+            } else {
+                cancelBuildState();
+            }
+            //print("State changed to play");
         }
     }
 
@@ -163,24 +169,24 @@ public class BuildManager : MonoBehaviour
     public void planTower(SELECTION buildSelection) {
         if(buildSelection == SELECTION.Basic && gameManager.getPlayerCredit() >= value_basic) {
             ui.selectButton(ui.basicTowerButton);
-            print("basic tower selected");
+            //print("basic tower selected");
             soundManager.playSound(soundManager.audioButtonBlip);
             //gameManager.setTowerPlannedState(true);
         } else if(buildSelection == SELECTION.Frost && gameManager.getPlayerCredit() >= value_frost) {
             ui.selectButton(ui.frostTowerButton);
-            print("frost tower selected");
+            //print("frost tower selected");
             soundManager.playSound(soundManager.audioButtonBlip);
             //gameManager.setTowerPlannedState(true);
         } else if(buildSelection == SELECTION.Rapid && gameManager.getPlayerCredit() >= value_rapid) {
             ui.selectButton(ui.rapidTowerButton);
-            print("rapid tower selected");
+            //print("rapid tower selected");
             soundManager.playSound(soundManager.audioButtonBlip);
             //gameManager.setTowerPlannedState(true);
 
         } else {
             setSelection(SELECTION.Invalid);
             setCreditWarning(true);
-            print("we need more gold");
+            //print("we need more gold");
             soundManager.playSound(soundManager.audioDeclined);
             ui.resetButtons();
             //gameManager.setTowerPlannedState(false);
@@ -191,7 +197,7 @@ public class BuildManager : MonoBehaviour
         // check if a build node is selected for selling
         if (gameManager.getTowerSelectState()) {
             gameManager.sellTowerSelected();
-            print("Tower sold");
+            //print("Tower sold");
             soundManager.playSound(soundManager.audioDeathMech);
         }
         cancelBuildState();
@@ -203,7 +209,7 @@ public class BuildManager : MonoBehaviour
         ui.displayTowerMenu();
         ui.displayButton(ui.cancelMenuButton);
         gameManager.deselectTower();
-        print("State changed to build");
+        //print("State changed to build");
     }
 
 }

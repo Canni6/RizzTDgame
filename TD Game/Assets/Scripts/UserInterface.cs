@@ -111,8 +111,8 @@ public class UserInterface : MonoBehaviour
     }
 
     void restartGame() {
-        print("Game restarted");
-        print("Active scene is: " + SceneManager.GetActiveScene().ToString());
+        //print("Game restarted");
+        //print("Active scene is: " + SceneManager.GetActiveScene().ToString());
         SceneManager.LoadScene(1);
     }
 
@@ -139,7 +139,7 @@ public class UserInterface : MonoBehaviour
             towerMenu.transform.GetChild(i).gameObject.GetComponent<Image>().color = Color.white;
         }
         button.gameObject.GetComponent<Image>().color = Color.yellow;
-        print("Button selected: " + button.name);
+        //print("Button selected: " + button.name);
     }
     public void OnSelect() {
         //this.gameObject.GetComponent<Image>().color = Color.yellow;

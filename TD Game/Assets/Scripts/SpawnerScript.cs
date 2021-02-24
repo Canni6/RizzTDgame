@@ -123,9 +123,9 @@ public class SpawnerScript : MonoBehaviour {
     }
 
 	public void loadNextWave() {
-		waveCounter++;
-		if (waveCounter == waves.Length) {
-			print("Game is over.");
+		++waveCounter;
+		if (waveCounter >= waves.Length) {
+			//print("Game is over.");
 			gameManager.setGameWon();
         } else {
 			currentWave = waves[waveCounter];

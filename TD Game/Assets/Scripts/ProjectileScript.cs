@@ -40,13 +40,13 @@ public class ProjectileScript : MonoBehaviour
         if(target == null)
         {
             Destroy(gameObject);
-            print("target null - projectile destroyed");
+            //print("target null - projectile destroyed");
             return;
         }
 
         Vector3 dir = target.position - transform.position;
         this.transform.Translate(dir.normalized * step, Space.World);
-        print("projectile moved");
+        //print("projectile moved");
 
     }
 
@@ -54,7 +54,7 @@ public class ProjectileScript : MonoBehaviour
     void OnCollisionEnter(Collision target) {
         if(target.gameObject.tag.Equals("enemy") == true ) {
             Destroy(gameObject);
-            print("collision - projectile destroyed!");
+            //print("collision - projectile destroyed!");
         }
     }
 

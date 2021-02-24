@@ -31,7 +31,7 @@ public class Player : MonoBehaviour
     }
 
     public int getCredit() {
-        print("current credit is: " + credit);
+        //print("current credit is: " + credit);
         return credit;
     }
     public int getLife() {

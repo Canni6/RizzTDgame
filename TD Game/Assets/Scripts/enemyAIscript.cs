@@ -55,7 +55,7 @@ public class EnemyAiScript : MonoBehaviour
 	    Destroy(gameObject);
         // subtract life from player
         gameManagerRef.addPlayerLife(-1);
-        print("Reached goal");
+        //print("Reached goal");
         spawner.removeEnemy();
         soundManager.playSound(soundManager.audioDeathBio);
         checkEndRound();
@@ -101,14 +101,14 @@ public class EnemyAiScript : MonoBehaviour
                                             healthBar.transform.localScale.y,
                                             healthBar.transform.localScale.z);
             if (health < 1) {
-                Destroy(gameObject);
-                print("collision - enemy destroyed!");
+                //print("collision - enemy destroyed!");
                 gameManagerRef.addPlayerCredit(1);
-                print("Added to player score");
+                //print("Added to player score");
                 spawner.removeEnemy();
                 soundManager.playSound(soundManager.audioDeathBio);
                 // check end of round condition
                 checkEndRound();
+                Destroy(gameObject);
             }
         }
     }

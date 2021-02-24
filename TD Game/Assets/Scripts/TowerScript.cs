@@ -107,7 +107,7 @@ public class TowerScript : MonoBehaviour
                 while (enemyProximity <= maxRange)
                 {
                     closestEnemy = enemy;
-                    print("Found closest enemy" + closestEnemy);
+                    //print("Found closest enemy" + closestEnemy);
                     closestEnemy.GetComponent<Renderer>().material = highlightTarget;
                     target = closestEnemy.transform;
                     return closestEnemy;
@@ -118,7 +118,7 @@ public class TowerScript : MonoBehaviour
                 closestEnemy = null;
                 target = null;
                 enemy.GetComponent<Renderer>().material.color = Color.cyan;
-                print("No enemies found");
+                //print("No enemies found");
             }
         }
         return closestEnemy;
