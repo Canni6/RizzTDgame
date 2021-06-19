@@ -12,9 +12,9 @@ GameObject:
   - component: {fileID: 33726859356156370}
   - component: {fileID: 135409332314683388}
   - component: {fileID: 23949909465872060}
-  - component: {fileID: 114372743684500676}
+  - component: {fileID: 3541874212125215235}
   m_Layer: 0
-  m_Name: enemyAI
+  m_Name: enemy
   m_TagString: enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -69,6 +69,8 @@ MeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -80,6 +82,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 1
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -92,7 +95,8 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!114 &114372743684500676
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &3541874212125215235
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -104,4 +108,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3d693f502d218bc46a81b13f77702f7d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Speed: 0
+  targetWaypoint: {fileID: 0}
+  waypointIndex: 0
+  speed: 0
+  health: 0
+  healthMax: 0
+  waypointCount: 0
+  distanceToTarget: 0
+  soundManager: {fileID: 0}
+  healthBar: {fileID: 0}
