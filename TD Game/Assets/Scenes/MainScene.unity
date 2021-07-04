@@ -3873,6 +3873,7 @@ MonoBehaviour:
   mousePosOg: {x: 0, y: 0}
   pixelWidth: 0
   pixelHeight: 0
+  gameManager: {fileID: 1557519309}
 --- !u!1001 &157738523
 PrefabInstance:
   m_ObjectHideFlags: 0

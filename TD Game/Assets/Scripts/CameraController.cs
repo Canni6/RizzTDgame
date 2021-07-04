@@ -17,6 +17,7 @@ public class CameraController : MonoBehaviour
     public int pixelHeight;
 
     private Camera cam;
+    public GameManager gameManager; // set in inspector
 
     void Start()
     {
@@ -72,37 +73,40 @@ public class CameraController : MonoBehaviour
         GUILayout.EndArea();
         /* end code sample */
 
-        // if mouse position within 10% of window extents
-        // PAN LEFT
-        if (mousePos.x < (0 + pixelWidth / 20) && point.x > 0) {
-            camPos.x -= scale / panRate;
-            this.transform.position = camPos;
-            print("pan left check: " + (0 + pixelWidth / 20));
-            print("Camera panned left");
-            //print("x: " + camPos.x + " y: " + camPos.y + " z: " + camPos.z);
-        }
-        // PAN RIGHT
-        if(mousePos.x > (pixelWidth - pixelWidth / 20) && point.x < 80) {
-            camPos.x += scale / panRate;
-            this.transform.position = camPos;
-            
-            print("Camera panned right");
-            //print("x: " + camPos.x + " y: " + camPos.y + " z: " + camPos.z);
-        }
-        // PAN DOWN (y screen axis / z world axis)
-        if (mousePos.y < (0 + pixelHeight / 20) && point.z > -80) {
-            camPos.z -= scale / panRate;                                   
-            this.transform.position = camPos;
-            print("Camera panned down");
-            //print("x: " + camPos.x + " y: " + camPos.y + " z: " + camPos.z);
-        }
-        // PAN UP (y screen axis / z world axis)
-        if (mousePos.y > (pixelHeight - pixelHeight / 20) && point.z < -20) {
-            camPos.z += scale / panRate;
-            this.transform.position = camPos;
-            print("pan up check: " + (pixelHeight - pixelHeight / 20));
-            print("Camera panned up");
-            //print("x: " + camPos.x + " y: " + camPos.y + " z: " + camPos.z);
+        if (gameManager.getPaused() == false) {
+            // if mouse position within 10% of window extents
+            // PAN LEFT
+
+            if (mousePos.x < (0 + pixelWidth / 20) && point.x > 0) {
+                camPos.x -= scale / panRate;
+                this.transform.position = camPos;
+                print("pan left check: " + (0 + pixelWidth / 20));
+                print("Camera panned left");
+                //print("x: " + camPos.x + " y: " + camPos.y + " z: " + camPos.z);
+            }
+            // PAN RIGHT
+            if (mousePos.x > (pixelWidth - pixelWidth / 20) && point.x < 80) {
+                camPos.x += scale / panRate;
+                this.transform.position = camPos;
+
+                print("Camera panned right");
+                //print("x: " + camPos.x + " y: " + camPos.y + " z: " + camPos.z);
+            }
+            // PAN DOWN (y screen axis / z world axis)
+            if (mousePos.y < (0 + pixelHeight / 20) && point.z > -80) {
+                camPos.z -= scale / panRate;
+                this.transform.position = camPos;
+                print("Camera panned down");
+                //print("x: " + camPos.x + " y: " + camPos.y + " z: " + camPos.z);
+            }
+            // PAN UP (y screen axis / z world axis)
+            if (mousePos.y > (pixelHeight - pixelHeight / 20) && point.z < -20) {
+                camPos.z += scale / panRate;
+                this.transform.position = camPos;
+                print("pan up check: " + (pixelHeight - pixelHeight / 20));
+                print("Camera panned up");
+                //print("x: " + camPos.x + " y: " + camPos.y + " z: " + camPos.z);
+            }
         }
     }
     
