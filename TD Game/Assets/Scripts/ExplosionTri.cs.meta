@@ -1,12 +1,9 @@
 fileFormatVersion: 2
-guid: 3d693f502d218bc46a81b13f77702f7d
+guid: 7d7bb232b5eb08248ba255064a1ac4b9
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences:
-  - targetWaypoint: {instanceID: 0}
-  - soundManager: {instanceID: 0}
-  - healthBar: {instanceID: 0}
+  defaultReferences: []
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
