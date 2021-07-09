@@ -12,6 +12,7 @@ public class UserInterface : MonoBehaviour
     public GameObject towerMenu;
     public Button buildMenuButton;
     public Button sellMenuButton;
+    public Button pauseMenuButton;
     public Button cancelMenuButton;
     public Button restartButton;
     public Button basicTowerButton;
@@ -43,6 +44,7 @@ public class UserInterface : MonoBehaviour
         buildMenu.SetActive(true);
         buildMenuButton = buildMenu.transform.GetChild(1).GetComponent<Button>();     
         buildMenuButton.onClick.AddListener(displayTowerMenu);
+        pauseMenuButton = GameObject.Find("MainMenu").transform.GetChild(2).GetComponent<Button>();
         // switch on children buttons
         for (int i = 0; i < buildMenu.transform.childCount; ++i) {
             buildMenu.transform.GetChild(i).gameObject.SetActive(true);

@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class BuildManager : MonoBehaviour
 {
@@ -25,6 +26,7 @@ public class BuildManager : MonoBehaviour
     public GameManager gameManager;
     public SoundManager soundManager;
     public PauseMenu pauseMenu;
+    public Button pauseButton;
     public UserInterface ui;
 
     // tower construction value
@@ -49,6 +51,8 @@ public class BuildManager : MonoBehaviour
         soundManager = GameObject.Find("GameManager").GetComponent<SoundManager>();
         pauseMenu = GameObject.Find("GameManager").GetComponent<PauseMenu>();
         ui = GameObject.Find("GameManager").GetComponent<UserInterface>();
+        pauseButton = GameObject.Find("PauseButton").GetComponent<Button>();
+        pauseButton.onClick.AddListener(pauseMenu.pauseGame);
         // build variable state
         buildSelection = SELECTION.Invalid;
         buildState = false;
