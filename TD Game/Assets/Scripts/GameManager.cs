@@ -32,6 +32,7 @@ public class GameManager : MonoBehaviour {
     public GameObject mainCamera;
     public Vector3 camPos;
     public bool paused = false;
+    public int TOWER_TYPES = 3;
 
     // Start is called before the first frame update
     void Start() {

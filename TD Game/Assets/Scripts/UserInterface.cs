@@ -18,6 +18,7 @@ public class UserInterface : MonoBehaviour
     public Button frostTowerButton;
     public Button rapidTowerButton;
     public BuildManager buildManager;
+    public int TOWER_TYPES = 3;
 
     // Method to get texture from Prefab preview to use as icon for GUI
     //public static Texture2D GetAssetPreview(Object asset) {
@@ -40,7 +41,7 @@ public class UserInterface : MonoBehaviour
         buildManager = GameObject.Find("GameManager").GetComponent<BuildManager>();
         buildMenu = GameObject.Find("BuildMenu");
         buildMenu.SetActive(true);
-        buildMenuButton = buildMenu.transform.GetChild(0).GetComponent<Button>();     
+        buildMenuButton = buildMenu.transform.GetChild(1).GetComponent<Button>();     
         buildMenuButton.onClick.AddListener(displayTowerMenu);
         // switch on children buttons
         for (int i = 0; i < buildMenu.transform.childCount; ++i) {
@@ -53,24 +54,20 @@ public class UserInterface : MonoBehaviour
             }
         }
         towerMenu = GameObject.Find("TowerMenu");
-        Button towersButton = towerMenu.transform.GetChild(0).GetComponent<Button>();
-        towersButton.transform.GetChild(0).GetComponent<Text>().text = "Towers\t\t\t\t\t\t" +
-                                                                        "| Cost\t| Range\t| Fire-Rate";
-        Button basicTowerButton = towerMenu.transform.GetChild(1).GetComponent<Button>();
-        basicTowerButton.transform.GetChild(0).GetComponent<Text>().text = "Basic Tower (B) \t\t\t| "
-                                                    + BuildManager.value_basic + "\t\t| "
-                                                    + BuildManager.range_basic + "\t\t\t| "
-                                                    + BuildManager.rate_basic;
-        Button frostTowerButton = towerMenu.transform.GetChild(2).GetComponent<Button>();
-        frostTowerButton.transform.GetChild(0).GetComponent<Text>().text = "Frost Tower (F) \t\t\t| "
-                                                    + BuildManager.value_frost + "\t\t| "
-                                                    + BuildManager.range_frost + "\t\t\t| "
-                                                    + BuildManager.rate_frost;
-        Button rapidTowerButton = towerMenu.transform.GetChild(3).GetComponent<Button>();
-        rapidTowerButton.transform.GetChild(0).GetComponent<Text>().text = "Rapid Tower (R) \t\t| "
-                                                    + BuildManager.value_rapid + "\t\t| "
-                                                    + BuildManager.range_rapid + "\t\t\t| "
-                                                    + BuildManager.rate_rapid;
+        
+        
+        basicTowerButton = towerMenu.transform.GetChild(0).GetComponent<Button>();
+        frostTowerButton = towerMenu.transform.GetChild(1).GetComponent<Button>();
+        rapidTowerButton = towerMenu.transform.GetChild(2).GetComponent<Button>();
+        basicTowerButton.transform.GetChild(1).GetComponent<Text>().text = BuildManager.value_basic.ToString();
+        basicTowerButton.transform.GetChild(2).GetComponent<Text>().text = BuildManager.range_basic.ToString();
+        basicTowerButton.transform.GetChild(3).GetComponent<Text>().text = BuildManager.rate_basic.ToString();
+        frostTowerButton.transform.GetChild(1).GetComponent<Text>().text = BuildManager.value_frost.ToString();
+        frostTowerButton.transform.GetChild(2).GetComponent<Text>().text = BuildManager.range_frost.ToString();
+        frostTowerButton.transform.GetChild(3).GetComponent<Text>().text = BuildManager.rate_frost.ToString();
+        rapidTowerButton.transform.GetChild(1).GetComponent<Text>().text = BuildManager.value_rapid.ToString();
+        rapidTowerButton.transform.GetChild(2).GetComponent<Text>().text = BuildManager.range_rapid.ToString();
+        rapidTowerButton.transform.GetChild(3).GetComponent<Text>().text = BuildManager.rate_rapid.ToString();
         towerMenu.SetActive(false);
         
 
@@ -81,9 +78,9 @@ public class UserInterface : MonoBehaviour
         buildMenuButton.onClick.AddListener(buildManager.enterBuild);
         cancelMenuButton.onClick.AddListener(buildManager.cancelBuildState);
         sellMenuButton.onClick.AddListener(buildManager.sellTower);
-        towerMenu.transform.GetChild(1).GetComponent<Button>().onClick.AddListener(buildBasic);
-        towerMenu.transform.GetChild(2).GetComponent<Button>().onClick.AddListener(buildFrost);
-        towerMenu.transform.GetChild(3).GetComponent<Button>().onClick.AddListener(buildRapid);
+        towerMenu.transform.GetChild(0).GetComponent<Button>().onClick.AddListener(buildBasic);
+        towerMenu.transform.GetChild(1).GetComponent<Button>().onClick.AddListener(buildFrost);
+        towerMenu.transform.GetChild(2).GetComponent<Button>().onClick.AddListener(buildRapid);
 
         restartButton = GameObject.Find("RestartButton").GetComponent<Button>();
         restartButton.onClick.AddListener(restartGame);
@@ -135,7 +132,7 @@ public class UserInterface : MonoBehaviour
 
     public void selectButton(Button button) {
         // reset all button colors
-        for(int i = 0; i < towerMenu.transform.childCount; ++i) {
+        for(int i = 0; i < TOWER_TYPES; ++i) {
             towerMenu.transform.GetChild(i).gameObject.GetComponent<Image>().color = Color.white;
         }
         button.gameObject.GetComponent<Image>().color = Color.yellow;
